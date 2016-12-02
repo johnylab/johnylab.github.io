@@ -1,6 +1,7 @@
 ---
-title: Honeypot Captcha, uma alternativa muito mais elegante para combater spambots
-excerpt: Em vez de fazer o usuário digitar aquela imagem chata, crie um campo que não é pra ser preenchido. Pode ter o mínimo de tamanho e depois torne-o invisível com {display:none;}...
+title: "Honeypot Captcha, uma alternativa muito mais elegante para combater spambots"
+excerpt: >
+  Em vez de fazer o usuário digitar aquela imagem chata, crie um campo que não é pra ser preenchido. Pode ter o mínimo de tamanho e depois torne-o invisível com {display:none;}...
 img: /imagens/css-abbreviations.jpg
 categories: Tutoriais
 tags: captcha, antispam, validação, formulário
@@ -11,9 +12,9 @@ tags: captcha, antispam, validação, formulário
 <small>Reinaldo Ferraz, <a href="http://tableless.com.br/eu-nao-sou-uma-maquina/" target="_blank" title="Tableless / Acessibilidade">Eu não sou uma máquina</a></small>
 </blockquote>
 
-Honeypot Captcha é o nome dado a uma técnica para evitar o preenchimento de formulários por <em lang="en">spambots*, sem que o usuário tenha que fazer nenhum esforço adicional para provar que é um ser humano. Em vez de fazer o usuário digitar aquela imagem chata, crie um campo que **não é pra ser preenchido**. Pode ter o mínimo de tamanho e depois torne-o invisível com `.
+Honeypot Captcha é o nome dado a uma técnica para evitar o preenchimento de formulários por <em lang="en">spambots</em>, sem que o usuário tenha que fazer nenhum esforço adicional para provar que é um ser humano. Em vez de fazer o usuário digitar aquela imagem chata, crie um campo que <strong>não é pra ser preenchido</strong>. Pode ter o mínimo de tamanho e depois torne-o invisível com <code>{display:none;}</code>.
  
-Quando o <em lang="en">spambot* tentar mandar uma mensagem, ele não terá como saber o que é aquele campo, então o preencherá e por isso será bloqueado. Sem o usuário ser incomodado.
+Quando o <em lang="en">spambot</em> tentar mandar uma mensagem, ele não terá como saber o que é aquele campo, então o preencherá e por isso será bloqueado. Sem o usuário ser incomodado.
  
 <a href="http://jsfiddle.net/johnylab/qEy75/" target="_blank">Veja um exemplo de Honeypot Captcha.</a>
  

@@ -1,6 +1,7 @@
 ---
-title: Como transformar um arquivo HTML em um email (ou newsletter)
-excerpt: Uma newsletter em HTML nada mais é do que uma página web dentro do corpo do e-mail. Então, para mandar um e-mail com o formato de uma página web (rich content, ou texto de conteúdo rico), você precisa seguir os mesmos passos para se fazer uma página de um
+title: "Como transformar um arquivo HTML em um email (ou newsletter)"
+excerpt: >
+  Uma newsletter em HTML nada mais é do que uma página web dentro do corpo do e-mail. Então, para mandar um e-mail com o formato de uma página web (rich content, ou texto de conteúdo rico), você precisa seguir os mesmos passos para se fazer uma página de um
 img: /imagens/code_snip.gif
 categories: Tutoriais
 tags: e-mail, newsletter, anexos
@@ -15,7 +16,7 @@ Eu montei um arquivo com o <a href="http://www.kompozer.net/" target="_blank" ti
 
 #### Resposta
 
-Uma *newsletter em HTML* nada mais é do que uma página web dentro do corpo do e-mail. Então, para mandar um e-mail com o formato de uma página web (rich content, ou texto de conteúdo rico), você precisa seguir os mesmos passos para se fazer uma página de um site.
+Uma <em>newsletter em HTML</em> nada mais é do que uma página web dentro do corpo do e-mail. Então, para mandar um e-mail com o formato de uma página web (rich content, ou texto de conteúdo rico), você precisa seguir os mesmos passos para se fazer uma página de um site.
 
 No caso do <a href="http://www.kompozer.net/" target="_blank" title="Ambiente de autoria para web">Kompozer</a> ou qualquer outro editor, você precisa publicar a página em um servidor web primeiro. Se a mensagem existir em algum endereço web e funcionar direitinho lá, será mais fácil funcionar no e-mail. Depois, basta criar uma mensagem de e-mail com o código-fonte igual, lembrando de mudar os endereços das imagens e outros arquivos anexos para que o navegador encontre todos.
 

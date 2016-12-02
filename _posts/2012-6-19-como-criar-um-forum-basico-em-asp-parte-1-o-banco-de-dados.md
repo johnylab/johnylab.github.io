@@ -1,6 +1,7 @@
 ---
-title: Como criar um fórum básico em ASP - parte 1: o banco de dados
-excerpt: Antes de mais nada, o fórum vai precisar de uma base de dados. Eu uso mysql, mas isso não importa muito pois o exemplo é bastante simples, podendo ser feito em Access...
+title: "Como criar um fórum básico em ASP - parte 1: o banco de dados"
+excerpt: >
+  Antes de mais nada, o fórum vai precisar de uma base de dados. Eu uso mysql, mas isso não importa muito pois o exemplo é bastante simples, podendo ser feito em Access...
 img: /imagens/article-using-asp.jpg
 categories: ASP
 tags: fórum, ASP, banco de dados, mensagens
@@ -8,12 +9,12 @@ tags: fórum, ASP, banco de dados, mensagens
 
 Vi isso num tutorial na internet há algum tempo, mas não lembro mais onde. Este tutorial pretende mostrar os passos para criar os recursos básicos de um fórum com asp.
 
-**Primeiro passo: o banco de dados** 
+<b>Primeiro passo: o banco de dados</b> 
 Antes de mais nada, o fórum vai precisar de uma base de dados. Eu uso mysql, mas isso não importa muito pois o exemplo é bastante simples, podendo ser feito em Access ou qualquer outro banco disponível. A base terá 2 tabelas:
 
 
 
--**foruns** <br>A tabela que conterá os dados sobre os *sub-fóruns* que serão criados. Terá os seguintes campos:
+-<b>foruns</b> <br>A tabela que conterá os dados sobre os <em>sub-fóruns</em> que serão criados. Terá os seguintes campos:
 
 
 -   forumID: campo chave-primária do tipo Inteiro, com numeração automática. Terá o valor único que identifica cada fórum.
@@ -23,12 +24,12 @@ Antes de mais nada, o fórum vai precisar de uma base de dados. Eu uso mysql, ma
 -   postagens: campo tipo inteiro que conterá a quantidade de mensagem que o fórum recebeu
 
 
--**mensagens** <br>Guardará as mensagens deixadas em cada fórum. As mensagens serão relacionadas cada uma ao seu fórum específico através de uma *chave estrangeira*. Terá os campos a seguir:
+-<b>mensagens</b> <br>Guardará as mensagens deixadas em cada fórum. As mensagens serão relacionadas cada uma ao seu fórum específico através de uma <em>chave estrangeira</em>. Terá os campos a seguir:
 
 
 -   msgID: campo chave-primária do tipo Inteiro, com numeração automática. Terá o valor único que identifica cada mensagem.
 -   mensagem: campo tipo texto longo que conterá a mensagem em questão.
 -   dataDaMensagem: campo tipo data/hora, que terá a data em que a mensagem foi salva.
--   forum: campo chave estrangeira tipo inteiro que identificará a qual fórum a mensagem pertence. Chave estrangeira significa que os valores serão obtidos de uma chave de outra tabela, no nosso caso a tabela *foruns*.
+-   forum: campo chave estrangeira tipo inteiro que identificará a qual fórum a mensagem pertence. Chave estrangeira significa que os valores serão obtidos de uma chave de outra tabela, no nosso caso a tabela <em>foruns</em>.
 
 

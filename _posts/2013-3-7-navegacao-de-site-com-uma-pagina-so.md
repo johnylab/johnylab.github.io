@@ -1,6 +1,7 @@
 ---
-title: Navegação de site com uma página só
-excerpt: A resposta curta é: sim, dá pra fazer. Se você tem um site com bastante conteúdo, é melhor usar ajax (...), mas para um site com pouco conteúdo, você pode fazer tudo em uma página só...
+title: "Navegação de site com uma página só"
+excerpt: >
+  A resposta curta é: sim, dá pra fazer. Se você tem um site com bastante conteúdo, é melhor usar ajax (...), mas para um site com pouco conteúdo, você pode fazer tudo em uma página só...
 img: /imagens/css-abbreviations.jpg
 categories: HTML
 tags: css, estilos, navegação, layout
@@ -19,15 +20,23 @@ Estou procurando uma maneira de fazer um site bem simples, gostaria de saber se 
 A resposta curta é: sim, dá pra fazer. Eu faria uma ressalva. Se você tem um site com bastante conteúdo, é melhor <a href="http://johnylab.net/?id=123">usar ajax (o javascript carrega o conteúdo externo e põe o resultado onde você mandar)</a>, mas para um site com pouco conteúdo, você pode fazer tudo em uma página só e através do CSS fazer com que apareça uma seção de cada vez. É uma ótima alternativa para muitos designers fazer o site com uma página só.
 
 A navegação se dá através de hatchtag (#):
-```
+
+{% highlight html %}
+
 <a href="#algumasecao">Ir para "alguma seção"</a>
-```
+
+{% endhighlight %}
+
 
 Você já deve ter visto isso funcionando em algum site. Quando clica no link com hatchtag, ele rola a página para mostrar algum elemento (se houver) que tenha um id correspondente ao nome chamado após o caractere de hatchtag (#). No caso do exemplo acima, você precisaria ter um elemento qualquer na página com um id correspondente, assim:
-```
+
+{% highlight html %}
+
 <section id="algumasecao">
 <p>A página vai rolar até aqui.</p>
 </section>
-```
 
-Mas até aqui ainda não é o que você queria. O truque no final é, através do CSS, criar um container para as seções ficarem "escondidas" (eu prefiro mascaradas), exibindo apenas uma de cada vez. Quando você então clicar num link, o container vai rolar o seu conteúdo para atender ao chamado do hatchtag, mas de uma forma velada, sem dar a impressão de que já estava lá, criando a impressão de um site *superultrarrápido*.
+{% endhighlight %}
+
+
+Mas até aqui ainda não é o que você queria. O truque no final é, através do CSS, criar um container para as seções ficarem "escondidas" (eu prefiro mascaradas), exibindo apenas uma de cada vez. Quando você então clicar num link, o container vai rolar o seu conteúdo para atender ao chamado do hatchtag, mas de uma forma velada, sem dar a impressão de que já estava lá, criando a impressão de um site <em>superultrarrápido</em>.

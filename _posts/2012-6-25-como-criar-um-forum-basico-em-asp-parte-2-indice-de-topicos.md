@@ -1,6 +1,7 @@
 ---
-title: Como criar um fórum básico em ASP - parte 2: índice de tópicos
-excerpt: Agora que já criamos o banco de dados (veja aqui), vamos fazer o script que acessa os fóruns. Você pode acessar o fórum de exemplo aqui.
+title: "Como criar um fórum básico em ASP - parte 2: índice de tópicos"
+excerpt: >
+  Agora que já criamos o banco de dados (veja aqui), vamos fazer o script que acessa os fóruns. Você pode acessar o fórum de exemplo aqui.
 img: /imagens/article-using-asp.jpg
 categories: ASP
 tags: fórum, web, ASP, VBScript, SQL, RecordSet
@@ -12,7 +13,9 @@ Esse script terá os links de cada tópico apontando para um segundo script que 
 
 Vamos acessar o banco de dados para começar:
 
-```
+
+{% highlight html %}
+
 
 <%@LANGUAGE="VBSCRIPT" CODEPAGE="1252"%>
 
@@ -26,11 +29,15 @@ conn.Open "Driver=MySQL ODBC 5.1 Driver; DATABASE=nomeDoBancoDeDados; SERVER=seu
 
 %>
 
-```
+
+{% endhighlight %}
+
 
 Em seguida eu já vou verificar se o usuário está tentando salvar um novo tópico. Caso tenha sido enviado o título do novo tópico, ele será salvo no banco. Assim o novo título salvo já constará quando eu listar todos os tópicos, em seguida.
 
-```
+
+{% highlight html %}
+
 
 <%
 
@@ -41,11 +48,15 @@ End If
 
 %>
 
-```
+
+{% endhighlight %}
+
 
 Agora vamos começar a produzir o HTML para a página. Este exemplo foi atualizado para HTML5:
 
-```
+
+{% highlight html %}
+
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -65,11 +76,15 @@ Agora vamos começar a produzir o HTML para a página. Este exemplo foi atualiza
 
 </html>
 
-```
 
-Já temos uma página vazia e uma ` vai o nosso conteúdo, que consistirá da lista de tópicos e do formulário para salvar um novo tópico.
+{% endhighlight %}
 
-```
+
+Já temos uma página vazia e uma <code>div</code> com a classe "conteudo", que poderá ser estilizada mais tarde através de um arquivo CSS. Dentro desta <code>div</code> vai o nosso conteúdo, que consistirá da lista de tópicos e do formulário para salvar um novo tópico.
+
+
+{% highlight html %}
+
 
 <%
 
@@ -113,12 +128,14 @@ Wend
 
 </form>
 
-```
 
-Para mostrar os tópicos disponíveis, utilizamos uma nova consulta sql. Porém desta vez, armazenamos o resultado da consulta no objeto RecordSet que eu chamei de **rs**. Como resultado teremos todos os registros que o banco retornou, ou seja, os tópicos existentes no nosso sistema.
+{% endhighlight %}
 
-Inicia-se um loop `, indicando que chegamos ao final da consulta.
 
-Atenção para um erro comum: sem o comando `, o cursor do objeto continuará apontando para o mesmo registro, e o loop nunca chegará ao seu fim, gerando um erro no script.
+Para mostrar os tópicos disponíveis, utilizamos uma nova consulta sql. Porém desta vez, armazenamos o resultado da consulta no objeto RecordSet que eu chamei de <strong>rs</strong>. Como resultado teremos todos os registros que o banco retornou, ou seja, os tópicos existentes no nosso sistema.
+
+Inicia-se um loop <code>While</code> que se repetirá até percorrermos todos os registros do nosso objeto <b>rs</b>. Tudo o que está dentro do loop <code>While</code> será executado e repetido até que a expressão <code>Not rs.EOF</code> retorne <em>True</em>, indicando que chegamos ao final da consulta.
+
+Atenção para um erro comum: sem o comando <code>MoveNext</code> do objeto <code>RecordSet</code>, o cursor do objeto continuará apontando para o mesmo registro, e o loop nunca chegará ao seu fim, gerando um erro no script.
 
 Em seguida, temos o formulário HTML que aponta de volta para a mesma página com os dados para adicionar um novo fórum. Se preferir, retire-o da página para que somente pessoas autorizadas possam moderar o seu fórum.

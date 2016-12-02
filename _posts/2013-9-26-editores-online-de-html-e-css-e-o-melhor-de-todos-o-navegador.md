@@ -1,6 +1,7 @@
 ---
-title: Editores online de HTML e CSS e o melhor de todos: o navegador
-excerpt: Apesar de ser uma grande ideia (e bem didática), o Thimble não é nenhuma novidade. Para quem precisa de uma alternativa mais poderosa para testes avançados, já existem diversos aplicativos na web onde se pode testar códigos HTML, javascript e CSS.
+title: "Editores online de HTML e CSS e o melhor de todos: o navegador"
+excerpt: >
+  Apesar de ser uma grande ideia (e bem didática), o Thimble não é nenhuma novidade. Para quem precisa de uma alternativa mais poderosa para testes avançados, já existem diversos aplicativos na web onde se pode testar códigos HTML, javascript e CSS.
 img: /imagens/thimble-mozilla.jpg
 categories: Tutoriais
 tags: 
@@ -21,7 +22,7 @@ Apesar de ser uma grande ideia (e bem didática), o Thimble não é nenhuma novi
 
 ### jsFiddle
 
-O <a href="http://jsfiddle.net" target="_blank">jsFiddle</a> é um serviço completo para se testar <em lang="en" title="Trechos independentes de código.">snippets* sem ter de salvar vários arquivos de código. Até mesmo membros de grandes organizações, como o <a href="http://johnylab.net/?id=117"><abbr lang="en" title="Web Hypertext Application Technology Working Group">WHATWG</abbr></a> o utilizam para compartilhar testes. Você pode incluir automaticamente uma biblioteca de javascript, como a jQery, ou uma folha de estilos CSS já disponível, e digitar apenas o trecho de código que deseja testar. Perfeito para se praticar conceitos tanto de HTML como de CSS e javascript. A tela pode ser dividida em até quatro painéis: um para o HTML, um para o CSS adicional, um para a programação, e o último mostra o resultado de todos os outros funcionando em conjunto.
+O <a href="http://jsfiddle.net" target="_blank">jsFiddle</a> é um serviço completo para se testar <em lang="en" title="Trechos independentes de código.">snippets</em> sem ter de salvar vários arquivos de código. Até mesmo membros de grandes organizações, como o <a href="http://johnylab.net/?id=117"><abbr lang="en" title="Web Hypertext Application Technology Working Group">WHATWG</abbr></a> o utilizam para compartilhar testes. Você pode incluir automaticamente uma biblioteca de javascript, como a jQery, ou uma folha de estilos CSS já disponível, e digitar apenas o trecho de código que deseja testar. Perfeito para se praticar conceitos tanto de HTML como de CSS e javascript. A tela pode ser dividida em até quatro painéis: um para o HTML, um para o CSS adicional, um para a programação, e o último mostra o resultado de todos os outros funcionando em conjunto.
 
 ### TheCodePlayer
 
@@ -29,7 +30,7 @@ O <a href="http://jsfiddle.net" target="_blank">jsFiddle</a> é um serviço comp
 
 ### CodePen
 
-<a href="http://codepen.io/" target="_blank">CodePen</a> é um meio termo entre os dois. Criado por <a href="http://codepen.io/chriscoyier" target="_blank">Chris Coyier</a>, tem uma interface que facilita pesquisa de trabalhos antigos, além de um blog para discussão, o que torna o aplicativo muito mais colaborativo. Você não pode dar <em lang="en">play* no código e vê-lo se explicando sozinho, mas tem a lista de experimentos de outros usuários para pesquisar. Outra vantagem é que você pode fazer login pelo seu perfil do Github para salvar os experimentos.
+<a href="http://codepen.io/" target="_blank">CodePen</a> é um meio termo entre os dois. Criado por <a href="http://codepen.io/chriscoyier" target="_blank">Chris Coyier</a>, tem uma interface que facilita pesquisa de trabalhos antigos, além de um blog para discussão, o que torna o aplicativo muito mais colaborativo. Você não pode dar <em lang="en">play</em> no código e vê-lo se explicando sozinho, mas tem a lista de experimentos de outros usuários para pesquisar. Outra vantagem é que você pode fazer login pelo seu perfil do Github para salvar os experimentos.
 
 ## Editar o HTML e CSS em tempo real direto no navegador
 
@@ -37,11 +38,11 @@ O melhor editor de todos na minha opinião, você já usa: o navegador web. E a 
 
 Você pode testar o Dev Tools enquanto lê esta página. Comece por mais um atalho: clique com o botão direito do mouse neste parágrafo e selecione "Inspecionar elemento". Se você estiver usando o Internet Explorer vai ter que pressionar a tecla <kbd>F12</kbd> mesmo, pois é o único atalho que ele tem. No Opera não tem o F12, só <kbd>Ctrl + Shift + I</kbd>. Se quiser "inspecionar um elemento" específico da página no IE, não se desespere. No painel aberto, tem uma ferramenta com ícone semelhante a uma seta do mouse que serve para selecionar o elemento direto na página.
 
-<figure><img src="https://developers.google.com/chrome-developer-tools/images/image03.png" alt="Ferramentas para desenvolvedores Chrome DevTools"><figcation><small>*O painel <a href="https://developers.google.com/chrome-developer-tools/" target="_blank" hreflang="en">DevTools do Google Chrome</a>*</small></figcaption></figure>
+<figure><img src="https://developers.google.com/chrome-developer-tools/images/image03.png" alt="Ferramentas para desenvolvedores Chrome DevTools"><figcation><small><em>O painel <a href="https://developers.google.com/chrome-developer-tools/" target="_blank" hreflang="en">DevTools do Google Chrome</a></em></small></figcaption></figure>
 
-Ao abrir o painel DevTools, você terá várias abas com recursos diferentes e muito úteis em diversos momentos do desenvolvimento do site. Na aba Console, por exemplo, você pode ver mensagens de erro de javascript e alertas, e digitar comandos de programação para testar os resultados sem o inconveniente de recarregar a página várias vezes. Em Elements está o <abbr title="HyperText Markup Language" lang="en">HTML</abbr> da página e os estilos aplicados a cada elemento. Selecione um elemento no <abbr title="HyperText Markup Language" lang="en">HTML</abbr> e veja ao lado (ou embaixo) os *styles* aplicados. Duplo clique em qualquer coisa para editar. Você pode fazer os testes que quiser alterando o código que está carregado no navegador antes de sair salvando direto no seu código-fonte.
+Ao abrir o painel DevTools, você terá várias abas com recursos diferentes e muito úteis em diversos momentos do desenvolvimento do site. Na aba Console, por exemplo, você pode ver mensagens de erro de javascript e alertas, e digitar comandos de programação para testar os resultados sem o inconveniente de recarregar a página várias vezes. Em Elements está o <abbr title="HyperText Markup Language" lang="en">HTML</abbr> da página e os estilos aplicados a cada elemento. Selecione um elemento no <abbr title="HyperText Markup Language" lang="en">HTML</abbr> e veja ao lado (ou embaixo) os <i>styles</i> aplicados. Duplo clique em qualquer coisa para editar. Você pode fazer os testes que quiser alterando o código que está carregado no navegador antes de sair salvando direto no seu código-fonte.
 
-É importante obervar que o <abbr title="HyperText Markup Language" lang="en">HTML</abbr> exibido no DevTools **não é o código-fonte original da página**. Ele exibe o resultado de scripts e até implementações do navegador, ou seja, o <abbr title="HyperText Markup Language" lang="en">HTML</abbr> processado pelo navegador. Se você inserir código com javascript na página, o resultado dessas operações será visualizado no painel. Para ver o código-fonte como ele foi enviado pelo servidor web, você ainda precisa usar a opção "Exibir código fonte", também presente em todos os navegadores.
+É importante obervar que o <abbr title="HyperText Markup Language" lang="en">HTML</abbr> exibido no DevTools <strong>não é o código-fonte original da página</strong>. Ele exibe o resultado de scripts e até implementações do navegador, ou seja, o <abbr title="HyperText Markup Language" lang="en">HTML</abbr> processado pelo navegador. Se você inserir código com javascript na página, o resultado dessas operações será visualizado no painel. Para ver o código-fonte como ele foi enviado pelo servidor web, você ainda precisa usar a opção "Exibir código fonte", também presente em todos os navegadores.
 
 Para aprender mais sobre o uso das Ferramentas para Desenvolvedores do seu browser preferido, visite o site <a href="http://devtoolsecrets.com/" target="_blank" hreflang="en">Secrets of the Browser Developer Tools</a>. Você pode filtrar informações de cada browser, agrupadas em diversas categorias, conhecer atalhos e ver as funcionalidades que estão presentes em mais de um navegador. Divirta-se!
 

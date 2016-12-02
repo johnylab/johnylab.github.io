@@ -1,6 +1,7 @@
 ---
-title: Novo filtro Pintura a Óleo do Photoshop CS6
-excerpt: Oil Paint Filter do Adobe Photoshop CS6. Parece encurtar bastante o caminho para criar efeitos de pintura a óleo. Ferramenta profissional ou só mais um efeito Instagram?
+title: "Novo filtro Pintura a Óleo do Photoshop CS6"
+excerpt: >
+  Oil Paint Filter do Adobe Photoshop CS6. Parece encurtar bastante o caminho para criar efeitos de pintura a óleo. Ferramenta profissional ou só mais um efeito Instagram?
 img: /imagens/Logo-Adobe-Photoshop-CS6-Beta.jpg
 categories: Photoshop
 tags: photoshop, efeito, filtro

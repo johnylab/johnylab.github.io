@@ -1,12 +1,13 @@
 ---
-title: Não use <picture> (na maioria das vezes)
-excerpt: Você não precisa saber todos os casos, mas precisa entender a diferença entre os dois casos mais comuns de uso a fim de saber que parte da especificação picture resolverá seus problemas.
+title: "Não use <picture> (na maioria das vezes)"
+excerpt: >
+  Você não precisa saber todos os casos, mas precisa entender a diferença entre os dois casos mais comuns de uso a fim de saber que parte da especificação picture resolverá seus problemas.
 img: /imagens/devices-sm.gif
 categories: HTML
 tags: imagens responsivas, tag, picture, img
 ---
 
-*O texto a seguir é adaptado de um artigo de <a href="http://blog.cloudfour.com/author/jason-grigsby/" title="Posts by Jason Grigsby" hreflang="en">Jason Grigsby</a> e você pode ler o texto original em <a href="http://blog.cloudfour.com/dont-use-picture-most-of-the-time/" hreflang="en">Don’t use &lt;picture> (most of the time)</a>.*
+<em>O texto a seguir é adaptado de um artigo de <a href="http://blog.cloudfour.com/author/jason-grigsby/" title="Posts by Jason Grigsby" hreflang="en">Jason Grigsby</a> e você pode ler o texto original em <a href="http://blog.cloudfour.com/dont-use-picture-most-of-the-time/" hreflang="en">Don’t use &lt;picture> (most of the time)</a>.</em>
 
 O suporte dos navegadores para a especificação picture está chegando e, como diz <a href="http://marcosc.com/">Marcos Cáceres</a>, é hora de "sair picturizando tudo!"
 
@@ -42,15 +43,21 @@ Além que você tenha em vista a direção de arte, não precisa usar o elemento
 
 A especificação picture suporta sintaxes que podem ser usadas sem o tal elemento. Um exemplo dado por Yoav Weiss no artigo <a href="https://dev.opera.com/articles/native-responsive-images/" hreflang="en">Native Responsive Images</a> fica mais ou menos assim:
 
-```
+
+{% highlight html %}
+
 <img src="cat_500px.jpg"
     srcset="cat_750px.jpg 1.5x, cat_1000px.jpg 2x"
     width="500px" alt="lolcat">
-```
+
+{% endhighlight %}
+
 
 Isso dá ao navegador opções diferentes conforme a densidade da tela. A seguir um exemplo mais complicado:
 
-```
+
+{% highlight html %}
+
 <img sizes="(max-width: 30em) 100vw,
             (max-width: 50em) 50vw,
             calc(33vw - 100px)"
@@ -59,7 +66,9 @@ Isso dá ao navegador opções diferentes conforme a densidade da tela. A seguir
             swing-800.jpg 800w,
             swing-1600.jpg 1600w"
     src="swing-400.jpg" alt="Kettlebell Swing">
-```
+
+{% endhighlight %}
+
 
 Eu recomendo a leitura do <a href="https://dev.opera.com/articles/native-responsive-images/" hreflang="en">artigo do Yoav</a> para entender melhor cada detalhe.
 
@@ -67,17 +76,21 @@ Quando você usa os atributos srcset e sizes em um elemento &lt;img>, você est�
 
 Como designer ou desenvolvedor, você não tem como saber qual a largura de banda do usuário, ou se ele declarou algum tipo de preferência com relação à resolução de imagens que ele deseja ver. Se damos ao navegador informações através do atributo srcset ou sizes, ele poderá tomar decisões mais inteligentes a respeito de qual arquivo carregar.
 
-Mas nada disso é possível quando você usa &lt;picture> e seus atributos `:
+Mas nada disso é possível quando você usa &lt;picture> e seus atributos <code>media</code>:
 
-```
+
+{% highlight html %}
+
 <picture>
     <source media="(min-width: 45em)" srcset="large.jpg">
     <source media="(min-width: 32em)" srcset="med.jpg">
     <img src="small.jpg" alt="The president giving an award.">
 </picture>
-```
 
-Quando você especifica ` para as fontes da imagem, está criando regras para o navegador obedecer. Ele não terá condições de tomar decisões inteligentes de download baseadas nas preferências do usuário, rede, etc.
+{% endhighlight %}
+
+
+Quando você especifica <code>media queries</code> para as fontes da imagem, está criando regras para o navegador obedecer. Ele não terá condições de tomar decisões inteligentes de download baseadas nas preferências do usuário, rede, etc.
 
 Você deve ditar as condições de decisão de download moderadamente. Na verdade, só deve usar isso para fins de direção de arte, não para determinar a resolução.
 
