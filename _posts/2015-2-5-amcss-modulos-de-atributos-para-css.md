@@ -22,19 +22,19 @@ Os botões são um dos melhores exemplos de aplicação de AM. Aqui temos alguns
 
 {% highlight html %}
 
-<! - Botão primário Grande ->
+<!-- Botão primário Grande -->
 <a class="btn btn-primary btn-lg"> Botão primário Grande </a>
 <a am-Button="primary large"> Botão primário Grande </a>
 
-<! - Botão Padrão ->
+<!-- Botão Padrão -->
 <a class="btn btn-default"> Botão Padrão </a>
 <a am-Button> Botão Padrão </a>
 
-<! - Botão de informação pequeno ->
+<!-- Botão de informação pequeno -->
 <a class="btn btn-info btn-sm"> Botão de informação pequeno </a>
 <a am-Button="info small"> Botão de informação pequeno </a>
 
-<! - Botão de perigo extra-pequeno ->
+<!-- Botão de perigo extra-pequeno -->
 <a class="btn btn-danger btn-xs"> Botão de perigo extra-pequeno </a>
 <a am-Button="danger extra-small"> Botão de perigo extra-pequeno </a>
 

@@ -10,7 +10,7 @@ tags: lógica de programação, seno, coseno, cosseno, cálculo
 O código abaixo produziu um efeito legal de posicionamento em círculo, calculando o seno e cosseno dos ângulos de cada div para gerar as coordenadas ao redor de um ponto. O código está em VBScript com ASP, mas pode ser feito em qualquer linguagem de programação para web, como JavaScript. Para testar a formação em círculo, é só passar a quantidade de divs a ser geradas através do parâmetro "n" na URL. Por exemplo: <em>testecirc.asp<b>?n=5</b></em>
 
 
-{% highlight html %}
+{% highlight asp %}
 
 
 <%@LANGUAGE="VBSCRIPT" CODEPAGE="1252"%>
@@ -29,39 +29,39 @@ angulo = 360 / (numPontos + 1)
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Teste de menu em círculo</title>
-</head>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Teste de menu em círculo</title>
+  </head>
 
-<body onload="document.myForm.n.select();">
+  <body onload="document.myForm.n.select();">
 
-<%
+    <%
 
-For i = 1 to numPontos
+    For i = 1 to numPontos
 
-	x = Round(centroX + Cos(angulo * i) * raio)
-	y = Round(centroY + Sin(angulo * i) * raio)
+      x = Round(centroX + Cos(angulo * i) * raio)
+      y = Round(centroY + Sin(angulo * i) * raio)
 
-	Response.Write "<div style=""position: absolute; left: "
-	Response.Write x & "px; "
-	Response.Write "top: "
-	Response.Write y & "px;"">"
-	Response.Write i & " ° (" & x & ", " & y & ")</div>" & VbCrLf
+      Response.Write "<div style=""position: absolute; left: "
+      Response.Write x & "px; "
+      Response.Write "top: "
+      Response.Write y & "px;"">"
+      Response.Write i & " ° (" & x & ", " & y & ")</div>" & VbCrLf
 
-Next
+    Next
 
-%>
+    %>
 
-	<form action="" method="get" name="myForm">
+    <form action="" method="get" name="myForm">
 
-		<label for="n">Nº de pontos: </label>
-		<input name="n" type="text" value="<%= numPontos %>" size="11" maxlength="11" />
-		<input name="submit" type="submit" value="Testar" />
+      <label for="n">Nº de pontos: </label>
+      <input name="n" type="text" value="<%= numPontos %>" size="11" maxlength="11" />
+      <input name="submit" type="submit" value="Testar" />
 
-	</form>
+    </form>
 
-</body>
+  </body>
 
 </html>
 

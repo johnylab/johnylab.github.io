@@ -43,50 +43,49 @@ O W3 Schools é um ótimo lugar para consultar referências e a seção destinad
   - Base de dados SQL local
   - Aplicações web
   
--Multimídia no HTML5<br>Com HTML5, rodar vídeo e áudio ficou mais fácil do que nunca:
+- Multimídia no HTML5<br>Com HTML5, rodar vídeo e áudio ficou mais fácil do que nunca:
   
-  -HTML5 &lt;video>
-  -HTML5 &lt;audio>
+  - HTML5 &lt;video>
+  - HTML5 &lt;audio>
   
--Gráficos em HTML5<br>Com HTML5, desenhar gráficos ficou mais fácil do que nunca:
+- Gráficos em HTML5<br>Com HTML5, desenhar gráficos ficou mais fácil do que nunca:
  
-  -Uso do elemento &lt;canvas>
-  -Uso de SVG inline
-  -Uso de efeitos 2D e 3D no CSS3
+  - Uso do elemento &lt;canvas>
+  - Uso de SVG inline
+  - Uso de efeitos 2D e 3D no CSS3
   
--Aplicativos HTML5<br>Com HTML5, desenvolver aplicativos web ficou mais fácil do que nunca:
+- Aplicativos HTML5<br>Com HTML5, desenvolver aplicativos web ficou mais fácil do que nunca:
   
-  -Armazenamento de dados local
-  -Acesso a arquivos locais
-  -Base de dados SQL local
-  -Controle de cache do aplicativo
-  -Javascript workers
-  -XHTMLHttpRequest 2 (AJAX)
+  - Armazenamento de dados local
+  - Acesso a arquivos locais
+  - Base de dados SQL local
+  - Controle de cache do aplicativo
+  - Javascript workers
+  - XHTMLHttpRequest 2 (AJAX)
   
--Elementos semânticos
+- Elementos semânticos
   
-  -Novos elementos para cabeçalhos, rodapés, menus, seções e artigos.
-  -HTML5 Forms
+  - Novos elementos para cabeçalhos, rodapés, menus, seções e artigos.
+  - HTML5 Forms
   
--Novos elementos de formulários, novos atributos, novos tipos de input, validação automática.
+- Novos elementos de formulários, novos atributos, novos tipos de input, validação automática.
   
-  -HTML5 usa CSS3
-  -Novos seletores
-  -Novas propriedades
-  -Animações
-  -Transformações 2D e 3D
-  -Cantos arredondados
-  -Efeitos de sombra
-  -Carregamento de fontes
+  - HTML5 usa CSS3
+  - Novos seletores
+  - Novas propriedades
+  - Animações
+  - Transformações 2D e 3D
+  - Cantos arredondados
+  - Efeitos de sombra
+  - Carregamento de fontes
   
 
 <a href="http://www.w3schools.com/html/html5_intro.asp" title="HTML5 Introduction" hreflang="en" target="_blank">Acesse o tutorial de HTML5 do W3 Schools</a>
 
-<aside style="border:solid 1px #ccc;border-width:1px 0;margin:50px 0;">
+
 #### Página oficial do HTML5
 Documento atualizado dos vocabulários e APIs relacionadas ao HTML e XHTML direto da fonte.
 <a href="http://www.w3.org/TR/html5/" target="_blank">W3C HTML5: http://www.w3.org/TR/html5/</a>
-</aside>
 
 #### HTML 5 Demos and Examples
 Experimentos e demonstrações do funcionamento das novas funcionalidades da HTML 5. Busque numa lista extensa de exemplos, filtrando-os por navegadores suportados ou tipo de tecnologia.

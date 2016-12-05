@@ -14,7 +14,7 @@ Esse script terá os links de cada tópico apontando para um segundo script que 
 Vamos acessar o banco de dados para começar:
 
 
-{% highlight html %}
+{% highlight asp %}
 
 
 <%@LANGUAGE="VBSCRIPT" CODEPAGE="1252"%>
@@ -25,7 +25,7 @@ Set conn = Server.CreateObject("ADODB.Connection")
 Set rs = Server.CreateObject("ADODB.RecordSet") 
 
 ' Altere a linha abaixo com os dados do seu banco de dados
-conn.Open "Driver=MySQL ODBC 5.1 Driver; DATABASE=nomeDoBancoDeDados; SERVER=seuServidor; UID=seuID; PASSWORD=*******;" 
+conn.Open "Driver=MySQL ODBC 5.1 Driver; DATABASE=nomeDoBancoDeDados; SERVER=seuServidor; UID=seuID; PASSWORD=∗∗∗∗∗∗;" 
 
 %>
 
@@ -36,7 +36,7 @@ conn.Open "Driver=MySQL ODBC 5.1 Driver; DATABASE=nomeDoBancoDeDados; SERVER=seu
 Em seguida eu já vou verificar se o usuário está tentando salvar um novo tópico. Caso tenha sido enviado o título do novo tópico, ele será salvo no banco. Assim o novo título salvo já constará quando eu listar todos os tópicos, em seguida.
 
 
-{% highlight html %}
+{% highlight asp %}
 
 
 <%
@@ -83,7 +83,7 @@ Agora vamos começar a produzir o HTML para a página. Este exemplo foi atualiza
 Já temos uma página vazia e uma <code>div</code> com a classe "conteudo", que poderá ser estilizada mais tarde através de um arquivo CSS. Dentro desta <code>div</code> vai o nosso conteúdo, que consistirá da lista de tópicos e do formulário para salvar um novo tópico.
 
 
-{% highlight html %}
+{% highlight asp %}
 
 
 <%
