@@ -9,33 +9,30 @@ tags: css, posicionamento, layout
 
 Pergunta do meu amigo Celso Garcia:
 
-<blockquote>
-"Tenho uma página com uma altura de 200 px ou uma pagina com uma altura de 2000px.
-Preciso deixar o rodapé sempre lá embaixo.
-Já usei <code><em>{position: absolute; bottom: 0;}</em></code> e funciona pra um ou para outro."
-</blockquote>
+> Tenho uma página com uma altura de 200 px ou uma pagina com uma altura de 2000px.
+> 
+> Preciso deixar o rodapé sempre lá embaixo.
+> 
+> Já usei `{position: absolute; bottom: 0;}` e funciona pra um ou para outro.
 
 
-{% highlight html %}
+{% highlight css %}
 
 * {  
-   padding: 0px;  
-    margin: 0px;  
+    padding: 0px;
+    margin: 0px;
 }  
   
-html, body 
-{  
+html, body {  
     height: 100%;  
 }  
  
-#page 
-{  
+#page {  
     min-height: 100%;  
     position: relative;  
 }  
   
-#footer 
-{  
+#footer {  
     width: 100%;  
     bottom: 0;  
     position: absolute;  
@@ -47,9 +44,9 @@ html, body
 Solução:
 
 
-{% highlight html %}
+{% highlight css %}
 
-{position:fixed;bottom:0;}
+#footer {position:fixed;bottom:0;}
 
 {% endhighlight %}
 

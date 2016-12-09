@@ -9,10 +9,9 @@ tags: e-mail, newsletter, anexos
 
 Pergunta feita no Yahoo Answers:
 
-<blockquote>
-<img src="/imagens/screenshot_homepage_KompoZer.png" class="alinhado direita" alt="Interface do KompoZer" />
-Eu montei um arquivo com o <a href="http://www.kompozer.net/" target="_blank" title="Ambiente de autoria para web">Kompozer</a> e queria saber o que eu tenho que fazer para mandar esse arquivo por email. Mas não por anexo, eu queria que a imagem que fiz aparecesse ja na hora de ABRIR O EMAIL, como uma newsletter.
-</blockquote>
+> ![Interface do KompoZer](http://johnylab.net/imagens/screenshot_homepage_KompoZer.png)
+> 
+> Eu montei um arquivo com o <a href="http://www.kompozer.net/" target="_blank" title="Ambiente de autoria para web">Kompozer</a> e queria saber o que eu tenho que fazer para mandar esse arquivo por email. Mas não por anexo, eu queria que a imagem que fiz aparecesse ja na hora de ABRIR O EMAIL, como uma newsletter.
 
 #### Resposta
 
@@ -26,7 +25,7 @@ Lembre-se que existem muitos serviços de e-mail, e todos são diferentes, inclu
 
 #### Antwort - Layouts responsivos para email
 
-<img src="http://internations.github.com/antwort/images/responsive-graphic.png" border="0" alt="Real responsive Email layouts">
+![Real responsive Email layouts](http://internations.github.com/antwort/images/responsive-graphic.png)
 
 Recentemente a InterNations GmbH lançou o <a href="http://internations.github.com/antwort/" title="Antwort | Responsive Layouts for Email" target="_blank">Antwort</a>, um template responsivo para newsletters que promete funcionar em um grande número de dispositivos, principalmente os mais modernos.
 

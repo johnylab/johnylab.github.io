@@ -13,10 +13,9 @@ Essa é a pergunta recorrente na área de desenvolvimento web atualmente, e muit
 
 Sim e com certeza você já pode usar HTML5 para desenvolver websites e aplicativos web (este site já usa). Isso porque muitas funcionalidades já estão implementadas nos navegadores modernos, sem deixar de apresentar um conteúdo acessível para os mais antigos. Esse princípio inclusive faz parte da especificação, chama-se retrocompatibilidade.
 
-<blockquote>
-O WHATWG tem mantido o foco para manter a retrocompatibilidade. Nenhum site deverá ter de ser refeito totalmente para se adequar aos novos conceitos e regras. O HTML5 está sendo criado para que seja compatível com os browsers recentes, possibilitando a utilização das novas características imediatamente.
-<small><a href="http://www.w3c.br/cursos/html5/conteudo/capitulo1.html" target="_blank">Visão geral do HTML5 - W3C Brasil</a></small>
-</blockquote>
+> O WHATWG tem mantido o foco para manter a retrocompatibilidade. Nenhum site deverá ter de ser refeito totalmente para se adequar aos novos conceitos e regras. O HTML5 está sendo criado para que seja compatível com os browsers recentes, possibilitando a utilização das novas características imediatamente.
+> 
+> <small><a href="http://www.w3c.br/cursos/html5/conteudo/capitulo1.html" target="_blank">Visão geral do HTML5 - W3C Brasil</a></small>
 
 ## html5shiv
 
@@ -39,13 +38,13 @@ Aqui é utilizado um código de comentário condicional, que o IE entende como u
 Se você pretende fazer mais do que estilizar o site com CSS, pode precisar de uma biblioteca mais completa, chamada <a href="http://modernizr.com/" target="_blank">Modernizr</a>. O Modernizr é uma biblioteca de detectação que lhe permite verificar o suporte da maioria das características do HTML5 e CSS3. Além de incluir automaticamente classes especiais na tag &lt;html>, cria um objeto javascript Modernizr, que tem as propriedades correspondentes a cada funcionalidade para testar se o objeto desejado está disponível no navegador.
 
 
-{% highlight html %}
+{% highlight javascript %}
 
 if (Modernizr.geolocation) {
-	  // Aceita a feature
-	} else {
-	  // Não aceita a feature testada. 
-	}
+  // Aceita a feature
+} else {
+  // Não aceita a feature testada. 
+}
 
 {% endhighlight %}
 

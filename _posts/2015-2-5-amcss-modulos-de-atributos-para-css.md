@@ -7,9 +7,8 @@ categories: CSS
 tags: css, atributos, seletores, módulos css
 ---
 
-<blockquote>
-Esta página é uma tradução do artigo <a href="http://amcss.github.io/" hreflang="en">http://amcss.github.io/</a>, com pequenas adaptações.
-</blockquote>
+>
+  Esta página é uma tradução do artigo <a href="http://amcss.github.io/" hreflang="en">http://amcss.github.io/</a>, com pequenas adaptações.
 
 Attribute Modules (AM) é uma técnica para usar os atributos HTML e seus valores em vez de classes para estilizar os elementos. Ao fazê-lo, cada atributo declara efetivamente um namespace separado para encapsular as informações de estilo, resultando em um HTML e CSS mais legíveis e de fácil manutenção.
 
@@ -48,7 +47,7 @@ A versão de AM, por sua vez, utiliza o atributo <code>am-Button</code> como um 
 As mudanças no CSS são bastante simples:
 
 
-{% highlight html %}
+{% highlight css %}
 
 .btn
 [am-Button] {/ * estilos botão padrão * /}
@@ -66,26 +65,27 @@ As mudanças no CSS são bastante simples:
 
 Já é de praxe usarmos algum sistema de grade, e <a href="http://flexboxgrid.com/" hreflang="en">Flexbox Grid</a> é uma boa opção. Aqui temos convertido um exemplo de marcação em um estilo AM.
 
+Com class:
 
 {% highlight html %}
 
 <div class="row reverse">
     <div class="column-12--hand column-8--lap">
         <div class="box">Responsive</div>
-    </ div>
-</ div>
+    </div>
+</div>
 
 {% endhighlight %}
 
-
+Com atributos personalizados:
 
 {% highlight html %}
 
 <div am-Grid-Row="reverse">
     <div am-Grid-Col="12 lap:8">
         <div am-Demo="box">Responsive</div>
-    </ div>
-</ div>
+    </div>
+</div>
 
 {% endhighlight %}
 
@@ -101,11 +101,11 @@ Considerando AM uma evolução do estilo de nomeação BEM, você também pode c
 
 {% highlight html %}
 
-<div class = "u-posAbsoluteCenter">
-   <div class = "u-textTruncate u-textCenter">
+<div class="u-posAbsoluteCenter">
+   <div class="u-textTruncate u-textCenter">
      Texto super centralizado.
-   </ div>
-</ div>
+   </div>
+</div>
 
 {% endhighlight %}
 
@@ -113,11 +113,11 @@ Considerando AM uma evolução do estilo de nomeação BEM, você também pode c
 
 {% highlight html %}
 
-<div am-position = "center absolute">
-   <div am-text = "center truncate">
+<div am-position="center absolute">
+   <div am-text="center truncate">
      Texto super centralizado.
-   </ div>
-</ div>
+   </div>
+</div>
 
 {% endhighlight %}
 

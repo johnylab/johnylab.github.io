@@ -10,7 +10,7 @@ tags: JavaScript, jQuery, ajax
 Todo programador de <abbr title="Asynchronous Javascript and XML (Javascript e XML Assíncronos)" lang="en">AJAX</abbr> passa por isso. Os tais caracteres que existem na nossa querida Língua Portuguesa, mas os falantes da Língua Inglesa (azar o deles!) não conhecem. Então você cria o seu objeto <abbr title="Asynchronous Javascript and XML (Javascript e XML Assíncronos)" lang="en">AJAX</abbr>, limpíssimo e escalonável, e chama o arquivo externo:
 
 
-{% highlight html %}
+{% highlight javascript %}
 
 var ajaxObj = function() {
     if (window.ActiveXObject) return new ActiveXObject('Microsoft.XMLHTTP');
@@ -44,10 +44,11 @@ requisicaoAjax('/meuArquivoExterno.html');
 
 
 ## Ajax com jQuery
+
 Ah! você não faz mais assim? Usa jQuery? Desculpa aí:
 
 
-{% highlight html %}
+{% highlight javascript %}
 
 $.ajax({
   type: 'get',
@@ -66,14 +67,13 @@ $.ajax({
 {% endhighlight %}
 
 
-<blockquote>
-JQuery tem vários métodos para simplificar a chamada de uma requisição ajax. Veja a <a href="http://api.jquery.com/category/ajax/" lang="en" title="Ajax - jQuery API" target="_blank">lista completa de métodos ajax</a>.
-</blockquote>
+> JQuery tem vários métodos para simplificar a chamada de uma requisição ajax. Veja a <a href="http://api.jquery.com/category/ajax/" lang="en" title="Ajax - jQuery API" target="_blank">lista completa de métodos ajax</a>.
+
 
 Para fazer um campo de busca agora, basta fazer uma função no <code>&lt;input></code> que você quiser para chamar a página de resultados quando ocorrer uma alteração no campo. Simples? Nada disso. Graças à boa e velha incompatibilidade de navegadores, alguns eventos não acontecem em alguns navegadores, outros são disparados quando você não quer. Veja como eu responderia ao evento <code>change</code> do campo de busca, para retornar o resultado:
 
 
-{% highlight html %}
+{% highlight javascript %}
 
 var query = '';
 var url = 'minhapagina.php';
@@ -114,7 +114,7 @@ Parece ótimo, até testarmos em diferentes navegadores:
 Usando o método <code>.preventDefault()</code>, do objeto jQuery, evitamos que o IE faça besteira.
 
 
-{% highlight html %}
+{% highlight javascript %}
 
 $('#formBusca').submit( function(e){ e.preventDefault(); } );
 
@@ -138,7 +138,7 @@ Se você codificou corretamente todos os arquivos, e não tem um erro no seu scr
 Aí está o segredo. Para que o IE também mande a sua string de busca corretamente, basta usar um método javascript que serve para fazer a devida conversão:
 
 
-{% highlight html %}
+{% highlight javascript %}
 
 $.get(u, encodeURI(q), function(data) {
 

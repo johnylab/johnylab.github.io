@@ -7,14 +7,14 @@ categories: CSS
 tags: css, estilos, layout
 ---
 
-## Aqui vão 10 dicas do <a href="http://line25.com/articles/10-css-rules-every-web-designer-should-know" target="_blank">line25.com</a> para soluções simples no seu código CSS
+*Aqui vão 10 dicas do <a href="http://line25.com/articles/10-css-rules-every-web-designer-should-know" target="_blank">line25.com</a> para soluções simples no seu código CSS.*
 
 ### @media
 
-{% highlight html %}
+{% highlight css %}
 
 @media screen and (max-width: 960px) {
-     /* Seus estilos aqui */
+    /* Seus estilos aqui */
 }
 
 {% endhighlight %}
@@ -26,7 +26,7 @@ Todos os navegadores modernos suportam este tipo de regras. Os antigos (IE6,7,8)
 
 ### background-size
 
-{% highlight html %}
+{% highlight css %}
 
 body {
 	background: url(image.jpg) no-repeat;
@@ -42,7 +42,7 @@ Atenção: certifique-se de que a sua imagem de fundo permanece legível ao aces
 
 ### @font-face
 
-{% highlight html %}
+{% highlight css %}
 
 @font-face {
 	font-family: Blackout;
@@ -56,7 +56,7 @@ Já existem muitas fontes novas e distribuídas gratuitamente para se usar com <
 
 Para atender as inconsistências de implementação nos diferentes navegadores, não são necessárias soluções de programação, bastando fornecer a mesma fonte em diferentes formatos: WOFF é preferencial, seguido de TTF e EOT (para o Internet Explorer). Use o <a href="http://www.fontsquirrel.com/fontface/generator" target="_blank">Font Squirrel Generator</a> para converter fontes que você tem licensa para usar. Veja abaixo um exemplo de regra para servir fonte incorporada ao site que vai funcionar em todos os navegadores:
 
-{% highlight html %}
+{% highlight css %}
 
 @font-face {
 	font-family: 'MinhaFamiliaDeFontes';
@@ -71,7 +71,7 @@ Para atender as inconsistências de implementação nos diferentes navegadores, 
 
 ### margin: 0 auto;
 
-{% highlight html %}
+{% highlight css %}
 
 #container {
 	margin: 0 auto;
@@ -84,7 +84,7 @@ A inteligente declaração <code>margin: 0 auto;</code> é o que faz o container
 
 ### overflow: hidden
 
-{% highlight html %}
+{% highlight css %}
 
 .container {
 	overflow: hidden;
@@ -97,10 +97,10 @@ Existem todo tipo de soluções para limpar os floats, mas uma forma pura e simp
 
 ### .clearfix
 
-{% highlight html %}
+{% highlight css %}
 
 .clearfix:after {
-	content: ".";
+	content: "";
 	display: block;
 	clear: both;
 	visibility: hidden;
@@ -115,7 +115,7 @@ Para os casos em que <code>overflow: hidden;</code> não resolve, use a técnica
 
 ### color: rgba();
 
-{% highlight html %}
+{% highlight css %}
 
 .btn {
 	color: rgba(0,0,0,0.5);
@@ -128,7 +128,7 @@ Imagens PNG eram a única solução para dar efeitos de transparência, até que
 
 ### input[type="text"]
 
-{% highlight html %}
+{% highlight css %}
 
 input[type="text"] {
 	width: 200px;
@@ -141,7 +141,7 @@ O formato de seletores como <code>input[type="text"]</code> e outros seletores a
 
 ### transform: rotate(30deg);
 
-{% highlight html %}
+{% highlight css %}
 
 .title {
 	transform: rotate(30deg);
@@ -154,10 +154,10 @@ Embora não tenha muita utilidade prática, certas manipulações de elementos s
 
 ### a {outline: none;}
 
-{% highlight html %}
+{% highlight css %}
 
 a {outline: none;}
 
 {% endhighlight %}
 
-Sabe aquela linha pontilhada que aparece ao redor de um link ou outro elemento de interação ao ser clicado, estragando a beleza do seu layout? Declare <code>{outline: none;}</code> para removê-la, mas por questões de acessibilidade, não se esqueça de <a href="http://johnylab.net/?id=84" title="Focus no Hover">adicionar o estado <code>:focus</code> para os seus links</a>. Se o problema não é a linha pontilhada e sim que ela não envolva a tela toda, declare <code>{overflow: auto; }</code> na sua folha de estilos.
+Sabe aquela linha pontilhada que aparece ao redor de um link ou outro elemento de interação ao ser clicado, estragando a beleza do seu layout? Declare <code>{outline: none;}</code> para removê-la, mas por questões de acessibilidade, não se esqueça de [adicionar o estado <code>:focus</code> para os seus links]({% post_url 2012-6-19-focus-no-hover %}). Se o problema não é a linha pontilhada e sim que ela não envolva a tela toda, declare <code>{overflow: auto; }</code> na sua folha de estilos.

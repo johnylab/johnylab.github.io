@@ -9,8 +9,12 @@ tags:
 
 A Mozilla lançou oficialmente seu <a href="https://thimble.webmaker.org/en-US/" target="_blank">novo editor online e gratuito de HTML e CSS</a>. Batizado como Thimble, o editor é simples e funcional. Além de não precisar de nenhum cadastro para começar a usá-lo, o serviço sugere alguns modelos de projetos para praticar.
 
-<img src="/imagens/thimble-mozilla.jpg" alt="Imagem" />
-<small>Fonte: <a href="http://www.baboo.com.br/conteudo/modelos/Mozilla-lanca-editor-online-de-HTML-e-CSS_a48581_z0.aspx" target="_blank">www.baboo.com.br</a></small>
+<figure>
+    <img src="http://johnylab.net/imagens/thimble-mozilla.jpg" alt="Thimble da Mozilla">
+    <figcaption>
+        <small>Fonte: <a href="http://www.baboo.com.br/conteudo/modelos/Mozilla-lanca-editor-online-de-HTML-e-CSS_a48581_z0.aspx" target="_blank">www.baboo.com.br</a></small>
+    </figcaption>
+</figure>
 
 Indicado para pessoas que não são muito familiarizadas com <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheet">CSS</abbr>, o editor consiste de um campo de texto para inserção do código-fonte, com uma área de pre-visualização ao lado. A grande vantagem deste formato é poder ver as alterações acontecerem na página em tempo real, enquanto se digita na área de código. Instruções para quem deseja dar os primeiros passos na linguagem de marcação HTML são dadas como comentários na própria tela de código, e mensagens de erros, alertas e sugestões com acesso a referências de consulta são mostradas enquanto se digita.
 
@@ -38,7 +42,12 @@ O melhor editor de todos na minha opinião, você já usa: o navegador web. E a 
 
 Você pode testar o Dev Tools enquanto lê esta página. Comece por mais um atalho: clique com o botão direito do mouse neste parágrafo e selecione "Inspecionar elemento". Se você estiver usando o Internet Explorer vai ter que pressionar a tecla <kbd>F12</kbd> mesmo, pois é o único atalho que ele tem. No Opera não tem o F12, só <kbd>Ctrl + Shift + I</kbd>. Se quiser "inspecionar um elemento" específico da página no IE, não se desespere. No painel aberto, tem uma ferramenta com ícone semelhante a uma seta do mouse que serve para selecionar o elemento direto na página.
 
-<figure><img src="https://developers.google.com/chrome-developer-tools/images/image03.png" alt="Ferramentas para desenvolvedores Chrome DevTools"><figcation><small><em>O painel <a href="https://developers.google.com/chrome-developer-tools/" target="_blank" hreflang="en">DevTools do Google Chrome</a></em></small></figcaption></figure>
+<figure>
+    <img src="https://developers.google.com/chrome-developer-tools/images/image03.png" alt="Ferramentas para desenvolvedores Chrome DevTools">
+    <figcaption>
+        <small>O painel <a href="https://developers.google.com/chrome-developer-tools/" target="_blank" hreflang="en">DevTools do Google Chrome</a></small>
+    </figcaption>
+</figure>
 
 Ao abrir o painel DevTools, você terá várias abas com recursos diferentes e muito úteis em diversos momentos do desenvolvimento do site. Na aba Console, por exemplo, você pode ver mensagens de erro de javascript e alertas, e digitar comandos de programação para testar os resultados sem o inconveniente de recarregar a página várias vezes. Em Elements está o <abbr title="HyperText Markup Language" lang="en">HTML</abbr> da página e os estilos aplicados a cada elemento. Selecione um elemento no <abbr title="HyperText Markup Language" lang="en">HTML</abbr> e veja ao lado (ou embaixo) os <i>styles</i> aplicados. Duplo clique em qualquer coisa para editar. Você pode fazer os testes que quiser alterando o código que está carregado no navegador antes de sair salvando direto no seu código-fonte.
 

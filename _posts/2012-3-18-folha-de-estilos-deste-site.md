@@ -12,7 +12,7 @@ O novo layout está usando o <a href="http://html5boilerplate.com/" hreflang="en
 Vale lembrar que o arquivo usado no site foi minimizado para diminuir o tempo de processamento e para mostrar aqui eu formatei o código usando o <a href="http://dirtymarkup.com/" hreflang="en" target="_blank">Dirty Markup</a>, que faz as quebras de linhas e a indentação rapidamente pra facilitar estudos de códigos.
 
 
-{% highlight html %}
+{% highlight css %}
 
 /* ===== Primary Styles ====================================
    Author: João Batista Ferreira
@@ -33,7 +33,7 @@ Vale lembrar que o arquivo usado no site foi minimizado para diminuir o tempo de
 Pra começar defini a largura de todo o conteúdo do site e centralizei o layout. Uma margem no header do site foi usada para que as imagens não fiquem muito espremidas. Nas próximas linhas vamos definir uma divisão em três partes, que serão duas tags <code>article</code> e um <code>menu</code>. Note o uso da tag <code>figure</code>, que ao contrário do que parece, não serve apenas para conter imagens com legendas.
 
 
-{% highlight html %}
+{% highlight css %}
 
 .top article {
     width: 360px;
@@ -81,7 +81,7 @@ Pra começar defini a largura de todo o conteúdo do site e centralizei o layout
 As tags de links para redes sociais recebem no html uma classe <code>ir</code> (Image Replacement), do boilerplate, que já tem os estilos necessários para substituir todo o conteúdo do link pela imagem de fundo. Assim, mesmo que eu escreva alguma coisas para os leitores de tela poderem retornar informação aos usuários que não podem ver as imagens, a maioria dos navegadores vai exibir apenas os ícones.
 
 
-{% highlight html %}
+{% highlight css %}
 
 .top menu a {
     width: 100%;
@@ -110,7 +110,7 @@ As tags de links para redes sociais recebem no html uma classe <code>ir</code> (
 O formulário de pesquisa pode ser posicionado em termos absolutos e mesmo assim permanece dentro do layout. Isso é possível porque o elemento pai (<code>.top menu</code>) tem uma propriedade <code>position:relative</code>.
 
 
-{% highlight html %}
+{% highlight css %}
 
 .top menu form {
     position: absolute;
@@ -131,7 +131,7 @@ O formulário de pesquisa pode ser posicionado em termos absolutos e mesmo assim
 Em seguida criei uma classe <code>painel</code> para conter as listas de posts da página inicial. A tag que usa esta classe é um <code>menu</code> com diversos itens de lista (<code>li</code>), cada um representando um post do site.
 
 
-{% highlight html %}
+{% highlight css %}
 
 .painel {
     display: block;
@@ -219,7 +219,7 @@ Em seguida criei uma classe <code>painel</code> para conter as listas de posts d
 Uma <code>div</code> com a classe <code>paginacao</code> posicionará os links para navegar entre as páginas da lista de posts. Aqui o posicionamento é feito com <code>fixed</code>. Uma <a href="/?id=106" title="Triângulos com CSS sem usar imagens">técnica usando as bordas dos links foi usada para produzir a imagem de um triângulo</a> apontando para a direita e outro para a esquerda.
 
 
-{% highlight html %}
+{% highlight css %}
 
 .paginacao a {
     display: block;
@@ -249,7 +249,7 @@ Uma <code>div</code> com a classe <code>paginacao</code> posicionará os links p
 Agora vamos definir os estilos da página de resultados de pesquisa. Note mais uma vez o uso da tag figure.
 
 
-{% highlight html %}
+{% highlight css %}
 
 .pesquisa {
     padding: 0;
@@ -302,7 +302,7 @@ Agora vamos definir os estilos da página de resultados de pesquisa. Note mais u
 A classe <code>arredondado</code> pode ser acrescentada em qualquer elemento para ficar com os cantos arredondados.
 
 
-{% highlight html %}
+{% highlight css %}
 
 .arredondado {
     -webkit-border-radius: 4px;
@@ -319,7 +319,7 @@ A classe <code>arredondado</code> pode ser acrescentada em qualquer elemento par
 Por fim os estilos da página do post.
 
 
-{% highlight html %}
+{% highlight css %}
 
 .leitura {
     width: 900px;

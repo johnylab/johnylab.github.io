@@ -7,15 +7,15 @@ categories: HTML
 tags: imagens responsivas, tag, picture, img
 ---
 
-<em>O texto a seguir é adaptado de um artigo de <a href="http://blog.cloudfour.com/author/jason-grigsby/" title="Posts by Jason Grigsby" hreflang="en">Jason Grigsby</a> e você pode ler o texto original em <a href="http://blog.cloudfour.com/dont-use-picture-most-of-the-time/" hreflang="en">Don’t use &lt;picture> (most of the time)</a>.</em>
+<em>Este post é adaptado de um artigo de <a href="http://blog.cloudfour.com/author/jason-grigsby/" title="Posts by Jason Grigsby" hreflang="en">Jason Grigsby</a> e você pode ler o texto original em <a href="http://blog.cloudfour.com/dont-use-picture-most-of-the-time/" hreflang="en">Don’t use &lt;picture> (most of the time)</a>.</em>
 
-O suporte dos navegadores para a especificação picture está chegando e, como diz <a href="http://marcosc.com/">Marcos Cáceres</a>, é hora de "sair picturizando tudo!"
-
-Só que não!
-
-Mas você de usar picture desde já para servir imagens responsivas. Não há porque esperar.
-
-Confuso? Não é só você.
+> O suporte dos navegadores para a especificação picture está chegando e, como diz <a href="http://marcosc.com/">Marcos Cáceres</a>, é hora de "sair picturizando tudo!"
+> 
+> Só que não! Você não deve colocar `<picture>` em tudo.
+> 
+> Mas você já pode usar `<picture>` para servir imagens responsivas. Não há porque esperar.
+> 
+> Confuso? Não é só você.
 
 #### &lt;picture> vs. picture
 

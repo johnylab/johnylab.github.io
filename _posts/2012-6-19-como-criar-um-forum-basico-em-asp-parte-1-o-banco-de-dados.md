@@ -9,12 +9,17 @@ tags: fórum, ASP, banco de dados, mensagens
 
 Vi isso num tutorial na internet há algum tempo, mas não lembro mais onde. Este tutorial pretende mostrar os passos para criar os recursos básicos de um fórum com asp.
 
-<b>Primeiro passo: o banco de dados</b> 
-Antes de mais nada, o fórum vai precisar de uma base de dados. Eu uso mysql, mas isso não importa muito pois o exemplo é bastante simples, podendo ser feito em Access ou qualquer outro banco disponível. A base terá 2 tabelas:
+## Primeiro passo: o banco de dados
+
+Antes de mais nada, o fórum vai precisar de uma base de dados. Eu uso mysql, mas isso não importa muito pois o exemplo é bastante simples, podendo ser feito em Access ou qualquer outro banco disponível. 
+
+A base terá 2 tabelas:
 
 
 
--<b>foruns</b> <br>A tabela que conterá os dados sobre os <em>sub-fóruns</em> que serão criados. Terá os seguintes campos:
+### foruns
+
+A tabela que conterá os dados sobre os <em>sub-fóruns</em> que serão criados. Terá os seguintes campos:
 
 
 -   forumID: campo chave-primária do tipo Inteiro, com numeração automática. Terá o valor único que identifica cada fórum.
@@ -24,7 +29,9 @@ Antes de mais nada, o fórum vai precisar de uma base de dados. Eu uso mysql, ma
 -   postagens: campo tipo inteiro que conterá a quantidade de mensagem que o fórum recebeu
 
 
--<b>mensagens</b> <br>Guardará as mensagens deixadas em cada fórum. As mensagens serão relacionadas cada uma ao seu fórum específico através de uma <em>chave estrangeira</em>. Terá os campos a seguir:
+### mensagens
+
+Guardará as mensagens deixadas em cada fórum. As mensagens serão relacionadas cada uma ao seu fórum específico através de uma <em>chave estrangeira</em>. Terá os campos a seguir:
 
 
 -   msgID: campo chave-primária do tipo Inteiro, com numeração automática. Terá o valor único que identifica cada mensagem.
