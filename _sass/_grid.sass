@@ -8,9 +8,7 @@
 
     +media-query($on-palm)
         flex-direction: column
-        > *
-            flex-basis: auto !important
-            max-width: 100%
+        align-items: stretch
 
     +variant(row)
         flex-direction: row
@@ -106,6 +104,7 @@
         +media-query($on-palm)
             margin-left: 0
             margin-right: 0
+
             +variant(nospace)
                 margin-bottom: 0
 
