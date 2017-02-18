@@ -11,7 +11,18 @@
         <div class="nickname">{{ card.nickname }}</div>
         <div class="note">{{ card.note }}</div>
         <div class="adr"><span class="locality">{{ card.adr-locality }}</span>, <span class="region">{{ card.adr-region }}</span></div>
+
       </figcaption>
+
+      <ul class="seamless" data-cell="shrink">
+        <li><a href="{{ site.baseurl }}/" data-cell="shrink">Home</a></li>
+        {% for p in site.pages %}
+          {% if p.menu-title %}
+            <li><a href="{{ p.url | prepend: site.baseurl }}" data-cell="shrink">{{ p.menu-title }}</a></li>
+          {% endif %}
+        {% endfor %}
+        <li><a href="#contato" data-cell="shrink">Contato</a></li>
+      </ul>
       <ul class="seamless social" data-cell="shrink">
         {% for link in card.social %}
           <li>

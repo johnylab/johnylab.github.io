@@ -2,6 +2,7 @@
 .site-header
     min-height: 56px
     position: relative
+    border-bottom: 1px solid $grey-color-light
 
 .site-title
     font-size: 26px
@@ -40,6 +41,8 @@
             line-height: 0
             padding-top: 10px
             text-align: center
+            &:before
+                content: initial
             > svg
                 width: 18px
                 height: 15px
@@ -64,6 +67,9 @@
     background-color: #222
     padding: $spacing-unit 0
     color: #fff
+    a
+        &:hover, &:active, &:focus
+            color: gold
 
 .footer-heading
     font-size: 18px
@@ -82,6 +88,7 @@
         margin-bottom: $spacing-unit
     .post-title
         margin-top: 0
+        margin-bottom: 10px
 
 .post-meta
     font-size: $small-font-size
@@ -91,6 +98,10 @@
     display: block
     font-size: 24px
     line-height: 1.1
+
+.post-excerpt
+    font-size: $small-font-size
+    margin-top: 10px
 
 .post-header
     margin-bottom: $spacing-unit
@@ -119,7 +130,7 @@
         padding-top: $spacing-unit / 2
         padding-bottom: $spacing-unit / 2
     +media-query($on-palm)
-        padding-top: $spacing-unit / 4
+        padding-top: 0
         padding-bottom: $spacing-unit / 4
     .hero-bg
         position: absolute
