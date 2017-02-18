@@ -126,6 +126,8 @@ pre
     margin-left: auto
     padding-right: $spacing-unit
     padding-left: $spacing-unit
+    &.large
+        max-width: $large-content-width
     &.small
         max-width: $on-laptop
     @extend %clearfix
@@ -157,3 +159,20 @@ pre
         color: inherit
         path, polygon, rect, circ
             fill: currentcolor
+    &.bigger
+        svg
+            width: 32px
+            height: 32px
+
++module(btn)
+    display: inline-block
+    text-decoration: none
+    text-align: center
+    padding: .3em 1em
+    border-radius: 500px
+    border: 1px solid $brand-color
+    &:hover, &:active, &:focus
+        background-color: $brand-color
+        color: #fff
+    &:before
+        content: initial

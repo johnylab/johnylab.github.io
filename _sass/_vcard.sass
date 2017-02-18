@@ -1,5 +1,11 @@
 .vcard
     .photo
+        width: 105px
+        height: 105px
+        padding: 5px
+        border-radius: 500px
+        overflow: hidden
+        background-color: $grey-color-light
     .fn
         margin-top: 0
     .nickname
@@ -10,15 +16,6 @@
         margin-bottom: 0
         .url
             display: block
-            padding: 5px 15px
-            border: 1px solid $brand-color
-            border-radius: 500px
-            text-align: center
             font-weight: bold
-            overflow: hidden
-            white-space: nowrap
-            text-overflow: clip
-            &:hover, &:focus, &:active
-                background-color: $brand-color
             &:before
                 content: initial
