@@ -1,15 +1,16 @@
 title: Johnylab
-email: contato@johnylab.net
 description: > 
   Site pessoal de João Batista Ferreira, web designer e developer.
   Moro em Santos e curto padrões web e design moderno.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://johnylab.net" # the base hostname & protocol for your site
-twitter_username: johnylab
-github_username:  johnylab
 
 # Build settings
 markdown: kramdown
+exclude: 
+  - gulpfile.js
+  - README.md
+  - package.json
 
 defaults:
   -
