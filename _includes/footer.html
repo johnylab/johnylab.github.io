@@ -14,22 +14,24 @@
 
       </figcaption>
 
-      <ul class="seamless" data-cell="shrink">
-        <li><a href="{{ site.baseurl }}/" data-cell="shrink">Home</a></li>
-        {% for p in site.pages %}
-          {% if p.menu-title %}
-            <li><a href="{{ p.url | prepend: site.baseurl }}" data-cell="shrink">{{ p.menu-title }}</a></li>
-          {% endif %}
-        {% endfor %}
-        <li><a href="#contato" data-cell="shrink">Contato</a></li>
-      </ul>
-      <ul class="seamless social" data-cell="shrink">
-        {% for link in card.social %}
-          <li>
-            <a href="{{ link.url }}" {% if link.rel %}rel="{{ link.rel }}"{% endif %} target="_blank" class="url" data-btn>{{ link.title }}</a>
-          </li>
-        {% endfor %}
-      </ul>
+      <div data-cell="shrink" data-grid="row nowrap center spacing justify">
+        <ul class="seamless" data-cell="shrink">
+          <li><a href="{{ site.baseurl }}/" data-cell="shrink">Home</a></li>
+          {% for p in site.pages %}
+            {% if p.menu-title %}
+              <li><a href="{{ p.url | prepend: site.baseurl }}" data-cell="shrink">{{ p.menu-title }}</a></li>
+            {% endif %}
+          {% endfor %}
+          <li><a href="#contato" data-cell="shrink">Contato</a></li>
+        </ul>
+        <ul class="seamless social" data-cell="shrink">
+          {% for link in card.social %}
+            <li>
+              <a href="{{ link.url }}" {% if link.rel %}rel="{{ link.rel }}"{% endif %} target="_blank" class="url" data-btn>{{ link.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
     </figure>
   </div>
 
