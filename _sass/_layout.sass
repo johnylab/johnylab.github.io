@@ -126,6 +126,7 @@
 
 .section-hero
     position: relative
+    background-image: linear-gradient(to top, rgba(#a8edea, .8) 0%, rgba(#fed6e3, .8) 100%)
     +media-query($on-laptop)
         padding-top: $spacing-unit / 2
         padding-bottom: $spacing-unit / 2
@@ -140,17 +141,18 @@
         bottom: 0
         z-index: -9
         overflow: hidden
-        +media-query($on-palm)
-            position: static
     p
         line-height: 1.75
     span
-        background-color: rgba(gold, .7)
-        box-shadow: 0 0 0 4px rgba(gold, .7)
+        background-color: gold
+        box-shadow: 0 0 0 4px gold
     +media-query($on-palm)
         .hero-title
-            position: absolute
-            top: 0
+            line-height: .9
+            small
+                font:
+                    size: 6.8vmin
+                    weight: 600
     +media-greater($on-palm)
         .hero-title
             font-size: 5vmin
