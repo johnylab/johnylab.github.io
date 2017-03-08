@@ -29,10 +29,18 @@
         top: 9px
         z-index: 999
         right: $spacing-unit / 2
-        background-color: $background-color
-        border: 1px solid $grey-color-light
         border-radius: 5px
         text-align: right
+        overflow: hidden
+        box-shadow: -15px 15px 20px -15px black
+        background-color: $background-color
+        transform: translate(0)
+        transition: .3s ease-in-out
+        &:hover
+            padding: 25px
+            .menu-icon
+                opacity: 0
+                transform: scale(0)
         .menu-icon
             display: block
             float: right
@@ -41,6 +49,7 @@
             line-height: 0
             padding-top: 10px
             text-align: center
+            transition: .3s ease-in-out
             &:before
                 content: initial
             > svg
@@ -58,9 +67,18 @@
         .page-link
             display: block
             padding: 5px 10px
-            &:not(:last-child)
-                margin-right: 0
-            margin-left: 20px
+            margin: 0
+            opacity: 0
+            @for $i from 1 through 10
+                &:nth-of-type(#{$i})
+                    animation: enter-from-right .4s .1s * ($i - 1) ease-in-out forwards
+            @keyframes enter-from-right
+                0%
+                    opacity: 0
+                    transform: translate(150px)
+                100%
+                    opacity: 1
+                    transform: translate(0)
 
 .site-footer
     font-size: $small-font-size
@@ -148,10 +166,11 @@
         box-shadow: 0 0 0 4px gold
     +media-query($on-palm)
         .hero-title
+            font-size: 14vmin
             line-height: .9
             small
                 font:
-                    size: 6.8vmin
+                    size: 6vmin
                     weight: 600
     +media-greater($on-palm)
         .hero-title
