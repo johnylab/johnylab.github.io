@@ -170,6 +170,12 @@ pre
         &:before
             content: initial
 
+.nbr
+    display: inline-block
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+
 +module(btn)
     display: inline-block
     text-decoration: none
@@ -177,6 +183,8 @@ pre
     padding: .3em 1em
     border-radius: 500px
     border: 1px solid $brand-color
+    +variant(nbr)
+        @extend .nbr
     &:hover, &:active, &:focus
         background-color: $brand-color
         color: #fff
