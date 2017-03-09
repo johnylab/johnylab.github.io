@@ -12,6 +12,10 @@ exclude:
   - README.md
   - package.json
 
+collections:
+  trabalhos:
+    output: false
+
 defaults:
   -
     scope:
