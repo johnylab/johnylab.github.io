@@ -1,14 +1,14 @@
 <footer class="footer-contato" id="contato" data-modal="" data-grid="center">
     <form action="" method="post" class="wrapper large">
-        <header data-grid="row nowrap center spacing">
-            <h3>Faça seu site</h3>
+        <header data-grid="row nowrap spacing">
+            <h3 class="icon inline">{% include svg/favicon.svg %} Faça seu site</h3>
             <a href="#x" data-cell="shrink" class="icon ui" title="Fechar formulário">{% include svg/letter-x.svg %}</a>
         </header>
         <p>Me conte como é o site que você precisa para que eu possa fazer um orçamento.</p>
         <div data-grid="spacing">
             <p>
                 <label for="nome">Seu nome</label>
-                <input name="nome" type="text" required placeholder="Como deseja ser chamado">
+                <input name="nome" type="text" required placeholder="Como deseja que eu te chame?">
             </p>
             <p>
                 <label for="email">E-mail</label>
@@ -17,14 +17,14 @@
         </div>
         <p>
             <label for="empresa">Apresente a sua empresa</label>
-            <textarea name="empresa" cols="30" rows="5" placeholder="Qual o ramo de atividade? Qual o seu público? B2B ou B2C? Qual o porte? Tem algum aspecto regional incorporado à empresa?"></textarea>
+            <textarea name="empresa" cols="30" rows="5" placeholder="Qual o ramo? Qual o público? Qual o porte? Como é a cultura?"></textarea>
         </p>
         <p>
             <label for="tipo">Que tipo de site você precisa?</label>
-            <textarea name="tipo" cols="30" rows="5" placeholder="Institucional ou promocional? Apresentará produtos ou serviços? Precisa de um cadastro de clientes ou orçamentos?"></textarea>
+            <textarea name="tipo" cols="30" rows="5" placeholder="Institucional? Terá produtos e serviços? Precisa de um cadastro?"></textarea>
         </p>
         <p>
-            <label for="paginas">Descreva as principais páginas que o site vai ter...</label><textarea name="paginas" cols="30" rows="5" placeholder="Produtos? Serviços? Portifólio? Solicitação de visita técnica?Download de documentos? Resuma o conteúdo de cada seção do site."></textarea>
+            <label for="paginas">Quais serão as principais páginas do site?</label><textarea name="paginas" cols="30" rows="5" placeholder="Institucional? Formulários? Downloads? Descreva cada seção."></textarea>
         </p>
         <footer data-grid="row nowrap spacing center justify">
             <button data-cell="shrink">ENVIAR</button>

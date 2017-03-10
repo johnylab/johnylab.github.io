@@ -1,12 +1,21 @@
 %form-basis
-    padding: 0.5em
-    font-size: $base-font-size
-    border: 1px solid $grey-color
+    padding: 10px
+    border-width: 0 0 1px
+    border-style: none none solid
+    border-color: transparent transparent $grey-color
+    border-radius: 7px
+    font: inherit
     background-color: #fff
     transition: 0.3s ease-in-out
     outline: none
     &:focus
-        border-color: $brand-color
+        border-color: transparent
+
+%form-inputs
+    width: 100%
+    font-family: $ui-font-family
+    line-height: 2
+    letter-spacing: 1px
 
 fieldset
     -webkit-margin-start: 0
@@ -20,7 +29,11 @@ fieldset
 
 label
     display: block
-    font-size: 0.75em
+    padding: 0 10px
+    font:
+        family: $title-font-family
+        size: 0.75em
+        weight: 600
     text-transform: uppercase
     line-height: 1.2
 
@@ -40,24 +53,27 @@ input
     &[type='number'],
     &[type='range']
         @extend %form-basis
-        width: 100%
+        @extend %form-inputs
 
 textarea
     @extend %form-basis
-    font-family: $base-font-family
-    width: 100%
+    @extend %form-inputs
+    height: 140px
+    +media-greater($on-palm)
+        &:not(:focus)
+            height: 45px
 
 \::-webkit-input-placeholder
-    color: $brand-color
+    color: $grey-color
 
 \:-moz-placeholder
-    color: $brand-color
+    color: $grey-color
 
 \::-moz-placeholder
-    color: $brand-color
+    color: $grey-color
 
 \:-ms-input-placeholder
-    color: $brand-color
+    color: $grey-color
 
 \:focus::-webkit-input-placeholder
     -webkit-transition: 0.5s 0.5s ease
@@ -74,7 +90,7 @@ button
     padding-right: 2em
     text-transform: uppercase
     background-color: transparent
-    border-color: $brand-color
+    border: 1px solid $brand-color
     border-radius: 500px
     color: $brand-color
     line-height: 1.5

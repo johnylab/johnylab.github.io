@@ -10,7 +10,7 @@ layout: default
       <p class="hero-excerpt"><span>Eu uso o meu site para fazer meus experimentos com HTML, CSS, Javascript, bancos de dados e outras tecnologias para web. Então não repare na bagunça.</span></p>
       <footer class="hero-cta" data-grid="center spacing">
         <a href="{{ site.baseurl }}/sobre-joao-ferreira/">MAIS SOBRE MIM...</a>
-        <a href="#contato" data-btn="nbr">CONTRATE-ME...</a>
+        <a href="#contato" data-btn="nbr">FAÇA SEU SITE...</a>
       </footer>
     </div>
     <div data-cell="1of3"></div>
@@ -24,16 +24,41 @@ layout: default
 </script>
 
 <section class="page-content section-portifolio">
-  <div class="wrapper">
+  <div class="wrapper" data-grid="end">
     <h2>Portfolio</h2>
+    <p data-cell="shrink"><a href="{{ site.baseurl }}/trabalhos/">VEJA MAIS DETALHES...</a></p>
   </div>
-  <div class="wrapper large">
-    <ul>
-      <li>Fazer uma collection para o portifolio</li>
-      <li>Relacionar imagens dos projetos</li>
-    </ul>
+  <div class="slider">
+    {% for job in site.trabalhos %}
+      <article class="slide{% if forloop.first %} current{% endif %}" data-grid="center">
+        <div class="wrapper" data-grid="center spacing">
+          <div data-cell="shrink">
+            <img src="{{ site.baseurl }}/img{{ job.id }}.png" alt="{{ job.title }}">
+          </div>
+          <h3>{{ job.title }}</h3>
+        </div>
+      </article>
+    {% endfor %}
   </div>
 </section>
+
+<script src="{{ site.baseurl }}/js/slider.js"></script>
+<link rel="stylesheet" href="{{ site.baseurl }}/css/slider.css">
+<script>
+  slider = Slider({
+    parentSelector: '.slider',
+    childSelector: '.slide',
+    duration: 3000
+  });
+  slider
+    .play()
+    .on('mouseover', function(){
+      slider.pause();
+    })
+    .on('mouseout', function(){
+      slider.play();
+    });
+</script>
 
 <section class="page-content section-blog">
   <div class="wrapper">
