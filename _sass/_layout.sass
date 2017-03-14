@@ -149,7 +149,7 @@
         padding-top: $spacing-unit / 2
         padding-bottom: $spacing-unit / 2
     +media-query($on-palm)
-        padding-top: 0
+        // padding-top: 0
         padding-bottom: $spacing-unit / 4
     .hero-bg
         position: absolute
@@ -164,13 +164,13 @@
     span
         background-color: gold
         box-shadow: 0 0 0 4px gold
-    // +media-query($on-palm)
-    //     .hero-title
-    //         font-size: 14vmin
-    //         line-height: .9
-    //         small
-    //             font:
-    //                 size: 6vmin
+    +media-query($on-palm)
+        .hero-title
+            font-size: 14vmin
+            line-height: .9
+            small
+                font:
+                    size: 6vmin
     +media-greater($on-palm)
         .hero-title
             small
