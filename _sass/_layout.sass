@@ -187,4 +187,20 @@
     // .hero-excerpt
     // .hero-cta
 .section-portifolio
-.section-blog
+    
+    .portfolio-gallery
+        height: 145px
+        margin-bottom: $spacing-unit / 2
+    +media-query($on-palm)
+        .portfolio-gallery
+            height: 260px
+        .portfolio-item
+            padding: $spacing-unit / 2
+    // .portfolio-img
+    // .portfolio-metadata
+    +media-query($on-palm)
+        .portfolio-title
+            font-size: $base-font-size
+            text-align: center
+            margin: 0
+// .section-blog

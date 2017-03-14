@@ -23,18 +23,20 @@ layout: default
 </script>
 
 <section class="page-content section-portifolio">
-  <div class="wrapper">
+  <header class="wrapper">
     <h2>Portfolio</h2>
-    <p><a href="{{ site.baseurl }}/trabalhos/">VEJA MAIS DETALHES...</a></p>
-  </div>
-  <div class="slider">
+    <p data-grid="end"><a data-cell="shrink" href="{{ site.baseurl }}/trabalhos/">MAIS DETALHES...</a></p>
+  </header>
+  <div class="slider portfolio-gallery">
     {% for job in site.trabalhos %}
-      <article class="slide{% if forloop.first %} current{% endif %}" data-grid="center">
-        <div class="wrapper" data-grid="center spacing">
-          <div data-cell="shrink">
+      <article class="wrapper slide{% if forloop.first %} current{% endif %} portfolio-item">
+        <div data-grid="center spacing">
+          <div data-cell="1of4 shrink" class="portfolio-img">
             <img src="{{ site.baseurl }}/img{{ job.id }}.png" alt="{{ job.title }}">
           </div>
-          <h3>{{ job.title }}</h3>
+          <div data-cell="3of4" class="portfolio-metadata">
+            <h3 class="portfolio-title">{{ job.title }}</h3>
+          </div>
         </div>
       </article>
     {% endfor %}
