@@ -25,7 +25,6 @@ layout: default
 <section class="page-content section-portifolio">
   <header class="wrapper">
     <h2>Portfolio</h2>
-    <p data-grid="end"><a data-cell="shrink" href="{{ site.baseurl }}/trabalhos/">MAIS DETALHES...</a></p>
   </header>
   <div class="slider portfolio-gallery">
     {% for job in site.trabalhos %}
@@ -41,6 +40,7 @@ layout: default
       </article>
     {% endfor %}
   </div>
+  <p class="wrapper" data-grid="end"><a data-cell="shrink" href="{{ site.baseurl }}/trabalhos/">MAIS DETALHES...</a></p>
 </section>
 
 <script src="{{ site.baseurl }}/js/slider.js"></script>
@@ -64,7 +64,7 @@ layout: default
 <section class="page-content section-blog">
   <div class="wrapper">
   
-    <h2>Posts mais recentes</h2>
+    <h2>Blog</h2>
     {% for post in site.posts | limit: 5 %}
       <article>
         <h3>
