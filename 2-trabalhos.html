@@ -5,3 +5,18 @@ menu-title: Portfolio
 permalink: /trabalhos/
 ---
 
+{% for job in site.trabalhos %}
+    <article class="page-content portfolio-item">
+        <header class="wrapper" data-grid="center spacing">
+            <div data-cell="1of4 shrink" class="portfolio-img">
+            <img src="{{ site.baseurl }}/img{{ job.id }}.png" alt="{{ job.title }}">
+            </div>
+            <div data-cell="3of4" class="portfolio-metadata">
+                <h3 class="portfolio-title">{{ job.title }}</h3>
+            </div>
+        </header>
+        <div class="wrapper">
+            {{ job.content }}
+        </div>
+    </article>
+{% endfor %}
