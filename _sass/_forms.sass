@@ -1,20 +1,18 @@
 %form-basis
     padding: 10px
-    border-width: 0 0 1px
-    border-style: none none solid
-    border-color: transparent transparent $grey-color
-    border-radius: 7px
+    border: 1px solid $grey-color-light
+    border-radius: 4px
     font: inherit
     background-color: #fff
     transition: 0.3s ease-in-out
     outline: none
     &:focus
-        border-color: transparent
+        border-color: $grey-color
+        box-shadow: 0 2px 10px 0 rgba($brand-color, .5)
 
 %form-inputs
     width: 100%
-    font-family: $ui-font-family
-    line-height: 2
+    font-family: inherit
     letter-spacing: 1px
 
 fieldset
@@ -29,13 +27,12 @@ fieldset
 
 label
     display: block
-    padding: 0 10px
     font:
         family: $title-font-family
         size: 0.75em
         weight: 600
     text-transform: uppercase
-    line-height: 1.2
+    line-height: 1.5
 
 input
     &[type='text'],
@@ -58,10 +55,6 @@ input
 textarea
     @extend %form-basis
     @extend %form-inputs
-    height: 140px
-    +media-greater($on-palm)
-        &:not(:focus)
-            height: 45px
 
 \::-webkit-input-placeholder
     color: $grey-color
@@ -96,4 +89,5 @@ button
     line-height: 1.5
     &:hover, &:focus
         background-color: $brand-color
+        border-color: $brand-color
         color: #fff

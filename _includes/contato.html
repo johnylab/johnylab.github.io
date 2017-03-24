@@ -6,26 +6,23 @@
         </header>
         <p>Me conte como é o site que você precisa para que eu possa fazer um orçamento.</p>
         <div data-grid="spacing">
-            <p>
-                <label for="nome">Seu nome</label>
-                <input name="nome" type="text" required placeholder="Como deseja que eu te chame?">
-            </p>
-            <p>
-                <label for="email">E-mail</label>
-                <input name="email" type="email" required placeholder="nome@dominio.com">
-            </p>
+            <div data-cell="1of2">
+                <p>
+                    <label for="nome">Seu nome</label>
+                    <input name="nome" type="text" required placeholder="Como deseja que eu te chame?">
+                </p>
+                <p>
+                    <label for="email">E-mail</label>
+                    <input name="email" type="email" required placeholder="nome@dominio.com">
+                </p>
+            </div>
+            <div data-cell="1of2">
+                <p>
+                    <label for="msg">Mensagem</label>
+                    <textarea name="msg" cols="30" rows="5" placeholder="Deixe sua mensagem..."></textarea>
+                </p>
+            </div>
         </div>
-        <p>
-            <label for="empresa">Apresente a sua empresa</label>
-            <textarea name="empresa" cols="30" rows="5" placeholder="Qual o ramo? Qual o público? Qual o porte? Como é a cultura?"></textarea>
-        </p>
-        <p>
-            <label for="tipo">Que tipo de site você precisa?</label>
-            <textarea name="tipo" cols="30" rows="5" placeholder="Institucional? Terá produtos e serviços? Precisa de um cadastro?"></textarea>
-        </p>
-        <p>
-            <label for="paginas">Quais serão as principais páginas do site?</label><textarea name="paginas" cols="30" rows="5" placeholder="Institucional? Formulários? Downloads? Descreva cada seção."></textarea>
-        </p>
         <footer data-grid="row nowrap spacing center justify">
             <button data-cell="shrink">ENVIAR</button>
             <a href="#x" data-cell="shrink" class="icon ui" title="Fechar formulário">FECHAR</a>
