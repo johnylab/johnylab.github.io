@@ -35,12 +35,13 @@ layout: default
           </div>
           <div data-cell="3of4" class="portfolio-metadata">
             <h3 class="portfolio-title">{{ job.title }}</h3>
+            {{ job.content }}
           </div>
         </div>
       </article>
     {% endfor %}
   </div>
-  <p class="wrapper" data-grid="end"><a data-cell="shrink" href="{{ site.baseurl }}/trabalhos/">MAIS DETALHES...</a></p>
+  <p class="wrapper" data-grid="end"><a data-cell="shrink" href="http://www.behance.net/johnylab" target="_blank">Portfolio completo...</a></p>
 </section>
 
 <script src="{{ site.baseurl }}/js/slider.js"></script>
