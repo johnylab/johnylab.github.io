@@ -13,12 +13,11 @@ formContato.addEventListener 'submit', (e) ->
     fetch this.action,
             method: "POST"
             headers:
-                "Content-Type": "application/x-www-form-urlencoded"
+                "Accept": "application/xml, text/xml, */*; q=0.01"
+                "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
             body: postBody
         .then (res) ->
             console.log res
-
-# <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSffp0CMGcihOckHujL_H1-Knn1J4rXuhXjGFzxEytjocoo9NQ/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
 
 # fetch("http://www.example.org/submit.php", {
 #   method: "POST",
