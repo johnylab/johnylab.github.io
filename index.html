@@ -41,36 +41,40 @@ layout: default
       </article>
     {% endfor %}
   </div>
-  <p class="wrapper" data-grid="end"><a data-cell="shrink" href="http://www.behance.net/johnylab" target="_blank">Portfolio completo...</a></p>
+  <p class="wrapper" data-grid="end"><a data-cell="shrink" href="http://www.behance.net/johnylab" target="_blank" class="icon-colored inline">{% include svg/behance.svg %} Portfolio completo...</a></p>
 </section>
 
-<section class="page-content section-services hero">
+<section class="page-content section-services hero brand">
   <div class="wrapper">
     <h2>Serviços</h2>
+    <div data-grid="center spacing">
+      <div data-cell="1of3 fill" data-text="lg center" class="service-item">{% include svg/brain.svg %}
+        <p>Criação</p>
+      </div>
+      <div data-cell="1of3 fill" data-text="lg center" class="service-item">{% include svg/development.svg %}
+        <p>Desenvolvimento</p>
+      </div>
+      <div data-cell="1of3 fill" data-text="lg center" class="service-item">{% include svg/networking.svg %} 
+        <p>Redes sociais</p>
+      </div>
+    </div>
   </div>
+  <p data-text="center xl"><a href="#contato" data-btn>ORÇAMENTO</a></p>
 </section>
 
 <script src="{{ site.baseurl }}/js/slider.js"></script>
 <link rel="stylesheet" href="{{ site.baseurl }}/css/slider.css">
 <script>
-  slider = Slider({
-    parentSelector: '.slider',
-    childSelector: '.slide',
-    duration: 3000
-  });
+  slider = Slider({ parentSelector: '.slider', childSelector: '.slide', duration: 3000 });
   slider
     .play()
-    .on('mouseover', function(){
-      slider.pause();
-    })
-    .on('mouseout', function(){
-      slider.play();
-    });
+    .on('mouseover', function(){ slider.pause(); })
+    .on('mouseout', function(){ slider.play(); });
 </script>
 
 <section class="page-content section-blog">
   <div class="wrapper">
-  
+
     <h2>Blog</h2>
     {% for post in site.posts | limit: 5 %}
       <article>
@@ -79,8 +83,8 @@ layout: default
         </h3>
       </article>
     {% endfor %}
-  
+
     <p class="rss-subscribe">Assine o <a href="{{ "/feed.xml" | prepend: site.baseurl }}">feed RSS</a></p>
-  
+
   </div>
-  </section>
+</section>

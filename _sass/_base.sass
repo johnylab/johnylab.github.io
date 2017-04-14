@@ -134,6 +134,30 @@ pre
         padding-right: $spacing-unit / 2
         padding-left: $spacing-unit / 2
 
+.hero
+    background-color: $grey-color
+    color: #fff
+    a:hover
+        color: gold
+    &.brand
+        background-color: $brand-color
+        color: $grey-color-light
+        a
+            color: gold
+            &:before
+                background-color: rgba($grey-color-dark, .3)
+        [data-btn]
+            border-color: currentcolor
+            &:hover
+                background-color: gold
+                color: $brand-color
+    &.light
+        background-color: $grey-color-light
+        color: $grey-color-dark
+    &.dark
+        background-color: $grey-color-dark
+        color: $grey-color-light
+
 .video-frame
     height: 0
     padding: 0 0 56.25%
@@ -149,26 +173,32 @@ pre
         display: table
         clear: both
 
-.icon
+.icon, .icon-colored
     > svg
         display: inline-block
         width: 16px
         height: 16px
         vertical-align: middle
-        color: inherit
-        path, polygon, rect, circ
-            fill: currentcolor
     &.inline
         svg
             width: 1em
             height: 1em
             vertical-align: text-top
+.icon
+    > svg
+        color: inherit
+        path, polygon, rect, circ
+            fill: currentcolor
     &.ui
         color: $grey-color
         &:hover, &:focus
             color: $brand-color
         &:before
             content: initial
+
+.circ
+    border-radius: 500px
+    overflow: hidden
 
 .nbr
     display: inline-block
@@ -234,3 +264,21 @@ pre
             transform: rotateX(-5deg)
         100%
             transform: rotateX(0deg)
+
++module(text)
+    +variant(sm)
+        font-size: $small-font-size
+    +variant(lg)
+        font-size: $base-font-size * 1.5
+    +variant(xl)
+        font-size: $base-font-size * 2
+    +variant(left)
+        text-align: left
+    +variant(center)
+        text-align: center
+    +variant(right)
+        text-align: right
+    +variant(light)
+        color: $grey-color
+    +variant(brand)
+        color: $brand-color
