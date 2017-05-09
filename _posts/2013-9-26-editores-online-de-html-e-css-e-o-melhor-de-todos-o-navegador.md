@@ -7,14 +7,9 @@ categories: Tutoriais
 tags: 
 ---
 
-A Mozilla lançou oficialmente seu <a href="https://thimble.webmaker.org/en-US/" target="_blank">novo editor online e gratuito de HTML e CSS</a>. Batizado como Thimble, o editor é simples e funcional. Além de não precisar de nenhum cadastro para começar a usá-lo, o serviço sugere alguns modelos de projetos para praticar.
+A Mozilla lançou oficialmente seu <a href="https://thimble.mozilla.org/pt-BR/" target="_blank">novo editor online e gratuito de HTML e CSS</a>. Batizado como Thimble, o editor é simples e funcional. Além de não precisar de nenhum cadastro para começar a usá-lo, o serviço sugere alguns modelos de projetos para praticar.
 
-<figure>
-    <img src="http://johnylab.net/imagens/thimble-mozilla.jpg" alt="Thimble da Mozilla">
-    <figcaption>
-        <small>Fonte: <a href="http://www.baboo.com.br/conteudo/modelos/Mozilla-lanca-editor-online-de-HTML-e-CSS_a48581_z0.aspx" target="_blank">www.baboo.com.br</a></small>
-    </figcaption>
-</figure>
+![Thimble da Mozilla](https://raw.githubusercontent.com/wiki/mozilla/thimble.webmaker.org/tutorial.gif)
 
 Indicado para pessoas que não são muito familiarizadas com <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheet">CSS</abbr>, o editor consiste de um campo de texto para inserção do código-fonte, com uma área de pre-visualização ao lado. A grande vantagem deste formato é poder ver as alterações acontecerem na página em tempo real, enquanto se digita na área de código. Instruções para quem deseja dar os primeiros passos na linguagem de marcação HTML são dadas como comentários na própria tela de código, e mensagens de erros, alertas e sugestões com acesso a referências de consulta são mostradas enquanto se digita.
 
@@ -26,13 +21,19 @@ Apesar de ser uma grande ideia (e bem didática), o Thimble não é nenhuma novi
 
 ### jsFiddle
 
+![jsFiddle](https://visualstudiomagazine.com/articles/2012/01/10/~/media/ECG/visualstudiomagazine/Images/2012/01/wcpap_jsfiddle11002fig.ashx)
+
 O <a href="http://jsfiddle.net" target="_blank">jsFiddle</a> é um serviço completo para se testar <em lang="en" title="Trechos independentes de código.">snippets</em> sem ter de salvar vários arquivos de código. Até mesmo membros de grandes organizações, como o <a href="http://johnylab.net/?id=117"><abbr lang="en" title="Web Hypertext Application Technology Working Group">WHATWG</abbr></a> o utilizam para compartilhar testes. Você pode incluir automaticamente uma biblioteca de javascript, como a jQery, ou uma folha de estilos CSS já disponível, e digitar apenas o trecho de código que deseja testar. Perfeito para se praticar conceitos tanto de HTML como de CSS e javascript. A tela pode ser dividida em até quatro painéis: um para o HTML, um para o CSS adicional, um para a programação, e o último mostra o resultado de todos os outros funcionando em conjunto.
 
 ### TheCodePlayer
 
+![The Code Player](http://www.improgrammer.net/wp-content/uploads/2015/01/The-Code-Player-1-1.png)
+
 <a href="http://thecodeplayer.com/" target="_blank">TheCodePlayer</a>, como o nome já diz, é um "player de código". Contém diversos tutoriais, principalmente de efeitos avançados em CSS3, e também podem ser vistos com a tela dividida para exibir o resultado em tempo real. Mas a grande vantagem deste aplicativo é que ele também funciona como um player. Funcionando como se estivesse rodando um vídeo, ele mostra o código todo sendo digitado do jeito que o desenvolvedor fez, e você pode notar como as alterações vão afetando o resultado durante todo o processo. O efeito disso é tão impressionante quanto assistir o código sendo digitado sozinho, como se fosse uma transmissão de vídeo.
 
 ### CodePen
+
+![CodePen.io](http://cheneytsai.github.io/slides-prototyping-tools/img/codepen.png)
 
 <a href="http://codepen.io/" target="_blank">CodePen</a> é um meio termo entre os dois. Criado por <a href="http://codepen.io/chriscoyier" target="_blank">Chris Coyier</a>, tem uma interface que facilita pesquisa de trabalhos antigos, além de um blog para discussão, o que torna o aplicativo muito mais colaborativo. Você não pode dar <em lang="en">play</em> no código e vê-lo se explicando sozinho, mas tem a lista de experimentos de outros usuários para pesquisar. Outra vantagem é que você pode fazer login pelo seu perfil do Github para salvar os experimentos.
 

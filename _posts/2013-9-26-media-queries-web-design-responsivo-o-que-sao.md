@@ -11,7 +11,7 @@ Responsive Web Design (<abbr title="Web Design Responsivo, na sigla em inglês">
 
 Acho que o maior incoveniente dessa técnica era a manutenção dobrada. Para cada alteração significativa no design ou funcionalidades do site, o desenvolvedor precisaria fazer a atualização duas vezes. Outro problema é que, em muitos casos, o usuário teria que carregar a versão principal do site e esperar que um script verificasse as características do ambiente, para redirecioná-lo, gerando uma demora indesejada e uso desnecessário de banda.
 
-![Web Design Responsivo](http://johnylab.net/imagens/Responsive_Design_Kinetic_Knowledge.jpg)
+![Web Design Responsivo](http://brolik.com/blog/wp-content/uploads/2013/05/BRO_ResponsiveDesign_Main2.png)
 
 Neste pé surgiu o novo conceito: Web Design Responsivo. A folha de estilos do site indica para qual meio de acesso (tela, impressão, braile, leitores de tela) as regras serão aplicadas, e para quais características (tamanho da tela, resolução, cores, orientação).
 

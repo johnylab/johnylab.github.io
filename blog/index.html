@@ -1,0 +1,38 @@
+---
+layout: page
+title: Blog
+---
+
+<div class="wrapper home">
+
+  <ul class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h2 class="post-title">
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 200 }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+
+
+  <footer class="pagination">
+    <div data-grid="center spacing justify">
+        {% if paginator.previous_page %}
+            <a data-cell="shrink" href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous icon">{% include svg/left-arrow.svg %}</a>
+        {% else %}
+            <span data-cell="shrink" class="previous icon">{% include svg/left-arrow.svg %}</span>
+        {% endif %}
+        <span data-cell="shrink" class="page_number">Página {{ paginator.page }} de {{ paginator.total_pages }}</span>
+        {% if paginator.next_page %}
+            <a data-cell="shrink" href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next icon">{% include svg/next-arrow.svg %}</a>
+        {% else %}
+            <span data-cell="shrink" class="next icon">{% include svg/next-arrow.svg %}</span>
+        {% endif %}
+    </div>
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}" onclick="ga('send', 'event', 'Feed', 'Acesso ao feed RSS', '{{ site.baseurl }}{{ page.url }}');">via RSS</a></p>
+  </footer>
+
+</div>

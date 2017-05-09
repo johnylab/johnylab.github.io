@@ -22,8 +22,9 @@
               <li><a href="{{ p.url | prepend: site.baseurl }}" data-cell="shrink">{{ p.menu-title }}</a></li>
             {% endif %}
           {% endfor %}
-          <li><a href="https://www.behance.net/johnylab" target="_blank">Portfolio</a></li>
-          <li><a href="#contato" data-cell="shrink">Contato</a></li>
+          <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
+          <li><a href="https://www.behance.net/johnylab" target="_blank" onclick="ga('send', 'event', 'Navegação', 'Behance', 'Rodapé');">Portfolio</a></li>
+          <li><a href="#contato" data-cell="shrink" onclick="ga('send', 'event', 'Contato', 'Abrir form de contato', 'Rodapé');">Contato</a></li>
         </ul>
         <ul class="seamless social" data-cell="shrink">
           {% for link in card.social %}

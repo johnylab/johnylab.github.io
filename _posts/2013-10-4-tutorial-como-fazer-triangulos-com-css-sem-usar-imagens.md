@@ -24,7 +24,7 @@ Veja esta animação do Chris Coyer:
 
 Quando definimos as dimensões do elemento para 0 (zero), obtemos quatro triângulos que são formados pelas bordas.
 
-![](http://johnylab.net/imagens/triangle-example.gif)
+![Triângulos feitos com CSS](https://i.stack.imgur.com/cojBG.gif)
 
 E a estilização básica dos triângulos fica assim:
 

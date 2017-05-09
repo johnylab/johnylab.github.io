@@ -10,7 +10,7 @@ layout: default
       <p class="hero-excerpt"><span>Eu uso o meu site para fazer meus experimentos com HTML, CSS, Javascript, bancos de dados e outras tecnologias para web. Então não repare na bagunça.</span></p>
       <footer class="hero-cta" data-grid="center spacing">
         <a href="{{ site.baseurl }}/sobre-joao-ferreira/">MAIS SOBRE MIM...</a>
-        <a href="#contato" data-btn="nbr">FAÇA SEU SITE...</a>
+        <a href="#contato" data-btn="nbr" onclick="ga('send', 'event', 'Contato', 'Abrir form de contato', 'Hero no topo');">FAÇA SEU SITE...</a>
       </footer>
     </div>
   </div>
@@ -41,7 +41,7 @@ layout: default
       </article>
     {% endfor %}
   </div>
-  <p class="wrapper" data-grid="end"><a data-cell="shrink" href="http://www.behance.net/johnylab" target="_blank" class="icon-colored inline">{% include svg/behance.svg %} Portfolio completo...</a></p>
+  <p class="wrapper" data-grid="end"><a data-cell="shrink" href="http://www.behance.net/johnylab" target="_blank" class="icon-colored inline" onclick="ga('send', 'event', 'Navegação', 'Behance', 'Seção Portfolio');">{% include svg/behance.svg %} Portfolio completo...</a></p>
 </section>
 
 <section class="page-content section-services hero brand">
@@ -59,7 +59,7 @@ layout: default
       </div>
     </div>
   </div>
-  <p data-text="center xl"><a href="#contato" data-btn>ORÇAMENTO</a></p>
+  <p data-text="center xl"><a href="#contato" data-btn onclick="ga('send', 'event', 'Contato', 'Abrir form de contato', 'Seção Serviços');">ORÇAMENTO</a></p>
 </section>
 
 <script src="{{ site.baseurl }}/js/slider.js"></script>
@@ -84,7 +84,7 @@ layout: default
       </article>
     {% endfor %}
 
-    <p class="rss-subscribe">Assine o <a href="{{ "/feed.xml" | prepend: site.baseurl }}">feed RSS</a></p>
+    <p class="rss-subscribe">Assine o <a href="{{ "/feed.xml" | prepend: site.baseurl }}" onclick="ga('send', 'event', 'Feed', 'Acesso ao feed RSS', 'Seção Blog');">feed RSS</a></p>
 
   </div>
 </section>
