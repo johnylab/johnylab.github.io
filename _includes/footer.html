@@ -29,7 +29,7 @@
         <ul class="seamless social" data-cell="shrink">
           {% for link in card.social %}
             <li>
-              <a href="{{ link.url }}" {% if link.rel %}rel="{{ link.rel }}"{% endif %} target="_blank" class="url" data-btn>{{ link.title }}</a>
+              <a href="{{ link.url }}" {% if link.rel %}rel="{{ link.rel }}"{% endif %} target="_blank" class="url" data-btn onclick="ga('send', 'event', 'Contato', '{{ link.title }}', 'Rodapé');">{{ link.title }}</a>
             </li>
           {% endfor %}
         </ul>
