@@ -135,25 +135,34 @@ pre
         padding-left: $spacing-unit / 2
 
 .hero
+    padding: $spacing-unit / 2
     background-color: $grey-color
     color: #fff
-    a:hover
+    a
         color: gold
+        &:before
+            background-color: rgba($grey-color-dark, .3)
+    [data-btn]
+        border-color: gold
+        &:hover, &:focus, &:active
+            border-color: $brand-color
     &.brand
         background-color: $brand-color
         color: $grey-color-light
-        a
-            color: gold
-            &:before
-                background-color: rgba($grey-color-dark, .3)
         [data-btn]
             border-color: currentcolor
-            &:hover
+            &:hover, &:focus, &:active
                 background-color: gold
                 color: $brand-color
     &.light
         background-color: $grey-color-light
         color: $grey-color-dark
+        a
+            color: $brand-color
+        [data-btn]
+            border-color: $brand-color
+            &:hover, &:focus, &:active
+                color: #fff
     &.dark
         background-color: $grey-color-dark
         color: $grey-color-light
