@@ -9,11 +9,21 @@ tags: HTML5, padrões, Web Standards, Internet Explorer
 
 Você já deve conhecer o hack de Internet Explorer que permite renderizar adequadamente os estilos do HTML5 na tela...
 
-{% highlight html %}
+{% highlight javascript %}
 
 // Discussões e comentários, visite: http://remysharp.com/2009/01/07/html5-enabling-script/
 
-(function(){if(!/*@cc_on!@*/0)return;var e = "abbr,article,aside,audio,bb,canvas,datagrid,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(',');for(var i=0;i<e.length;i++){document.createElement(e[i])}})();
+(function(){
+
+  if ( !/*@cc_on!@*/0 ) return;
+  
+  var e = "abbr,article,aside,audio,bb,canvas,datagrid,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(',');
+  
+  for ( var i=0; i<e.length; i++ ){
+    document.createElement(e[i])
+  }
+
+})();
 
 {% endhighlight %}
 

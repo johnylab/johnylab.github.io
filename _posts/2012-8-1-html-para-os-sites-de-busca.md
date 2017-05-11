@@ -28,7 +28,7 @@ Alguns elementos HTML a considerar:
 
 Define um título para a página e deve ser declarado apenas uma vez, dentro da seção <code>head</code> do código-fonte. O conteúdo da <em lang="en" title="Etiqueta">tag</em> é passado para a barra de título do navegador, ou a aba onde a página é visualizada. O valor passado também é usado para identificar uma página nos resultados dos sites de busca.
 
-<img src="/imagens/html-para-seo-serp-001.png" alt="Exibição do html na SERP do Google" />
+![Exibição do html na SERP do Google](http://www.leverinteractive.com/wp-content/uploads/2015/04/xTitle-Tag-SERP.png.pagespeed.ic.FlZhGsJw8Q.png)
 
 ### Meta Description
 
@@ -49,9 +49,9 @@ As informações deste elemento são armazenadas pelos sites de busca para exibi
 
 {% highlight html %}
 
-# Título 1
-## Título 2
-### Título 3
+<h1>Título 1</h1>
+<h2>Título 2</h2>
+<h3>Título 3</h3>
 
 {% endhighlight %}
 
@@ -72,17 +72,19 @@ A marcação de parágrafo representa um trecho de texto relevante. Basicamente,
 
 {% highlight html %}
 
+<!-- Lista não numerada -->
+<ul>
+   <li>Item de lista</li>
+   <li>Item de lista</li>
+   <li>Item de lista</li>
+</ul>
 
-   - Item de lista
-   - Item de lista
-   - Item de lista
-
-
-
-   - Item 1
-   - Item 2
-   - Item 3
-
+<!-- Lista numerada -->
+<ol>
+   <li>Item 1</li>
+   <li>Item 2</li>
+   <li>Item 3</li>
+</ol>
 
 {% endhighlight %}
 
@@ -127,6 +129,7 @@ Tanto o nome da imagem como o atributo alt presente na <em lang="en" title="Etiq
 
 {% endhighlight %}
 
+## Conclusão
 
 Faça o código-fonte da página o mais limpo e simples possível, para que o tempo de carregamento seja o menor. Use cada elemento HTML conforme seu significado semântico. Use corretamente o código HTML para que seu site seja compreendido pelos motores de busca.
 

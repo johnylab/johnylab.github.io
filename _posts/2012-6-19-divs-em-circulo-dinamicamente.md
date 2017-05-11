@@ -10,7 +10,7 @@ tags: lógica de programação, seno, coseno, cosseno, cálculo
 O código abaixo produziu um efeito legal de posicionamento em círculo, calculando o seno e cosseno dos ângulos de cada div para gerar as coordenadas ao redor de um ponto. O código está em VBScript com ASP, mas pode ser feito em qualquer linguagem de programação para web, como JavaScript. Para testar a formação em círculo, é só passar a quantidade de divs a ser geradas através do parâmetro "n" na URL. Por exemplo: <em>testecirc.asp<b>?n=5</b></em>
 
 
-{% highlight asp %}
+{% highlight vb %}
 
 
 <%@LANGUAGE="VBSCRIPT" CODEPAGE="1252"%>
