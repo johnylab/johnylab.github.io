@@ -44,6 +44,16 @@ layout: default
   <p class="wrapper" data-grid="end"><a data-cell="shrink" href="http://www.behance.net/johnylab" target="_blank" class="icon-colored inline" onclick="ga('send', 'event', 'Navegação', 'Behance', 'Seção Portfolio');">{% include svg/behance.svg %} Portfolio completo...</a></p>
 </section>
 
+<script src="{{ site.baseurl }}/js/slider.js"></script>
+<link rel="stylesheet" href="{{ site.baseurl }}/css/slider.css">
+<script>
+  slider = Slider({ parentSelector: '.slider', childSelector: '.slide', duration: 3000 });
+  slider
+    .play()
+    .on('mouseover', function(){ slider.pause(); })
+    .on('mouseout', function(){ slider.play(); });
+</script>
+
 <section class="page-content section-services hero brand">
   <div class="wrapper">
     <h2>Serviços</h2>
@@ -61,16 +71,6 @@ layout: default
   </div>
   <p data-text="center xl"><a href="#contato" data-btn onclick="ga('send', 'event', 'Contato', 'Abrir form de contato', 'Seção Serviços');">ORÇAMENTO</a></p>
 </section>
-
-<script src="{{ site.baseurl }}/js/slider.js"></script>
-<link rel="stylesheet" href="{{ site.baseurl }}/css/slider.css">
-<script>
-  slider = Slider({ parentSelector: '.slider', childSelector: '.slide', duration: 3000 });
-  slider
-    .play()
-    .on('mouseover', function(){ slider.pause(); })
-    .on('mouseout', function(){ slider.play(); });
-</script>
 
 <section class="page-content section-blog">
   <div class="wrapper">
