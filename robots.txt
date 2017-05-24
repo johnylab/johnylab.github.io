@@ -1,3 +1,4 @@
 user-agent: *
 Disallow: /404.html
 Disallow: /contato_enviado.html
+Sitemap: http://johnylab.net/feed.xml
