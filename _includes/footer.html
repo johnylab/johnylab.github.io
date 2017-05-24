@@ -23,13 +23,13 @@
             {% endif %}
           {% endfor %}
           <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
-          <li><a href="https://www.behance.net/johnylab" target="_blank" onclick="ga('send', 'event', 'Navegação', 'Behance', 'Rodapé');">Portfolio</a></li>
+          <li><a href="https://www.behance.net/johnylab" target="_blank" onclick="ga('send', 'event', 'Social', 'Behance', 'Rodapé');">Portfolio</a></li>
           <li><a href="#contato" data-cell="shrink" onclick="ga('send', 'event', 'Contato', 'Abrir form de contato', 'Rodapé');">Contato</a></li>
         </ul>
         <ul class="seamless social" data-cell="shrink">
           {% for link in card.social %}
             <li>
-              <a href="{{ link.url }}" {% if link.rel %}rel="{{ link.rel }}"{% endif %} target="_blank" class="url" data-btn onclick="ga('send', 'event', 'Contato', '{{ link.title }}', 'Rodapé');">{{ link.title }}</a>
+              <a href="{{ link.url }}" {% if link.rel %}rel="{{ link.rel }}"{% endif %} target="_blank" class="url" data-btn onclick="ga('send', 'event', 'Social', '{{ link.title }}', 'Rodapé');">{{ link.title }}</a>
             </li>
           {% endfor %}
         </ul>
