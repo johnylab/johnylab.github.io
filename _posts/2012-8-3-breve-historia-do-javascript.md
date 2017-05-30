@@ -1,4 +1,5 @@
 ---
+codigoTexto: 75
 title: "Breve história do Javascript"
 excerpt: >
   JavaScript é a linguagem mais popular entre os desenvolvedores da web de hoje... Inicialmente com o nome de Cmm (C menos menos)... muda novamente para JavaScript, pegando uma carona...

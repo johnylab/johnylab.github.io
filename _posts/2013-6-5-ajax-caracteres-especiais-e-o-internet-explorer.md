@@ -1,4 +1,5 @@
 ---
+codigoTexto: 123
 title: "AJAX, caracteres especiais e o Internet Explorer"
 excerpt: >
   Um problema recorrente do AJAX. Os tais caracteres que existem na nossa linda Língua Portuguesa, mas os falantes da Língua Inglesa nem conhecem. Acentos e cedilhas não aparecem ou são trocados indevidamente.

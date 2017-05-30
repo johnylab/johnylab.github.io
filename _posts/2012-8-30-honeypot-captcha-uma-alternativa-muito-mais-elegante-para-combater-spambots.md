@@ -1,4 +1,5 @@
 ---
+codigoTexto: 110
 title: "Honeypot Captcha, uma alternativa muito mais elegante para combater spambots"
 excerpt: >
   Em vez de fazer o usuário digitar aquela imagem chata, crie um campo que não é pra ser preenchido. Pode ter o mínimo de tamanho e depois torne-o invisível com {display:none;}...

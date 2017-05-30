@@ -1,4 +1,5 @@
 ---
+codigoTexto: 122
 title: "Você já pode atualizar seu website para a nova versão do HTML: a HTML5"
 excerpt: >
   A nova versão da HTML já é uma realidade, e ainda é possível manter o suporte a navegadores antigos sem deixar de aproveitar o HTML5 em seu website. Com a ajuda de javascript, é possível manter o design inclusive no Internet Explorer 6, 7, 8...

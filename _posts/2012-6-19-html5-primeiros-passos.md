@@ -1,4 +1,5 @@
 ---
+codigoTexto: 117
 title: "HTML5 - primeiros passos"
 excerpt: >
   HTML5 (Hypertext Markup Language, versão 5) é uma linguagem para estruturação de conteúdo para a World Wide Web e é a linguagem base para a distribuição de conteúdo na Internet. Originalmente desenvolvida pelo WHATWG, foi endossada pelo W3C em 2007

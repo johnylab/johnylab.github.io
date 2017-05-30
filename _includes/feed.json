@@ -1,0 +1,6 @@
+[{% for post in site.posts %}{
+    "id": "{{ post.codigoTexto }}",
+    "title": "{{ post.title }}",
+    "excerpt": "{{ post.excerpt }}",
+    "url": "{{ site.baseurl }}{{ post.url }}"
+}{% if forloop.last == false %},{% endif %}{% endfor %}]

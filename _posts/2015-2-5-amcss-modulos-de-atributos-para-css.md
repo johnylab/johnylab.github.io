@@ -1,4 +1,5 @@
 ---
+codigoTexto: 129
 title: "AMCSS - Módulos de Atributos para CSS"
 excerpt: >
   Não se trata nem de um framework, nem de uma biblioteca. É um estilo que melhor descreve os componentes que você está construindo. Já existe uma especificação disponível em https://github.com/amcss/attribute-module-specification/

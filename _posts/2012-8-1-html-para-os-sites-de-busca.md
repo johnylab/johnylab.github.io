@@ -1,4 +1,5 @@
 ---
+codigoTexto: 120
 title: "HTML para os sites de busca"
 excerpt: >
   HTML é uma linguagem de marcação, e não de programação como muitos pensam, e serve para descrever a estrutura da página web para os dispositivos que a visitam. É através dela que o Google, assim como os browsers, lê as suas informações.

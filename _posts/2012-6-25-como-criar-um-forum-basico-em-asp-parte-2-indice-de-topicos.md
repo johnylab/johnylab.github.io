@@ -1,4 +1,5 @@
 ---
+codigoTexto: 86
 title: "Como criar um fórum básico em ASP - parte 2: índice de tópicos"
 excerpt: >
   Agora que já criamos o banco de dados (veja aqui), vamos fazer o script que acessa os fóruns. Você pode acessar o fórum de exemplo aqui.

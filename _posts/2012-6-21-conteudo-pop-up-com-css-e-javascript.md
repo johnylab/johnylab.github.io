@@ -1,4 +1,5 @@
 ---
+codigoTexto: 80
 title: "Conteúdo pop-up com CSS e javascript"
 excerpt: >
   Código que gera uma janela pop-up baseada em estilos CSS. O JavaScript altera as propriedades para que a div apareça ou desapareça. Como não se trata de uma nova janela, não pode ser bloqueada.

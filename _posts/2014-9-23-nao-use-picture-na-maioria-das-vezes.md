@@ -1,4 +1,5 @@
 ---
+codigoTexto: 127
 title: "Não use &lt;picture> (na maioria das vezes)"
 excerpt: >
   Você não precisa saber todos os casos, mas precisa entender a diferença entre os dois casos mais comuns de uso a fim de saber que parte da especificação picture resolverá seus problemas.

@@ -1,4 +1,5 @@
 ---
+codigoTexto: 103
 title: "Impressão do HTML5 no Internet Explorer"
 excerpt: >
   Você já deve conhecer o hack de Internet Explorer que permite renderizar adequadamente os estilos do HTML5 na tela... garantir a formatação correta durante a impressão é outra história...

@@ -1,4 +1,5 @@
 ---
+codigoTexto: 121
 title: "Regras de CSS que todo web designer precisa saber"
 excerpt: >
   Aqui vão 10 dicas do line25.com para soluções simples no seu código CSS.

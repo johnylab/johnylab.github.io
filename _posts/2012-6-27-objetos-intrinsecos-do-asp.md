@@ -1,4 +1,5 @@
 ---
+codigoTexto: 72
 title: "Objetos intrínsecos do ASP"
 excerpt: >
   Lista dos objetos que são intrínsecos, ou seja, que pertencem ao Active Server Pages independentemente da linguagem utilizada

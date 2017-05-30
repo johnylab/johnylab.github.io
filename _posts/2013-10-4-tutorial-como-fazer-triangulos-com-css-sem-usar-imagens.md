@@ -1,4 +1,5 @@
 ---
+codigoTexto: 106
 title: "Tutorial: Como fazer triângulos com CSS (sem usar imagens)"
 excerpt: >
   Já é possível criar formas geométricas apenas com propriedades CSS... dá pra aplicar diversos efeitos e filtros, mas a maioria ainda não funciona no IE (lógico). A técnica funcionou em todos os navegadores...

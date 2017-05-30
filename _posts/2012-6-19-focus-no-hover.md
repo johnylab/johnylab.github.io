@@ -1,4 +1,5 @@
 ---
+codigoTexto: 84
 title: "Focus no Hover"
 excerpt: >
   Esta é a dica de acessibilidade de websites mais fácil que qualquer um poderá te dar... A inspiração para escrever sobre isso veio enquanto olhava o site Gowalla...

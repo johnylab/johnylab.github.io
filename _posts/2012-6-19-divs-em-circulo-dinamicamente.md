@@ -1,4 +1,5 @@
 ---
+codigoTexto: 85
 title: "DIVs em círculo dinamicamente"
 excerpt: >
   O código abaixo produziu um efeito legal de posicionamento em círculo, calculando o seno e cosseno dos ângulos de cada div para gerar as coordenadas ao redor de um ponto. Coloquei na seção ASP porque o código está em VBScript com ASP, mas pode ser feito

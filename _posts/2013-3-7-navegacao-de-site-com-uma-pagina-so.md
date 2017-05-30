@@ -1,4 +1,5 @@
 ---
+codigoTexto: 109
 title: "Navegação de site com uma página só"
 excerpt: >
   A resposta curta é: sim, dá pra fazer. Se você tem um site com bastante conteúdo, é melhor usar ajax (...), mas para um site com pouco conteúdo, você pode fazer tudo em uma página só...

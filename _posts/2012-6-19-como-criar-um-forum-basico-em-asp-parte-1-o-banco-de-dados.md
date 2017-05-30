@@ -1,4 +1,5 @@
 ---
+codigoTexto: 83
 title: "Como criar um fórum básico em ASP - parte 1: o banco de dados"
 excerpt: >
   Antes de mais nada, o fórum vai precisar de uma base de dados. Eu uso mysql, mas isso não importa muito pois o exemplo é bastante simples, podendo ser feito em Access...

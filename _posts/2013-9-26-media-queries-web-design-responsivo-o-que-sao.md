@@ -1,4 +1,5 @@
 ---
+codigoTexto: 126
 title: "Media Queries e Web Design Responsivo. O que são?"
 excerpt: >
   Faça um design de site que atende diferentes tipos de dispositivos. A folha de estilos do site indica para qual meio de acesso as regras serão aplicadas, e para quais características.

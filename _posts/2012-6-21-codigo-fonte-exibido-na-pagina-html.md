@@ -1,4 +1,5 @@
 ---
+codigoTexto: 108
 title: "Código-fonte exibido na página HTML"
 excerpt: >
   Esta dúvida foi indexada pelo Google recentemente. Ele tem um campo de formulário com um código HTML dentro, daqueles que você clica, copia e cola em outro lugar. Como fica o HTML dentro do campo?

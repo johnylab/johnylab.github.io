@@ -1,4 +1,5 @@
 ---
+codigoTexto: 74
 title: "Session - coleções, eventos, método e propriedades "
 excerpt: >
   ... permite preservar as informações de um mesmo usuário quando ele passa de uma página para outra...

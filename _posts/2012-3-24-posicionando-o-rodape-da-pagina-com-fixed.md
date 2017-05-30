@@ -1,4 +1,5 @@
 ---
+codigoTexto: 105
 title: "Posicionando o rodapé da página com fixed"
 excerpt: >
   Solução: {position:fixed;bottom:0;} Fixed posiciona sempre em relação à janela e não ao conteúdo da página.

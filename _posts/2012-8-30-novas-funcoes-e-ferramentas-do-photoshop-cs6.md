@@ -1,4 +1,5 @@
 ---
+codigoTexto: 107
 title: "Novas funções e ferramentas do Photoshop CS6"
 excerpt: >
   Por enquanto, a nova versão do Photoshop, em modo beta, pode ser baixada gratuitamento no site da Adobe. Algumas opiniões sobre as novidades são muito favoráveis...

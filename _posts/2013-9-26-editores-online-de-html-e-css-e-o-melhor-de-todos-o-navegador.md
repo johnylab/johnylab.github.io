@@ -1,4 +1,5 @@
 ---
+codigoTexto: 119
 title: "Editores online de HTML e CSS e o melhor de todos: o navegador"
 excerpt: >
   Apesar de ser uma grande ideia (e bem didática), o Thimble não é nenhuma novidade. Para quem precisa de uma alternativa mais poderosa para testes avançados, já existem diversos aplicativos na web onde se pode testar códigos HTML, javascript e CSS.
