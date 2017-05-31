@@ -1,0 +1,90 @@
+---
+layout: default
+permalink: seu-site-novo/
+excerpt: >
+    O que é preciso para ter o site da minha empresa?
+    Custa muito caro fazer um site?
+    Como escolher um bom profissional?
+    Entre em contato agora e resolva tudo isso.
+---
+
+<section class="page-content hero brand">
+    <header class="wrapper">
+        <h1>Solicite seu site hoje mesmo!</h1>
+        <p>Diga adeus ao site velho e apresente sua empresa ao mercado com uma cara nova e moderna.</p>
+    </header>
+    <div data-grid="center around">
+        {% for t in site.trabalhos %}
+            <div data-cell="shrink"><img src="{{ site.baseurl }}/img{{ t.id  }}.png" alt="{{ t.title }}"></div>
+        {% endfor %}
+    </div>
+    <p data-text="center lg">
+        <a href="#contato" onclick="ga('send', 'event', 'Contato', 'Abrir form de contato', 'Faça seu site @ topo');" data-btn>Comece agora mesmo!</a>
+    </p>
+</section>
+
+<section class="section-services">
+    <header class="wrapper">
+        <h2>O que é preciso para ter um site no ar:</h2>
+    </header>
+    <div class="wrapper">
+        <div data-grid="center spacing">
+            <div data-cell="1of3" class="service-item">{% include svg/campain-browser.svg %}</div>
+            <div data-cell="2of3">
+                <p>Registre o domínio que você escolheu em um orgão responsável, como o <a href="http://registro.br/" target="_blank">Registro.br</a></p>
+                <p>Domínio é o endereço principal do seu site, como <em>exemplo.com.br</em></p>
+            </div>
+        </div>
+        <div data-grid="center spacing">
+            <div data-cell="1of3 order-1" class="service-item">{% include svg/campain-streaming.svg %}</div>
+            <div data-cell="2of3">
+                <p>Contrate um serviço profissional de hospedagem para manter o seu site no ar.</p>
+                <p>A empresa de hospedagem vai manter os arquivos do seu site nos seus servidores, para que as páginas estejam acessíveis aos visitantes.</p>
+            </div>
+        </div>
+        <div data-grid="center spacing">
+            <div data-cell="1of3" class="service-item">{% include svg/campain-browsing-google.svg %}</div>
+            <div data-cell="2of3">
+                <p>Elabore todo o conteúdo do site. Escreva textos interessantes, prepare as imagens e planeje a navegação.</p>
+                <p>Um conteúdo bem planejado e otimizado é essencial para posicionar bem as suas páginas nos buscadores (como o Google). Esse processo é chamado de <em>SEO</em>: otimização para sites de busca.</p>
+            </div>
+        </div>
+        <div data-grid="center spacing">
+            <div data-cell="1of3 order-1" class="service-item">{% include svg/campain-devices.svg %}</div>
+            <div data-cell="2of3">
+                <p>Contrate um web designer (eu, por exemplo). Mande o seu conteúdo para ele codificar as páginas do seu site.</p>
+                <p>Um bom desenvolvedor web é capaz de fazer sites não só bonitos, mas competitivos, rápidos, adaptados para todos os tipos de telas, além de se preocupar com a segurança e estabilidade.</p>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <div data-grid="center spacing" class="wrapper large">
+            <div data-cell="1of3" class="service-item">{% include svg/campain-computer-checkboxes.svg %}</div>
+            <div data-cell="2of3">
+                <p>Resolva tudo isso em um só passo enviando-me uma mensagem agora mesmo:</p>
+                <p data-text="center lg"><a href="#contato" onclick="ga('send', 'event', 'Contato', 'Abrir form de contato', 'Faça seu site @ serviços');" data-btn="">Solicite um orçamento</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-grid class="page-content section-hero">
+    <div data-cell="1of2" class="wrapper">
+        <h3>Contratando hoje mesmo seu site vai ter:</h3>
+        <ul>
+            <li>Design exclusivo e personalizado: nenhum site é feito com templates baixados da internet. Eu produzo tudo para extrair o máximo de desempenho do site.</li>
+            <li>Layout responsivo: o layout vai funcionar em computadores, notebooks, celulares, tvs, portas de geladeira, paineis de carros, etc.</li>
+            <li>Otimização buscadores (SEO): todas as páginas serão codificadas de acordo com as diretrizes de sites de busca, como Google, Bing, Ask, etc.</li>
+            <li>Suporte técnico: hospedagem, configuração de e-mails, etc.</li>
+            <li>Acompanhamento do desemmpenho do site: todos os sites têm registro de visitas no Google Analytics e controle da indexação feita pelo Google.</li>
+        </ul>
+        <p data-text="center lg"><a href="#contato" onclick="ga('send', 'event', 'Contato', 'Abrir form de contato', 'Faça seu site @ final');" data-btn>Contrate agora</a></p>
+    </div>
+    <div data-cell="1of2"></div>
+</section>
+
+<script>
+
+    if ( window.innerWidth > 800 ) document.querySelector('.section-hero').innerHTML += '<div class="hero-bg"><div class="hero-bg-container video-frame"><iframe src="https://player.vimeo.com/video/108674295?autoplay=1&loop=1&color=ed143d&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" tabindex="-1"></iframe></div></div>';
+
+</script>
