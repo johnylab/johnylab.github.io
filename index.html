@@ -53,16 +53,16 @@ title: João Ferreira, web designer e desenvolvedor
 </script>
 
 <section class="page-content section-services hero brand">
-  <div class="wrapper">
+  <div class="wrapper large">
     <h2>Serviços</h2>
     <div data-grid="spacing">
-      <div data-cell="1of3 fill" data-text="lg center" class="service-item">{% include svg/brain.svg %}
+      <div data-cell="1of3 fill" data-text="lg center" class="wrapper service-item">{% include svg/brain.svg %}
         <p>Criação de logomarcas e design gráfico</p>
       </div>
-      <div data-cell="1of3 fill" data-text="lg center" class="service-item">{% include svg/development.svg %}
+      <div data-cell="1of3 fill" data-text="lg center" class="wrapper service-item">{% include svg/development.svg %}
         <p>Desenvolvimento de aplicações web, páginas institucionais e hotsites</p>
       </div>
-      <div data-cell="1of3 fill" data-text="lg center" class="service-item">{% include svg/networking.svg %} 
+      <div data-cell="1of3 fill" data-text="lg center" class="wrapper service-item">{% include svg/networking.svg %} 
         <p>Redes sociais, e-mail marketing e mais</p>
       </div>
     </div>
@@ -88,9 +88,13 @@ title: João Ferreira, web designer e desenvolvedor
 </section>
 
 <script>
+
 {% comment %}
+
   Array find polyfill https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/find 
+
 {% endcomment %}
+
 if (!Array.prototype.find) {
   Array.prototype.find = function(predicate) {
     if (this === null) {
