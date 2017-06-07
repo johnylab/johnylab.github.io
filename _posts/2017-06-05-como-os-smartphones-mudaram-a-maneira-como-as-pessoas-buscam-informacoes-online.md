@@ -16,7 +16,7 @@ tags: mobile, pesquisa, consumidores, micro-moments
         <p><strong>O departamento de marketing da Google, em parceria com a empresa de pesquisas Purchased, realizou uma pesquisa sobre o comportamento das pessoas na hora de pesquisar informações diversas no dia a dia. Seguem neste post algumas das descobertas deste estudo. As 1000 pessoas pesquisadas passaram 1 semana respondendo uma rápida enquete várias vezes informando os tipos de necessidades que elas tinham durante o dia, e quais decisões tomavam para atendê-las.</strong></p>
     </div>
     <div data-cell="shrink">
-        <img src="https://photos-6.dropbox.com/t/2/AACDHS-ziecZlYT_9hiqesSI2sedG2I8uuXhmOLwvyBKSQ/12/677103756/jpeg/32x32/1/_/1/2/cody-slingerland.jpg/ELT-rMUFGAYgAigC/0YyV3jt51KKw1jApLuVKutljiO-4MN57VMXNyWT8FMU?size=1280x960&size_mode=3" alt="Google" width="600">
+        <img src="https://c1.staticflickr.com/5/4270/34320225514_c15ceb6ee5_h.jpg" alt="Google" width="600">
     </div>
 </div>
 
