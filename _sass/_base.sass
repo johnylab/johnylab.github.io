@@ -2,6 +2,10 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure
     margin: 0
     padding: 0
 
+dd
+    padding-left: 1.2em
+    margin-bottom: $spacing-unit / 2
+
 body
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family
     color: $text-color
@@ -156,7 +160,7 @@ hr
             border-color: #000
             &:hover, &:focus, &:active
                 background-color: #000
-                color: #fff
+                color: $brand-color
     &.light
         background-color: $grey-color-light
         color: $grey-color-dark
@@ -225,13 +229,18 @@ hr
     padding: .3em 1em
     border-radius: 500px
     border: 1px solid $brand-color
-    +variant(nbr)
-        @extend .nbr
     &:hover, &:active, &:focus
         background-color: $brand-color
         color: #fff
     &:before
         content: initial
+    +variant(fill)
+        background-color: $brand-color
+        color: #fff
+        &:hover, &:active, &:focus
+            box-shadow: 0 0 15px 0 #000
+    +variant(nbr)
+        @extend .nbr
 
 +module(modal)
     position: fixed
