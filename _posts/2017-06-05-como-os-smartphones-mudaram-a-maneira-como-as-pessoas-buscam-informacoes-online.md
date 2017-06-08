@@ -5,7 +5,7 @@ excerpt: >
     recorrer ao celular já passou a ser uma questão de reflexo. Novas pesquisas mostram 
     como as pessoas passaram a usar o meio digital para tomar decisões no dia a dia.
 img: 
-categories: marketin comportamento
+categories: marketing comportamento
 tags: mobile, pesquisa, consumidores, micro-moments
 ---
 
