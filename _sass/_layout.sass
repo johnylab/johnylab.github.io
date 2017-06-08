@@ -132,8 +132,13 @@
         size: larger
     >
         h1, h2, h3, h4, h5, h6,
-        p, pre, blockquote, ul, ol, dl, figure
+        p, pre, blockquote, 
+        ul, ol, dl, 
+        figure, table
             @extend .wrapper
+        
+        table
+            @extend .wrapper.large
 
         ul, ol
             +media-greater($on-palm)

@@ -47,6 +47,31 @@ li
     > ol
         margin-bottom: 0
 
+table
+    width: 100%
+    table-layout: fixed
+    border-collapse: collapse
+    border-radius: 10px
+
+    thead, tfoot
+        background-color: $grey-color-dark
+        color: #fff
+    
+    > tr, tbody tr
+        &:nth-child(even)
+            background-color: $grey-color-light
+
+    caption
+        padding-bottom: .5em
+    
+    th, td
+        border: 1px solid #fff
+        padding: .5em
+
+    th
+        font-weight: bold
+        text-align: center
+
 h1, h2, h3, h4, h5, h6
     font:
         family: $title-font-family
