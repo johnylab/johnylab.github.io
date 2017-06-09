@@ -10,7 +10,7 @@ layout: default
         <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
       </div>
       <div data-cell="shrink fill">
-        {% include share/widget.html %}
+        {% include share/widget.html position='cabeçalho' %}
       </div>
     </div>
   </header>
@@ -37,7 +37,7 @@ layout: default
 <div class="page-content">
   <div class="wrapper" data-grid="center end">
     <p data-text="lg">Comente e compartilhe:</p>
-    <div data-cell="shrink">{% include share/widget.html %}</div>
+    <div data-cell="shrink">{% include share/widget.html position='comentários' %}</div>
   </div>
 </div>
 
