@@ -9,9 +9,12 @@ tags: grid layout, css3, responsive
 
 Fonte: *[How the minmax() Function Works](https://bitsofco.de/how-the-minmax-function-works/)*
 
-<div class="wrapper large">
+<figure class="wrapper large">
     <img src="https://c1.staticflickr.com/5/4230/34338590574_a19bcce7f4_o.png" alt="CSS Grid Layout">
-</div>
+    <figcaption>
+        <p><a href="https://www.chiefofdesign.com.br/guia-introdutorio-de-css-grid-layout/">Aprenda Grid Layout</a> com o autor desta imagem, meu amigo <a href="https://m.facebook.com/david.diarty">David Arty</a>.</p>
+    </figcaption>
+</figure>
 
 Uma nova característica muito útil apresentada com a [especificação do Grid Layout do CSS](https://www.w3.org/TR/css-grid-1) é a função `minmax()`. Ela nos permite escrever um CSS muito mais poderoso e sucinto, configurando valores para a grade ([grid track](https://bitsofco.de/css-grid-terminology/#gridcolumnsgridrowsandgridtracks)), incluindo na mesma linha um valor mínimo e máximo.
 
