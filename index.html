@@ -3,7 +3,7 @@ layout: default
 title: João Ferreira, web designer e desenvolvedor
 ---
 
-<section class="page-content section-hero">
+<section class="page-content section-hero bg-area">
   <div class="wrapper">
     <div class="hero-content">
       <h1 class="hero-title"><span>João Ferreira</span> <br><small><span>web designer e desenvolvedor</span></small></h1>
@@ -13,8 +13,8 @@ title: João Ferreira, web designer e desenvolvedor
     </div>
   </div>
   
-  <div class="video-bg">
-      <video id="top-video-background" src="{{ site.baseurl }}/midia/site-map-drawing.mp4" autoplay loop muted playsinline></video>
+  <div class="bg-container">
+      <video class="bg-content" id="top-video-background" src="{{ site.baseurl }}/midia/site-map-drawing.mp4" autoplay loop muted playsinline></video>
       <script>
           window.addEventListener('load', function(){
               document.getElementById('top-video-background').play();
