@@ -19,7 +19,7 @@ layout: default
     {{ content }}
   </div>
 
-  <nav class="post-navigation wrapper" data-grid="row spacing justify">
+  <nav class="post-navigation wrapper large hero light" data-grid="row spacing justify">
     <div data-cell="1of2" class="prev">
     {% if page.previous.url %}
       <a href="{{ page.previous.url | prepend: site.baseurl }}">&laquo; {% if page.previous.titulo %}{{ page.previous.titulo }}{% else %}{{page.previous.title}}{% endif %}</a>
