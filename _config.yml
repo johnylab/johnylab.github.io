@@ -29,16 +29,38 @@ defaults:
       permalink: 'blog/:categories/:title.html'
 prose:
   ignore:
-  - _data
-  - _includes
-  - _layouts
-  - blog
-  - .gitignore
-  - CNAME
-  - favicon.ico
-  - favicon.png
-  - feed.xml
-  - google6fb37ae82eecf839.html
-  - gulpfile.js
+    - _data
+    - _includes
+    - _layouts
+    - blog
+    - .gitignore
+    - CNAME
+    - favicon.ico
+    - favicon.png
+    - feed.xml
+    - google6fb37ae82eecf839.html
+    - gulpfile.js
   siteurl: http://johnylab.net
   media: img
+  metadata:
+    _posts:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Título"
+      - name: categories
+        field:
+          element: text
+          label: Categoria
+      - name: tags
+        field:
+          element: text
+          label: Palavras-chave
+      - name: excerpt
+        field:
+          element: textarea
+          label: Description/resumo
+      - name: cover
+        field:
+          element: text
+          label: Imagem para redes sociais
