@@ -1,6 +1,6 @@
 ---
 title: Johnylab
-timezone: UTC
+timezone: America/Sao_Paulo
 collections:
   posts:
     title: Posts
@@ -20,7 +20,7 @@ defaults:
     permalink: blog/:categories/:title.html
 description: Site pessoal de João Batista Ferreira, web designer e developer. Moro
   em Santos e curto padrões web e design moderno.
-baseurl: ''
+baseurl: 
 url: http://johnylab.net
 markdown: kramdown
 paginate: 10
