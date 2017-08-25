@@ -8,9 +8,7 @@ tags:
 - estilos,
 - layout
 codigoTexto: 121
-excerpt: 'Aqui vão 10 dicas do line25.com para soluções simples no seu código CSS.
-
-'
+excerpt: 'Aqui vão 10 dicas do line25.com para soluções simples no seu código CSS.'
 img: "/imagens/tubos.jpg"
 ---
 
@@ -167,4 +165,4 @@ a {outline: none;}
 
 {% endhighlight %}
 
-Sabe aquela linha pontilhada que aparece ao redor de um link ou outro elemento de interação ao ser clicado, estragando a beleza do seu layout? Declare <code>{outline: none;}</code> para removê-la, mas por questões de acessibilidade, não se esqueça de [adicionar o estado <code>:focus</code> para os seus links]({% post_url 2012-6-19-focus-no-hover %}). Se o problema não é a linha pontilhada e sim que ela não envolva a tela toda, declare <code>{overflow: auto; }</code> na sua folha de estilos.
+Sabe aquela linha pontilhada que aparece ao redor de um link ou outro elemento de interação ao ser clicado, estragando a beleza do seu layout? Declare <code>{outline: none;}</code> para removê-la, mas por questões de acessibilidade, não se esqueça de [adicionar o estado <code>:focus</code> para os seus links]({% post_url 2012-06-19-focus-no-hover %}). Se o problema não é a linha pontilhada e sim que ela não envolva a tela toda, declare <code>{overflow: auto; }</code> na sua folha de estilos.

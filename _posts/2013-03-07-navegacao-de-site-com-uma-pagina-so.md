@@ -11,9 +11,7 @@ tags:
 codigoTexto: 109
 excerpt: 'A resposta curta é: sim, dá pra fazer. Se você tem um site com bastante
   conteúdo, é melhor usar ajax (...), mas para um site com pouco conteúdo, você pode
-  fazer tudo em uma página só...
-
-'
+  fazer tudo em uma página só...'
 img: "/imagens/css-abbreviations.jpg"
 ---
 
@@ -23,7 +21,7 @@ Dúvida do meu amigo Pedro Albani:
 > 
 > Estou procurando uma maneira de fazer um site bem simples, gostaria de saber se existe uma maneira de criar um layout fixo para todas as páginas, e quando clicou em outra categoria do menu, apenas o conteúdo da página abaixo foi carregado. Isso faz com o que a página seja carregada mais rápido, pois o menu, rodapé, banner não são recarregados.
 
-A resposta curta é: sim, dá pra fazer. Eu faria uma ressalva. Se você tem um site com bastante conteúdo, é melhor [usar ajax (o javascript carrega o conteúdo externo e põe o resultado onde você mandar)]({% post_url 2013-6-5-ajax-caracteres-especiais-e-o-internet-explorer %}), mas para um site com pouco conteúdo, você pode fazer tudo em uma página só e através do CSS fazer com que apareça uma seção de cada vez. É uma ótima alternativa para muitos designers fazer o site com uma página só.
+A resposta curta é: sim, dá pra fazer. Eu faria uma ressalva. Se você tem um site com bastante conteúdo, é melhor [usar ajax (o javascript carrega o conteúdo externo e põe o resultado onde você mandar)]({% post_url 2013-06-05-ajax-caracteres-especiais-e-o-internet-explorer %}), mas para um site com pouco conteúdo, você pode fazer tudo em uma página só e através do CSS fazer com que apareça uma seção de cada vez. É uma ótima alternativa para muitos designers fazer o site com uma página só.
 
 A navegação se dá através de hashtag (#):
 
