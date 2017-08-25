@@ -8,7 +8,7 @@ tags:
 - estilos,
 - layout
 codigoTexto: 121
-excerpt: 'Aqui vão 10 dicas do line25.com para soluções simples no seu código CSS.'
+excerpt: Aqui vão 10 dicas do line25.com para soluções simples no seu código CSS.
 img: "/imagens/tubos.jpg"
 ---
 
