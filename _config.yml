@@ -1,36 +1,29 @@
----
 title: Johnylab
-timezone: America/Sao_Paulo
-collections:
-  posts:
-    title: Posts
-    output: true
-  trabalhos:
-    title: Trabalhos
-    output: false
-  uploads:
-    title: Uploads
-    output: true
-defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    layout: post
-    permalink: blog/:categories/:title.html
-description: Site pessoal de João Batista Ferreira, web designer e developer. Moro
-  em Santos e curto padrões web e design moderno.
-baseurl: 
-url: http://johnylab.net
+description: >
+  Site pessoal de João Batista Ferreira, web designer e developer.
+  Moro em Santos e curto padrões web e design moderno.
+baseurl: ''
+url: 'http://johnylab.net'
 markdown: kramdown
 paginate: 10
-paginate_path: "/blog/:num/"
+paginate_path: '/blog/:num/'
 plugins:
-- jekyll-coffeescript
-- jekyll-paginate
+  - jekyll-coffeescript
+  - jekyll-paginate
+  - jekyll-admin
 exclude:
-- gulpfile.js
-- README.md
-- package.json
-- desktop.ini
-- CNAME
+  - gulpfile.js
+  - README.md
+  - package.json
+  - desktop.ini
+  - CNAME
+collections:
+  trabalhos:
+    output: false
+defaults:
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
+      permalink: 'blog/:categories/:title.html'
