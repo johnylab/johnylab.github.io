@@ -1,13 +1,14 @@
 ---
-layout: page
 title: Olá! Meu nome é João Ferreira
+permalink: "/sobre-joao-ferreira/"
+layout: page
 menu-title: Perfil
-permalink: /sobre-joao-ferreira/
-excerpt: >
-    Meu nome completo é João Batista Ferreira. Sou desenvolvedor web desde 2003.
-    Minha paixão é explorar novas tecnologias relacionadas com a internet.
-    Moro em Santos, SP, mas posso atender sua empresa de qualquer lugar.
-    Você pode entrar em contato ou acessar as minhas redes sociais no rodapé da página.
+excerpt: 'Meu nome completo é João Batista Ferreira. Sou desenvolvedor web desde 2003.
+  Minha paixão é explorar novas tecnologias relacionadas com a internet. Moro em Santos,
+  SP, mas posso atender sua empresa de qualquer lugar. Você pode entrar em contato
+  ou acessar as minhas redes sociais no rodapé da página.
+
+'
 ---
 
 <div data-grid="center spacing" class="wrapper">

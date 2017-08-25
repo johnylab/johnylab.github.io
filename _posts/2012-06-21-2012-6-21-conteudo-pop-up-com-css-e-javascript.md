@@ -1,11 +1,19 @@
 ---
+title: Conteúdo pop-up com CSS e javascript
+date: 2012-06-21 00:00:00 Z
+categories:
+- JavaScript
+tags:
+- pop-up,
+- JavaScript,
+- CSS
 codigoTexto: 80
-title: "Conteúdo pop-up com CSS e javascript"
-excerpt: >
-  Código que gera uma janela pop-up baseada em estilos CSS. O JavaScript altera as propriedades para que a div apareça ou desapareça. Como não se trata de uma nova janela, não pode ser bloqueada.
-img: /imagens/tubos.jpg
-categories: JavaScript
-tags: pop-up, JavaScript, CSS
+excerpt: 'Código que gera uma janela pop-up baseada em estilos CSS. O JavaScript altera
+  as propriedades para que a div apareça ou desapareça. Como não se trata de uma nova
+  janela, não pode ser bloqueada.
+
+'
+img: "/imagens/tubos.jpg"
 ---
 
 O código abaixo mostra como criar uma janela pop-up baseada em CSS, que torna-se visível quando uma função em JavaScript altera o atributo <code>display</code> e uma DIV é exibida por cima da página. Por não precisar abrir uma nova janela ou aba, o código na realidade não gera um pop-up, e sim uma parte do código-fonte, que estava oculta pelo estilo CSS <code>display:none;</code>.

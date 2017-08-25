@@ -1,11 +1,22 @@
 ---
+title: 'Você já pode atualizar seu website para a nova versão do HTML: a HTML5'
+date: 2013-03-07 00:00:00 Z
+categories:
+- HTML
+tags:
+- HTML5,
+- padrões,
+- Web
+- Standards,
+- Internet
+- Explorer
 codigoTexto: 122
-title: "Você já pode atualizar seu website para a nova versão do HTML: a HTML5"
-excerpt: >
-  A nova versão da HTML já é uma realidade, e ainda é possível manter o suporte a navegadores antigos sem deixar de aproveitar o HTML5 em seu website. Com a ajuda de javascript, é possível manter o design inclusive no Internet Explorer 6, 7, 8...
-img: /imagens/HTML-5-Logotipo-Oficial.png
-categories: HTML
-tags: HTML5, padrões, Web Standards, Internet Explorer
+excerpt: 'A nova versão da HTML já é uma realidade, e ainda é possível manter o suporte
+  a navegadores antigos sem deixar de aproveitar o HTML5 em seu website. Com a ajuda
+  de javascript, é possível manter o design inclusive no Internet Explorer 6, 7, 8...
+
+'
+img: "/imagens/HTML-5-Logotipo-Oficial.png"
 ---
 
 Essa é a pergunta recorrente na área de desenvolvimento web atualmente, e muitos já responderam, mas poucos mostram de fato como fazer para começar a desenvolver de acordo com a futura especificação do HTML, sem esbarrar nas diferenças de implementação de cada navegador. Muitos já responderam essa pergunta, mas poucos mostram como é possível fazer com que o HTML funcione direito em navegadores antigos, como Internet Explorer 6, 7 e 8.

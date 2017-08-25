@@ -1,11 +1,19 @@
 ---
+title: Código-fonte exibido na página HTML
+date: 2012-06-21 00:00:00 Z
+categories:
+- HTML
+tags:
+- código-fonte,
+- caracteres,
+- HTML
 codigoTexto: 108
-title: "Código-fonte exibido na página HTML"
-excerpt: >
-  Esta dúvida foi indexada pelo Google recentemente. Ele tem um campo de formulário com um código HTML dentro, daqueles que você clica, copia e cola em outro lugar. Como fica o HTML dentro do campo?
-img: /imagens/div-2.png
-categories: HTML
-tags: código-fonte, caracteres, HTML
+excerpt: 'Esta dúvida foi indexada pelo Google recentemente. Ele tem um campo de formulário
+  com um código HTML dentro, daqueles que você clica, copia e cola em outro lugar.
+  Como fica o HTML dentro do campo?
+
+'
+img: "/imagens/div-2.png"
 ---
 
 Esta dúvida foi indexada pelo Google recentemente:

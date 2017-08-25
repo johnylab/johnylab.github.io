@@ -1,11 +1,20 @@
 ---
+title: Como transformar um arquivo HTML em um email (ou newsletter)
+date: 2013-03-14 00:00:00 Z
+categories:
+- Tutoriais
+tags:
+- e-mail,
+- newsletter,
+- anexos
 codigoTexto: 118
-title: "Como transformar um arquivo HTML em um email (ou newsletter)"
-excerpt: >
-  Uma newsletter em HTML nada mais é do que uma página web dentro do corpo do e-mail. Então, para mandar um e-mail com o formato de uma página web (rich content, ou texto de conteúdo rico), você precisa seguir os mesmos passos para se fazer uma página de um
-img: /imagens/code_snip.gif
-categories: Tutoriais
-tags: e-mail, newsletter, anexos
+excerpt: 'Uma newsletter em HTML nada mais é do que uma página web dentro do corpo
+  do e-mail. Então, para mandar um e-mail com o formato de uma página web (rich content,
+  ou texto de conteúdo rico), você precisa seguir os mesmos passos para se fazer uma
+  página de um
+
+'
+img: "/imagens/code_snip.gif"
 ---
 
 Pergunta feita no Yahoo Answers:

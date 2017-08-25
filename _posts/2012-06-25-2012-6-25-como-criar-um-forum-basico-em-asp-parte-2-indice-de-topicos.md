@@ -1,11 +1,21 @@
 ---
+title: 'Como criar um fórum básico em ASP - parte 2: índice de tópicos'
+date: 2012-06-25 00:00:00 Z
+categories:
+- ASP
+tags:
+- fórum,
+- web,
+- ASP,
+- VBScript,
+- SQL,
+- RecordSet
 codigoTexto: 86
-title: "Como criar um fórum básico em ASP - parte 2: índice de tópicos"
-excerpt: >
-  Agora que já criamos o banco de dados (veja aqui), vamos fazer o script que acessa os fóruns. Você pode acessar o fórum de exemplo aqui.
-img: /imagens/article-using-asp.jpg
-categories: ASP
-tags: fórum, web, ASP, VBScript, SQL, RecordSet
+excerpt: 'Agora que já criamos o banco de dados (veja aqui), vamos fazer o script
+  que acessa os fóruns. Você pode acessar o fórum de exemplo aqui.
+
+'
+img: "/imagens/article-using-asp.jpg"
 ---
 
 Agora que já criamos o banco de dados (<a href="http://johnylab.net/index.asp?id=83">veja aqui</a>), vamos fazer o script que acessa os tópicos.

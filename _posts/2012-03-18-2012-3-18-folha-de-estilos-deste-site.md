@@ -1,11 +1,19 @@
 ---
+title: Folha de estilos deste site
+date: 2012-03-18 00:00:00 Z
+categories:
+- CSS
+tags:
+- css,
+- estilos,
+- posicionamento
 codigoTexto: 81
-title: "Folha de estilos deste site"
-excerpt: >
-  Estilos do arquivo css usado neste site, comentado para estudo da linguagem de folhas de estilos. O novo layout está usando o HTML5 &#9733; Boilerplate, que foi omitido aqui para economizar espaço...
-img: /imagens/css-abbreviations.jpg
-categories: CSS
-tags: css, estilos, posicionamento
+excerpt: 'Estilos do arquivo css usado neste site, comentado para estudo da linguagem
+  de folhas de estilos. O novo layout está usando o HTML5 &#9733; Boilerplate, que
+  foi omitido aqui para economizar espaço...
+
+'
+img: "/imagens/css-abbreviations.jpg"
 ---
 
 O novo layout está usando o <a href="http://html5boilerplate.com/" hreflang="en" target="_blank">HTML5 &#9733; Boilerplate</a> para facilitar a padronização. Estou tentando aproveitar as <a href="http://simon.html5.org/html-elements" hreflang="en" target="_blank">novas tags do HTML5</a> que proporcionam maior significação para os elementos do layout. Os estilos que já vêm prontos no boilerplate serão omitidos aqui pois você pode consultá-los no próprio site ou baixar o pacote com comentários (em inglês) para estudar.

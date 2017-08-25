@@ -1,11 +1,20 @@
 ---
+title: Navegação de site com uma página só
+date: 2013-03-07 00:00:00 Z
+categories:
+- HTML
+tags:
+- css,
+- estilos,
+- navegação,
+- layout
 codigoTexto: 109
-title: "Navegação de site com uma página só"
-excerpt: >
-  A resposta curta é: sim, dá pra fazer. Se você tem um site com bastante conteúdo, é melhor usar ajax (...), mas para um site com pouco conteúdo, você pode fazer tudo em uma página só...
-img: /imagens/css-abbreviations.jpg
-categories: HTML
-tags: css, estilos, navegação, layout
+excerpt: 'A resposta curta é: sim, dá pra fazer. Se você tem um site com bastante
+  conteúdo, é melhor usar ajax (...), mas para um site com pouco conteúdo, você pode
+  fazer tudo em uma página só...
+
+'
+img: "/imagens/css-abbreviations.jpg"
 ---
 
 Dúvida do meu amigo Pedro Albani:

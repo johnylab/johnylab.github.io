@@ -1,11 +1,23 @@
 ---
+title: Desenhe uma página splash no Photoshop em alguns cliques
+date: 2013-02-07 00:00:00 Z
+categories:
+- Photoshop
+tags:
+- splash,
+- landing,
+- photoshop,
+- e-mail
+- marketing,
+- newsletter,
+- template
 codigoTexto: 100
-title: "Desenhe uma página splash no Photoshop em alguns cliques"
-excerpt: >
-  Na maioria das vezes, menos é mais quando se trata de criar páginas de chegada (landing pages). Aprenda neste vídeo os passos para criar uma página splash realmente leve em poucos minutos.
-img: /imagens/preview.png
-categories: Photoshop
-tags: splash, landing, photoshop, e-mail marketing, newsletter, template
+excerpt: 'Na maioria das vezes, menos é mais quando se trata de criar páginas de chegada
+  (landing pages). Aprenda neste vídeo os passos para criar uma página splash realmente
+  leve em poucos minutos.
+
+'
+img: "/imagens/preview.png"
 ---
 
 Na maioria das vezes, menos é mais quando se trata de criar páginas de chegada (landing pages). Aprenda neste vídeo os passos para criar uma página splash realmente leve em poucos minutos. Depois, acesse o link do post original para baixar o arquivo de exemplo do Photoshop gratuitamente.

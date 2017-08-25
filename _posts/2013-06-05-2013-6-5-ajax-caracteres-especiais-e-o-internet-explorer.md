@@ -1,11 +1,19 @@
 ---
+title: AJAX, caracteres especiais e o Internet Explorer
+date: 2013-06-05 00:00:00 Z
+categories:
+- JavaScript
+tags:
+- JavaScript,
+- jQuery,
+- ajax
 codigoTexto: 123
-title: "AJAX, caracteres especiais e o Internet Explorer"
-excerpt: >
-  Um problema recorrente do AJAX. Os tais caracteres que existem na nossa linda Língua Portuguesa, mas os falantes da Língua Inglesa nem conhecem. Acentos e cedilhas não aparecem ou são trocados indevidamente.
-img: /imagens/200px-HTML5.svg.png
-categories: JavaScript
-tags: JavaScript, jQuery, ajax
+excerpt: 'Um problema recorrente do AJAX. Os tais caracteres que existem na nossa
+  linda Língua Portuguesa, mas os falantes da Língua Inglesa nem conhecem. Acentos
+  e cedilhas não aparecem ou são trocados indevidamente.
+
+'
+img: "/imagens/200px-HTML5.svg.png"
 ---
 
 Todo programador de <abbr title="Asynchronous Javascript and XML (Javascript e XML Assíncronos)" lang="en">AJAX</abbr> passa por isso. Os tais caracteres que existem na nossa querida Língua Portuguesa, mas os falantes da Língua Inglesa (azar o deles!) não conhecem. Então você cria o seu objeto <abbr title="Asynchronous Javascript and XML (Javascript e XML Assíncronos)" lang="en">AJAX</abbr>, limpíssimo e escalonável, e chama o arquivo externo:

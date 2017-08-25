@@ -1,11 +1,17 @@
 ---
+title: 'Session - coleções, eventos, método e propriedades '
+date: 2012-06-19 00:00:00 Z
+categories:
+- ASP
+tags:
+- ASP,
+- objeto,
+- Session,
+- sessão
 codigoTexto: 74
-title: "Session - coleções, eventos, método e propriedades "
-excerpt: >
-  ... permite preservar as informações de um mesmo usuário quando ele passa de uma página para outra...
-img: /imagens/microsoft-asp.JPG
-categories: ASP
-tags: ASP, objeto, Session, sessão
+excerpt: "... permite preservar as informações de um mesmo usuário quando ele passa
+  de uma página para outra...\n"
+img: "/imagens/microsoft-asp.JPG"
 ---
 
 O objeto Session permite preservar as informações de um mesmo usuário quando ele passa de uma página para outra da mesma aplicação.

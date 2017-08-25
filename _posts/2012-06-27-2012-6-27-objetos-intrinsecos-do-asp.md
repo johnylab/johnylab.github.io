@@ -1,11 +1,18 @@
 ---
+title: Objetos intrínsecos do ASP
+date: 2012-06-27 00:00:00 Z
+categories:
+- ASP
+tags:
+- ASP,
+- objetos,
+- componentes
 codigoTexto: 72
-title: "Objetos intrínsecos do ASP"
-excerpt: >
-  Lista dos objetos que são intrínsecos, ou seja, que pertencem ao Active Server Pages independentemente da linguagem utilizada
-img: /imagens/tubos.jpg
-categories: ASP
-tags: ASP, objetos, componentes
+excerpt: 'Lista dos objetos que são intrínsecos, ou seja, que pertencem ao Active
+  Server Pages independentemente da linguagem utilizada
+
+'
+img: "/imagens/tubos.jpg"
 ---
 
 ASP permite que você crie suas aplicações através de cinco objetos básicos:

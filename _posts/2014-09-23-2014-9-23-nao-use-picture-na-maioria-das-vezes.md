@@ -1,11 +1,21 @@
 ---
+title: Não use &lt;picture> (na maioria das vezes)
+date: 2014-09-23 00:00:00 Z
+categories:
+- HTML
+tags:
+- imagens
+- responsivas,
+- tag,
+- picture,
+- img
 codigoTexto: 127
-title: "Não use &lt;picture> (na maioria das vezes)"
-excerpt: >
-  Você não precisa saber todos os casos, mas precisa entender a diferença entre os dois casos mais comuns de uso a fim de saber que parte da especificação picture resolverá seus problemas.
-img: /imagens/devices-sm.gif
-categories: HTML
-tags: imagens responsivas, tag, picture, img
+excerpt: 'Você não precisa saber todos os casos, mas precisa entender a diferença
+  entre os dois casos mais comuns de uso a fim de saber que parte da especificação
+  picture resolverá seus problemas.
+
+'
+img: "/imagens/devices-sm.gif"
 ---
 
 <em>Este post é adaptado de um artigo de <a href="http://blog.cloudfour.com/author/jason-grigsby/" title="Posts by Jason Grigsby" hreflang="en">Jason Grigsby</a> e você pode ler o texto original em <a href="http://blog.cloudfour.com/dont-use-picture-most-of-the-time/" hreflang="en">Don’t use &lt;picture> (most of the time)</a>.</em>

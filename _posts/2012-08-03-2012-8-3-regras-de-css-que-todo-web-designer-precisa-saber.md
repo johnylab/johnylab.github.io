@@ -1,11 +1,17 @@
 ---
+title: Regras de CSS que todo web designer precisa saber
+date: 2012-08-03 00:00:00 Z
+categories:
+- CSS
+tags:
+- css,
+- estilos,
+- layout
 codigoTexto: 121
-title: "Regras de CSS que todo web designer precisa saber"
-excerpt: >
-  Aqui vão 10 dicas do line25.com para soluções simples no seu código CSS.
-img: /imagens/tubos.jpg
-categories: CSS
-tags: css, estilos, layout
+excerpt: 'Aqui vão 10 dicas do line25.com para soluções simples no seu código CSS.
+
+'
+img: "/imagens/tubos.jpg"
 ---
 
 *Aqui vão 10 dicas do <a href="http://line25.com/articles/10-css-rules-every-web-designer-should-know" target="_blank">line25.com</a> para soluções simples no seu código CSS.*

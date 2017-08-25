@@ -1,11 +1,19 @@
 ---
+title: HTML para os sites de busca
+date: 2012-08-01 00:00:00 Z
+categories:
+- HTML
+tags:
+- HTML,
+- padrões,
+- SEO
 codigoTexto: 120
-title: "HTML para os sites de busca"
-excerpt: >
-  HTML é uma linguagem de marcação, e não de programação como muitos pensam, e serve para descrever a estrutura da página web para os dispositivos que a visitam. É através dela que o Google, assim como os browsers, lê as suas informações.
-img: /imagens/code_snip.gif
-categories: HTML
-tags: HTML, padrões, SEO
+excerpt: 'HTML é uma linguagem de marcação, e não de programação como muitos pensam,
+  e serve para descrever a estrutura da página web para os dispositivos que a visitam.
+  É através dela que o Google, assim como os browsers, lê as suas informações.
+
+'
+img: "/imagens/code_snip.gif"
 ---
 
 HTML é uma linguagem de marcação, e não de programação como muitos pensam, e serve para descrever a estrutura da página web para os dispositivos que a visitam. É através dela que o Google, assim como os browsers, lê as suas informações. Por isso, a marcação HTML tem como objetivo estruturar a página, determinando o significado de cada  parte do conteúdo.

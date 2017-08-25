@@ -1,11 +1,21 @@
 ---
+title: Breve história do Javascript
+date: 2012-08-03 00:00:00 Z
+categories:
+- JavaScript
+tags:
+- Java,
+- JavaScript,
+- Sun,
+- Netscape,
+- história
 codigoTexto: 75
-title: "Breve história do Javascript"
-excerpt: >
-  JavaScript é a linguagem mais popular entre os desenvolvedores da web de hoje... Inicialmente com o nome de Cmm (C menos menos)... muda novamente para JavaScript, pegando uma carona...
-img: /imagens/promptIn-Javascript.jpg
-categories: JavaScript
-tags: Java, JavaScript, Sun, Netscape, história
+excerpt: 'JavaScript é a linguagem mais popular entre os desenvolvedores da web de
+  hoje... Inicialmente com o nome de Cmm (C menos menos)... muda novamente para JavaScript,
+  pegando uma carona...
+
+'
+img: "/imagens/promptIn-Javascript.jpg"
 ---
 
 <div data-grid="center spacing" class="wrapper large">

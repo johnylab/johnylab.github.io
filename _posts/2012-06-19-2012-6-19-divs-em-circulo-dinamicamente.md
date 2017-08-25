@@ -1,11 +1,24 @@
 ---
+title: DIVs em círculo dinamicamente
+date: 2012-06-19 00:00:00 Z
+categories:
+- Tutoriais
+tags:
+- lógica
+- de
+- programação,
+- seno,
+- coseno,
+- cosseno,
+- cálculo
 codigoTexto: 85
-title: "DIVs em círculo dinamicamente"
-excerpt: >
-  O código abaixo produziu um efeito legal de posicionamento em círculo, calculando o seno e cosseno dos ângulos de cada div para gerar as coordenadas ao redor de um ponto. Coloquei na seção ASP porque o código está em VBScript com ASP, mas pode ser feito
-img: /imagens/div-2.png
-categories: Tutoriais
-tags: lógica de programação, seno, coseno, cosseno, cálculo
+excerpt: 'O código abaixo produziu um efeito legal de posicionamento em círculo, calculando
+  o seno e cosseno dos ângulos de cada div para gerar as coordenadas ao redor de um
+  ponto. Coloquei na seção ASP porque o código está em VBScript com ASP, mas pode
+  ser feito
+
+'
+img: "/imagens/div-2.png"
 ---
 
 O código abaixo produziu um efeito legal de posicionamento em círculo, calculando o seno e cosseno dos ângulos de cada div para gerar as coordenadas ao redor de um ponto. O código está em VBScript com ASP, mas pode ser feito em qualquer linguagem de programação para web, como JavaScript. Para testar a formação em círculo, é só passar a quantidade de divs a ser geradas através do parâmetro "n" na URL. Por exemplo: <em>testecirc.asp<b>?n=5</b></em>

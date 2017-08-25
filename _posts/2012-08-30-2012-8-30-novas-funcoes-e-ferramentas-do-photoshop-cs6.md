@@ -1,11 +1,18 @@
 ---
+title: Novas funções e ferramentas do Photoshop CS6
+date: 2012-08-30 00:00:00 Z
+categories:
+- Photoshop
+tags:
+- photoshop,
+- review,
+- atualização
 codigoTexto: 107
-title: "Novas funções e ferramentas do Photoshop CS6"
-excerpt: >
-  Por enquanto, a nova versão do Photoshop, em modo beta, pode ser baixada gratuitamento no site da Adobe. Algumas opiniões sobre as novidades são muito favoráveis...
-img: /imagens/Logo-Adobe-Photoshop-CS6-Beta.jpg
-categories: Photoshop
-tags: photoshop, review, atualização
+excerpt: 'Por enquanto, a nova versão do Photoshop, em modo beta, pode ser baixada
+  gratuitamento no site da Adobe. Algumas opiniões sobre as novidades são muito favoráveis...
+
+'
+img: "/imagens/Logo-Adobe-Photoshop-CS6-Beta.jpg"
 ---
 
 Por enquanto, a nova versão do Photoshop está em modo beta, mas já pode ser baixada gratuitamento no <a href="http://labs.adobe.com/technologies/photoshopcs6/" target="_blank">site da Adobe</a>. Algumas opiniões sobre as novidades são muito favoráveis, principalmente pela nova interface, mais simples e centrada das funções mais usadas.

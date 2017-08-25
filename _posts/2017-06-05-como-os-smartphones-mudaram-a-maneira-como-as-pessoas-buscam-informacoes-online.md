@@ -1,12 +1,21 @@
 ---
 title: Como os smartphones mudaram a maneira como as pessoas buscam informações online
-excerpt: >
-    No momento em que as pessoas precisam saber, chegar a um lugar, fazer ou comprar, 
-    recorrer ao celular já passou a ser uma questão de reflexo. Novas pesquisas mostram 
-    como as pessoas passaram a usar o meio digital para tomar decisões no dia a dia.
+date: 2017-06-05 00:00:00 Z
+categories:
+- marketing
+- comportamento
+tags:
+- mobile,
+- pesquisa,
+- consumidores,
+- micro-moments
+excerpt: 'No momento em que as pessoas precisam saber, chegar a um lugar, fazer ou
+  comprar,  recorrer ao celular já passou a ser uma questão de reflexo. Novas pesquisas
+  mostram  como as pessoas passaram a usar o meio digital para tomar decisões no dia
+  a dia.
+
+'
 img: 
-categories: marketing comportamento
-tags: mobile, pesquisa, consumidores, micro-moments
 ---
 
 *Adaptado de [Mobile Has Changed Search Intent and How People Get Things Done: New Consumer Behavior Data](https://www.thinkwithgoogle.com/consumer-insights/mobile-search-consumer-behavior-data/).*

@@ -1,11 +1,16 @@
 ---
+title: 'Editores online de HTML e CSS e o melhor de todos: o navegador'
+date: 2013-09-26 00:00:00 Z
+categories:
+- Tutoriais
 codigoTexto: 119
-title: "Editores online de HTML e CSS e o melhor de todos: o navegador"
-excerpt: >
-  Apesar de ser uma grande ideia (e bem didática), o Thimble não é nenhuma novidade. Para quem precisa de uma alternativa mais poderosa para testes avançados, já existem diversos aplicativos na web onde se pode testar códigos HTML, javascript e CSS.
-img: /imagens/thimble-mozilla.jpg
-categories: Tutoriais
-tags: 
+excerpt: 'Apesar de ser uma grande ideia (e bem didática), o Thimble não é nenhuma
+  novidade. Para quem precisa de uma alternativa mais poderosa para testes avançados,
+  já existem diversos aplicativos na web onde se pode testar códigos HTML, javascript
+  e CSS.
+
+'
+img: "/imagens/thimble-mozilla.jpg"
 ---
 
 A Mozilla lançou oficialmente seu <a href="https://thimble.mozilla.org/pt-BR/" target="_blank">novo editor online e gratuito de HTML e CSS</a>. Batizado como Thimble, o editor é simples e funcional. Além de não precisar de nenhum cadastro para começar a usá-lo, o serviço sugere alguns modelos de projetos para praticar.
