@@ -2,9 +2,6 @@
 title: Johnylab
 timezone: America/Sao_Paulo
 collections:
-  data:
-    title: Data
-    output: true
   posts:
     title: Posts
     output: true
