@@ -28,18 +28,7 @@ defaults:
       layout: post
       permalink: 'blog/:categories/:title.html'
 prose:
-  ignore:
-    - _data
-    - _includes
-    - _layouts
-    - blog
-    - .gitignore
-    - CNAME
-    - favicon.ico
-    - favicon.png
-    - feed.xml
-    - google6fb37ae82eecf839.html
-    - gulpfile.js
+  rooturl: _posts
   siteurl: http://johnylab.net
   media: img
   metadata:
