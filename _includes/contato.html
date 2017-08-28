@@ -1,34 +1,23 @@
-<script type="text/javascript">var submitted=false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {ga('send', 'event', 'Contato', 'Mensagem enviada', 'Form de contato');window.location='{{ site.baseurl }}/contato_enviado.html';}"></iframe>
 
 <footer class="footer-contato" id="contato" data-modal="" data-grid="center">
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLSffp0CMGcihOckHujL_H1-Knn1J4rXuhXjGFzxEytjocoo9NQ/formResponse" method="post" class="wrapper large" id="formContato" target="hidden_iframe" onsubmit="submitted=true;">
+
+    <div class="wrapper large">
+
         <header data-grid="row nowrap spacing">
             <h3 class="icon inline">{% include svg/favicon.svg %} Faça seu site</h3>
             <a href="#x" data-cell="shrink" class="icon ui" title="Fechar formulário">{% include svg/letter-x.svg %}</a>
         </header>
-        <p>Me conte como é o site que você precisa para que eu possa fazer um orçamento.</p>
-        <div data-grid="spacing">
-            <div data-cell="1of2 fill">
-                <p>
-                    <label for="entry.2005820982">Seu nome</label>
-                    <input name="entry.2005820982" type="text" required placeholder="Como deseja que eu te chame?">
-                </p>
-                <p>
-                    <label for="entry.164767440">E-mail</label>
-                    <input name="entry.164767440" type="email" required placeholder="nome@dominio.com">
-                </p>
-            </div>
-            <div data-cell="1of2 fill">
-                <p>
-                    <label for="entry.217077662">Mensagem</label>
-                    <textarea name="entry.217077662" cols="30" rows="5" placeholder="Deixe sua mensagem..."></textarea>
-                </p>
-            </div>
-        </div>
-        <footer data-grid="row nowrap spacing center justify">
-            <a href="#x" data-cell="shrink" class="icon ui" title="Fechar formulário">FECHAR</a>
-            <button data-cell="shrink">ENVIAR</button>
-        </footer>
-    </form>
+
+        <p><strong>Contatos:</strong> 
+            {% for link in site.data.vcard.social %}
+                <a 
+                    href="{{ link.url }}" target="_blank" 
+                    class="url" data-btn 
+                    onclick="ga('send', 'event', 'Social', '{{ link.title }}', 'Formulário');"
+                >{{ link.title }}</a> 
+            {% endfor %}
+        </p>
+
+    </div>
+
 </footer>
