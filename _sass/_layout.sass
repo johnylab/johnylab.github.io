@@ -68,6 +68,7 @@
             opacity: 0
             @for $i from 1 through 10
                 &:nth-of-type(#{$i})
+                    -webkit-animation: enter-from-right .4s .1s * ($i - 1) ease-in-out forwards
                     animation: enter-from-right .4s .1s * ($i - 1) ease-in-out forwards
             @keyframes enter-from-right
                 0%
