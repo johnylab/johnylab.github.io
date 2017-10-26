@@ -1,9 +1,9 @@
 ---
-layout: default
 title: João Ferreira, web designer e desenvolvedor
+layout: default
 ---
 
-<section class="page-content section-hero">
+<section class="page-content section-hero bg-area">
   <div class="wrapper">
     <div class="hero-content">
       <h1 class="hero-title"><span>João Ferreira</span> <br><small><span>web designer e desenvolvedor</span></small></h1>
@@ -12,13 +12,17 @@ title: João Ferreira, web designer e desenvolvedor
       <p><a href="#contato" data-btn="nbr" onclick="ga('send', 'event', 'Contato', 'Abrir form de contato', 'Hero no topo');">FAÇA SEU SITE...</a></p>
     </div>
   </div>
+  
+  <div class="bg-container">
+      <video class="bg-content" id="top-video-background" src="{{ site.baseurl }}/midia/site-map-drawing.mp4" autoplay loop muted playsinline></video>
+      <script>
+          window.addEventListener('load', function(){
+              document.getElementById('top-video-background').play();
+          });
+      </script>
+  </div>
+
 </section>
-
-<script>
-
-  if ( window.innerWidth > 800 ) document.querySelector('.section-hero').innerHTML += '<div class="hero-bg"><div class="hero-bg-container video-frame"><iframe src="https://player.vimeo.com/video/108674295?autoplay=1&loop=1&color=ed143d&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" tabindex="-1"></iframe></div></div>';
-
-</script>
 
 <section class="page-content section-portifolio">
   <header class="wrapper">
@@ -74,7 +78,7 @@ title: João Ferreira, web designer e desenvolvedor
   <div class="wrapper">
 
     <h2>Blog</h2>
-    {% for post in site.posts | limit: 5 %}
+    {% for post in site.posts limit: 5 %}
       <article>
         <h3>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>

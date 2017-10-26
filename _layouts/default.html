@@ -1,12 +1,14 @@
 ---
 layout: compress
 ---
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
   {% include head.html %}
 
   <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDP78JF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     {% include header.html %}
 
@@ -22,6 +24,8 @@ layout: compress
       ga('create', 'UA-15099492-1', 'auto');
       ga('send', 'pageview');
     </script>
+
+    <script src="{{ site.baseurl }}/js/main.js"></script>
 
   </body>
 

@@ -1,14 +1,24 @@
 ---
-title: "Como usar a função minmax() do Css Grid Layout"
-excerpt: >
-    Uma nova característica muito útil apresentada com a especificação do Grid Layout do CSS é a função minmax(). Ela nos permite escrever um CSS muito mais poderoso e sucinto, configurando valores para a grade (grid track), incluindo na mesma linha um valor mínimo e máximo.
+title: Como usar a função minmax() do Css Grid Layout
+date: 2017-06-08 00:00:00 Z
+categories:
+- css
+tags:
+- grid
+- layout,
+- css3,
+- responsive
+excerpt: 'Uma nova característica muito útil apresentada com a especificação do Grid
+  Layout do CSS é a função minmax(). Ela nos permite escrever um CSS muito mais poderoso
+  e sucinto, configurando valores para a grade (grid track), incluindo na mesma linha
+  um valor mínimo e máximo.
+
+'
 img: 
-categories: css
-tags: grid layout, css3, responsive
 ---
 
 <figure class="large">
-    <img src="https://c1.staticflickr.com/5/4230/34338590574_a19bcce7f4_o.png" alt="CSS Grid Layout"><figcaption class="hero light"><a href="https://www.chiefofdesign.com.br/guia-introdutorio-de-css-grid-layout/">Aprenda Grid Layout</a> com o autor desta imagem, meu amigo <a href="https://m.facebook.com/david.diarty">David Arty</a>.</figcaption>
+    <img src="https://www.chiefofdesign.com.br/wp-content/uploads/2017/04/CSS-Grid-Layout.png" alt="CSS Grid Layout by David Arty"><figcaption class="hero light"><a href="https://www.chiefofdesign.com.br/guia-introdutorio-de-css-grid-layout/">Aprenda Grid Layout</a> com o autor desta imagem, meu amigo <a href="https://facebook.com/david.diarty">David Arty</a>.</figcaption>
 </figure>
 
 Fonte: *[How the minmax() Function Works](https://bitsofco.de/how-the-minmax-function-works/)*

@@ -1,18 +1,18 @@
 ---
-layout: default
 permalink: seu-site-novo/
-excerpt: >
-    O que é preciso para ter o site da minha empresa?
-    Custa muito caro fazer um site?
-    Como escolher um bom profissional?
-    Entre em contato agora e resolva tudo isso.
+layout: default
+excerpt: 'O que é preciso para ter o site da minha empresa? Custa muito caro fazer
+  um site? Como escolher um bom profissional? Entre em contato agora e resolva tudo
+  isso.
+
+'
 ---
 
-<section class="page-content hero dark">
+<section class="page-content top-section hero brand">
     <div class="wrapper" data-grid="center spacing">
         <header data-cell="1of2">
-            <h1>Solicite seu site hoje mesmo!</h1>
-            <p>Tenha um site totalmente novo e apresente sua empresa ao mercado com um layout moderno que funciona em todos os dispositivos e telas.</p>
+            <h1>Site novo, responsivo e moderno!</h1>
+            <p>Alcance novos públicos e gere mais resultados.</p>
         </header>
         <div data-cell="1of2" data-grid="row center wrap">
             {% for t in site.trabalhos %}
@@ -21,53 +21,66 @@ excerpt: >
         </div>
     </div>
     <p data-text="center lg">
-        <a href="#contato" onclick="ga('send', 'event', 'Contato', 'Abrir form de contato', 'Faça seu site @ topo');" data-btn>COMECE AGORA MESMO!</a>
+        <a href="#contato" onclick="ga('send', 'event', 'Contato', 'Abrir form de contato', 'Faça seu site @ topo');" data-btn>COMECE AQUI</a>
     </p>
 </section>
 
 <section class="section-services">
+
     <header class="wrapper">
-        <h2>O que é preciso para ter um site no ar:</h2>
+        <h2>4 passos básicos para ter um site novo:</h2>
     </header>
+
     <div class="wrapper">
-        <div data-grid="center spacing">
+        <article data-grid="center spacing">
+            <div data-cell="shrink" class="service-counter">1</div>
             <div data-cell="1of3" class="service-item">{% include svg/campain-browser.svg %}</div>
             <div data-cell="2of3">
                 <p>Registre o domínio que você escolheu em um orgão responsável, como o <a href="http://registro.br/" target="_blank">Registro.br</a></p>
                 <p>Domínio é o endereço principal do seu site, como <em>exemplo.com.br</em></p>
             </div>
-        </div>
-        <div data-grid="center spacing">
+        </article>
+        <article data-grid="center spacing">
+            <div data-cell="shrink" class="service-counter">2</div>
             <div data-cell="1of3 order-1" class="service-item">{% include svg/campain-streaming.svg %}</div>
             <div data-cell="2of3">
                 <p>Contrate um serviço profissional de hospedagem para manter o seu site no ar.</p>
                 <p>A empresa de hospedagem vai manter os arquivos do seu site nos seus servidores, para que as páginas estejam acessíveis aos visitantes.</p>
             </div>
-        </div>
-        <div data-grid="center spacing">
+        </article>
+        <article data-grid="center spacing">
+            <div data-cell="shrink" class="service-counter">3</div>
             <div data-cell="1of3" class="service-item">{% include svg/campain-browsing-google.svg %}</div>
             <div data-cell="2of3">
                 <p>Elabore todo o conteúdo do site. Escreva textos interessantes, prepare as imagens e planeje a navegação.</p>
                 <p>Um conteúdo bem planejado e otimizado é essencial para posicionar bem as suas páginas nos buscadores (como o Google). Esse processo é chamado de <em>SEO</em>: otimização para sites de busca.</p>
             </div>
-        </div>
-        <div data-grid="center spacing">
+        </article>
+        <article data-grid="center spacing">
+            <div data-cell="shrink" class="service-counter">4</div>
             <div data-cell="1of3 order-1" class="service-item">{% include svg/campain-devices.svg %}</div>
             <div data-cell="2of3">
                 <p>Contrate um web designer (eu, por exemplo). Mande o seu conteúdo para ele codificar as páginas do seu site.</p>
                 <p>Um bom desenvolvedor web é capaz de fazer sites não só bonitos, mas competitivos, rápidos, adaptados para todos os tipos de telas, além de se preocupar com a segurança e estabilidade.</p>
             </div>
-        </div>
+        </article>
     </div>
-    <div class="hero brand" style="background-image: url();background-size: cover;">
-        <div data-grid="center spacing" class="wrapper">
-            <div data-cell="1of3" class="service-item">{% include svg/campain-computer-checkboxes.svg %}</div>
-            <div data-cell="2of3">
-                <p>Resolva tudo isso em um só passo enviando-me uma mensagem agora mesmo:</p>
-                <p data-text="center lg"><a href="#contato" onclick="ga('send', 'event', 'Contato', 'Abrir form de contato', 'Faça seu site @ serviços');" data-btn="">ENVIAR MENSAGEM</a></p>
+
+    <div class="hero brand">
+        <article>
+            <header class="wrapper">
+                <h3>Simplifique todo o processo do seu site</h3>
+            </header>
+            <div data-grid="center spacing" class="wrapper">
+                <div data-cell="1of3" class="service-item">{% include svg/campain-computer-checkboxes.svg %}</div>
+                <div data-cell="2of3">
+                    <p>Resolva tudo isso em um só passo enviando-me uma mensagem agora mesmo:</p>
+                    <p data-text="center lg"><a href="#contato" onclick="ga('send', 'event', 'Contato', 'Abrir form de contato', 'Faça seu site @ serviços');" data-btn="">ENVIAR MENSAGEM</a></p>
+                </div>
             </div>
-        </div>
+        </article>
     </div>
+
 </section>
 
 <section class="page-content wrap-up">
@@ -75,15 +88,15 @@ excerpt: >
         <h3>Contratando hoje mesmo, seu site vai ter:</h3>
         <dl>
             <dt class="icon-colored inline">{% include svg/html-5.svg %} <strong>Design exclusivo e personalizado:</strong></dt>
-            <dd>nenhum site é feito com templates baixados da internet. Eu produzo tudo para extrair o máximo de desempenho do site.</dd>
+            <dd>Nenhum site é feito com templates baixados da internet. Eu produzo tudo para extrair o máximo de desempenho do site.</dd>
             <dt class="icon-colored inline">{% include svg/html-5.svg %} <strong>Layout responsivo:</strong></dt>
-            <dd>o layout vai funcionar em computadores, notebooks, celulares, tvs, portas de geladeira, paineis de carros, etc.</dd>
+            <dd>O layout vai funcionar em computadores, notebooks, celulares, etc.</dd>
             <dt class="icon-colored inline">{% include svg/html-5.svg %} <strong>Otimização para buscadores (SEO):</strong></dt>
-            <dd>todas as páginas serão codificadas de acordo com as diretrizes de sites de busca, como Google, Bing, Ask, etc.</dd>
+            <dd>Todas as páginas serão codificadas de acordo com as diretrizes de sites de busca, como Google, Bing, Ask, etc.</dd>
             <dt class="icon-colored inline">{% include svg/favicon.svg %} <strong>Suporte técnico:</strong></dt>
-            <dd>hospedagem, configuração de e-mails, etc.</dd>
+            <dd>Hospedagem, configuração de e-mails, etc. Tudo fica por minha conta.</dd>
             <dt class="icon-colored inline">{% include svg/favicon.svg %} <strong>Acompanhamento de web analytics:</strong></dt>
-            <dd>todos os sites têm registro de visitas no Google Analytics e controle da indexação feita pelo Google.</dd>
+            <dd>Todos os sites têm registro de visitas no Google Analytics e acompanhamento da indexação no Google através do Google Search Console.</dd>
         </dl>
         <p class="call-to-action" data-text="center lg"><a href="#contato" onclick="ga('send', 'event', 'Contato', 'Abrir form de contato', 'Faça seu site @ final');" data-btn="fill">CONTRATE-ME</a></p>
     </div>
@@ -94,11 +107,19 @@ excerpt: >
         background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
     }
     @media only screen and (min-width:601px) {
-        .wrap-up {
-            background-image: url('{{ site.baseurl }}/img/jesus-kiteque-desk.jpg');
+        .top-section, .wrap-up {
             background-repeat: no-repeat;
-            background-position: bottom left;
             background-size: cover;
+        }
+        .top-section{
+            padding-top: 10%;
+            padding-bottom: 10%;
+            background-image: url('{{ site.baseurl }}/img/seu-site-novo/dts-modern-workshop.jpg');
+            background-position: top left;
+        }
+        .wrap-up {
+            background-image: url('{{ site.baseurl }}/img/seu-site-novo/jesus-kiteque-desk.jpg');
+            background-position: bottom left;
         }
         .wrap-up .call-to-action {
             padding-bottom: 250px;
