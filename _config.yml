@@ -7,10 +7,9 @@ url: 'http://johnylab.net'
 markdown: kramdown
 paginate: 10
 paginate_path: '/blog/:num/'
-plugins:
+gems:
   - jekyll-coffeescript
   - jekyll-paginate
-  - jekyll-admin
 exclude:
   - gulpfile.js
   - README.md
@@ -27,29 +26,3 @@ defaults:
     values:
       layout: post
       permalink: 'blog/:categories/:title.html'
-prose:
-  rooturl: _posts
-  siteurl: http://johnylab.net
-  media: img
-  metadata:
-    _posts:
-      - name: "title"
-        field:
-          element: "text"
-          label: "Título"
-      - name: categories
-        field:
-          element: text
-          label: Categoria
-      - name: tags
-        field:
-          element: text
-          label: Palavras-chave
-      - name: excerpt
-        field:
-          element: textarea
-          label: Description/resumo
-      - name: cover
-        field:
-          element: text
-          label: Imagem para redes sociais
