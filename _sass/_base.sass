@@ -170,6 +170,14 @@ hr
     padding: $spacing-unit / 2
     background-color: $grey-color
     color: #fff
+    background:
+        position: center
+        repeat: no-repeat
+        size: cover
+    +media-query($on-laptop)
+        .wrapper
+            padding-left: 0
+            padding-right: 0
     a
         color: gold
         &:before
@@ -178,16 +186,23 @@ hr
         border-color: gold
         &:hover, &:focus, &:active
             border-color: $brand-color
+    +media-greater($on-palm)
+        padding-top: 10%
+        padding-bottom: 10%
     &.brand
         background-color: $brand-color
         [data-btn]
             &:hover, &:focus, &:active
                 background-color: #000
                 color: $brand-color
-    &.light
+        +media-greater($on-palm)
+            background:
+                image: url('#{$baseurl}/img/dts-modern-workshop.jpg')
+                position: top left
+    &.light, &.wrap-up
         background-color: $grey-color-light
         color: $grey-color-dark
-        a
+        a:not([data-btn~="fill"])
             color: $brand-color
         [data-btn]
             border-color: $brand-color
@@ -196,6 +211,14 @@ hr
     &.dark
         background-color: $grey-color-dark
         color: $grey-color-light
+    
+    &.wrap-up
+        background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%)
+        +media-greater($on-palm)
+            background:
+                image: url('#{$baseurl}/img/jesus-kiteque-desk.jpg')
+                position: bottom left
+            padding-bottom: 250px
 
 .video-frame
     height: 0
@@ -222,6 +245,7 @@ hr
             left: 50%
             min-width: 100%
             min-height: 100%
+            -webkit-transform: translate(-50%, -50%)
             transform: translate(-50%, -50%)
 
 %clearfix
@@ -241,11 +265,15 @@ hr
             width: 1em
             height: 1em
             vertical-align: text-top
-.icon
+
+.svg-inherit-color
     > svg
         color: inherit
         path, polygon, rect, circ
             fill: currentcolor
+
+.icon
+    @extend .svg-inherit-color
     &.ui
         color: $grey-color
         &:hover, &:focus
