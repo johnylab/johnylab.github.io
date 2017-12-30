@@ -7,7 +7,7 @@ url: 'http://johnylab.net'
 markdown: kramdown
 paginate: 10
 paginate_path: '/blog/:num/'
-gems:
+plugins:
   - jekyll-coffeescript
   - jekyll-paginate
 exclude:
