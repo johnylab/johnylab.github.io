@@ -18,7 +18,7 @@ img:
 ---
 
 <figure class="large">
-    <img src="https://www.chiefofdesign.com.br/wp-content/uploads/2017/04/CSS-Grid-Layout.png" alt="CSS Grid Layout by David Arty"><figcaption class="hero light"><a href="https://www.chiefofdesign.com.br/guia-introdutorio-de-css-grid-layout/">Aprenda Grid Layout</a> com o autor desta imagem, meu amigo <a href="https://facebook.com/david.diarty">David Arty</a>.</figcaption>
+    <img src="https://www.chiefofdesign.com.br/wp-content/uploads/2017/04/CSS-Grid-Layout.png" alt="CSS Grid Layout by David Arty"><figcaption class="hero tight light"><a href="https://www.chiefofdesign.com.br/guia-introdutorio-de-css-grid-layout/">Aprenda Grid Layout</a> com o autor desta imagem, meu amigo <a href="https://facebook.com/david.diarty">David Arty</a>.</figcaption>
 </figure>
 
 Fonte: *[How the minmax() Function Works](https://bitsofco.de/how-the-minmax-function-works/)*
