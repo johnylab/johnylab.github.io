@@ -22,7 +22,7 @@ description: 'Site pessoal de João Batista Ferreira, web designer e developer. 
   em Santos e curto padrões web e design moderno.
 
 '
-baseurl: ''
+baseurl: 
 url: http://johnylab.net
 markdown: kramdown
 paginate: 10
