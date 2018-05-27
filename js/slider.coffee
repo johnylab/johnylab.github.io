@@ -12,7 +12,6 @@ class Slider
         @duration = @config.duration || 3000
         @compose()
 
-Slider.prototype =
     compose: () ->
         prevIndex = if @index > 0 then @index - 1 else @children.length - 1
         nextIndex = if @index < @children.length - 1 then @index + 1 else 0
@@ -25,6 +24,7 @@ Slider.prototype =
         @children[@index].classList.add 'current'
         @children[nextIndex].classList.add 'next'
         @
+
     play: () ->
         that = @
         @playingStateID = setInterval () ->
@@ -32,35 +32,44 @@ Slider.prototype =
             , @duration
         @isPlaying = true
         @
+
     pause: () ->
         clearInterval @playingStateID
         @isPlaying = false
         @
+
     playpause: () ->
         if @isPlaying
             @pause()
         else
             @play()
+
     prev: () ->
         if @index > 0 then @index-- else @index = @children.length - 1
         playingState = @isPlaying
         @pause() if playingState
         @compose()
         @play() if playingState
+        @
+
     next: () ->
         if @index < @children.length - 1 then @index++ else @index = 0
         playingState = @isPlaying
         @pause() if playingState
         @compose()
         @play() if playingState
+        @
+
     on: (event, fn) ->
         that = @
         @parent.addEventListener event, fn
         @
+
     off: (event, fn) ->
         that = @
         @parent.removeEventListener event, fn
         @
+
     inspect: () ->
         console.group @parentSelector
         try

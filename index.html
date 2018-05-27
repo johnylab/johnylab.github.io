@@ -25,13 +25,21 @@ layout: default
 </section>
 
 <section class="page-content section-portifolio">
-  <header class="wrapper">
+  <header class="wrapper" data-grid="center spacing">
     <h2>Portfolio</h2>
+    <p class="slider-controls" data-cell="shrink" data-grid="row nowrap spacing">
+      <a href="javascript:void(0);" class="slider-control icon" data-action="prev">
+        {% include svg/left-arrow.svg %}
+      </a>
+      <a href="javascript:void(0);" class="slider-control icon" data-action="next">
+        {% include svg/next-arrow.svg %}
+      </a>
+    </p>
   </header>
   <div class="slider portfolio-gallery">
     {% for job in site.trabalhos %}
       <article class="wrapper slide{% if forloop.first %} current{% endif %} portfolio-item">
-        <div data-grid="center spacing">
+        <div data-grid="spacing">
           <div data-cell="1of4 shrink" class="portfolio-img">
             <img src="{{ site.baseurl }}/img{{ job.id }}.png" alt="{{ job.title }}">
           </div>
@@ -49,11 +57,27 @@ layout: default
 <script src="{{ site.baseurl }}/js/slider.js"></script>
 <link rel="stylesheet" href="{{ site.baseurl }}/css/slider.css">
 <script>
-  slider = Slider({ parentSelector: '.slider', childSelector: '.slide', duration: 3000 });
+  var slider = Slider({ parentSelector: '.slider', childSelector: '.slide', duration: 3000 });
   slider
     .play()
     .on('mouseover', function(){ slider.pause(); })
     .on('mouseout', function(){ slider.play(); });
+  var sliderConstrols = document.querySelector('.slider-controls');
+  if (sliderConstrols) {
+    Array.prototype.forEach.call(
+      sliderConstrols.querySelectorAll('.slider-control'),
+      function(control) {
+        control.addEventListener('click', function() {
+          var action = this.getAttribute('data-action');
+          var params = this.getAttribute('data-params');
+          if (params) params = params.split(',').map(function(param) {
+            return param && param.trim();
+          });
+          slider[action].apply(slider, params);
+        });
+      }
+    );
+  }
 </script>
 
 <section class="page-content section-services hero brand">
