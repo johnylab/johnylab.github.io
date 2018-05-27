@@ -23,7 +23,7 @@ description: 'Site pessoal de João Batista Ferreira, web designer e developer. 
 
 '
 baseurl: 
-url: http://johnylab.net
+url: https://johnylab.net
 markdown: kramdown
 paginate: 10
 paginate_path: "/blog/:num/"
