@@ -13,9 +13,8 @@ layout: page
 
 <div data-grid="center spacing" class="wrapper">
     <div data-cell="2of3">
-        <p>Meu nome é João Ferreira. Sou desenvolvedor web desde 2003.</p>
-        <p>Moro em Santos, SP, mas posso atender sua empresa de qualquer lugar.</p>
-        <p>Minha paixão é explorar novas tecnologias relacionadas com a internet.</p>
+        <p>Meu nome é João Ferreira. Sou desenvolvedor web desde 2003. Moro em Santos, SP, mas posso atender sua empresa em qualquer lugar.</p>
+        <p>Minha paixão é explorar as últimas técnicas, padrões e tecnologias para desenvolvimento web. Todos os meus sites são responsivos, seguros e de alta performance.</p>
         <p>Você pode <a href="#contato">entrar em contato</a> ou acessar as minhas redes sociais no rodapé da página.</p>
     </div>
     <div data-cell="1of3">
@@ -24,3 +23,13 @@ layout: page
         </div>
     </div>
 </div>
+
+## Skills
+
+- HTML5 e geradores de conteúdo estático, como Jekyll.
+- CSS3 e pré-processadores (Sass, Less, etc.).
+- Javascript Moderno, programação com módulos e transpiladores de scripts.
+- Compatibilidade de navegadores.
+- Modelagem de banco de dados e acesso a dados com SQL.
+- Plataformas de desenvolvimento de aplicativos modernos, como Firebase e Heroku e outras tecnologias de back-end, como NodeJS, PHP e .NET.
+- Também faço design gráfico com Photoshop, Illustrator e Indesign, mas prefiro as alternativas de código aberto, como Inkscape e Paint.NET.
