@@ -1,13 +1,14 @@
 ---
-title: Como os smartphones mudaram a maneira como as pessoas buscam informações online
-date: 2017-06-05 00:00:00 Z
+title: Como os smartphones mudaram as buscas e decisões dos usuários
+date: 2017-06-04 21:00:00 -03:00
 categories:
 - marketing
 - comportamento
 tags:
-- mobile,
-- pesquisa,
-- consumidores,
+- mobile
+- ''
+- pesquisa
+- consumidores
 - micro-moments
 excerpt: 'No momento em que as pessoas precisam saber, chegar a um lugar, fazer ou
   comprar,  recorrer ao celular já passou a ser uma questão de reflexo. Novas pesquisas
