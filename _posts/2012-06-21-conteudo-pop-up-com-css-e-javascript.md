@@ -1,6 +1,6 @@
 ---
 title: Conteúdo pop-up com CSS e Javascript
-date: 2012-06-21 00:00:00 Z
+date: 2012-06-20 21:00:00 -03:00
 categories:
 - JavaScript
 tags:
@@ -8,10 +8,9 @@ tags:
 - JavaScript,
 - CSS
 codigoTexto: 80
-excerpt: 'Gere uma janela pop-up utilizando css e Javascript.
-  Com este código simples é possível fazer modais para aplicativos ou adaptá-lo
-  para várias necessidades de UI.
-'
+excerpt: 'Gere uma janela pop-up utilizando css e Javascript. Com este código simples
+  é possível fazer modais para aplicativos ou adaptá-lo para várias necessidades de
+  UI. '
 img: "/imagens/tubos.jpg"
 ---
 
