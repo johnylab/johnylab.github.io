@@ -1,6 +1,7 @@
 ---
 title: Mensagem enviada!
 layout: page
+sitemap: false
 ---
 
 Recebi a sua mensagem. Aguarde o meu contato. Obrigado!
