@@ -1,11 +1,12 @@
 ---
 title: Focus no Hover
-date: 2012-06-19 00:00:00 Z
+date: 2012-06-18 21:00:00 -03:00
 categories:
 - CSS
 tags:
-- acessibilidade,
-- estilos,
+- acessibilidade
+- ''
+- estilos
 - css
 codigoTexto: 84
 excerpt: 'Esta é a dica de acessibilidade de websites mais fácil que qualquer um poderá
@@ -26,4 +27,4 @@ A inspiração para escrever sobre isso veio enquanto olhava o site <a href="htt
 
 Esse problema estende-se para muito além de Gowalla. Há incontáveis montões de sites que forçam as pessoas a usar o mouse só para poderem navegar pelos links. É uma vergonha isso acontecer, considerando o mínimo esforço necessário para resolver isso.
 
-<em>Mais: <a href="http://antonpeck.com/journal/article/focus_on_the_hover/" title="Abrir link externo em uma nova janela ou aba." target="_blank">http://antonpeck.com/journal/article/focus_on_the_hover/</a></em>
+(Infelizmente, o post original não está mais disponível) <del>Mais: <a href="http://antonpeck.com/journal/article/focus_on_the_hover/" title="Abrir link externo em uma nova janela ou aba." target="_blank">http://antonpeck.com/journal/article/focus_on_the_hover/</a></del>
