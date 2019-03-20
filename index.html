@@ -3,107 +3,41 @@ title: João Ferreira, web designer e desenvolvedor
 layout: default
 ---
 
-<section class="page-content section-hero bg-area">
+<section class="page-content section-about">
+  {% assign about_page = site.pages | where: 'url', '/sobre-mim/' | first %}
   <div class="wrapper">
-    <div class="hero-content">
-      <h1 class="hero-title"><span>João Ferreira</span> <br><small><span>web designer e desenvolvedor</span></small></h1>
-      <p class="hero-excerpt"><span>Este site é feito de acordo com as mais recentes especificações de HTML, CSS, Javascript, bancos de dados e outras tecnologias para web. <a href="{{ site.baseurl }}/sobre-joao-ferreira/">Mais sobre mim...</a></span></p>
-      <p class="hero-excerpt"><span>E o que é preciso para ter um site? Custa muito caro? Quanto tempo leva? Entre em contato e eu responderei:</span></p>
-      <p><a href="#contato" data-btn="nbr" onclick="ga('send', 'event', 'Contato', 'Abrir form de contato', 'Hero no topo');">FAÇA SEU SITE...</a></p>
+    <div data-grid="center">
+      <div data-cell="">
+        <h1>{{ about_page.title }}</h1>
+        <p>
+          {{ about_page.excerpt }}
+          <a href="{{ site.baseurl }}{{ about_page.url }}">Mais sobre mim...</a>
+        </p>
+      </div>
+
+      <ul class="seamless" data-cell="shrink">
+        {% for link in site.data.vcard.social %}
+          <li>
+            <a
+              href="{{ link.url }}"
+              target="_blank"
+              class="url"
+              onclick="ga('send', 'event', 'Social', '{{ link.title }}', 'Rodapé');"
+            >
+              {{ link.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
   </div>
-  
-  <div class="bg-container">
-      <video class="bg-content" id="top-video-background" src="{{ site.baseurl }}/midia/site-map-drawing.mp4" autoplay loop muted playsinline></video>
-      <script>
-          window.addEventListener('load', function(){
-              document.getElementById('top-video-background').play();
-          });
-      </script>
-  </div>
-
-</section>
-
-<section class="page-content section-portifolio">
-  <header class="wrapper" data-grid="center spacing">
-    <h2 data-cell="fill">Portfolio</h2>
-    <p class="slider-controls" data-cell="shrink fill" data-grid="row nowrap end spacing">
-      <a href="javascript:void(0);" class="slider-control icon" data-action="prev">
-        {% include svg/left-arrow.svg %}
-      </a>
-      <small>Passe o mouse no texto para pausar</small>
-      <a href="javascript:void(0);" class="slider-control icon" data-action="next">
-        {% include svg/next-arrow.svg %}
-      </a>
-    </p>
-  </header>
-  <div class="slider portfolio-gallery">
-    {% for job in site.trabalhos %}
-      <article class="wrapper slide{% if forloop.first %} current{% endif %} portfolio-item">
-        <div data-grid="spacing">
-          <div data-cell="1of4 shrink" class="portfolio-img">
-            <img src="{{ site.baseurl }}/img{{ job.id }}.png" alt="{{ job.title }}">
-          </div>
-          <div data-cell="3of4" class="portfolio-metadata">
-            <h3 class="portfolio-title">{{ job.title }}</h3>
-            {{ job.content }}
-          </div>
-        </div>
-      </article>
-    {% endfor %}
-  </div>
-  <p class="wrapper" data-grid="end"><a data-cell="shrink" href="http://www.behance.net/johnylab" target="_blank" class="icon-colored inline" onclick="ga('send', 'event', 'Navegação', 'Behance', 'Seção Portfolio');">{% include svg/behance.svg %} Portfolio completo...</a></p>
-</section>
-
-<script src="{{ site.baseurl }}/js/slider.js"></script>
-<link rel="stylesheet" href="{{ site.baseurl }}/css/slider.css">
-<script>
-  var slider = Slider({ parentSelector: '.slider', childSelector: '.slide', duration: 3000 });
-  slider
-    .play()
-    .on('mouseover', function(){ slider.pause(); })
-    .on('mouseout', function(){ slider.play(); });
-  var sliderConstrols = document.querySelector('.slider-controls');
-  if (sliderConstrols) {
-    Array.prototype.forEach.call(
-      sliderConstrols.querySelectorAll('.slider-control'),
-      function(control) {
-        control.addEventListener('click', function() {
-          var action = this.getAttribute('data-action');
-          var params = this.getAttribute('data-params');
-          if (params) params = params.split(',').map(function(param) {
-            return param && param.trim();
-          });
-          slider[action].apply(slider, params);
-        });
-      }
-    );
-  }
-</script>
-
-<section class="page-content section-services hero brand">
-  <div class="wrapper large">
-    <h2>Serviços</h2>
-    <div data-grid="spacing">
-      <div data-cell="1of3 fill" data-text="lg center" class="service-item svg-inherit-color">{% include svg/brain.svg %}
-        <p>Criação de logomarcas e design gráfico</p>
-      </div>
-      <div data-cell="1of3 fill" data-text="lg center" class="service-item svg-inherit-color">{% include svg/development.svg %}
-        <p>Desenvolvimento de aplicações web, páginas institucionais e hotsites</p>
-      </div>
-      <div data-cell="1of3 fill" data-text="lg center" class="service-item svg-inherit-color">{% include svg/networking.svg %} 
-        <p>Redes sociais, e-mail marketing e mais</p>
-      </div>
-    </div>
-  </div>
-  <p data-text="center xl"><a href="#contato" data-btn onclick="ga('send', 'event', 'Contato', 'Abrir form de contato', 'Seção Serviços');">ORÇAMENTO</a></p>
 </section>
 
 <section class="page-content section-blog">
   <div class="wrapper">
 
     <h2>Blog</h2>
-    {% for post in site.posts limit: 5 %}
+    {% for post in site.posts limit: 3 %}
       <article>
         <h3 class="blog-title">
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -114,7 +48,9 @@ layout: default
       </article>
     {% endfor %}
 
-    <p class="rss-subscribe">Assine o <a href="{{ "/feed.xml" | prepend: site.baseurl }}" onclick="ga('send', 'event', 'Feed', 'Acesso ao feed RSS', 'Seção Blog');">feed RSS</a></p>
+    <footer>
+      <p><a href="{{ site.baseurl }}/blog/">Mais posts...</a></p>
+    </footer>
 
   </div>
 </section>

@@ -1,7 +1,6 @@
 .site-header
     min-height: 56px
     position: relative
-    border-bottom: 1px solid $grey-color-light
 
 .site-title
     font-size: 26px
@@ -90,14 +89,13 @@
                     transform: translate(0)
 
 .site-footer
-    background-color: #222
+    background-color: $text-color
     padding: $spacing-unit 0
     color: #fff
     a
         &:hover, &:active, &:focus
             color: gold
-        &:before
-            content: initial
+            background-color: transparent
 
 .footer-heading
     font-size: 18px
@@ -141,9 +139,7 @@
 
 .post-content
     margin-bottom: $spacing-unit
-    font:
-        family: $post-font-family
-        size: larger
+    font-size: larger
     >
         h1, h2, h3, h4, h5, h6,
         p, pre, blockquote, 

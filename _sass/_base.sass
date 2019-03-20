@@ -89,25 +89,9 @@ a
     text-decoration: none
     transition: .3s ease-in-out
     position: relative
-    &:before
-        content: ''
-        display: block
-        width: 100%
-        height: .55em
-        margin: auto
-        position: absolute
-        top: .55em
-        left: 0
-        background-color: rgba($brand-color, .3)
-        opacity: 0
-        transform: translate(0)
-        transition: .3s ease-in-out
     &:hover, &:focus
-        color: $text-color
+        background-color: rgba(black, .08)
         outline: none
-        &:before
-            opacity: 1
-            transform: translate(-.25em)
 
 blockquote
     padding: 10px
@@ -201,7 +185,7 @@ hr
             background:
                 image: url('#{$baseurl}/img/dts-modern-workshop.jpg')
                 position: top left
-    &.light, &.wrap-up
+    &.light
         background-color: $grey-color-light
         color: $grey-color-dark
         a:not([data-btn~="fill"])
@@ -213,14 +197,6 @@ hr
     &.dark
         background-color: $grey-color-dark
         color: $grey-color-light
-    
-    &.wrap-up
-        background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%)
-        +media-greater($on-palm)
-            background:
-                image: url('#{$baseurl}/img/jesus-kiteque-desk.jpg')
-                position: bottom left
-            padding-bottom: 250px
 
 .video-frame
     height: 0
@@ -230,25 +206,6 @@ hr
         width: 100%
         height: 100%
         position: absolute
-
-.bg-area
-    position: relative
-    .bg-container
-        position: absolute
-        top: 0
-        left: 0
-        width: 100%
-        height: 100%
-        overflow: hidden
-        z-index: -1
-        .bg-content
-            position: absolute
-            top: 50%
-            left: 50%
-            min-width: 100%
-            min-height: 100%
-            -webkit-transform: translate(-50%, -50%)
-            transform: translate(-50%, -50%)
 
 %clearfix
     &:after
@@ -313,50 +270,6 @@ hr
     +variant(nbr)
         @extend .nbr
 
-+module(modal)
-    position: fixed
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
-    margin: auto
-    z-index: 999
-    perspective: 3000px
-    transform: translate(0)
-    &:target
-        background-color: rgba(black, .7)
-        animation: appear .3s ease-in-out forwards
-        > *
-            animation: enter-up .6s ease-in-out forwards
-    &:not(:target)
-        display: none
-        > *
-            opacity: 0
-    > *
-        padding-top: $spacing-unit / 2
-        padding-bottom: $spacing-unit / 2
-        margin: auto
-        max-height: 100vh
-        overflow: auto
-        background-color: $background-color
-        transform-origin: 50% 100%
-    
-    @keyframes appear
-        0%
-            opacity: 0
-        100%
-            opacity: 1
-    
-    @keyframes enter-up
-        0%
-            transform: rotateX(-90deg)
-        60%
-            transform: rotateX(10deg)
-        80%
-            transform: rotateX(-5deg)
-        100%
-            transform: rotateX(0deg)
-
 +module(text)
     +variant(sm)
         font-size: $small-font-size
@@ -416,4 +329,3 @@ hr
         &:hover
             background-color: #4dc247
             color: #fff
-

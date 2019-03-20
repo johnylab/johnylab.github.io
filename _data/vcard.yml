@@ -6,18 +6,14 @@ adr-region: SP
 email: contato@johnylab.net
 social:
     -
-        title: Google Plus
-        url: https://plus.google.com/+JoãoFerreira_johnylab
-        rel: author
-    -
-        title: Facebook
-        url: http://www.facebook.com/joaobatistacomunic
-    -
         title: Twitter
-        url: https://twitter.com/JohnyLab
+        url: https://twitter.com/johnyLab
     -
         title: Linkedin
         url: https://br.linkedin.com/in/johnylab
+    -
+        title: Behance
+        url: http://www.behance.net/johnylab
     -
         title: Github
         url: https://github.com/johnylab

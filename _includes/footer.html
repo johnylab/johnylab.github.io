@@ -5,30 +5,46 @@
   <div class="wrapper">
 
     <figure class="vcard" role="banner" aria-labelledby="vcard-label" data-grid="spacing wrap">
-      <div class="photo" data-cell="shrink"><img src="{{ site.baseurl }}/img/johnylab.png" alt="João B Ferreira"></div>
+
+      <div class="photo" data-cell="shrink">
+        <a href="{{ site.baseurl }}/">
+          <img src="{{ site.baseurl }}/img/johnylab.png" alt="João B Ferreira">
+        </a>
+      </div>
+
       <figcaption>
         <h2 class="fn" id="vcard-label">{{ card.fn }}</h2>
         <div class="nickname">{{ card.nickname }}</div>
         <div class="note">{{ card.note }}</div>
-        <div class="adr"><span class="locality">{{ card.adr-locality }}</span>, <span class="region">{{ card.adr-region }}</span></div>
+        <div class="adr">
+          <span class="locality">{{ card.adr-locality }}</span>,
+          <span class="region">{{ card.adr-region }}</span>
+        </div>
       </figcaption>
 
       <div data-grid="row nowrap center spacing around">
         <ul class="seamless" data-cell="shrink">
-          <li><a href="{{ site.baseurl }}/" data-cell="shrink">Home</a></li>
+          <li><a href="{{ site.baseurl }}/">Home</a></li>
           {% for p in site.pages %}
             {% if p.menu-title %}
-              <li><a href="{{ p.url | prepend: site.baseurl }}" data-cell="shrink">{{ p.menu-title }}</a></li>
+              <li>
+                <a href="{{ p.url | prepend: site.baseurl }}" data-cell="shrink">{{ p.menu-title }}</a>
+              </li>
             {% endif %}
           {% endfor %}
           <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
-          <li><a href="https://www.behance.net/johnylab" target="_blank" onclick="ga('send', 'event', 'Social', 'Behance', 'Rodapé');">Portfolio</a></li>
-          <li><a href="#contato" data-cell="shrink" onclick="ga('send', 'event', 'Contato', 'Abrir form de contato', 'Rodapé');">Contato</a></li>
         </ul>
-        <ul class="seamless social" data-cell="shrink">
+        <ul class="seamless" data-cell="shrink">
           {% for link in card.social %}
             <li>
-              <a href="{{ link.url }}" {% if link.rel %}rel="{{ link.rel }}"{% endif %} target="_blank" class="url" data-btn onclick="ga('send', 'event', 'Social', '{{ link.title }}', 'Rodapé');">{{ link.title }}</a>
+              <a
+                href="{{ link.url }}"
+                target="_blank"
+                class="url"
+                onclick="ga('send', 'event', 'Social', '{{ link.title }}', 'Rodapé');"
+              >
+                {{ link.title }}
+              </a>
             </li>
           {% endfor %}
         </ul>
@@ -37,5 +53,3 @@
   </div>
 
 </footer>
-
-{% include contato.html %}
