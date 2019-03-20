@@ -16,10 +16,8 @@ excerpt: 'Esta é a dica de acessibilidade de websites mais fácil que qualquer 
 img: "/imagens/Web-Accessibility-Icon-Qicon-blueRGB.JPG"
 ---
 
-<em>Este artigo foi traduzido do site de <a href="http://antonpeck.com/" title="Abrir link externo em uma nova janela ou aba." target="_blank">Anton Peck</a>. Veja o <a href="http://antonpeck.com/journal/article/focus_on_the_hover/" title="Abrir link externo em uma nova janela ou aba." target="_blank">texto original em inglês aqui</a>.</em>
-
-### Esta é a dica de acessibilidade de websites mais fácil que qualquer um poderá te dar:
-Adicione uma pseudo-classe <b>:focus</b> para tudo o que tiver um estilo <b>:hover</b>, para que os usuários que preferem o teclado tenham a mesma qualidade de resultado visual que você oferece aos usuários que preferem o mouse.
+> Esta é a dica de acessibilidade de websites mais fácil que qualquer um poderá te dar:
+> Adicione uma pseudo-classe <b>:focus</b> para tudo o que tiver um estilo <b>:hover</b>, para que os usuários que preferem o teclado tenham a mesma qualidade de resultado visual que você oferece aos usuários que preferem o mouse.
 
 Toda vez que falo disso, me surpreendo ao ver quantos <em>designers</em> não percebem que podem usar isso em seus códigos. Sem nenhum inconveniente de navegador, incrivelmente fácil de implementar, e permite aos usuários que preferem o teclado verem todos os seus belos efeitos de <em>roll-over</em> enquanto navegam pela página usando a tecla <b>tab</b>.
 
