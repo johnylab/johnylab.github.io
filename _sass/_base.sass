@@ -95,15 +95,15 @@ a
 
 blockquote
     padding: 10px
-    background-color: #f1f1f1
+    background-color: $grey-color-light
     color: $grey-color
     font-style: italic
     position: relative
     &:before
         content: url('/img/left-quotes.svg')
         position: absolute
-        top: 0
-        left: -$spacing-unit
+        top: -$spacing-unit * .1
+        left: -$spacing-unit * .7
         +media-query($content-width)
             top: -$spacing-unit / 3
             left: $spacing-unit / 3
