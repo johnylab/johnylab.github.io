@@ -25,9 +25,7 @@ img:
     <div data-cell="1of4" class="wrapper" style="min-width:14em;">
         <p><strong>O departamento de marketing da Google, em parceria com a empresa de pesquisas Purchased, realizou uma pesquisa sobre o comportamento das pessoas na hora de pesquisar informações diversas no dia a dia. Seguem neste post algumas das descobertas deste estudo. As 1000 pessoas pesquisadas passaram 1 semana respondendo uma rápida enquete várias vezes informando os tipos de necessidades que elas tinham durante o dia, e quais decisões tomavam para atendê-las.</strong></p>
     </div>
-    <div data-cell="shrink">
-        <img src="https://c1.staticflickr.com/5/4270/34320225514_c15ceb6ee5_h.jpg" alt="Google" width="600">
-    </div>
+    <div data-cell="shrink"><img src="https://c1.staticflickr.com/5/4270/34320225514_c15ceb6ee5_h.jpg" alt="Google" width="600"></div>
 </div>
 
 O resultado da pesquisa foram mais de 14.000 respostas, que iam de escolher um restaurante para um jantar especial até procurar cupons de descontos para a viagem de férias. As respostas detalharam milhares de micro-momentos em que as pessoas recorreram à ajuda dos seus dispositivos móveis. Examinando essas respostas, nós podemos verificar como os consumidores resolvem seus micro-momentos de saber, ir, fazer e comprar.
