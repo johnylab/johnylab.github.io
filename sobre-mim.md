@@ -1,5 +1,5 @@
 ---
-title: Olá! Meu nome é João Ferreira
+title: Meu nome é João Ferreira
 menu-title: Sobre mim
 excerpt: Sou desenvolvedor web desde 2003. Moro em Santos.
 ---
