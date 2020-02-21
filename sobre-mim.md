@@ -20,7 +20,7 @@ excerpt: Sou desenvolvedor web desde 2003. Moro em Santos.
     </div>
 </section>
 
-## Skills
+## Habilidades
 
 - HTML5 e geradores de conteúdo estático, como Jekyll.
 - CSS3 e pré-processadores (Sass, Less, etc.).
