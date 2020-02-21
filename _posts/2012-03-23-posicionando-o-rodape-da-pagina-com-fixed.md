@@ -1,6 +1,6 @@
 ---
 title: Posicionando o rodapé da página com fixed
-date: 2012-03-24 00:00:00 Z
+date: 2012-03-23 21:00:00 -03:00
 categories:
 - CSS
 tags:

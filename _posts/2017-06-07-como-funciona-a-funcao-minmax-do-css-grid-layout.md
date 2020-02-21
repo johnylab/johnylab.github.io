@@ -1,6 +1,6 @@
 ---
 title: Como usar a função minmax() do Css Grid Layout
-date: 2017-06-08 00:00:00 Z
+date: 2017-06-07 21:00:00 -03:00
 categories:
 - css
 tags:

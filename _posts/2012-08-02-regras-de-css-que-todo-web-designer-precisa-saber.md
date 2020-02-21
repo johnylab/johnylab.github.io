@@ -1,6 +1,6 @@
 ---
 title: Regras de CSS que todo web designer precisa saber
-date: 2012-08-03 00:00:00 Z
+date: 2012-08-02 21:00:00 -03:00
 categories:
 - CSS
 tags:

@@ -1,6 +1,6 @@
 ---
 title: Breve história do Javascript
-date: 2012-08-03 00:00:00 Z
+date: 2012-08-02 21:00:00 -03:00
 categories:
 - JavaScript
 tags:

@@ -1,6 +1,6 @@
 ---
 title: Como transformar um arquivo HTML em um email (ou newsletter)
-date: 2013-03-14 00:00:00 Z
+date: 2013-03-13 21:00:00 -03:00
 categories:
 - Tutoriais
 tags:

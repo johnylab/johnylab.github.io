@@ -1,6 +1,6 @@
 ---
 title: HTML5 - primeiros passos
-date: 2012-06-19 00:00:00 Z
+date: 2012-06-18 21:00:00 -03:00
 categories:
 - HTML
 tags:

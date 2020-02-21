@@ -1,6 +1,6 @@
 ---
 title: Media Queries e Web Design Responsivo. O que são?
-date: 2013-09-26 00:00:00 Z
+date: 2013-09-25 21:00:00 -03:00
 categories:
 - CSS
 tags:

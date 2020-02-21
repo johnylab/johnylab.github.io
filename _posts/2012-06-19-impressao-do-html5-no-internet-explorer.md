@@ -1,6 +1,6 @@
 ---
 title: Impressão do HTML5 no Internet Explorer
-date: 2012-06-20 00:00:00 Z
+date: 2012-06-19 21:00:00 -03:00
 categories:
 - HTML
 tags:

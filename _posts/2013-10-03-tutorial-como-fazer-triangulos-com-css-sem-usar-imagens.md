@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: Como fazer triângulos com CSS (sem usar imagens)'
-date: 2013-10-04 00:00:00 Z
+date: 2013-10-03 21:00:00 -03:00
 categories:
 - CSS
 tags:

@@ -1,6 +1,6 @@
 ---
 title: HTML para os sites de busca
-date: 2012-08-01 00:00:00 Z
+date: 2012-07-31 21:00:00 -03:00
 categories:
 - HTML
 tags:

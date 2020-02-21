@@ -1,6 +1,6 @@
 ---
 title: AJAX, caracteres especiais e o Internet Explorer
-date: 2013-06-05 00:00:00 Z
+date: 2013-06-04 21:00:00 -03:00
 categories:
 - JavaScript
 tags:

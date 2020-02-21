@@ -1,6 +1,6 @@
 ---
 title: Não use &lt;picture> (na maioria das vezes)
-date: 2014-09-23 00:00:00 Z
+date: 2014-09-22 21:00:00 -03:00
 categories:
 - HTML
 tags:

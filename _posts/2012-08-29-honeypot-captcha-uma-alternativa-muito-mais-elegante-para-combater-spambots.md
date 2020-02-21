@@ -1,6 +1,6 @@
 ---
 title: Honeypot Captcha, uma alternativa muito mais elegante para combater spambots
-date: 2012-08-30 00:00:00 Z
+date: 2012-08-29 21:00:00 -03:00
 categories:
 - Tutoriais
 tags:
