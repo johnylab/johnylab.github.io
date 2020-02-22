@@ -1,7 +1,6 @@
 ---
 title: Johnylab
 timezone: America/Sao_Paulo
-lang: pt_BR
 collections:
   posts:
     title: Posts
@@ -21,6 +20,7 @@ defaults:
   values:
     layout: post
     permalink: blog/:title/
+lang: pt_BR
 description: 'Site pessoal de João Batista Ferreira, web designer e developer. Moro
   em Santos e curto padrões web e design moderno.
 
@@ -35,8 +35,8 @@ plugins:
 - jekyll-paginate
 - jekyll-sitemap
 exclude:
-- .sass-cache/
-- .jekyll-cache/
+- ".sass-cache/"
+- ".jekyll-cache/"
 - gemfiles/
 - Gemfile
 - Gemfile.lock
