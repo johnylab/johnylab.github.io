@@ -87,23 +87,23 @@ O resultado da pesquisa foram mais de 14.000 respostas, que iam de escolher um r
         <dl>
             <dt>Usar um site de busca</dt>
             <dd>
-                <div style="background-color:#f7f7f7;padding:5px 10px;border-radius:7px;width:30%">30%</div>
+                <div style="background-color:#fff;padding:5px 10px;border-radius:7px;width:30%">30%</div>
             </dd>
             <dt>Visitar uma loja ou outro lugar</dt>
             <dd>
-                <div style="background-color:#f7f7f7;padding:5px 10px;border-radius:7px;width:30%">30%</div>
+                <div style="background-color:#fff;padding:5px 10px;border-radius:7px;width:30%">30%</div>
             </dd>
             <dt>Visitar um site ou app de compras</dt>
             <dd>
-                <div style="background-color:#f7f7f7;padding:5px 10px;border-radius:7px;width:24%">24%</div>
+                <div style="background-color:#fff;padding:5px 10px;border-radius:7px;width:24%">24%</div>
             </dd>
             <dt>Visitar outros tipos de site ou app</dt>
             <dd>
-                <div style="background-color:#f7f7f7;padding:5px 10px;border-radius:7px;width:14%">14%</div>
+                <div style="background-color:#fff;padding:5px 10px;border-radius:7px;width:14%">14%</div>
             </dd>
             <dt>Usar um mapa</dt>
             <dd>
-                <div style="background-color:#f7f7f7;padding:5px 10px;border-radius:7px;width:13%">13%</div>
+                <div style="background-color:#fff;padding:5px 10px;border-radius:7px;width:13%">13%</div>
             </dd>
         </dl>
     </div>
