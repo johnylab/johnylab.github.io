@@ -19,15 +19,20 @@ h1, h2, h3, h4, h5, h6, p, li, blockquote
   margin-top: var(--spacing)
   margin-bottom: var(--spacing)
 
+@for $i from 1 through 6
+  h#{$i}
+    font-size: 2em + 2em / $i
+
+h1, h2, h3, h4, h5, h6
+  font-family: $title-font-family
+  font-weight: 300
+
 blockquote
   padding: var(--spacing-s) var(--spacing-m)
   background-color: $grey-color-light
   color: $grey-color
   font-style: italic
   position: relative
-
-h1, h2, h3, h4, h5, h6
-  font-family: $title-font-family
 
 a
   font-family: $title-font-family
