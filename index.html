@@ -5,31 +5,29 @@ layout: default
 
 <section class="page-content section-about">
   {% assign about_page = site.pages | where: 'url', '/sobre-mim/' | first %}
-  <div class="wrapper">
-    <div data-grid="center">
-      <div data-cell="">
-        <h1>{{ about_page.title }}</h1>
-        <p>
-          {{ about_page.excerpt }}
-          <a href="{{ site.baseurl }}{{ about_page.url }}">Mais sobre mim...</a>
-        </p>
-      </div>
-
-      <ul class="seamless" data-cell="shrink">
-        {% for link in site.data.vcard.social %}
-          <li>
-            <a
-              href="{{ link.url }}"
-              target="_blank"
-              class="url"
-              onclick="ga('send', 'event', 'Social', '{{ link.title }}', 'Rodapé');"
-            >
-              {{ link.title }}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
+  <div class="wrapper horizontal">
+    <div style="align-self: center;">
+      <h1>{{ about_page.title }}</h1>
+      <p>
+        {{ about_page.excerpt }}
+        <a href="{{ site.baseurl }}{{ about_page.url }}">Mais sobre mim...</a>
+      </p>
     </div>
+
+    <ul class="seamless" class="flex">
+      {% for link in site.data.vcard.social %}
+        <li>
+          <a
+            href="{{ link.url }}"
+            target="_blank"
+            class="url"
+            onclick="ga('send', 'event', 'Social', '{{ link.title }}', 'Rodapé');"
+          >
+            {{ link.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
 </section>
 

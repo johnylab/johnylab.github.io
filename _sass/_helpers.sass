@@ -1,0 +1,190 @@
+.wrapper
+    max-width: $content-width
+    margin-right: auto
+    margin-left: auto
+    padding-right: var(--spacing)
+    padding-left: var(--spacing)
+
+    &.large
+        max-width: $large-content-width
+
+    &.small
+        max-width: $on-laptop
+
+    +media-query($on-laptop)
+        padding-right: var(--spacing-s)
+        padding-left: var(--spacing-s)
+
+.hero
+    padding: var(--spacing-s)
+    background-color: $grey-color
+    color: #fff
+    background:
+        position: center
+        repeat: no-repeat
+        size: cover
+
+    +media-query($on-laptop)
+
+        .wrapper
+            padding-left: 0
+            padding-right: 0
+
+    a
+        color: gold
+
+        &:before
+            background-color: rgba($grey-color-dark, .3)
+    
+    [data-btn]
+        border-color: gold
+
+        &:hover, &:focus, &:active
+            border-color: $brand-color
+
+    +media-greater($on-palm)
+        padding-top: 10%
+        padding-bottom: 10%
+
+    &.tight
+        padding: var(--spacing-s)
+
+    &.brand
+        background-color: $brand-bg-color
+
+        [data-btn]
+            &:hover, &:focus, &:active
+                background-color: #000
+                color: $brand-color
+
+        +media-greater($on-palm)
+            background:
+                image: url('#{$baseurl}/img/dts-modern-workshop.jpg')
+                position: top left
+
+    &.light
+        background-color: $grey-color-light
+        color: $grey-color-dark
+
+        a:not([data-btn~="fill"])
+            color: $brand-color
+
+        [data-btn]
+            border-color: $brand-color
+
+            &:hover, &:focus, &:active
+                color: #fff
+
+    &.dark
+        background-color: $grey-color-dark
+        color: $grey-color-light
+
+.video-frame
+    height: 0
+    padding: 0 0 56.25%
+    position: relative
+
+    iframe, object, embed, > *
+        width: 100%
+        height: 100%
+        position: absolute
+
+ul.seamless
+    padding: 0
+    list-style: none
+
+.icon, .icon-colored
+
+    > svg
+        display: inline-block
+        width: 16px
+        height: 16px
+        vertical-align: middle
+
+    &.inline
+
+        svg
+            width: 1em
+            height: 1em
+            vertical-align: text-top
+
+.svg-inherit-color
+
+    > svg
+        color: inherit
+
+        path, polygon, rect, circ
+            fill: currentcolor
+
+.icon
+    @extend .svg-inherit-color
+
+    &.ui
+        color: $grey-color
+
+        &:hover, &:focus
+            color: $brand-color
+
+        &:before
+            content: initial
+
+.circ
+    border-radius: 500px
+    overflow: hidden
+
+.nbr
+    display: inline-block
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+
++module(btn)
+    display: inline-block
+    text-decoration: none
+    text-align: center
+    padding: .3em 1em
+    border-radius: 500px
+    border: 1px solid $brand-color
+
+    &:hover, &:active, &:focus
+        background-color: $brand-color
+        color: #fff
+
+    &:before
+        content: initial
+
+    +variant(fill)
+        background-color: $brand-color
+        color: #fff
+
+        &:hover, &:active, &:focus
+            box-shadow: 0 0 15px 0 #000
+
+    +variant(nbr)
+        @extend .nbr
+
++module(text)
+
+    +variant(sm)
+        font-size: $small-font-size
+
+    +variant(lg)
+        font-size: $base-font-size * 1.5
+
+    +variant(xl)
+        font-size: $base-font-size * 2
+
+    +variant(left)
+        text-align: left
+
+    +variant(center)
+        text-align: center
+
+    +variant(right)
+        text-align: right
+
+    +variant(light)
+        color: $grey-color
+
+    +variant(brand)
+        color: $brand-color

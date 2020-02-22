@@ -4,37 +4,40 @@
 
   <div class="wrapper">
 
-    <figure class="vcard" role="banner" aria-labelledby="vcard-label" data-grid="spacing wrap">
+    <figure class="vcard" role="banner" aria-labelledby="vcard-label">
 
-      <div class="photo" data-cell="shrink">
-        <a href="{{ site.baseurl }}/">
-          <img src="{{ site.baseurl }}/img/johnylab.png" alt="João B Ferreira">
-        </a>
+      <div class="vcard-cell">
+        <div class="photo">
+          <a href="{{ site.baseurl }}/">
+            <img src="{{ site.baseurl }}/img/johnylab.png" alt="João B Ferreira">
+          </a>
+        </div>
+  
+        <figcaption>
+          <h2 class="fn" id="vcard-label">{{ card.fn }}</h2>
+          <div class="nickname">{{ card.nickname }}</div>
+          <div class="note">{{ card.note }}</div>
+          <div class="adr">
+            <span class="locality">{{ card.adr-locality }}</span>,
+            <span class="region">{{ card.adr-region }}</span>
+          </div>
+        </figcaption>
       </div>
 
-      <figcaption>
-        <h2 class="fn" id="vcard-label">{{ card.fn }}</h2>
-        <div class="nickname">{{ card.nickname }}</div>
-        <div class="note">{{ card.note }}</div>
-        <div class="adr">
-          <span class="locality">{{ card.adr-locality }}</span>,
-          <span class="region">{{ card.adr-region }}</span>
-        </div>
-      </figcaption>
-
-      <div data-grid="row nowrap center spacing around">
-        <ul class="seamless" data-cell="shrink">
+      <div class="vcard-cell">
+        <ul class="seamless nav">
           <li><a href="{{ site.baseurl }}/">Home</a></li>
           {% for p in site.pages %}
             {% if p.menu-title %}
               <li>
-                <a href="{{ p.url | prepend: site.baseurl }}" data-cell="shrink">{{ p.menu-title }}</a>
+                <a href="{{ p.url | prepend: site.baseurl }}">{{ p.menu-title }}</a>
               </li>
             {% endif %}
           {% endfor %}
           <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
         </ul>
-        <ul class="seamless" data-cell="shrink">
+  
+        <ul class="seamless nav">
           {% for link in card.social %}
             <li>
               <a
@@ -49,7 +52,9 @@
           {% endfor %}
         </ul>
       </div>
+
     </figure>
+
   </div>
 
 </footer>

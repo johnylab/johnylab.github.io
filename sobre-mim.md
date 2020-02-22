@@ -6,12 +6,12 @@ excerpt: Sou desenvolvedor web desde 2003. Moro em Santos.
 
 <section class="page-content section-about">
     <div class="wrapper">
-        <div data-grid="center spacing">
-            <div data-cell="2of3">
+        <div class="horizontal center">
+            <div class="flex">
                 <p>Sou desenvolvedor web desde 2003. Moro em Santos.</p>
                 <p>Minha paixão é explorar as últimas técnicas, padrões e tecnologias para desenvolvimento web.</p>
             </div>
-            <div data-cell="1of3">
+            <div class="flex">
                 <div class="circ">
                     <img src="https://c2.staticflickr.com/8/7446/27265225164_2a17a12c6a.jpg" alt="João Ferreira">
                 </div>

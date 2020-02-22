@@ -25,13 +25,12 @@ Originalmente desenvolvida pelo WHATWG, foi endossada pelo W3C em 2007, reconsid
 
 É importante, para quem deseja aprender a produzir páginas para a web, entender que a HTML não se destina a definir a apresentação da página na tela, e sim estruturar o conteúdo, determinando as partes do todo e como cada seção da página se relaciona com as outras. Por exemplo, definem-se na HTML, quais linhas de texto representam títulos e qual o nível de cada título, não importando de que tamanho e cor o navegador vai renderizar cada um. Esta nova versão traz reconsiderações importantes quanto ao papel original do HTML no mundo da Web, com atenção especial à semântica e acessibilidade.
 
-<div data-grid="center spacing" class="wrapper">
-  <div data-cell="1of3">
+<div class="wrapper horizontal center">
+  <div class="flex" style="flex-basis: 30%; margin-right: var(--spacing);">
     {% include svg/html-5.svg %}
   </div>
-  <div data-cell="2of3">
-    <p>Com novos recursos, antes só possíveis por meio de outras tecnologias, também cumpre o papel de melhorar a linguagem com o suporte para as mais recentes multimídias, enquanto a mantém a marcação legível por seres humanos, e consistentemente compreensível por computadores e outros dispositivos (navegadores, parsers, etc.). O HTML5 será o novo padrão para HTML, XHTML, e HTML DOM.</p>
-  </div>
+
+  <p class="flex" style="flex-basis: 70%;">Com novos recursos, antes só possíveis por meio de outras tecnologias, também cumpre o papel de melhorar a linguagem com o suporte para as mais recentes multimídias, enquanto a mantém a marcação legível por seres humanos, e consistentemente compreensível por computadores e outros dispositivos (navegadores, parsers, etc.). O HTML5 será o novo padrão para HTML, XHTML, e HTML DOM.</p>
 </div>
 
 > O projeto do HTML5 foi bem recebido pelos desenvolvedores Web até então, e tornou-se tema na mídia em abril de 2010, depois que o CEO da Apple Inc., Steve Jobs emitiu uma carta pública intitulada "Reflexões sobre o Adobe Flash", onde ele conclui que o desenvolvimento do HTML5 tornaria o Adobe Flash não mais necessário, tanto para assistir vídeo ou mesmo exibir qualquer conteúdo web. Isso provocou um debate entre os desenvolvedores Web, onde muitos sugeriram que, enquanto o HTML5 proporcionasse uma melhor funcionalidade, a variedade de browsers existentes exibiria páginas diferentes, tendo um resultado diferente em cada navegador e não conseguir-se-ia de fato chegar a um padrão. No início de novembro de 2011 a Adobe anunciou que vai interromper o desenvolvimento de Flash para dispositivos móveis e redirecionar seus esforços para o desenvolvimento de ferramentas utilizando HTML5.
@@ -43,54 +42,6 @@ Originalmente desenvolvida pelo WHATWG, foi endossada pelo W3C em 2007, reconsid
 #### HTML5 Tutorial
 
 O W3 Schools é um ótimo lugar para consultar referências e a seção destinada ao HTML5 tem um resumo interativo das principais novidades da nova versão:
-
-HTML5
-  
-  - Novos elementos
-  - Novos atributos
-  - Suporte completo a CSS3
-  - Suporte a vídeo e áudio nativos
-  - Gráficos 2D e 3D
-  - Armazenamento local
-  - Base de dados SQL local
-  - Aplicações web
-  
-Multimídia no HTML5<br>Com HTML5, rodar vídeo e áudio ficou mais fácil do que nunca:
-  
-  - HTML5 &lt;video>
-  - HTML5 &lt;audio>
-  
-Gráficos em HTML5<br>Com HTML5, desenhar gráficos ficou mais fácil do que nunca:
- 
-  - Uso do elemento &lt;canvas>
-  - Uso de SVG inline
-  - Uso de efeitos 2D e 3D no CSS3
-  
-Aplicativos HTML5<br>Com HTML5, desenvolver aplicativos web ficou mais fácil do que nunca:
-  
-  - Armazenamento de dados local
-  - Acesso a arquivos locais
-  - Base de dados SQL local
-  - Controle de cache do aplicativo
-  - Javascript workers
-  - XHTMLHttpRequest 2 (AJAX)
-  
-Elementos semânticos
-  
-  - Novos elementos para cabeçalhos, rodapés, menus, seções e artigos.
-  - HTML5 Forms
-  
-Novos elementos de formulários, novos atributos, novos tipos de input, validação automática.
-  
-  - HTML5 usa CSS3
-  - Novos seletores
-  - Novas propriedades
-  - Animações
-  - Transformações 2D e 3D
-  - Cantos arredondados
-  - Efeitos de sombra
-  - Carregamento de fontes
-  
 [Acesse o tutorial de HTML5 do W3 Schools](http://www.w3schools.com/html/html5_intro.asp)
 
 #### Página oficial do HTML5

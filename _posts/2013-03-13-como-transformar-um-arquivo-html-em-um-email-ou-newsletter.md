@@ -19,14 +19,7 @@ img: "/imagens/code_snip.gif"
 
 Pergunta feita no Yahoo Answers:
 
-<blockquote data-grid="center spacing">
-  <div data-cell="1of2">
-    <img src="http://www.kompozer.net/images/screenshot_homepage.png" alt="Interface do KompoZer">
-  </div>
-  <div data-cell="1of2">
-    <p>Eu montei um arquivo com o <a href="http://www.kompozer.net/" target="_blank" title="Ambiente de autoria para web">Kompozer</a> e queria saber o que eu tenho que fazer para mandar esse arquivo por email. Mas não por anexo, eu queria que a imagem que fiz aparecesse ja na hora de ABRIR O EMAIL, como uma newsletter.</p>
-  </div>
-</blockquote>
+> Eu montei um arquivo com o <a href="http://www.kompozer.net/" target="_blank" title="Ambiente de autoria para web">Kompozer</a> e queria saber o que eu tenho que fazer para mandar esse arquivo por email. Mas não por anexo, eu queria que a imagem que fiz aparecesse ja na hora de ABRIR O EMAIL, como uma newsletter.
 
 #### Resposta
 

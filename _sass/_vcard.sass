@@ -1,20 +1,29 @@
 .vcard
+    display: grid
+    grid-gap: var(--spacing-m)
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+
+    &-cell
+        display: grid
+        grid-gap: var(--spacing-m)
+        grid-auto-flow: column
+
     .photo
-        @extend %vertical-rhythm
         width: 105px
         height: 105px
         padding: 5px
         border-radius: 500px
         overflow: hidden
         background-color: $grey-color-light
-    .fn
-        @extend %vertical-rhythm
+
+    // .fn
+
     // .nickname
+
     // .note
+
     // .adr
-    .social
-        .url
-            display: block
-            font-weight: bold
-            &:before
-                content: initial
+
+    .nav
+
+        text-align: right

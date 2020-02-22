@@ -184,10 +184,10 @@ Além da função `minmax()`, existem duas outras partes importantes neste códi
 - **repeat()**: Função que permite definir o mesmo valor para múltiplas colunas da grade. Aceita dois valores: o número de repetições e o valor a ser repetido.
 - **auto-fit**: Palavra-chave que pode ser usada com a função `repeat()` no lugar do número de repetições. Redefine de forma flexível o número de colunas de acordo com a largura que cada coluna pode ter.
 
-<blockquote data-grid="spacing">
-    <div data-cell="3of4">
+<blockquote class="horizontal">
+    <div style="flex: 1 1 75%;">
         <p>Uma limitação, na minha opinião bem importante, é que isso só funciona se todas as colunas tiverem a mesma largura. Temos que usar <strong>repeat()</strong> junto com a palavra-chave <strong>auto-fit</strong>, já que é isso que permite que o número de colunas seja flexível. No entanto, esta ainda pode ser uma técnica extremamente útil em certas circunstâncias.</p>
         <p data-text="sm">Ire Aderinokun, autora do texto original <a href="https://bitsofco.de/how-the-minmax-function-works/">How the minmax() Function Works</a></p>
     </div>
-    <div data-cell="1of4"><img src="{{ site.baseurl }}/img/blog/Ire-Aderinokun.png" alt="Avatar: Ire Aderinokun"></div>
+    <div style="flex: 0 1 25%;"><img src="{{ site.baseurl }}/img/blog/Ire-Aderinokun.png" alt="Avatar: Ire Aderinokun"></div>
 </blockquote>
