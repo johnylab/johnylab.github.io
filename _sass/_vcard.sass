@@ -1,6 +1,6 @@
 .vcard
     display: grid
-    grid-gap: var(--spacing-m)
+    grid-gap: 100px
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
 
     &-cell
@@ -16,7 +16,9 @@
         overflow: hidden
         background-color: $grey-color-light
 
-    // .fn
+    .fn
+        margin-top: 0
+        font-size: 1.2rem
 
     // .nickname
 
@@ -25,5 +27,4 @@
     // .adr
 
     .nav
-
-        text-align: right
+        margin-top: 0
