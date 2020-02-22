@@ -1,6 +1,7 @@
 ---
 title: Johnylab
 timezone: America/Sao_Paulo
+lang: pt_BR
 collections:
   posts:
     title: Posts
@@ -31,12 +32,19 @@ permalink: pretty/
 paginate: 10
 paginate_path: "/blog/:num/"
 plugins:
-- jekyll-coffeescript
 - jekyll-paginate
 - jekyll-sitemap
 exclude:
-- gulpfile.js
+- .sass-cache/
+- .jekyll-cache/
+- gemfiles/
+- Gemfile
+- Gemfile.lock
+- node_modules/
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/
 - README.md
 - package.json
-- desktop.ini
 - CNAME

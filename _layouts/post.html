@@ -11,7 +11,7 @@ layout: default
         <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
       </div>
       <div data-cell="shrink fill">
-        {% include share/widget.html position='cabeçalho' %}
+        {% include share.html position='cabeçalho' %}
       </div>
     </div>
   </header>
@@ -37,27 +37,7 @@ layout: default
 
 <div class="wrapper" data-grid="center end">
   <p data-text="lg">Comente e compartilhe:</p>
-  <div data-cell="shrink">{% include share/widget.html position='comentários' %}</div>
+  <div data-cell="shrink">{% include share.html position='comentários' %}</div>
 </div>
 
-<div class="page-content">
-  <div id="disqus_thread" class="wrapper"></div>
-</div>
-<script>
-
-  var disqus_config = function () {
-  this.page.url = '{{ site.url }}{{ site.baseurl }}{{ page.url }}';
-  this.page.identifier = '{{ page.title }}';
-  };
-
-  (function() {
-  var d = document, s = d.createElement('script');
-  s.src = 'https://johnylab.disqus.com/embed.js';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-  })();
-
-</script>
-
-<noscript>Por favor, habilite a execução de scripts para ver os <a href="https://disqus.com/?ref_noscript">comentários do Disqus</a>.</noscript>
-                                
+{%- include disqus.html -%}
