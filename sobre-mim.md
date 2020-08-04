@@ -1,6 +1,5 @@
 ---
 title: Meu nome é João Ferreira
-published: false
 menu-title: Sobre mim
 excerpt: Sou desenvolvedor web desde 2003. Moro em Santos.
 ---
