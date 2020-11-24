@@ -1,0 +1,6 @@
+tasks:
+  - init: bundle install
+
+vscode:
+  extensions:
+    - ginfuru.ginfuru-vscode-jekyll-syntax@0.1.1:JmWse8/dTeUiBFEKYfrhCg==

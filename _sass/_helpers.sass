@@ -24,60 +24,12 @@
         repeat: no-repeat
         size: cover
 
-    +media-query($on-laptop)
-
-        .wrapper
-            padding-left: 0
-            padding-right: 0
+    .wrapper
+        padding-left: 0
+        padding-right: 0
 
     a
         color: gold
-
-        &:before
-            background-color: rgba($grey-color-dark, .3)
-    
-    [data-btn]
-        border-color: gold
-
-        &:hover, &:focus, &:active
-            border-color: $brand-color
-
-    +media-greater($on-palm)
-        padding-top: 10%
-        padding-bottom: 10%
-
-    &.tight
-        padding: var(--spacing-s)
-
-    &.brand
-        background-color: $brand-bg-color
-
-        [data-btn]
-            &:hover, &:focus, &:active
-                background-color: #000
-                color: $brand-color
-
-        +media-greater($on-palm)
-            background:
-                image: url('#{$baseurl}/img/dts-modern-workshop.jpg')
-                position: top left
-
-    &.light
-        background-color: $grey-color-light
-        color: $grey-color-dark
-
-        a:not([data-btn~="fill"])
-            color: $brand-color
-
-        [data-btn]
-            border-color: $brand-color
-
-            &:hover, &:focus, &:active
-                color: #fff
-
-    &.dark
-        background-color: $grey-color-dark
-        color: $grey-color-light
 
 .video-frame
     height: 0
