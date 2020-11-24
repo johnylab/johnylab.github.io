@@ -4,23 +4,23 @@ layout: default
 ---
 
 <section class="page-content section-blog">
-  <div class="wrapper">
+	<div class="wrapper">
+		<h2>Blog</h2>
 
-    <h2>Blog</h2>
-    {% for post in site.posts limit: 3 %}
-      <article>
-        <h3 class="blog-title">
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h3>
-        <p>
-          {{ post.excerpt }}
-        </p>
-      </article>
-    {% endfor %}
+		{% for post in site.posts limit: 3 %}
+		<article>
+			<h3 class="blog-title">
+				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</h3>
+			<p>
+				{{ post.excerpt }}
+			</p>
+		</article>
+		{% endfor %}
 
-    <footer>
-      <p><a href="{{ site.baseurl }}/blog/">Mais posts...</a></p>
-    </footer>
+		<footer>
+			<p><a href="{{ site.baseurl }}/blog/">Mais posts...</a></p>
+		</footer>
 
-  </div>
+	</div>
 </section>
