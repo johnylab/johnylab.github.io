@@ -47,25 +47,25 @@ O resultado da pesquisa foram mais de 14.000 respostas, que iam de escolher um r
         <h3>Como as necessidades foram atendidas:</h3>
         <dl>
             <dt>Sites de busca</dt>
-            <dd><div style="background-color: #fff; padding:5px 10px;border-radius:7px;width:40%">40%</div></dd>
+            <dd><div style="background-color: #00ffc3; padding:5px 10px;border-radius:7px;width:40%">40%</div></dd>
             <dt>Site ou app de compras</dt>
-            <dd><div style="background-color: #fff; padding:5px 10px;border-radius:7px;width:19%">19%</div></dd>
+            <dd><div style="background-color: #00ffc3; padding:5px 10px;border-radius:7px;width:19%">19%</div></dd>
             <dt>Outros sites e apps</dt>
-            <dd><div style="background-color: #fff; padding:5px 10px;border-radius:7px;width:19%">19%</div></dd>
+            <dd><div style="background-color: #00ffc3; padding:5px 10px;border-radius:7px;width:19%">19%</div></dd>
             <dt>Visita a loja ou outro lugar</dt>
-            <dd><div style="background-color: #fff; padding:5px 10px;border-radius:7px;width:15%">15%</div></dd>
+            <dd><div style="background-color: #00ffc3; padding:5px 10px;border-radius:7px;width:15%">15%</div></dd>
             <dt>Usaram um mapa</dt>
-            <dd><div style="background-color: #fff; padding:5px 10px;border-radius:7px;width:12%">12%</div></dd>
+            <dd><div style="background-color: #00ffc3; padding:5px 10px;border-radius:7px;width:12%">12%</div></dd>
             <dt>Imagens ou fotos em um site ou app</dt>
-            <dd><div style="background-color: #fff; padding:5px 10px;border-radius:7px;width:10%">10%</div></dd>
+            <dd><div style="background-color: #00ffc3; padding:5px 10px;border-radius:7px;width:10%">10%</div></dd>
             <dt>Perguntaram a alguém por chamada, messenger ou SMS</dt>
-            <dd><div style="background-color: #fff; padding:5px 10px;border-radius:7px;width:8%">8%</div></dd>
+            <dd><div style="background-color: #00ffc3; padding:5px 10px;border-radius:7px;width:8%">8%</div></dd>
             <dt>Assistiram um vídeo online</dt>
-            <dd><div style="background-color: #fff; padding:5px 10px;border-radius:7px;width:6%">6%</div></dd>
+            <dd><div style="background-color: #00ffc3; padding:5px 10px;border-radius:7px;width:6%">6%</div></dd>
             <dt>Usaram mídias sociais</dt>
-            <dd><div style="background-color: #fff; padding:5px 10px;border-radius:7px;width:6%">6%</div></dd>
+            <dd><div style="background-color: #00ffc3; padding:5px 10px;border-radius:7px;width:6%">6%</div></dd>
             <dt>Contataram uma empresa</dt>
-            <dd><div style="background-color: #fff; padding:5px 10px;border-radius:7px;width:6%">6%</div></dd>
+            <dd><div style="background-color: #00ffc3; padding:5px 10px;border-radius:7px;width:6%">6%</div></dd>
         </dl>
     </div>
 </div>
@@ -87,23 +87,23 @@ O resultado da pesquisa foram mais de 14.000 respostas, que iam de escolher um r
         <dl>
             <dt>Usar um site de busca</dt>
             <dd>
-                <div style="background-color:#fff;padding:5px 10px;border-radius:7px;width:30%">30%</div>
+                <div style="background-color: #00ffc3;padding:5px 10px;border-radius:7px;width:30%">30%</div>
             </dd>
             <dt>Visitar uma loja ou outro lugar</dt>
             <dd>
-                <div style="background-color:#fff;padding:5px 10px;border-radius:7px;width:30%">30%</div>
+                <div style="background-color: #00ffc3;padding:5px 10px;border-radius:7px;width:30%">30%</div>
             </dd>
             <dt>Visitar um site ou app de compras</dt>
             <dd>
-                <div style="background-color:#fff;padding:5px 10px;border-radius:7px;width:24%">24%</div>
+                <div style="background-color: #00ffc3;padding:5px 10px;border-radius:7px;width:24%">24%</div>
             </dd>
             <dt>Visitar outros tipos de site ou app</dt>
             <dd>
-                <div style="background-color:#fff;padding:5px 10px;border-radius:7px;width:14%">14%</div>
+                <div style="background-color: #00ffc3;padding:5px 10px;border-radius:7px;width:14%">14%</div>
             </dd>
             <dt>Usar um mapa</dt>
             <dd>
-                <div style="background-color:#fff;padding:5px 10px;border-radius:7px;width:13%">13%</div>
+                <div style="background-color: #00ffc3;padding:5px 10px;border-radius:7px;width:13%">13%</div>
             </dd>
         </dl>
     </div>

@@ -4,35 +4,33 @@ layout: page
 isPaginated: true
 ---
 
-<div class="wrapper home">
-
-  <ul class="post-list">
+<div class="wrapper">
     {% for post in paginator.posts %}
-      <li>
+    <article>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         <h2 class="post-title">
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
         <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 200 }}</p>
-      </li>
+    </article>
     {% endfor %}
-  </ul>
 
+    <footer class="pagination horizontal center">
+        {% if paginator.previous_page %}
+        <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}"
+            class="previous icon">{% include svg/left-arrow.svg %}</a>
+        {% else %}
+        <span class="previous icon">{% include svg/left-arrow.svg %}</span>
+        {% endif %}
 
-  <footer class="pagination horizontal center">
-    {% if paginator.previous_page %}
-      <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous icon">{% include svg/left-arrow.svg %}</a>
-    {% else %}
-      <span class="previous icon">{% include svg/left-arrow.svg %}</span>
-    {% endif %}
-    
-    <span class="page_number">Página {{ paginator.page }} de {{ paginator.total_pages }}</span>
-    
-    {% if paginator.next_page %}
-      <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next icon">{% include svg/next-arrow.svg %}</a>
-    {% else %}
-      <span class="next icon">{% include svg/next-arrow.svg %}</span>
-    {% endif %}
-  </footer>
+        <span class="page_number">Página {{ paginator.page }} de {{ paginator.total_pages }}</span>
+
+        {% if paginator.next_page %}
+        <a href="{{ site.baseurl }}{{ paginator.next_page_path }}"
+            class="next icon">{% include svg/next-arrow.svg %}</a>
+        {% else %}
+        <span class="next icon">{% include svg/next-arrow.svg %}</span>
+        {% endif %}
+    </footer>
 
 </div>
