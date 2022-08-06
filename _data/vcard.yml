@@ -1,19 +1,13 @@
-fn: João Batista Ferreira
+fn: João (Joo-Um) Ferreira
 nickname: '@johnylab'
-note: Web designer e desenvolvedor
+note: Frontend Engineer
 adr-locality: Santos
 adr-region: SP
-email: contato@johnylab.net
+email: contato@johnylab.com.br
 social:
-    -
-        title: Twitter
-        url: https://twitter.com/johnyLab
     -
         title: Linkedin
         url: https://br.linkedin.com/in/johnylab
-    -
-        title: Behance
-        url: http://www.behance.net/johnylab
     -
         title: Github
         url: https://github.com/johnylab
