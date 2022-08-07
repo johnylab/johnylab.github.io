@@ -25,13 +25,7 @@ Originalmente desenvolvida pelo WHATWG, foi endossada pelo W3C em 2007, reconsid
 
 É importante, para quem deseja aprender a produzir páginas para a web, entender que a HTML não se destina a definir a apresentação da página na tela, e sim estruturar o conteúdo, determinando as partes do todo e como cada seção da página se relaciona com as outras. Por exemplo, definem-se na HTML, quais linhas de texto representam títulos e qual o nível de cada título, não importando de que tamanho e cor o navegador vai renderizar cada um. Esta nova versão traz reconsiderações importantes quanto ao papel original do HTML no mundo da Web, com atenção especial à semântica e acessibilidade.
 
-<div class="wrapper horizontal center">
-  <div class="flex" style="flex-basis: 30%; margin-right: var(--spacing);">
-    {% include svg/html-5.svg %}
-  </div>
-
-  <p class="flex" style="flex-basis: 70%;">Com novos recursos, antes só possíveis por meio de outras tecnologias, também cumpre o papel de melhorar a linguagem com o suporte para as mais recentes multimídias, enquanto a mantém a marcação legível por seres humanos, e consistentemente compreensível por computadores e outros dispositivos (navegadores, parsers, etc.). O HTML5 será o novo padrão para HTML, XHTML, e HTML DOM.</p>
-</div>
+Com novos recursos, antes só possíveis por meio de outras tecnologias, também cumpre o papel de melhorar a linguagem com o suporte para as mais recentes multimídias, enquanto a mantém a marcação legível por seres humanos, e consistentemente compreensível por computadores e outros dispositivos (navegadores, parsers, etc.). O HTML5 será o novo padrão para HTML, XHTML, e HTML DOM.</p>
 
 > O projeto do HTML5 foi bem recebido pelos desenvolvedores Web até então, e tornou-se tema na mídia em abril de 2010, depois que o CEO da Apple Inc., Steve Jobs emitiu uma carta pública intitulada "Reflexões sobre o Adobe Flash", onde ele conclui que o desenvolvimento do HTML5 tornaria o Adobe Flash não mais necessário, tanto para assistir vídeo ou mesmo exibir qualquer conteúdo web. Isso provocou um debate entre os desenvolvedores Web, onde muitos sugeriram que, enquanto o HTML5 proporcionasse uma melhor funcionalidade, a variedade de browsers existentes exibiria páginas diferentes, tendo um resultado diferente em cada navegador e não conseguir-se-ia de fato chegar a um padrão. No início de novembro de 2011 a Adobe anunciou que vai interromper o desenvolvimento de Flash para dispositivos móveis e redirecionar seus esforços para o desenvolvimento de ferramentas utilizando HTML5.
 >
