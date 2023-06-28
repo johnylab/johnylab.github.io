@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-# gem "jekyll", "~> 4.0.0"
+gem "webrick" # serve 'require' cannot load such file -- webrick (LoadError)
 
 gem "github-pages", group: :jekyll_plugins
 
