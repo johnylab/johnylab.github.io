@@ -16,6 +16,7 @@ excerpt: 'JavaScript é a linguagem mais popular entre os desenvolvedores da web
 
 '
 img: "/imagens/promptIn-Javascript.jpg"
+canonical_url: 'https://johnylab.com.br/blog/breve-historia-evolucao-javascript-de-cmm-javascript/'
 ---
 
 {% highlight javascript %}
