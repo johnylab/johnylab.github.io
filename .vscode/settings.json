@@ -1,5 +1,8 @@
 {
     "cSpell.words": [
         "vcard"
-    ]
+    ],
+    "[markdown]": {
+    },
+    "frontMatter.dashboard.openOnStart": true
 }
