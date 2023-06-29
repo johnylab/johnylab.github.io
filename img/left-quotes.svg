@@ -1,6 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" height="48.6" viewBox="0 0 50 48.584003" width="50" version="1.1" y="0px" x="0px" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
-<g fill="#adadad" transform="matrix(2.13 0 0 2.13 0 -.708)">
-	<path fill="#adadad" d="m8.08 0.333c0.594 0 1.5 0.041 2.73 0.119v4.57c-3.72 0-5.58 1.72-5.58 5.16l0.06 2.08h3.86v10.9h-9.14v-11.8c0.001-7.39 2.69-11.1 8.08-11.1zm15.4 4.69v-4.57c-1-0.075-1.8-0.116-2.2-0.116-5.38 0-8.07 3.68-8.07 11v11.8h9.14v-10.9h-3.86l-0.059-2.08c-0.005-3.24 1.7-4.97 5.1-5.16z"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="48.6" x="0" y="0" version="1.1" viewBox="0 0 50 48.584" xml:space="preserve"><g fill="#adadad"><path fill="#adadad" d="m8.08 0.333c0.594 0 1.5 0.041 2.73 0.119v4.57c-3.72 0-5.58 1.72-5.58 5.16l0.06 2.08h3.86v10.9h-9.14v-11.8c0.001-7.39 2.69-11.1 8.08-11.1zm15.4 4.69v-4.57c-1-0.075-1.8-0.116-2.2-0.116-5.38 0-8.07 3.68-8.07 11v11.8h9.14v-10.9h-3.86l-0.059-2.08c-0.005-3.24 1.7-4.97 5.1-5.16z" transform="matrix(2.13 0 0 2.13 0 -.708)"/></g></svg>
