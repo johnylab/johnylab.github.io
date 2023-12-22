@@ -1,6 +1,6 @@
 <footer class="site-footer">
 
-{% assign card = site.data.vcard %}
+  {% assign card = site.data.vcard %}
 
   <div class="wrapper">
 
@@ -12,7 +12,7 @@
             <img src="{{ site.baseurl }}/img/johnylab.png" alt="{{ card.fn }}">
           </a>
         </div>
-  
+
         <figcaption>
           <h2 class="fn" id="vcard-label">{{ card.fn }}</h2>
           <div class="nickname">{{ card.nickname }}</div>
@@ -27,28 +27,17 @@
       <div class="vcard-cell">
         <ul class="seamless nav">
           <li><a href="{{ site.baseurl }}/">Home</a></li>
-          {% for p in site.pages %}
-            {% if p.menu-title %}
-              <li>
-                <a href="{{ p.url | prepend: site.baseurl }}">{{ p.menu-title }}</a>
-              </li>
-            {% endif %}
-          {% endfor %}
           <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
         </ul>
-  
+
         <ul class="seamless nav">
           {% for link in card.social %}
-            <li>
-              <a
-                href="{{ link.url }}"
-                target="_blank"
-                class="url"
-                onclick="ga('send', 'event', 'Social', '{{ link.title }}', 'Rodapé');"
-              >
-                {{ link.title }}
-              </a>
-            </li>
+          <li>
+            <a href="{{ link.url }}" target="_blank" class="url"
+              onclick="ga('send', 'event', 'Social', '{{ link.title }}', 'Rodapé');">
+              {{ link.title }}
+            </a>
+          </li>
           {% endfor %}
         </ul>
       </div>
