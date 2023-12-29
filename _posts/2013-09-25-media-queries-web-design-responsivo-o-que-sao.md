@@ -2,20 +2,17 @@
 title: Media Queries e Web Design Responsivo. O que são?
 date: 2013-09-25 21:00:00 -03:00
 categories:
-- CSS
+  - CSS
 tags:
-- media
-- queries,
-- responsive,
-- design
-- responsivo
-codigoTexto: 126
-excerpt: 'Faça um design de site que atende diferentes tipos de dispositivos. A folha
+  - design
+  - media-queries
+  - responsive
+  - responsivo
+excerpt: |-
+  Faça um design de site que atende diferentes tipos de dispositivos. A folha
   de estilos do site indica para qual meio de acesso as regras serão aplicadas, e
   para quais características.
-
-'
-img: "/imagens/css-abbreviations.jpg"
+img: /img/css-abbreviations.jpg
 ---
 
 Responsive Web Design (<abbr title="Web Design Responsivo, na sigla em inglês">RWD</abbr>) é uma abordagem de web design em que são fornecidas estilizações diferentes conforme o meio de acesso que carrega uma página web. Você deve se lembrar de que há poucos anos havia uma tendência de grandes sites terem uma versão diferente de suas páginas para celular. Algo como *mobile.seusite.com.br*. Dessa forma era servido um site mais leve (ou não) e com design ajustado para celulares, por exemplo, enquanto a versão desktop do site permanecia disponível para telas maiores.

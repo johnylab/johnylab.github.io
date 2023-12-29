@@ -1,8 +1,17 @@
 {
-    "cSpell.words": [
-        "vcard"
-    ],
-    "[markdown]": {
+  "cSpell.words": ["vcard"],
+  "frontMatter.dashboard.openOnStart": true,
+  "[markdown]": {
+    "editor.fontSize": 14,
+    "editor.lineHeight": 26,
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 64,
+    "editor.lineNumbers": "off",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
     },
-    "frontMatter.dashboard.openOnStart": true
+    "editor.minimap.enabled": false
+  }
 }

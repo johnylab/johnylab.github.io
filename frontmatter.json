@@ -13,7 +13,7 @@
         },
         {
           "title": "Description",
-          "name": "description",
+          "name": "excerpt",
           "type": "string"
         },
         {
@@ -47,7 +47,6 @@
     }
   ],
   "frontMatter.framework.id": "jekyll",
-  "frontMatter.content.publicFolder": "imagens",
   "frontMatter.preview.host": "http://localhost:4000",
   "frontMatter.content.pageFolders": [
     {
@@ -55,15 +54,5 @@
       "path": "[[workspace]]/_posts"
     }
   ],
-  "frontMatter.taxonomy.tags": [
-    "JavaScript",
-    "css",
-    "estilos",
-    "layout",
-    "pop-up"
-  ],
-  "frontMatter.taxonomy.categories": [
-    "CSS",
-    "JavaScript"
-  ]
+  "frontMatter.framework.startCommand": "bundle exec jekyll s w --livereload"
 }

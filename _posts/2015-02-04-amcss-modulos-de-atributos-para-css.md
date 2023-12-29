@@ -2,19 +2,16 @@
 title: AMCSS - Módulos de Atributos para CSS
 date: 2015-02-04 22:00:00 -02:00
 categories:
-- CSS
+  - CSS
 tags:
-- css,
-- atributos,
-- seletores,
-- módulos
-- css
-codigoTexto: 129
-excerpt: 'Não se trata nem de um framework, nem de uma biblioteca. É um estilo que
+  - CSS
+  - atributos
+  - módulos
+  - seletores
+excerpt: |-
+  Não se trata nem de um framework, nem de uma biblioteca. É um estilo que
   melhor descreve os componentes que você está construindo. Já existe uma especificação
   disponível em https://github.com/amcss/attribute-module-specification/
-
-'
 img: https://farm8.staticflickr.com/7399/15822048634_023342337f.jpg
 ---
 

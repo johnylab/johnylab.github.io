@@ -1,20 +1,17 @@
 ---
-title: 'Tutorial: Como fazer triângulos com CSS (sem usar imagens)'
+title: "Tutorial: Como fazer triângulos com CSS (sem usar imagens)"
 date: 2013-10-03 21:00:00 -03:00
 categories:
-- CSS
+  - CSS
 tags:
-- CSS,
-- layout,
-- border,
-- triângulo
-codigoTexto: 106
-excerpt: 'Já é possível criar formas geométricas apenas com propriedades CSS... dá
+  - CSS
+  - border
+  - layout
+excerpt: |-
+  Já é possível criar formas geométricas apenas com propriedades CSS... dá
   pra aplicar diversos efeitos e filtros, mas a maioria ainda não funciona no IE (lógico).
   A técnica funcionou em todos os navegadores...
-
-'
-img: "/imagens/css-triangles.jpg"
+img: /img/css-triangles.jpg
 ---
 
 Já é possível criar formas geométricas apenas com propriedades CSS. Além disso, dá pra aplicar diversos efeitos e filtros, mas a maioria ainda não funciona no Internet Explorer (lógico). Como a técnica de criar triângulos funcionou em todos os navegadores que eu testei (não atendo mais ao IE6, mas funciona no 7) e pode ser muito útil para criar os controles de um slider sem ter que fazer mais imagens, estou passando abaixo o conceito.

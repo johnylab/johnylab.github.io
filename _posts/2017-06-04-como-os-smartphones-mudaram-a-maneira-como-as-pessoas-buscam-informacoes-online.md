@@ -2,21 +2,17 @@
 title: Como os smartphones mudaram as buscas e decisões dos usuários
 date: 2017-06-04 21:00:00 -03:00
 categories:
-- marketing
-- comportamento
+  - Marketing Digital
 tags:
-- mobile
-- ''
-- pesquisa
-- consumidores
-- micro-moments
-excerpt: 'No momento em que as pessoas precisam saber, chegar a um lugar, fazer ou
+  - micro-moments
+  - mobile
+  - pesquisa
+excerpt: |-
+  No momento em que as pessoas precisam saber, chegar a um lugar, fazer ou
   comprar,  recorrer ao celular já passou a ser uma questão de reflexo. Novas pesquisas
   mostram  como as pessoas passaram a usar o meio digital para tomar decisões no dia
   a dia.
-
-'
-img: 
+img: null
 ---
 
 *Adaptado de [Mobile Has Changed Search Intent and How People Get Things Done: New Consumer Behavior Data](https://www.thinkwithgoogle.com/consumer-insights/mobile-search-consumer-behavior-data/).*

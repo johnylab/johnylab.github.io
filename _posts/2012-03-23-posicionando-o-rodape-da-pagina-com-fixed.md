@@ -2,17 +2,13 @@
 title: Posicionando o rodapé da página com fixed
 date: 2012-03-23 21:00:00 -03:00
 categories:
-- CSS
+  - CSS
 tags:
-- css,
-- posicionamento,
-- layout
-codigoTexto: 105
-excerpt: 'Solução: {position:fixed;bottom:0;} Fixed posiciona sempre em relação à
-  janela e não ao conteúdo da página.
-
-'
-img: "/imagens/site.png"
+  - CSS
+  - layout
+  - posicionamento
+excerpt: "Solução: {position:fixed;bottom:0;} Fixed posiciona sempre em relação à janela e não ao conteúdo da página."
+img: /img/site.png
 ---
 
 Pergunta do meu amigo Celso Garcia:

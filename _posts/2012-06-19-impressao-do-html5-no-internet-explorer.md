@@ -2,21 +2,16 @@
 title: Impressão do HTML5 no Internet Explorer
 date: 2012-06-19 21:00:00 -03:00
 categories:
-- HTML
+  - HTML
 tags:
-- HTML5,
-- padrões,
-- Web
-- Standards,
-- Internet
-- Explorer
-codigoTexto: 103
-excerpt: 'Você já deve conhecer o hack de Internet Explorer que permite renderizar
-  adequadamente os estilos do HTML5 na tela... garantir a formatação correta durante
-  a impressão é outra história...
-
-'
-img: "/imagens/HTML-5-Logotipo-Oficial.png"
+  - Explorer
+  - HTML5
+  - Internet
+  - Standards
+  - Web
+  - padrões
+excerpt: Você já deve conhecer o hack de Internet Explorer que permite renderizar adequadamente os estilos do HTML5 na tela...
+img: /img/HTML-5-Logotipo-Oficial.png
 ---
 
 Você já deve conhecer o hack de Internet Explorer que permite renderizar adequadamente os estilos do HTML5 na tela...

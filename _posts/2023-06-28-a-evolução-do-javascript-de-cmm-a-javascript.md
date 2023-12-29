@@ -1,18 +1,18 @@
 ---
 title: "Breve História e Evolução do JavaScript: De Cmm a JavaScript"
 date: 2023-06-28T15:31:31.491Z
-img: /javascript-devices-yellow.jpg
+img: /img/blog/javascript-devices-yellow.jpg
 tags:
-  - História
-  - JavaScript
   - EcmaScript
+  - JavaScript
+  - história
 categories:
   - JavaScript
 description: JavaScript é uma linguagem de programação amplamente utilizada pelos desenvolvedores web atualmente. A história do JavaScript é marcada por mudanças e evoluções ao longo do tempo.
 slug: breve-historia-evolucao-javascript-de-cmm-javascript
 ---
 
-![Javascript e dispositivos conectados]({{ site.baseurl }}/imagens/javascript-devices-yellow.jpg)
+![Javascript e dispositivos conectados]({{ site.baseurl }}/img/blog/javascript-devices-yellow.jpg)
 
 JavaScript é uma linguagem de programação amplamente utilizada pelos desenvolvedores web atualmente. No entanto, sua história começa de forma diferente dos estúdios de criação de websites. Inicialmente conhecida como Cmm (C minus minus), a linguagem foi concebida para se assemelhar ao C/C++ e facilitar a transição dos programadores da época. Criada pela Nombas, mais tarde conhecida como OpenWave, ela veio acompanhada de um ambiente de desenvolvimento chamado CEnvi, uma abreviação de C Environment (Ambiente C), com o objetivo de apresentar a linguagem a programadores comuns.
 

@@ -4,12 +4,11 @@ date: 2012-08-02 21:00:00 -03:00
 categories:
   - CSS
 tags:
-  - css
+  - CSS
   - estilos
   - layout
-codigoTexto: 121
 excerpt: Aqui vão 10 dicas do line25.com para soluções simples no seu código CSS.
-img: /imagens/tubos.jpg
+img: /img/tubos.jpg
 ---
 
 *Aqui vão 10 dicas do <a href="http://line25.com/articles/10-css-rules-every-web-designer-should-know" target="_blank">line25.com</a> para soluções simples no seu código CSS.*

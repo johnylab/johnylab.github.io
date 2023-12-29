@@ -2,21 +2,19 @@
 title: HTML5 - primeiros passos
 date: 2012-06-18 21:00:00 -03:00
 categories:
-- HTML
+  - HTML
 tags:
-- HTML5,
-- história,
-- elementos,
-- atributos,
-- Web
-- Standards
-codigoTexto: 117
-excerpt: 'HTML5 (Hypertext Markup Language, versão 5) é uma linguagem para estruturação
+  - HTML5
+  - Standards
+  - Web
+  - atributos
+  - elementos
+  - história
+excerpt: |-
+  HTML5 (Hypertext Markup Language, versão 5) é uma linguagem para estruturação
   de conteúdo para a World Wide Web e é a linguagem base para a distribuição de conteúdo
   na Internet. Originalmente desenvolvida pelo WHATWG, foi endossada pelo W3C em 2007
-
-'
-img: "/imagens/HTML-5-Logotipo-Oficial.png"
+img: /img/HTML-5-Logotipo-Oficial.png
 ---
 
 HTML5 (Hypertext Markup Language, versão 5) é uma linguagem para estruturação de conteúdo para a World Wide Web e é a linguagem base para a distribuição de conteúdo na Internet.

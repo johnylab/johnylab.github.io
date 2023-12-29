@@ -2,42 +2,57 @@
 layout: default
 ---
 
-<article class="page-content post" itemscope itemtype="http://schema.org/BlogPosting">
-
+<article
+  class="page-content post"
+  itemscope
+  itemtype="http://schema.org/BlogPosting"
+>
   <header class="post-header wrapper">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
     <div class="horizontal">
       <p class="post-meta">
-        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-        {% if page.author %}
-          • 
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span itemprop="name">{{ page.author }}</span>
-          </span>
+        <time
+          datetime="{{ page.date | date_to_xmlschema }}"
+          itemprop="datePublished"
+          >{{ page.date | date_to_string: "%b %-d, %Y" | localize: "pt" }}</time
+        >
+        {% if page.author %} •
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <span itemprop="name">{{ page.author }}</span>
+        </span>
         {% endif %}
       </p>
 
-      <div>
-        {% include share.html position='cabeçalho' %}
-      </div>
+      <div>{% include share.html position='cabeçalho' %}</div>
     </div>
   </header>
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+  <div class="post-content" itemprop="articleBody">{{ content }}</div>
+
+  <footer class="post-content hero light">
+    <p>
+      Compartilhe suas experiências e descobertas comigo nas minhas redes
+      sociais! Seu feedback é fundamental para continuarmos aprimorando nossas
+      técnicas e compartilhando conhecimento.
+    </p>
+  </footer>
 
   <nav class="post-navigation wrapper large horizontal">
     <div class="flex prev">
-    {% if page.previous.url %}
-      <a href="{{ page.previous.url | prepend: site.baseurl }}">&laquo; {% if page.previous.titulo %}{{ page.previous.titulo }}{% else %}{{page.previous.title}}{% endif %}</a>
-    {% endif %}
+      {% if page.previous.url %}
+      <a href="{{ page.previous.url | prepend: site.baseurl }}"
+        >&laquo; {% if page.previous.titulo %}{{ page.previous.titulo }}{% else
+        %}{{page.previous.title}}{% endif %}</a
+      >
+      {% endif %}
     </div>
     <div class="flex next">
-    {% if page.next.url %}
-      <a href="{{ page.next.url | prepend: site.baseurl }}">{% if page.next.titulo %}{{ page.next.titulo }}{% else %}{{page.next.title}}{% endif %} &raquo;</a>
-    {% endif %}
+      {% if page.next.url %}
+      <a href="{{ page.next.url | prepend: site.baseurl }}"
+        >{% if page.next.titulo %}{{ page.next.titulo }}{% else
+        %}{{page.next.title}}{% endif %} &raquo;</a
+      >
+      {% endif %}
     </div>
   </nav>
-
 </article>

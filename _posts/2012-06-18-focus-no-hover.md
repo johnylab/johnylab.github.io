@@ -1,19 +1,14 @@
 ---
 title: Focus no Hover
-date: 2012-06-18 21:00:00 -03:00
 categories:
-- CSS
+  - CSS
 tags:
-- acessibilidade
-- ''
-- estilos
-- css
-codigoTexto: 84
-excerpt: 'Esta é a dica de acessibilidade de websites mais fácil que qualquer um poderá
-  te dar... A inspiração para escrever sobre isso veio enquanto olhava o site Gowalla...
-
-'
-img: "/imagens/Web-Accessibility-Icon-Qicon-blueRGB.JPG"
+  - ""
+  - CSS
+  - acessibilidade
+  - estilos
+excerpt: Esta é a dica de acessibilidade de websites mais fácil que qualquer um poderá te dar... A inspiração para escrever sobre isso veio enquanto olhava o site Gowalla...
+img: /img/Web-Accessibility-Icon-Qicon-blueRGB.JPG
 ---
 
 > Esta é a dica de acessibilidade de websites mais fácil que qualquer um poderá te dar:

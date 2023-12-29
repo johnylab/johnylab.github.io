@@ -2,19 +2,17 @@
 title: Honeypot Captcha, uma alternativa muito mais elegante para combater spambots
 date: 2012-08-29 21:00:00 -03:00
 categories:
-- Tutoriais
+  - Tutoriais
 tags:
-- captcha,
-- antispam,
-- validação,
-- formulário
-codigoTexto: 110
-excerpt: 'Em vez de fazer o usuário digitar aquela imagem chata, crie um campo que
+  - antispam
+  - captcha
+  - formulário
+  - validação
+excerpt: |-
+  Em vez de fazer o usuário digitar aquela imagem chata, crie um campo que
   não é pra ser preenchido. Pode ter o mínimo de tamanho e depois torne-o invisível
   com {display:none;}...
-
-'
-img: "/imagens/css-abbreviations.jpg"
+img: /img/css-abbreviations.jpg
 ---
 
 <blockquote>

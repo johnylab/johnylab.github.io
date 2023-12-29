@@ -4,12 +4,11 @@ date: 2012-06-20 21:00:00 -03:00
 categories:
   - JavaScript
 tags:
+  - CSS
   - JavaScript
-  - css
   - pop-up
-codigoTexto: 80
-excerpt: "Gere uma janela pop-up utilizando css e Javascript. Com este código simples é possível fazer modais para aplicativos ou adaptá-lo para várias necessidades de UI. "
-img: /imagens/tubos.jpg
+excerpt: Gere uma janela pop-up utilizando css e Javascript. Com este código simples é possível fazer modais para aplicativos ou adaptá-lo para várias necessidades de UI.
+img: /img/tubos.jpg
 ---
 
 > O pop-up é um tipo de janela que se abre no navegador ao visitar uma página web ou acessar uma hiperligação específica. O pop-up é utilizado por criadores de sites para abrir alguma informação extra ou como meio de propaganda.

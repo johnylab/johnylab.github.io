@@ -1,6 +1,8 @@
 ---
-title: 'Dicas de carreira: use o LinkedIn a seu favor para encontrar um novo emprego'
+title: |-
+  Use o LinkedIn a seu favor para encontrar um novo emprego
 date: 2021-10-23 11:48:00 -02:00
+excerpt: Basicamente, toda ferramenta é ótima se você entender como ela funciona e aproveitar todos os recursos que ela oferece.
 ---
 
 ![Perfil do LinkedIn - Cabeçalho](/uploads/linkedin-header-joao-ferreira.jpg)
