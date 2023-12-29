@@ -4,44 +4,35 @@ excerpt: Sou desenvolvedor web desde 2003. Moro em Santos.
 ---
 
 <section class="page-content section-about">
-	<div class="wrapper">
-		<h2>Português</h2>
+  <div class="wrapper">
+    <article lang="pt">
+      <h2>Português</h2>
+      <p>Brasileiro, casado e com 2 filhos. Moro em Santos, SP.</p>
+      <p>
+        Engenheiro de software desde 2003, sendo autodidata desde o início.
+        Tenho domínio avançado de Javascript Vanilla (independente de framework)
+        e muita experiência com React JS/Native.
+      </p>
+      <p>
+        Também tenho alguma experiência em .Net e Java. Gosto de resolver
+        problemas lógicos, ajudar o time e assumir responsabilidades.
+      </p>
+    </article>
 
-		<p>Brasileiro, casado e com 2 filhos. Moro em Santos, SP.</p>
-		<p>Engenheiro de software desde 2003, sendo autodidata desde o início. Tenho domínio avançado de Javascript
-			Vanilla (independente de framework) e muita experiência com React JS/Native.</p>
-		<p>Também tenho alguma experiência em .Net e Java. Gosto de resolver problemas lógicos, ajudar o time e assumir
-			responsabilidades.</p>
-
-		<h2>English</h2>
-
-		<p>I am Brazilian, married and have two children. I live in Santos, SP.</p>
-		<p>I've been a software engineer since 2003, being self-taught since the beginning. I have advanced knowledge of
-			Vanilla Javascript (independent of framework) and great experience with React JS/Native.</p>
-		<p>I also have some experience with .Net and Java. I enjoy solving logic problems, helping the team and taking
-			responsibility.</p>
-	</div>
-</section>
-
-<section class="page-content section-blog">
-	<div class="wrapper">
-		<h2>Blog</h2>
-
-		{% for post in site.posts limit: 3 %}
-		<article>
-			<h3 class="blog-title">
-				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-			</h3>
-			<p>
-				{{ post.content | strip_html | truncatewords: 60 }}
-			</p>
-		</article>
-		{% endfor %}
-
-		<footer>
-			<p><a href="{{ site.baseurl }}/blog/">Mais posts...</a></p>
-		</footer>
-
-	</div>
-
+    <article lang="en">
+      <h2>English</h2>
+      <p>
+        I am Brazilian, married and have two children. I live in Santos, SP.
+      </p>
+      <p>
+        I've been a software engineer since 2003, being self-taught since the
+        beginning. I have advanced knowledge of Vanilla Javascript (independent
+        of framework) and great experience with React JS/Native.
+      </p>
+      <p>
+        I also have some experience with .Net and Java. I enjoy solving logic
+        problems, helping the team and taking responsibility.
+      </p>
+    </article>
+  </div>
 </section>

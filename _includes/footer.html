@@ -1,49 +1,37 @@
-<footer class="site-footer">
+{% assign card = site.data.vcard %}
 
-  {% assign card = site.data.vcard %}
-
+<footer class="site-footer hero brand">
   <div class="wrapper">
+    <figure
+      class="vcard horizontal"
+      role="banner"
+      aria-labelledby="vcard-label"
+    >
+      <div class="photo">
+        <a href="{{ site.baseurl }}/">
+          <img src="{{ site.baseurl }}/img/johnylab.png" alt="{{ card.fn }}" />
+        </a>
+      </div>
 
-    <figure class="vcard" role="banner" aria-labelledby="vcard-label">
-
-      <div class="vcard-cell">
-        <div class="photo">
-          <a href="{{ site.baseurl }}/">
-            <img src="{{ site.baseurl }}/img/johnylab.png" alt="{{ card.fn }}">
-          </a>
+      <figcaption>
+        <h2 class="fn" id="vcard-label">{{ card.fn }}</h2>
+        <div class="nickname">{{ card.nickname }}</div>
+        <div class="note">{{ card.note }}</div>
+        <div class="adr">
+          <span class="locality">{{ card.adr-locality }}</span>,
+          <span class="region">{{ card.adr-region }}</span>
         </div>
+      </figcaption>
 
-        <figcaption>
-          <h2 class="fn" id="vcard-label">{{ card.fn }}</h2>
-          <div class="nickname">{{ card.nickname }}</div>
-          <div class="note">{{ card.note }}</div>
-          <div class="adr">
-            <span class="locality">{{ card.adr-locality }}</span>,
-            <span class="region">{{ card.adr-region }}</span>
-          </div>
-        </figcaption>
-      </div>
-
-      <div class="vcard-cell">
-        <ul class="seamless nav">
-          <li><a href="{{ site.baseurl }}/">Home</a></li>
-          <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
-        </ul>
-
-        <ul class="seamless nav">
-          {% for link in card.social %}
-          <li>
-            <a href="{{ link.url }}" target="_blank" class="url"
-              onclick="ga('send', 'event', 'Social', '{{ link.title }}', 'Rodapé');">
-              {{ link.title }}
-            </a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-
+      <nav class="site-nav">
+        <a href="{{ site.baseurl }}/">Home</a>
+        <a href="{{ site.baseurl }}/blog/">Blog</a>
+        {% for link in card.social %}
+        <a href="{{ link.url }}" target="_blank" class="url">
+          {{ link.title }}
+        </a>
+        {% endfor %}
+      </nav>
     </figure>
-
   </div>
-
 </footer>

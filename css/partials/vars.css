@@ -1,0 +1,39 @@
+:root {
+  --base-font-family: 'Crimson Pro', serif;
+  --title-font-family: var(--base-font-family);
+  --base-font-size: 1.1em;
+  --base-font-weight: 300;
+  --small-font-size: calc(var(--base-font-size) * 0.875);
+  --base-line-height: 1.5;
+
+  --white-color: #fff;
+  --grey-color-100: #eeeeee;
+  --grey-color-200: #e0e0e0;
+  --grey-color-300: #bdbdbd;
+  --grey-color-400: #9e9e9e;
+  --grey-color-500: #757575;
+  --grey-color-600: #616161;
+  --grey-color-700: #424242;
+  --grey-color-800: #303030;
+  --grey-color-900: #212121;
+  --black-color: #000;
+
+  --brand-color-light: #e57373;
+  --brand-color: #dc143c;
+  --brand-color-dark: #8c0d26;
+
+  --text-color: var(--grey-color-800);
+  --background-color: var(--white-color);
+  --link-color: var(--brand-color);
+  --link-color-hover: var(--black-color);
+
+  --spacing-xs: 8px;
+  --spacing: 24px;
+  --spacing-s: 12px;
+  --spacing-m: 36px;
+
+  --on-palm: 600px;
+  --on-laptop: 800px;
+  --content-width: 900px;
+  --large-content-width: 1200px;
+}

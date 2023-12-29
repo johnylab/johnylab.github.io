@@ -1,9 +1,20 @@
-<header class="site-header">
+{% assign card = site.data.vcard %}
 
-  <div class="wrapper">
+<header class="site-header hero">
+  <div class="wrapper horizontal">
+    <a href="{{ site.baseurl }}/" class="site-title">
+      <span class="icon">{% include svg/favicon.svg %}</span>
+      {{ site.title }}
+    </a>
 
-    <a href="{{ site.baseurl }}/" class="site-title icon inline">{% include svg/favicon.svg %} {{ site.title }}</a>
-
+    <nav class="site-nav">
+      <a href="{{ site.baseurl }}/">Home</a>
+      <a href="{{ site.baseurl }}/blog/">Blog</a>
+      {% for link in card.social %}
+      <a href="{{ link.url }}" target="_blank" class="url">
+        {{ link.title }}
+      </a>
+      {% endfor %}
+    </nav>
   </div>
-
 </header>

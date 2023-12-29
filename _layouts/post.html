@@ -9,22 +9,6 @@ layout: default
 >
   <header class="post-header wrapper">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <div class="horizontal">
-      <p class="post-meta">
-        <time
-          datetime="{{ page.date | date_to_xmlschema }}"
-          itemprop="datePublished"
-          >{{ page.date | date_to_string: "%b %-d, %Y" | localize: "pt" }}</time
-        >
-        {% if page.author %} •
-        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <span itemprop="name">{{ page.author }}</span>
-        </span>
-        {% endif %}
-      </p>
-
-      <div>{% include share.html position='cabeçalho' %}</div>
-    </div>
   </header>
 
   <div class="post-content" itemprop="articleBody">{{ content }}</div>
