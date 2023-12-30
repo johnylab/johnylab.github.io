@@ -1,5 +1,5 @@
 @import 'partials/vars.css';
 @import 'partials/defaults.css';
-@import 'partials/base.css';
 @import 'partials/syntax-highlighting.css';
-@import 'partials/home.css';
+@import 'partials/helpers.css';
+@import 'partials/structure.css';

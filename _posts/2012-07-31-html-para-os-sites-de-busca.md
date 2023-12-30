@@ -27,11 +27,11 @@ Alguns elementos HTML a considerar:
 
 ### Título da página
 
-{% highlight html %}
+```html
 
 <title>Título da página</title>
 
-{% endhighlight %}
+```
 
 Define um título para a página e deve ser declarado apenas uma vez, dentro da seção <code>head</code> do código-fonte. O conteúdo da <em lang="en" title="Etiqueta">tag</em> é passado para a barra de título do navegador, ou a aba onde a página é visualizada. O valor passado também é usado para identificar uma página nos resultados dos sites de busca.
 
@@ -39,7 +39,7 @@ Define um título para a página e deve ser declarado apenas uma vez, dentro da 
 
 ### Meta Description
 
-{% highlight html %}
+```html
 
 <meta
    name="description"
@@ -47,37 +47,37 @@ Define um título para a página e deve ser declarado apenas uma vez, dentro da 
       o código HTML para ser lido corretamente
       por mecanismos de busca.">
 
-{% endhighlight %}
+```
 
 As informações deste elemento são armazenadas pelos sites de busca para exibirem nas páginas de resultados. O conteúdo da descrição passada não afeta diretamente o posicionamento na <abbr title="Search Engine Results Page" lang="en">SERP</abbr>, mas serve para despertar o interesse do internauta em clicar no link para ver mais conteúdo de seu site. Use esta <em lang="en" title="Etiqueta">tag</em> para informar o que ele encontrará na sua página.
 
 ### Header: H1, H2, H3, H4, H5, H6
 
 
-{% highlight html %}
+```html
 
 <h1>Título 1</h1>
 <h2>Título 2</h2>
 <h3>Título 3</h3>
 
-{% endhighlight %}
+```
 
 
 Títulos e subtítulos no conteúdo da página devem conter as principais palavras-chave da página. Palavras contidas nestes títulos são consideradas relevantes para determinar o assunto principal da página e marcar as subdivisões do texto. Marque adequadamente os seus títulos sabendo que a numeração deles vai de h1 a h6 e o nível hierárquico deles vai do mais alto para o mais baixo. O título principal da página é h1, e h2 é um subtítulo imediato dele, e assim por diante.
 
 ### Parágrafo
 
-{% highlight html %}
+```html
 
 <p>Texto marcado como um parágrafo.</p>
 
-{% endhighlight %}
+```
 
 A marcação de parágrafo representa um trecho de texto relevante. Basicamente, o parágrafo é um conjunto de sentenças que discorrem sobre um determinado tópico. Marque todo o corpo do texto com parágrafos.
 
 ### Listagens
 
-{% highlight html %}
+```html
 
 <!-- Lista não numerada -->
 <ul>
@@ -93,7 +93,7 @@ A marcação de parágrafo representa um trecho de texto relevante. Basicamente,
    <li>Item 3</li>
 </ol>
 
-{% endhighlight %}
+```
 
 Isso é uma lista:
 
@@ -106,13 +106,13 @@ Isso é uma lista:
 
 ### Alt e nome das imagens
 
-{% highlight html %}
+```html
 
 <img
    src="nomeDaMinhaImagem"
    alt="Texto descrição alternativa.">
 
-{% endhighlight %}
+```
 
 Tanto o nome da imagem como o atributo alt presente na <em lang="en" title="Etiqueta">tag</em> são levados em consideração quando os mecanismos de busca indexam os elementos gráficos. Certifique-se de nomear adequadamente os arquivos de imagens, vídeos, áudios e outras mídias, e informe o conteúdo de cada imagem no atributo alt (como no exemplo acima) para que dispositivos com recursos especiais de leitura de tela, usuários com imagens desabilitadas e sistemas de busca tenham uma informação alternativa para identificar o conteúdo da imagem.
 
@@ -122,7 +122,7 @@ Tanto o nome da imagem como o atributo alt presente na <em lang="en" title="Etiq
 
 ### Blocos de conteúdo
 
-{% highlight html %}
+```html
 
 <header>Cabeçalho da página em HTML5</header>
 <nav>Área reservada para os elementos na navegação principal do site</nav>
@@ -134,7 +134,7 @@ Tanto o nome da imagem como o atributo alt presente na <em lang="en" title="Etiq
 
 <footer>Um conteúdo complementar da página, de uma section ou article</footer>
 
-{% endhighlight %}
+```
 
 ## Conclusão
 

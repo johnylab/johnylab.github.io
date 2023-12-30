@@ -2,14 +2,13 @@
 title: Editores online de HTML e CSS
 date: 2013-09-25 21:00:00 -03:00
 categories:
-- Tutoriais
+  - Tutoriais
 excerpt: |-
   Apesar de ser uma grande ideia (e bem didática), o Thimble não é nenhuma
   novidade. Para quem precisa de uma alternativa mais poderosa para testes avançados,
   já existem diversos aplicativos na web onde se pode testar códigos HTML, javascript
   e CSS.
-
-img: "/img/thimble-mozilla.jpg"
+img: null
 ---
 
 A Mozilla lançou oficialmente seu <a href="https://thimble.mozilla.org/pt-BR/" target="_blank">novo editor online e gratuito de HTML e CSS</a>. Batizado como Thimble, o editor é simples e funcional. Além de não precisar de nenhum cadastro para começar a usá-lo, o serviço sugere alguns modelos de projetos para praticar.
@@ -30,9 +29,9 @@ Apesar de ser uma grande ideia (e bem didática), o Thimble não é nenhuma novi
 
 O <a href="http://jsfiddle.net" target="_blank">jsFiddle</a> é um serviço completo para se testar <em lang="en" title="Trechos independentes de código.">snippets</em> sem ter de salvar vários arquivos de código. Até mesmo membros de grandes organizações, como o <a href="http://johnylab.net/?id=117"><abbr lang="en" title="Web Hypertext Application Technology Working Group">WHATWG</abbr></a> o utilizam para compartilhar testes. Você pode incluir automaticamente uma biblioteca de javascript, como a jQery, ou uma folha de estilos CSS já disponível, e digitar apenas o trecho de código que deseja testar. Perfeito para se praticar conceitos tanto de HTML como de CSS e javascript. A tela pode ser dividida em até quatro painéis: um para o HTML, um para o CSS adicional, um para a programação, e o último mostra o resultado de todos os outros funcionando em conjunto.
 
-### TheCodePlayer
+### The Code Player
 
-![The Code Player](http://www.improgrammer.net/wp-content/uploads/2015/01/The-Code-Player-1-1.png)
+![The Code Player]({{site.baseurl}}/img/blog/thecodeplayer.png)
 
 <a href="http://thecodeplayer.com/" target="_blank">TheCodePlayer</a>, como o nome já diz, é um "player de código". Contém diversos tutoriais, principalmente de efeitos avançados em CSS3, e também podem ser vistos com a tela dividida para exibir o resultado em tempo real. Mas a grande vantagem deste aplicativo é que ele também funciona como um player. Funcionando como se estivesse rodando um vídeo, ele mostra o código todo sendo digitado do jeito que o desenvolvedor fez, e você pode notar como as alterações vão afetando o resultado durante todo o processo. O efeito disso é tão impressionante quanto assistir o código sendo digitado sozinho, como se fosse uma transmissão de vídeo.
 
@@ -49,7 +48,7 @@ O melhor editor de todos na minha opinião, você já usa: o navegador web. E a 
 Você pode testar o Dev Tools enquanto lê esta página. Comece por mais um atalho: clique com o botão direito do mouse neste parágrafo e selecione "Inspecionar elemento". Se você estiver usando o Internet Explorer vai ter que pressionar a tecla <kbd>F12</kbd> mesmo, pois é o único atalho que ele tem. No Opera não tem o F12, só <kbd>Ctrl + Shift + I</kbd>. Se quiser "inspecionar um elemento" específico da página no IE, não se desespere. No painel aberto, tem uma ferramenta com ícone semelhante a uma seta do mouse que serve para selecionar o elemento direto na página.
 
 <figure>
-    <img src="https://developers.google.com/chrome-developer-tools/images/image03.png" alt="Ferramentas para desenvolvedores Chrome DevTools">
+    <img src="{{site.baseurl}}/img/blog/chrome-devtools.png" alt="Ferramentas para desenvolvedores Chrome DevTools">
     <figcaption>
         <small>O painel <a href="https://developers.google.com/chrome-developer-tools/" target="_blank" hreflang="en">DevTools do Google Chrome</a></small>
     </figcaption>

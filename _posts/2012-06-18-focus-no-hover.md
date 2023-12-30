@@ -9,6 +9,7 @@ tags:
   - estilos
 excerpt: Esta é a dica de acessibilidade de websites mais fácil que qualquer um poderá te dar... A inspiração para escrever sobre isso veio enquanto olhava o site Gowalla...
 img: /img/Web-Accessibility-Icon-Qicon-blueRGB.JPG
+date: 2012-06-18T10:50:57.674Z
 ---
 
 > Esta é a dica de acessibilidade de websites mais fácil que qualquer um poderá te dar:

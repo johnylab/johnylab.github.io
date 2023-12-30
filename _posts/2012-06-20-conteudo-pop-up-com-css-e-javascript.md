@@ -17,7 +17,7 @@ img: /img/tubos.jpg
 
 O código abaixo, adaptado de um exemplo da Wikipédia, mostra como criar uma janela pop-up baseada em CSS, que torna-se visível quando uma função em JavaScript altera o atributo <code>display</code> e uma DIV é exibida por cima da página:
 
-{% highlight html %}
+```html
 
 <style type="text/css">
   .popup{
@@ -58,7 +58,7 @@ O código abaixo, adaptado de um exemplo da Wikipédia, mostra como criar uma ja
   <a href="javascript: fechar();">Fechar POPUP</a>
 </p>
 
-{% endhighlight %}
+```
 
 1. A propriedade <code>position: fixed</code> manterá o conteúdo pop-up sempre visível, mesmo que o usuário role a página.
 1. O conteúdo é ocultado com <code>diplay: none</code>.
@@ -69,7 +69,7 @@ O código abaixo, adaptado de um exemplo da Wikipédia, mostra como criar uma ja
 
 Basicamente, o modal ou pop-up funciona muito bem, mas faltam algumas melhorias. Quando o conteúdo é exibido, ele surge de repente na tela, sem nenhuma animação. Vamos fazer um pop-up mais estiloso, e talvez dispensar a necessidade de Javascript:
 
-{% highlight css %}
+```css
 
 .pop {
   position: fixed;
@@ -112,7 +112,7 @@ Basicamente, o modal ou pop-up funciona muito bem, mas faltam algumas melhorias.
   line-height: 50px;
 }
 
-{% endhighlight %}
+```
 
 O pop-up agora tem várias melhorias:
 
@@ -124,7 +124,7 @@ O pop-up agora tem várias melhorias:
 
 Outro problema do exemplo anterior é que os scripts não podem ser reaproveitados. Como as funções estão sempre chamando o mesmo elemento, baseando-se no atributo `id`, não podemos usar as mesmas funções aqui. Vamos fazer uma função que resolva isso, e de quebra permita reutilizarmos o componente com mais flexibilidade:
 
-{% highlight javascript %}
+```javascript
 
 function modal(modal) {
 
@@ -141,11 +141,11 @@ function modal(modal) {
 
 };
 
-{% endhighlight %}
+```
 
 A função recebe um parâmetro para especificar qual elemento representa o nosso componente. Podemos passar o próprio elemento ou uma string que busca o elemento na página, no estilo da jQuery:
 
-{% highlight javascript %}
+```javascript
 
 var popupElement = document.querySelector('#pop-up-1');
 
@@ -153,11 +153,11 @@ var primeiroPopUp = modal(popupElement);
 
 var segundoPopUp = modal('#pop-up-2');
 
-{% endhighlight %}
+```
 
 A função retorna um objeto com os métodos `abrir` e `fechar`, que permitem realizar as ações que eles sugerem. Agora podemos usar o componente assim:
 
-{% highlight html %}
+```html
 
 <div id="pop-up-1" class="pop">
   <section class="pop-content">
@@ -176,17 +176,17 @@ A função retorna um objeto com os métodos `abrir` e `fechar`, que permitem re
   </section>
 </div>
 
-{% endhighlight %}
+```
 
 E podemos disparar a exibição do modal com o método do CSS ou com a função do javascript:
 
-{% highlight html %}
+```html
 
 <a href="#pop-up-1">Abrir sem Javascript</a>
 
 <a href="javascript: modal('#pop-up-1').abrir();">Abrir com Javascript</a>
 
-{% endhighlight %}
+```
 
 Experimente um [exemplo de pop-up funcionando](https://johnylab.net/amcss-modal/exemplo.html) ou baixe o [projeto AMCSS Modal no Github](https://github.com/Johnylab/amcss-modal/). Fique a vontade para baixar e usar os códigos como quiser. O projeto vem com alguns bônus:
 

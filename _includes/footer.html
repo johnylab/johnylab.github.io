@@ -3,18 +3,23 @@
 <footer class="site-footer hero brand">
   <div class="wrapper">
     <figure
-      class="vcard horizontal"
+      class="site-footer__figure vcard horizontal"
+      style="flex-wrap: wrap; gap: var(--spacing)"
       role="banner"
       aria-labelledby="vcard-label"
     >
       <div class="photo">
         <a href="{{ site.baseurl }}/">
-          <img src="{{ site.baseurl }}/img/johnylab.png" alt="{{ card.fn }}" />
+          <img
+            src="{{ site.baseurl }}/img/joao-ferreira.png"
+            width="150"
+            alt="{{ card.fn }}"
+          />
         </a>
       </div>
 
-      <figcaption>
-        <h2 class="fn" id="vcard-label">{{ card.fn }}</h2>
+      <figcaption class="flex">
+        <p class="fn site-footer__heading" id="vcard-label">{{ card.fn }}</p>
         <div class="nickname">{{ card.nickname }}</div>
         <div class="note">{{ card.note }}</div>
         <div class="adr">
@@ -23,7 +28,7 @@
         </div>
       </figcaption>
 
-      <nav class="site-nav">
+      <nav class="site-nav vertical">
         <a href="{{ site.baseurl }}/">Home</a>
         <a href="{{ site.baseurl }}/blog/">Blog</a>
         {% for link in card.social %}

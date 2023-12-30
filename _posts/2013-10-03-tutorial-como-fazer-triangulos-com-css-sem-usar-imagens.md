@@ -1,6 +1,6 @@
 ---
-title: "Tutorial: Como fazer triângulos com CSS (sem usar imagens)"
-date: 2013-10-03 21:00:00 -03:00
+title: "Tutorial: Criando Triângulos com CSS (Sem Usar Imagens)"
+date: 2013-12-29 23:20:00 -03:00
 categories:
   - CSS
 tags:
@@ -8,67 +8,83 @@ tags:
   - border
   - layout
 excerpt: |-
-  Já é possível criar formas geométricas apenas com propriedades CSS... dá
-  pra aplicar diversos efeitos e filtros, mas a maioria ainda não funciona no IE (lógico).
-  A técnica funcionou em todos os navegadores...
+  Descubra como adicionar formas geométricas ao seu design utilizando apenas propriedades CSS. Esta técnica de criar triângulos é compatível com todos os navegadores modernos, proporcionando uma solução eficaz sem a necessidade de imagens.
 img: /img/css-triangles.jpg
 ---
 
-Já é possível criar formas geométricas apenas com propriedades CSS. Além disso, dá pra aplicar diversos efeitos e filtros, mas a maioria ainda não funciona no Internet Explorer (lógico). Como a técnica de criar triângulos funcionou em todos os navegadores que eu testei (não atendo mais ao IE6, mas funciona no 7) e pode ser muito útil para criar os controles de um slider sem ter que fazer mais imagens, estou passando abaixo o conceito.
+<div class="wrapper horizontal" style="align-items: center; flex-wrap: wrap; gap: var(--spacing);">
+  <div style="flex: 1 1 555px;">
+    <p>
+      <img src="https://i.stack.imgur.com/cojBG.gif" alt="Triângulos feitos com CSS">
+    </p>
+  </div>
 
-#### Ilusão da propriedade `border`:
-
-Devemos tudo à forma como os navegadores processam as bordas dos elementos.
-
-<div class="wrapper" style="border:15px solid;border-color:#ccc #777;padding:1em;">Está caixa foi criada apenas com CSS. As cores das bordas foram definidas para que você perceba bem o que acontece.</div>
-
-Veja esta animação do Chris Coyer:
-
-<div class="wrapper">
-    <p data-height="380" data-theme-id="1572" data-slug-hash="lotjh" data-default-tab="result" data-user="chriscoyier" class='codepen'>See the Pen <a href='http://codepen.io/chriscoyier/pen/lotjh/'>Animation to Explain CSS Triangles</a> by Chris Coyier (<a href='http://codepen.io/chriscoyier'>@chriscoyier</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+  <div style="flex: 1 1 200px;">
+    <p>
+      Agora, é possível incorporar formas geométricas aos seus projetos com facilidade. Além disso, essa técnica oferece a flexibilidade de aplicar diversos efeitos e filtros. Como funciona em todos os navegadores modernos, é uma opção ideal para criar controles de slider sem recorrer a imagens adicionais. Vamos explorar os fundamentos.
+    </p>
+    <p>
+      Devemos tudo à forma como os navegadores processam as bordas dos elementos.
+    </p>
+  </div>
 </div>
 
-Quando definimos as dimensões do elemento para 0 (zero), obtemos quatro triângulos que são formados pelas bordas.
-
-![Triângulos feitos com CSS](https://i.stack.imgur.com/cojBG.gif)
-
-E a estilização básica dos triângulos fica assim:
-
-
-{% highlight css %}
-
+```css
 .triangulo{
-   width:0;
-   height:0;
-   border:1em solid;
+   width: 0;
+   height: 0;
+   border: 1em solid;
    font-size: 30px; /* Configure o tamanho do triângulo aqui. */
 }
-
-{% endhighlight %}
-
-
-Agora basta ocultar as bordas que não queremos:
-
-
-{% highlight css %}
 
 .prabaixo { border-color: #777 transparent transparent transparent; }
 .esquerda { border-color: transparent #777 transparent transparent; }
 .pracima  { border-color: transparent transparent #777 transparent; }
 .direita  { border-color: transparent transparent transparent #777; }
+```
 
-{% endhighlight %}
+Ao definir as dimensões do elemento como 0 (zero), obtemos quatro triângulos formados pelas bordas. A estilização básica dos triângulos é apresentada acima, e para ocultar as bordas indesejadas, utilize as classes correspondentes no seu HTML.
 
+Para uma demonstração animada, confira o exemplo abaixo produzido pelo Chris Coyer:
 
-Use as classes no seu HTML assim:
+<div class="wrapper page-content">
+  <iframe height="400" style="width: 100%; height: 400px;" scrolling="no" title="Animation to Explain CSS Triangles" src="https://codepen.io/chriscoyier/embed/DELgOJ?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+    See the Pen <a href="https://codepen.io/chriscoyier/pen/DELgOJ">
+    Animation to Explain CSS Triangles</a> by Chris Coyier  (<a href="https://codepen.io/chriscoyier">@chriscoyier</a>)
+    on <a href="https://codepen.io">CodePen</a>.
+  </iframe>
+</div>
+  
+<div class="page-content">
+  <div class="wrapper horizontal center">
+    <p>Uma aplicação prática interessante é criar balões de diálogo utilizando triângulos feitos em CSS para indicar a ponta do balão.</p>
+    <img src="/img/blog/speech-bubble-example.png" alt="Exemplo de um balão de diálogo feito com CSS"/>
+  </div>
+</div>
 
+```css
+blockquote {
+  margin-bottom: 60px;
+  padding: var(--spacing-s);
+  font-size: 1.15em;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--grey-color-500);
+  background-color: var(--grey-color-100);
+  position: relative;
+}
 
-{% highlight html %}
+blockquote::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 100px;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: var(--grey-color-100);
+  border-left-color: var(--grey-color-100);
+}
+```
 
-<div class="triangulo direita"></div>
-<div class="triangulo esquerda"></div>
-<div class="triangulo pracima"></div>
-<div class="triangulo prabaixo"></div>
-
-{% endhighlight %}
+A flexibilidade dessa técnica oferece oportunidades criativas para aprimorar a estética do seu design. Experimente e descubra como essa abordagem pode ser valiosa em diversos contextos.

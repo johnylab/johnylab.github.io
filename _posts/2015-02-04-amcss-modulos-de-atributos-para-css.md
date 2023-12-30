@@ -15,8 +15,7 @@ excerpt: |-
 img: https://farm8.staticflickr.com/7399/15822048634_023342337f.jpg
 ---
 
->
-  Esta página é uma tradução do artigo <a href="http://amcss.github.io/" hreflang="en">http://amcss.github.io/</a>, com pequenas adaptações.
+> Esta página é uma tradução do artigo <a href="http://amcss.github.io/" hreflang="en">http://amcss.github.io/</a>, com pequenas adaptações.
 
 Attribute Modules (AM) é uma técnica para usar os atributos HTML e seus valores em vez de classes para estilizar os elementos. Ao fazê-lo, cada atributo declara efetivamente um namespace separado para encapsular as informações de estilo, resultando em um HTML e CSS mais legíveis e de fácil manutenção.
 
@@ -27,8 +26,7 @@ Não se trata nem de um framework, nem de uma biblioteca. É um estilo que melho
 Os botões são um dos melhores exemplos de aplicação de AM. Aqui temos alguns exemplos de marcação dos botões do Bootstrap.
 
 
-{% highlight html %}
-
+```html
 <!-- Botão primário Grande -->
 <a class="btn btn-primary btn-lg"> Botão primário Grande </a>
 <a am-Button="primary large"> Botão primário Grande </a>
@@ -44,8 +42,7 @@ Os botões são um dos melhores exemplos de aplicação de AM. Aqui temos alguns
 <!-- Botão de perigo extra-pequeno -->
 <a class="btn btn-danger btn-xs"> Botão de perigo extra-pequeno </a>
 <a am-Button="danger extra-small"> Botão de perigo extra-pequeno </a>
-
-{% endhighlight %}
+```
 
 
 A marcação Bootstrap original é fortemente baseada na convenção de que todos os botões exigem uma classe <code>btn</code> e outras classes de botão específicas prefixadas por <code>btn-</code>. Isso resulta em um markup desordenado e repetitivo.
@@ -55,8 +52,7 @@ A versão de AM, por sua vez, utiliza o atributo <code>am-Button</code> como um 
 As mudanças no CSS são bastante simples:
 
 
-{% highlight css %}
-
+```css
 .btn
 [am-Button] {/ * estilos botão padrão * /}
 
@@ -65,8 +61,7 @@ As mudanças no CSS são bastante simples:
 
 .btn-large
 [am-Button~= "large"] {/ * definições de dimensionamento * /}
-
-{% endhighlight %}
+```
 
 
 ### Exemplo: Flexbox Grid
@@ -75,27 +70,23 @@ Já é de praxe usarmos algum sistema de grade, e <a href="http://flexboxgrid.co
 
 Com class:
 
-{% highlight html %}
-
+```html
 <div class="row reverse">
     <div class="column-12--hand column-8--lap">
         <div class="box">Responsive</div>
     </div>
 </div>
-
-{% endhighlight %}
+```
 
 Com atributos personalizados:
 
-{% highlight html %}
-
+```html
 <div am-Grid-Row="reverse">
     <div am-Grid-Col="12 lap:8">
         <div am-Demo="box">Responsive</div>
     </div>
 </div>
-
-{% endhighlight %}
+```
 
 
 A marcação inicial tem alguns problemas comuns a todos os sistemas de grade baseados em classes. Como as classes da grade são usadas com tanta freqüência, ela usa classes css relativamente <em>nuas</em>, como <code>row</code> e <code>reverse</code>, mas como as colunas precisam ser responsivas, ela evita uma classe <code>col</code> global e define classes <code>col-breakpoint-número</code>.
@@ -106,37 +97,29 @@ A marcação AM, por outro lado, define os módulos <code>am-Grid-Row</code> e <
 
 Considerando AM uma evolução do estilo de nomeação BEM, você também pode considerar um módulo que defina um namespace mais geral para o agrupamento de estilos relacionados. Semelhante às classes de utilidade em Suit CSS, estes podem ser considerados como traços de estilo reutilizáveis, que podem ser aplicados sobre ou no interior de componentes.
 
-
-{% highlight html %}
-
+```html
 <div class="u-posAbsoluteCenter">
    <div class="u-textTruncate u-textCenter">
      Texto super centralizado.
    </div>
 </div>
+```
 
-{% endhighlight %}
-
-
-
-{% highlight html %}
-
+```html
 <div am-position="center absolute">
    <div am-text="center truncate">
      Texto super centralizado.
    </div>
 </div>
-
-{% endhighlight %}
-
+```
 
 Aqui podemos aproveitar o fato de que os valores para <code>am-position</code> e <code>am-text</code> operam em diferentes namespaces, para que possamos utilizar o valor center em ambos os lugares, sem a preocupação com conflitos de nomes.
 
 ### Mais exemplos no Github
 
+- <a href="https://github.com/benschwarz/am-grid">am-Grid</a>
+  <br>Um sistema de grade em AM, inspirado no Flexbox Grid. <a href="https://github.com/benschwarz/am-grid/blob/master/src/grid.css">Veja o  código-fonte</a>.
 
-
-<a href="https://github.com/benschwarz/am-grid">am-Grid</a><br>Um sistema de grade em AM, inspirado no Flexbox Grid. <a href="https://github.com/benschwarz/am-grid/blob/master/src/grid.css">Veja o  código-fonte</a>.
-
-<a href="https://github.com/amcss/amcss.github.io/tree/development">amcss.github.io</a><br>Um exemplo simples de componentes em AM, divididos em <a href="https://github.com/amcss/amcss.github.io/tree/development/src/styles/modules">quatro módulos simples</a>.
+- <a href="https://github.com/amcss/amcss.github.io/tree/development">amcss.github.io</a>
+  <br>Um exemplo simples de componentes em AM, divididos em <a href="https://github.com/amcss/amcss.github.io/tree/development/src/styles/modules">quatro módulos simples</a>.
 

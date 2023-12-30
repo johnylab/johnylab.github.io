@@ -26,7 +26,8 @@ h4,
 h5,
 h6,
 p,
-li,
+ul,
+ol,
 blockquote {
   margin-top: var(--spacing);
   margin-bottom: var(--spacing);
@@ -70,10 +71,44 @@ p {
   line-height: var(--base-line-height);
 }
 
+ul,
+ol {
+  padding-left: calc(var(--spacing) * 2);
+}
+
 blockquote {
+  margin-bottom: 60px;
+  padding: var(--spacing-s);
   font-size: 1.15em;
   font-style: italic;
-  color: var(--grey-color-700);
+  font-weight: 400;
+  color: var(--grey-color-500);
+  background-color: var(--grey-color-100);
+  position: relative;
+
+  p,
+  li {
+    margin-top: var(--spacing-s);
+    margin-bottom: var(--spacing-s);
+  }
+}
+
+blockquote::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 100px;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: var(--grey-color-100);
+  border-left-color: var(--grey-color-100);
+}
+
+
+li p {
+  margin-top: var(--spacing-xs);
+  margin-bottom: var(--spacing-xs);
 }
 
 a {

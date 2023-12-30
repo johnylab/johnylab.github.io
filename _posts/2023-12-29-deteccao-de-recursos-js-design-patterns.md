@@ -10,6 +10,7 @@ img: null
 excerpt: |-
   Um mergulho profundo na detecção de recursos no navegador usando padrões de design em JavaScript.
   Aprenda como otimizar a detecção de recursos, tornar seu código mais organizado e melhorar a manutenção e expansão futura.
+date: 2023-12-30T02:50:10.000Z
 ---
 
 ![Ilustração de uma estrutura de software. Um padrão de formas hexagonais rodeado de termos relacionados.](/img/blog/software-hive-structure.jpg)

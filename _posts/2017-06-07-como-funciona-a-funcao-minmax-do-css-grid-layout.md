@@ -16,8 +16,13 @@ excerpt: |-
 img: null
 ---
 
-<figure class="large">
-    <img src="https://www.chiefofdesign.com.br/wp-content/uploads/2017/04/CSS-Grid-Layout.png" alt="CSS Grid Layout by David Arty"><figcaption class="hero tight light"><a href="https://www.chiefofdesign.com.br/guia-introdutorio-de-css-grid-layout/">Aprenda Grid Layout</a> com o autor desta imagem, meu amigo <a href="https://facebook.com/david.diarty">David Arty</a>.</figcaption>
+<figure>
+    <img src="https://www.chiefofdesign.com.br/wp-content/uploads/2017/04/CSS-Grid-Layout.png" alt="CSS Grid Layout by David Arty">
+    <figcaption class="wrapper hero small">
+        <small>
+            Autor da image: <a href="https://chiefofdesign.com.br/">David Arty</a>.
+        </small>
+    </figcaption>
 </figure>
 
 Fonte: *[How the minmax() Function Works](https://bitsofco.de/how-the-minmax-function-works/)*
@@ -28,11 +33,11 @@ Uma nova característica muito útil apresentada com a [especificação do Grid 
 
 A função `minmax()` aceita dois parâmetros, um valor mínimo e um máximo:
 
-{% highlight css %}
+```css
 
 minmax(min, max)
 
-{% endhighlight %}
+```
 
 Se o valor máximo definido for menor que o valor mínimo, ele é ignorado, e a função é tratada como se apresentasse apenas o valor mínimo.
 
@@ -57,14 +62,14 @@ Talvez o exemplo mais simples de valor usado com a função `minmax()`, já que 
 
 Usando a função `minmax()` podemos especificar que a célula amarela permaneça entre 100px e 200px. Conforme a janela é redimensionada, a valor absoluto muda, mas sempre dentro dos dois limites.
 
-{% highlight css %}
+```css
 
 .grid {
     display: grid;
     grid-template-columns: minmax(100px, 200px) 1fr 1fr;
 }
 
-{% endhighlight %}
+```
 
 ![Demonstração da função minmax() com valores absolutos]({{ site.baseurl }}/img/blog/grid-minmax-length-1.gif)
 
@@ -72,14 +77,14 @@ Usando a função `minmax()` podemos especificar que a célula amarela permaneç
 
 Também podemos usar porcentagens com a função `minmax()`. Digamos que precisássemos que a mesma célula amarela tivesse o tamanho máximo de 50% da grade, mas nunca menos do que 200px.
 
-{% highlight css %}
+```css
 
 .grid {
     display: grid;
     grid-template-columns: minmax(200px, 50%) 1fr 1fr;
 }
 
-{% endhighlight %}
+```
 
 ![Demonstração da função minmax() com porcentagens]({{ site.baseurl }}/img/blog/grid-minmax-percentage.gif)
 
@@ -91,14 +96,14 @@ O tamanho flexível (fr) é uma nova unidade de medida que surgiu junto com a es
 
 Até o momento, a unidade **fr** só pode ser usada para o valor máximo na função `minmax()`. Embora esteja anotado na especificação que, no futuro, ela também poderá ser aplicada ao valor mínimo. Voltando ao exemplo prático, em que a nossa célula amarela tem a largura mínima de 200px, mas queremos que, quando a tela tive um espaço maior, ela fique com 1fr de largura, que é o mesmo tamanho das outras duas colunas.
 
-{% highlight css %}
+```css
 
 .grid {
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 1fr 1fr;
 }
 
-{% endhighlight %}
+```
 
 ![Demonstração da função minmax() com a nova unidade fr]({{ site.baseurl }}/img/blog/grid-minmax-fr.gif)
 
@@ -110,14 +115,14 @@ A palavra-chave **max-content** é um valor especial que representa o "tamanho i
 
 Voltando ao exemplo anterior, vamos especificar que a célula amarela tenha um mínimo e um máximo de **max-content**.
 
-{% highlight css %}
+```css
 
 .grid {
     display: grid;
     grid-template-columns: minmax(max-content, max-content) 1fr 1fr;
 }
 
-{% endhighlight %}
+```
 
 ![Demonstração da função minmax() com a palavra-chave max-content]({{ site.baseurl }}/img/blog/grid-minmax-max-content.gif)
 
@@ -129,14 +134,14 @@ A palavra chave **min-content**, assim como no caso anterior, é um valor especi
 
 Para ilustrar a diferença entre **min-content** e **max-content**, podemos usar o mesmo conteúdo do exemplo anterior, passando para a função `minmax()` o valor **min-content**.
 
-{% highlight css %}
+```css
 
 .grid {
     display: grid;
     grid-template-columns: minmax(min-content, min-content) 1fr 1fr;
 }
 
-{% endhighlight %}
+```
 
 ![Demonstração da função minmax() com a palavra-chave min-content]({{ site.baseurl }}/img/blog/grid-minmax-min-content.gif)
 
@@ -150,14 +155,14 @@ Quando usado como o máximo, o valor **auto** é equivalente ao valor **max-cont
 
 Para ilustrar, vamos novamente configurar a célula amarela com a função `minmax()` com o valor **auto** para o mínimo e máximo.
 
-{% highlight css %}
+```css
 
 .grid {
     display: grid;
     grid-template-columns: minmax(auto, auto) 1fr 1fr;
 }
 
-{% endhighlight %}
+```
 
 ![Demonstração da função minmax() com a palavra-chave auto]({{ site.baseurl }}/img/blog/grid-minmax-auto.gif)
 
@@ -169,24 +174,29 @@ Como foi visto, existem muitos casos para usar a função `minmax()`. Provavelme
 
 Cada coluna da grade tem uma largura mínima de 200px. Quando a tela é redimensionada, muda o número de colunas para que elas mantenham o tamanho ideal. Com CSS Grid e a função `minmax()`, basta duas linhas de código para isso.
 
-{% highlight css %}
+```css
 
 .grid {
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
 }
 
-{% endhighlight %}
+```
 
 Além da função `minmax()`, existem duas outras partes importantes neste código:
 
 - **repeat()**: Função que permite definir o mesmo valor para múltiplas colunas da grade. Aceita dois valores: o número de repetições e o valor a ser repetido.
 - **auto-fit**: Palavra-chave que pode ser usada com a função `repeat()` no lugar do número de repetições. Redefine de forma flexível o número de colunas de acordo com a largura que cada coluna pode ter.
 
-<blockquote class="horizontal">
-    <div style="flex: 1 1 75%;">
+<blockquote class="horizontal" style="gap: 1em;">
+    <div class="vertical" style="justify-content: space-around; flex: 1 1 75%;">
         <p>Uma limitação, na minha opinião bem importante, é que isso só funciona se todas as colunas tiverem a mesma largura. Temos que usar <strong>repeat()</strong> junto com a palavra-chave <strong>auto-fit</strong>, já que é isso que permite que o número de colunas seja flexível. No entanto, esta ainda pode ser uma técnica extremamente útil em certas circunstâncias.</p>
-        <p data-text="sm">Ire Aderinokun, autora do texto original <a href="https://bitsofco.de/how-the-minmax-function-works/">How the minmax() Function Works</a></p>
+        <p data-text="sm">
+            Ire Aderinokun, autora do texto original 
+            <a href="https://bitsofco.de/how-the-minmax-function-works/">How the minmax() Function Works</a>
+        </p>
     </div>
-    <div style="flex: 0 1 25%;"><img src="{{ site.baseurl }}/img/blog/Ire-Aderinokun.png" alt="Avatar: Ire Aderinokun"></div>
+    <div style="flex: 1 1 25%;">
+        <img src="{{ site.baseurl }}/img/blog/Ire-Aderinokun.png" width="150" alt="Avatar: Ire Aderinokun">
+    </div>
 </blockquote>

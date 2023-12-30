@@ -39,30 +39,24 @@ Primeiro vieram os <a href="http://tableless.com.br/o-que-sao-media-types/" targ
 
 No HTML:
 
-{% highlight html %}
-
+```html
 <link rel="stylesheet" href="style.css" media="screen">
 <link rel="stylesheet" href="style.css" media="print, handheld">
-
-{% endhighlight %}
+```
 
 Na folha de estilos:
 
-{% highlight css %}
-
+```css
 @media print {
   /* Código CSS */
 }
-
-{% endhighlight %}
+```
 
 Ao importar um arquivo css dentro de outro:
 
-{% highlight css %}
-
+```css
 @import url("impressao.css") print;
-
-{% endhighlight %}
+```
 
 
 Com a evolução dos dispositivos, um número sem fim de resoluções, formatos de tela, entre outras características do ambiente, tornaram os media types insuficientes para se entregar uma formatação confortável para todos os dispositivos. Veja mais em <a href="http://tableless.com.br/introducao-ao-responsive-web-design/" target="_blank">O que é Responsive Web Design?</a> Isso nos traz a uma solução mais flexível, usada atualmente para fazer sites responsivos: as Media Queries (consultas da mídia, em inglês do Google).
@@ -75,8 +69,7 @@ Com a evolução dos dispositivos, um número sem fim de resoluções, formatos 
 
 Para facilitar, aqui vai um exemplo:
 
-{% highlight css %}
-
+```css
 /* regra aplicada em primeiro lugar */
 body { background: blue; }
  
@@ -89,25 +82,18 @@ body { background: blue; }
 @media screen and (min-width: 480px) and (orientation: landscape) {
    nav { float: left; }
 }
-
-{% endhighlight %}
+```
 
 
 Como mostrado acima, após os estilos CSS gerais da página, são acrescentados os blocos iniciados por media queries (<code>@media</code>), que são destinados a dispositivos com características específicas (no nosso caso, apenas a largura da tela e orientação). As medidas usadas no exemplo se referem à largura (<em>width</em>) da <i>viewport</i>. Em dispositivos móveis, é o mesmo que a largura da tela. Em <i>desktops</i>, é a largura da janela do navegador. Neste último caso, torna-se possível testar os resultados ajustando o tamanho da janela. É claro que existem diferenças de implementação, e será mais confiável usar uma ferramenta de testes, ou o próprio dispositivo que você deseja atender. Veja mais <a href="http://mediaqueri.es/" target="_blank">exemplos de media queries</a>.
 
 ## O que as Media Queries não fazem
 
-Uma possível armadilha ao utilizar media queries é o peso adicional do código e imagens de <i>background</i>. Embora as "consultas da mídia" almejem atender melhor dispositivos com características específicas, acrescentar mais código para ajustar o conteúdo em telas pequenas vai ter um efeito justamente oposto de deixar o site mais leve. Além disso, definir imagens de fundo diferentes para telas diferentes, fará o celular baixar todas as imagens de fundo, mesmo que ele exiba apenas a versão mais leve.
+Uma possível armadilha ao utilizar media queries é o peso desnecessário ao carregar imagens de <i>background</i> em dispositivos com telas pequenas. Embora as "consultas da mídia" almejem atender melhor dispositivos com características específicas, acrescentar mais código para ajustar o conteúdo em telas pequenas vai ter um efeito justamente oposto de deixar o site mais leve. Além disso, definir imagens de fundo diferentes para telas diferentes fora das media queries fará o celular baixar todas as imagens de fundo, mesmo que ele exiba apenas a versão mais leve.
 
-Isso porque as media queries não impedem o navegador de baixar todo o conteúdo e código, independente das características de dispositivo indicadas. O CSS inteiro vai ter que ser carregado, e o navegador vai ter que baixar as imagens para calcular o resultado, antes de aplicar os estilos específicos das media queries.
+Isso porque as media queries não impedem o navegador de baixar todo o conteúdo e código, independente das características de dispositivo indicadas. O CSS inteiro vai ter que ser carregado, e o navegador vai ter que baixar todas as imagens que não estiverem dentro de media queries.
 
 Ainda não existe uma forma perfeita de fornecer imagens responsivas, de acordo com a largura de banda ou especificações do dispositivo. Muito trabalho tem sido feito, e muito há o que se discutir. Veja mais no <a href="http://responsiveimages.org/" target="_blank">Responsiveimages.org</a>.
-
-Além disso, media queries não funcionam em navegadores antigos, como o Internet Explorer 8 (claro, sempre ele). O mais recomendado é que o conteúdo do site não dependa de estilos dentro das media queries para estar disponível, e que elas sirvam apenas para melhorar a experiência.
-
-> Versões anteriores do IE (6, 7, 8), infelizmente, não entenderão as consultas de mídia, o que significa que nenhum estilo CSS dentro delas será processado por ele. Recomendamos que você faça as pazes com isso (ou use Chrome Frame), mas se não for possível, você pode usar <a href="https://github.com/scottjehl/Respond" target="_blank">Respond.js</a>, mas lembre-se que isso aumentará o volume de download, deixando o carregamento das páginas mais lento.
-> 
-> <small><a href="http://html5please.com/#media queries" target="_blank">HTML5 Please - Media Queries</a></small>
 
 ## Conclusão
 

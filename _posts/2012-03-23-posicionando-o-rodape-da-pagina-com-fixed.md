@@ -20,7 +20,7 @@ Pergunta do meu amigo Celso Garcia:
 > Já usei `{position: absolute; bottom: 0;}` e funciona pra um ou para outro.
 
 
-{% highlight css %}
+```css
 
 * {  
     padding: 0px;
@@ -42,17 +42,17 @@ html, body {
     position: absolute;  
 }  
 
-{% endhighlight %}
+```
 
 
 Solução:
 
 
-{% highlight css %}
+```css
 
 #footer {position:fixed;bottom:0;}
 
-{% endhighlight %}
+```
 
 
 Fixed posiciona sempre em relação à janela e não ao conteúdo da página.

@@ -30,7 +30,7 @@ Lembre-se que existem muitos serviços de e-mail, e todos são diferentes, inclu
 
 #### Antwort - Layouts responsivos para email
 
-![Real responsive Email layouts](http://internations.github.com/antwort/images/responsive-graphic.png)
+![Página inicial do site do Antwort](/img/blog/antwort.png)
 
 Recentemente a InterNations GmbH lançou o <a href="http://internations.github.com/antwort/" title="Antwort | Responsive Layouts for Email" target="_blank">Antwort</a>, um template responsivo para newsletters que promete funcionar em um grande número de dispositivos, principalmente os mais modernos.
 

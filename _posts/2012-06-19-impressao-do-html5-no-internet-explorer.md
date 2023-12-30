@@ -16,7 +16,7 @@ img: /img/HTML-5-Logotipo-Oficial.png
 
 Você já deve conhecer o hack de Internet Explorer que permite renderizar adequadamente os estilos do HTML5 na tela...
 
-{% highlight javascript %}
+```javascript
 
 // Discussões e comentários, visite: http://remysharp.com/2009/01/07/html5-enabling-script/
 
@@ -32,7 +32,7 @@ Você já deve conhecer o hack de Internet Explorer que permite renderizar adequ
 
 })();
 
-{% endhighlight %}
+```
 
 ... mas garantir a formatação correta da página durante a impressão é outra história. Mesmo usando o "arranjo" em javascript mostrado acima, os elementos não seriam estilizados corretamente quando enviados para impressão.
 

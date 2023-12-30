@@ -27,6 +27,9 @@
   --link-color: var(--brand-color);
   --link-color-hover: var(--black-color);
 
+  --github-color: #000000;
+  --linkedin-color: #0077b5;
+
   --spacing-xs: 8px;
   --spacing: 24px;
   --spacing-s: 12px;

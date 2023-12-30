@@ -27,6 +27,16 @@
     --link-color: var(--white-color);
     --link-color-hover: var(--black-color);
   }
+
+  &.small {
+    padding-top: var(--spacing-xs);
+    padding-bottom: var(--spacing-xs);
+  }
+
+  &.large {
+    padding-top: var(--spacing-m);
+    padding-bottom: var(--spacing-m);
+  }
 }
 
 .video-frame {
@@ -60,66 +70,5 @@ ul.seamless {
     display: block;
     width: 1em;
     height: 1em;
-    fill: currentColor;
   }
-}
-
-.page-content {
-  padding-top: var(--spacing-m);
-  padding-bottom: var(--spacing-m);
-}
-
-.wrapper,
-.post-content>h1,
-.post-content>h2,
-.post-content>h3,
-.post-content>h4,
-.post-content>h5,
-.post-content>h6,
-.post-content>p,
-.post-content>pre,
-.post-content>blockquote,
-.post-content>ul,
-.post-content>ol,
-.post-content>dl,
-.post-content>figure,
-.post-content>table,
-.post-content>[class*="highlight"] {
-  max-width: var(--content-width);
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: var(--spacing);
-  padding-right: var(--spacing);
-
-  &.large {
-    max-width: var(--large-content-width);
-  }
-
-  &.small {
-    max-width: var(--small-content-width);
-  }
-}
-
-.post-content ul,
-.post-content ol {
-  padding-left: var(--spacing-m);
-}
-
-.post-navigation {
-  border-top: 1px solid var(--grey-color-light);
-  border-bottom: 1px solid var(--grey-color-light);
-  padding-top: var(--spacing-s);
-  padding-bottom: var(--spacing-s);
-}
-
-.post-navigation .prev {
-  text-align: left;
-}
-
-.post-navigation .next {
-  text-align: right;
-}
-
-.pagination>* {
-  margin: var(--spacing);
 }

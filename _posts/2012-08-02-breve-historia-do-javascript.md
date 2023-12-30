@@ -16,13 +16,13 @@ img: /img/promptIn-Javascript.jpg
 canonical_url: https://johnylab.com.br/blog/breve-historia-evolucao-javascript-de-cmm-javascript/
 ---
 
-{% highlight javascript %}
+```javascript
 var person = prompt("Enter your name", "Name");
 
 if (person != null) {
   document.getElementById("demo").innerHTML = "Hello " + person + "! How are you today?";
 }
-{% endhighlight %}
+```
 
 <div class="horizontal center">
   <img src="http://www.javascripter.net/faq/prompt.gif" alt="Prompt javascript">
