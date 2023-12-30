@@ -2,35 +2,45 @@
 title: Blog
 layout: page
 isPaginated: true
+lang: pt_BR
 ---
 
 <div class="wrapper">
-    {% for post in paginator.posts %}
-    <article>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h2 class="post-title">
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <p class="post-excerpt">{{ post.content | strip_html | truncatewords: 60 }}</p>
-    </article>
-    {% endfor %}
+  {% for post in paginator.posts %}
+  <article>
+    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <h2 class="post-title">
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"
+        >{{ post.title }}</a
+      >
+    </h2>
+    <p class="post-excerpt">
+      {{ post.content | strip_html | truncatewords: 60 }}
+    </p>
+  </article>
+  {% endfor %}
 
-    <footer class="pagination horizontal center">
-        {% if paginator.previous_page %}
-        <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}"
-            class="previous icon">{% include svg/left-arrow.svg %}</a>
-        {% else %}
-        <span class="previous icon">{% include svg/left-arrow.svg %}</span>
-        {% endif %}
+  <footer class="pagination horizontal center">
+    {% if paginator.previous_page %}
+    <a
+      href="{{ site.baseurl }}{{ paginator.previous_page_path }}"
+      class="previous icon"
+      >{% include svg/left-arrow.svg %}</a
+    >
+    {% else %}
+    <span class="previous icon">{% include svg/left-arrow.svg %}</span>
+    {% endif %}
 
-        <span class="page_number">Página {{ paginator.page }} de {{ paginator.total_pages }}</span>
+    <span class="page_number"
+      >Página {{ paginator.page }} de {{ paginator.total_pages }}</span
+    >
 
-        {% if paginator.next_page %}
-        <a href="{{ site.baseurl }}{{ paginator.next_page_path }}"
-            class="next icon">{% include svg/next-arrow.svg %}</a>
-        {% else %}
-        <span class="next icon">{% include svg/next-arrow.svg %}</span>
-        {% endif %}
-    </footer>
-
+    {% if paginator.next_page %}
+    <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next icon"
+      >{% include svg/next-arrow.svg %}</a
+    >
+    {% else %}
+    <span class="next icon">{% include svg/next-arrow.svg %}</span>
+    {% endif %}
+  </footer>
 </div>

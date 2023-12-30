@@ -1,9 +1,10 @@
 ---
 layout: compress
 ---
+{% capture page_lang %}{{ page.lang | default: site.lang }}{% endcapture %}
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="{{page_lang}}">
 
   {% include head.html %}
 

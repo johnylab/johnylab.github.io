@@ -1,38 +1,167 @@
 ---
-title: João Ferreira, engenheiro de frontend
-excerpt: Sou desenvolvedor web desde 2003. Moro em Santos.
+title: Johnylab: Elevating Web and Mobile Experiences 🚀
+excerpt: I'm João Ferreira, a passionate frontend engineer based in Santos, SP. 
 ---
 
-<section class="page-content section-about">
+<section class="page-content section-presentation">
   <div class="wrapper">
-    <article lang="pt">
-      <h2>Português</h2>
-      <p>Brasileiro, casado e com 2 filhos. Moro em Santos, SP.</p>
+    <article>
+      <h2>Hello there! I'm João Ferreira</h2>
       <p>
-        Engenheiro de software desde 2003, sendo autodidata desde o início.
-        Tenho domínio avançado de Javascript Vanilla (independente de framework)
-        e muita experiência com React JS/Native.
-      </p>
-      <p>
-        Também tenho alguma experiência em .Net e Java. Gosto de resolver
-        problemas lógicos, ajudar o time e assumir responsabilidades.
+        Proudly Brazilian, happily married, and the joyful father of two. Let's
+        embark on a journey into my realm of software engineering, where
+        innovation blends seamlessly with precision.
       </p>
     </article>
+  </div>
+</section>
 
-    <article lang="en">
-      <h2>English</h2>
-      <p>
-        I am Brazilian, married and have two children. I live in Santos, SP.
-      </p>
-      <p>
-        I've been a software engineer since 2003, being self-taught since the
-        beginning. I have advanced knowledge of Vanilla Javascript (independent
-        of framework) and great experience with React JS/Native.
-      </p>
-      <p>
-        I also have some experience with .Net and Java. I enjoy solving logic
-        problems, helping the team and taking responsibility.
-      </p>
-    </article>
+<section class="page-content section-skills hero">
+  <div class="wrapper">
+    <h2>Tech Expertise:</h2>
+    <ul>
+      <li>🚀 Software engineer since 2003.</li>
+      <li>
+        🛠️ Advanced in Vanilla Javascript, with a focus on React JS/Native.
+      </li>
+      <li>💼 Experience in .Net and Java.</li>
+      <li>
+        💡 Problem-solving enthusiast, team player, and responsibility taker.
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="page-content section-blog">
+  <div class="wrapper">
+    <h2>Blog Insights:</h2>
+    <p>
+      Explore the tech universe through my
+      <a href="{{site.baseurl}}/blog/">blog</a> (in Portuguese). Recent posts
+      include:
+    </p>
+
+    <ol lang="pt-br">
+      {% for post in site.posts limit: 3 %}
+      <li>
+        <p class="blog-title">
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"
+            >{{ post.title }}</a
+          >
+        </p>
+        <p>{{ post.content | strip_html | truncatewords: 10 }}</p>
+      </li>
+      {% endfor %}
+    </ol>
+
+    <p>
+      More insights await in the
+      <a href="{{site.baseurl}}/blog/">Blog Section</a>.
+    </p>
+  </div>
+</section>
+
+<section class="page-content section-about hero dark">
+  <div class="wrapper">
+    <h2>About Me:</h2>
+    <ul>
+      <li>🌍 Based in Santos, SP.</li>
+      <li>🏡 Family-oriented: Brazilian, married, and father of two.</li>
+    </ul>
+
+    <h2>Professional Identity:</h2>
+    <ul>
+      <li>🛠️ Frontend Engineer.</li>
+      <li>
+        📍 Currently considering new opportunities to contribute and grow.
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="page-content section-career">
+  <div class="wrapper">
+    <h2>Career Summary:</h2>
+
+    <dl>
+      <dt>📅 Ender (August 2022 - December 2023):</dt>
+      <dd>
+        <ul>
+          <li>
+            Frontend Engineer contributing to web development in React JS,
+            Typescript, and AWS.
+          </li>
+          <li>
+            Engaged in testing with Playwright and GitHub automated test
+            integrations.
+          </li>
+        </ul>
+      </dd>
+
+      <dt>📅 FourSquare (March 2021 - July 2022):</dt>
+      <dd>
+        <ul>
+          <li>
+            Fullstack Engineer involved in web development using Ruby, Rails,
+            Java, React JS, and AWS.
+          </li>
+          <li>
+            Worked on large and complex analytics reports applications with
+            CI/CD stack integration.
+          </li>
+        </ul>
+      </dd>
+
+      <dt>📅 Webnets Soluções (September 2017 - September 2020):</dt>
+      <dd>
+        <ul>
+          <li>
+            Front-end Leader overseeing the restructuring of project
+            architectures.
+          </li>
+          <li>
+            Introduced knowledge of SPA, PWA, and REST APIs to the company.
+          </li>
+        </ul>
+      </dd>
+
+      <dt>
+        📅 Colégio Objetivo Baixada Santista (March 2010 - September 2017):
+      </dt>
+      <dd>
+        <ul>
+          <li>
+            Web Developer contributing to various projects, including a video
+            player for distance learning and educational applications.
+          </li>
+        </ul>
+      </dd>
+
+      <dt>📅 Fundação Lusíada (June 2008 - March 2010):</dt>
+      <dd>
+        <ul>
+          <li>
+            Web Designer involved in the development and optimization of the
+            commercial part of the website.
+          </li>
+        </ul>
+      </dd>
+
+      <dt>📅 Escola Aprendiz (February 2007 - November 2007):</dt>
+      <dd>
+        <ul>
+          <li>
+            Teacher and Web designer teaching basic computing and web design.
+          </li>
+        </ul>
+      </dd>
+    </dl>
+
+    <hr />
+
+    <p>
+      More details can be found on my
+      <a href="https://www.linkedin.com/in/johnylab/">LinkedIn</a>.
+    </p>
   </div>
 </section>

@@ -20,7 +20,7 @@ defaults:
   values:
     layout: post
     permalink: blog/:title/
-lang: pt_BR
+lang: en
 description: >
   Site pessoal de João Batista Ferreira, web designer e developer.
   Moro em Santos e curto padrões web e design moderno.
