@@ -188,7 +188,3 @@ E podemos disparar a exibição do modal com o método do CSS ou com a função 
 
 ```
 
-Experimente um [exemplo de pop-up funcionando](https://johnylab.net/amcss-modal/exemplo.html) ou baixe o [projeto AMCSS Modal no Github](https://github.com/Johnylab/amcss-modal/). Fique a vontade para baixar e usar os códigos como quiser. O projeto vem com alguns bônus:
-
-- Componente estilizado como módulo de atributo. [Saiba mais sobre módulos de atributos]({{ site.baseurl }}{% post_url 2015-02-04-amcss-modulos-de-atributos-para-css %}).
-- Estilos adicionais para o `<header>`, `<footer>` e botões de ação.
