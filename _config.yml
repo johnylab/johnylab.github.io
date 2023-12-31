@@ -3,10 +3,6 @@ title: Johnylab
 timezone: America/Sao_Paulo
 collections:
   posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
     output: true
 defaults:
 - scope:
@@ -21,10 +17,7 @@ defaults:
     layout: post
     permalink: blog/:title/
 lang: en
-description: >
-  Site pessoal de João Batista Ferreira, web designer e developer.
-  Moro em Santos e curto padrões web e design moderno.
-
+description: "I'm João Ferreira, a passionate frontend engineer based in Santos, SP."
 baseurl: ''
 url: https://johnylab.com.br
 markdown: kramdown

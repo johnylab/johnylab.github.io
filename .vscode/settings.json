@@ -1,5 +1,8 @@
 {
-  "cSpell.words": ["vcard"],
+  "cSpell.words": [
+    "Johnylab",
+    "vcard"
+  ],
   "frontMatter.dashboard.openOnStart": true,
   "[markdown]": {
     "editor.fontSize": 14,
