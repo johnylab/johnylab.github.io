@@ -7,8 +7,28 @@
 }
 
 .site-title {
-  font-size: 2em;
-  margin-right: var(--spacing);
+  margin-right: auto;
+  position: relative;
+  transform-origin: top left;
+
+  &:hover {
+    color: var(--brand-color);
+    transform: scale(1.2);
+  }
+
+  .icon {
+    font-size: 5rem;
+  }
+
+  .label {
+    position: absolute;
+    top: 0.2rem;
+    left: 0;
+    transform-origin: top right;
+    transform: rotate(-90deg) translateY(-5rem);
+
+    font-family: var(--title-font-family);
+  }
 }
 
 .site-footer__figure {
