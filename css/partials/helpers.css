@@ -1,8 +1,6 @@
 .hero {
   --background-color: var(--grey-color-100);
   --text-color: var(--black-color);
-  --link-color: var(--brand-color);
-  --link-color-hover: var(--black-color);
 
   color: var(--text-color);
   background-color: var(--background-color);
@@ -16,16 +14,16 @@
 
   &.dark {
     --background-color: var(--black-color);
-    --text-color: var(--white-color);
-    --link-color: var(--brand-color);
+    --text-color: var(--grey-color-300);
+    --link-color: var(--brand-color-lightest);
     --link-color-hover: var(--white-color);
   }
 
   &.brand {
     --background-color: var(--brand-color);
     --text-color: var(--white-color);
-    --link-color: var(--white-color);
-    --link-color-hover: var(--black-color);
+    --link-color: var(--brand-color-lightest);
+    --link-color-hover: var(--white-color);
   }
 
   &.small {

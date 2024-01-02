@@ -39,23 +39,28 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.2;
+  font-family: var(--title-font-family);
+  letter-spacing: 0.025em;
 }
 
 h1 {
   font-size: 2.5em;
+  line-height: 1.1;
 }
 
 h2 {
   font-size: 2em;
+  line-height: 1.1;
 }
 
 h3 {
   font-size: 1.75em;
+  line-height: 1.25;
 }
 
 h4 {
   font-size: 1.5em;
+  line-height: 1.25;
 }
 
 h5 {
@@ -79,10 +84,10 @@ ol {
 blockquote {
   margin-bottom: 60px;
   padding: var(--spacing-s);
+  font-family: var(--title-font-family);
+  font-weight: 200;
   font-size: 1.15em;
   font-style: italic;
-  font-weight: 400;
-  color: var(--grey-color-500);
   background-color: var(--grey-color-100);
   position: relative;
 
@@ -121,6 +126,14 @@ a:hover,
 a:focus,
 a:active {
   color: var(--link-color-hover);
+  text-decoration: underline;
+}
+
+hr {
+  margin-top: var(--spacing-m);
+  margin-bottom: var(--spacing-m);
+  border: 0 none;
+  border-top: 1px solid var(--grey-color-300);
 }
 
 embed,

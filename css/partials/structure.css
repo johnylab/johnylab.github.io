@@ -115,6 +115,21 @@
 }
 
 .post-navigation {
+  margin-top: var(--spacing-m);
+  margin-bottom: var(--spacing-m);
+
+  .prev,
+  .next {
+    small {
+      text-transform: uppercase;
+      font-family: var(--title-font-family);
+      font-size: 0.7em;
+      font-weight: 700;
+      letter-spacing: 0.025em;
+      color: var(--grey-color-700);
+    }
+  }
+
   .prev {
     text-align: left;
   }
