@@ -5,7 +5,7 @@ date: 2021-10-23 11:48:00 -02:00
 excerpt: Basicamente, toda ferramenta é ótima se você entender como ela funciona e aproveitar todos os recursos que ela oferece.
 ---
 
-![Perfil do LinkedIn - Cabeçalho](/uploads/linkedin-header-joao-ferreira.jpg)
+![Perfil do LinkedIn - Cabeçalho](/img/blog/linkedin-header-joao-ferreira.jpg)
 
 Basicamente, toda ferramenta é ótima se você entender como ela funciona e aproveitar todos os recursos que ela oferece. O LinkedIn é um exemplo de uma ferramenta muito útil, que muita gente tem deixado de aproveitar completamente.
 
@@ -83,7 +83,7 @@ Aqui está o pulo do gato. Depois que o seu perfil estiver completamente preench
 
 ## Seu currículo já está pronto
 
-![Linkedin - Baixar como PDF](/uploads/linkedin-header-joao-ferreira.jpg)
+![Linkedin - Baixar como PDF](/img/blog/linkedin-header-joao-ferreira.jpg)
 
 Acessando a sua página de perfil, no menu do botão **Mais** tem uma opção de **Salvar como PDF**. Esta opção serve para qualquer pessoa baixar o perfil do LinkedIn formatado como um currículo.
 
