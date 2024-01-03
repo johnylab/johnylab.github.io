@@ -1,81 +1,234 @@
 ---
 layout: default
-title: "Johnylab: Elevating Web and Mobile Experiences 🚀"
+title: 'Johnylab: Elevating Web and Mobile Experiences 🚀'
 ---
 
+<style>
+  .site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+
+    &:hover,
+    &:focus-within {
+      background-color: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(10px);
+    }
+  }
+
+  .section-presentation {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-presentation .wrapper {
+    margin-left: 0;
+  }
+
+  .section-presentation__title,
+  .section-presentation__description {
+    text-wrap: balance;
+    max-width: 36rem;
+  }
+
+  .section-presentation__title {
+    font-size: clamp(1.6rem, 8vw, 3rem);
+    line-height: 1.22;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .section-presentation__description {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+</style>
+
 <section class="page-content section-presentation">
-  <div class="wrapper">
-    <article>
-      <h2>Hello there! I'm João Ferreira</h2>
+  <div class="video-background">
+    <video id="presentation" autoplay loop playsinline muted>
+      <source
+        media="(min-width: 601px)"
+        src="assets/video/pexels-google-deepmind-18069232.mp4"
+        type="video/mp4"
+      />
+      <source
+        media="(max-width: 600px)"
+        src="assets/video/pexels-google-deepmind-18069233.mp4"
+        type="video/mp4"
+      />
+    </video>
+  </div>
+
+  <article class="section-presentation__content wrapper">
+    <h2 class="section-presentation__title">
+      <span class="inline-highlight"> Hello there! I'm João Ferreira </span>
+    </h2>
+    <p class="section-presentation__description">
+      <span class="inline-highlight">
+        Brazilian, married, father of two, and a software engineer since 2003.
+      </span>
+    </p>
+  </article>
+</section>
+
+<script>
+  {
+    const video = document.querySelector('video#presentation');
+
+    const sources = [...video.querySelectorAll('source')];
+    const sourcesMap = new Map();
+    sources.forEach((source) => {
+      sourcesMap.set(window.matchMedia(source.media), source.src);
+    });
+
+    function handleSourceChanged() {
+      const source = sourcesMap.get(this);
+      if (source) {
+        video.src = source;
+      }
+    }
+
+    sourcesMap.forEach((source, media) => {
+      media.addEventListener('change', handleSourceChanged);
+      handleSourceChanged.call(media);
+    });
+
+    const noMotionMedia = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const noMotionStep = 2;
+    let intervalID;
+
+    function handleReduceMotionChanged() {
+      if (noMotionMedia.matches) {
+        video.removeAttribute('autoplay');
+        intervalID = setInterval(() => {
+          const currentTime = video.currentTime + noMotionStep;
+          video.currentTime = currentTime > video.duration ? 0 : currentTime;
+        }, noMotionStep * 1000);
+        video.pause();
+      } else {
+        clearInterval(intervalID);
+        video.setAttribute('autoplay', '');
+        video.play();
+      }
+    }
+
+    noMotionMedia.addEventListener('change', handleReduceMotionChanged);
+    handleReduceMotionChanged();
+
+    const presentationContent = document.querySelector(
+      '.section-presentation__content'
+    );
+
+    function handleScroll() {
+      const translation = window.scrollY;
+      video.style.transform = `translateY(${translation * 0.33}px)`;
+      presentationContent.style.transform = `translateY(${
+        translation * 0.5
+      }px)`;
+    }
+
+    window.addEventListener('scroll', handleScroll);
+  }
+</script>
+
+<div class="horizontal" style="flex-wrap: wrap">
+  <section class="page-content section-skills hero" style="flex: 1 1 300px">
+    <div
+      class="wrapper vertical"
+      style="height: 100%; justify-content: flex-end"
+    >
+      <h2>Tech Expertise:</h2>
+      <ul>
+        <li>Software engineer since 2003.</li>
+        <li>
+          Advanced in Vanilla Javascript, with a focus on React JS/Native.
+        </li>
+        <li>Experience in .Net and Java.</li>
+        <li>
+          Problem-solving enthusiast, team player, and responsibility taker.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="page-content section-blog" style="flex: 1 1 600px">
+    <div class="wrapper">
+      <h2>Blog Insights:</h2>
       <p>
-        Proudly Brazilian, happily married, and the joyful father of two. Let's
-        embark on a journey into my realm of software engineering, where
-        innovation blends seamlessly with precision.
+        Explore the tech universe through my
+        <a href="{{site.baseurl}}/blog/">blog</a> (in Portuguese). Recent posts
+        include:
       </p>
+
+      <ol lang="pt-br">
+        {% for post in site.posts limit: 3 %}
+        <li>
+          <p class="blog-title">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"
+              >{{ post.title }}</a
+            >
+          </p>
+          <p>{{ post.content | strip_html | truncatewords: 10 }}</p>
+        </li>
+        {% endfor %}
+      </ol>
+
+      <p>
+        More insights await in the
+        <a href="{{site.baseurl}}/blog/">Blog Section</a>.
+      </p>
+    </div>
+  </section>
+</div>
+
+<style>
+  .section-about {
+    padding: 0;
+
+    article {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+</style>
+
+<section
+  class="section-about hero dark horizontal center"
+  style="flex-wrap: wrap"
+>
+  <div class="page-content wrapper" style="flex: 1 1 300px">
+    <article>
+      <h2>About Me:</h2>
+      <ul>
+        <li>Based in Santos, SP.</li>
+        <li>Family-oriented: Brazilian, married, and father of two.</li>
+      </ul>
+    </article>
+
+    <article>
+      <h2>Professional Identity:</h2>
+      <ul>
+        <li>Frontend Engineer.</li>
+        <li>Currently considering new opportunities to contribute and grow.</li>
+      </ul>
     </article>
   </div>
-</section>
 
-<section class="page-content section-skills hero">
-  <div class="wrapper">
-    <h2>Tech Expertise:</h2>
-    <ul>
-      <li>🚀 Software engineer since 2003.</li>
-      <li>
-        🛠️ Advanced in Vanilla Javascript, with a focus on React JS/Native.
-      </li>
-      <li>💼 Experience in .Net and Java.</li>
-      <li>
-        💡 Problem-solving enthusiast, team player, and responsibility taker.
-      </li>
-    </ul>
-  </div>
-</section>
-
-<section class="page-content section-blog">
-  <div class="wrapper">
-    <h2>Blog Insights:</h2>
-    <p>
-      Explore the tech universe through my
-      <a href="{{site.baseurl}}/blog/">blog</a> (in Portuguese). Recent posts
-      include:
-    </p>
-
-    <ol lang="pt-br">
-      {% for post in site.posts limit: 3 %}
-      <li>
-        <p class="blog-title">
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"
-            >{{ post.title }}</a
-          >
-        </p>
-        <p>{{ post.content | strip_html | truncatewords: 10 }}</p>
-      </li>
-      {% endfor %}
-    </ol>
-
-    <p>
-      More insights await in the
-      <a href="{{site.baseurl}}/blog/">Blog Section</a>.
-    </p>
-  </div>
-</section>
-
-<section class="page-content section-about hero dark">
-  <div class="wrapper">
-    <h2>About Me:</h2>
-    <ul>
-      <li>🌍 Based in Santos, SP.</li>
-      <li>🏡 Family-oriented: Brazilian, married, and father of two.</li>
-    </ul>
-
-    <h2>Professional Identity:</h2>
-    <ul>
-      <li>🛠️ Frontend Engineer.</li>
-      <li>
-        📍 Currently considering new opportunities to contribute and grow.
-      </li>
-    </ul>
+  <div style="flex: 1 1 800px">
+    <img
+      src="/img/johnylab-at-google.webp"
+      alt="João at Google Space at São Paulo, Brazil"
+      width="100%"
+    />
   </div>
 </section>
 
@@ -83,79 +236,61 @@ title: "Johnylab: Elevating Web and Mobile Experiences 🚀"
   <div class="wrapper">
     <h2>Career Summary:</h2>
 
-    <dl>
-      <dt>📅 Ender (August 2022 - December 2023):</dt>
-      <dd>
-        <ul>
-          <li>
-            Frontend Engineer contributing to web development in React JS,
-            Typescript, and AWS.
-          </li>
-          <li>
-            Engaged in testing with Playwright and GitHub automated test
-            integrations.
-          </li>
-        </ul>
-      </dd>
+    <p><strong>Ender</strong> (August 2022 - December 2023):</p>
+    <ul>
+      <li>
+        Frontend Engineer contributing to web development in React JS,
+        Typescript, and AWS.
+      </li>
+      <li>
+        Engaged in testing with Playwright and GitHub automated test
+        integrations.
+      </li>
+    </ul>
 
-      <dt>📅 FourSquare (March 2021 - July 2022):</dt>
-      <dd>
-        <ul>
-          <li>
-            Fullstack Engineer involved in web development using Ruby, Rails,
-            Java, React JS, and AWS.
-          </li>
-          <li>
-            Worked on large and complex analytics reports applications with
-            CI/CD stack integration.
-          </li>
-        </ul>
-      </dd>
+    <p><strong>FourSquare</strong> (March 2021 - July 2022):</p>
+    <ul>
+      <li>
+        Fullstack Engineer involved in web development using Ruby, Rails, Java,
+        React JS, and AWS.
+      </li>
+      <li>
+        Worked on large and complex analytics reports applications with CI/CD
+        stack integration.
+      </li>
+    </ul>
 
-      <dt>📅 Webnets Soluções (September 2017 - September 2020):</dt>
-      <dd>
-        <ul>
-          <li>
-            Front-end Leader overseeing the restructuring of project
-            architectures.
-          </li>
-          <li>
-            Introduced knowledge of SPA, PWA, and REST APIs to the company.
-          </li>
-        </ul>
-      </dd>
+    <p><strong>Webnets Soluções</strong> (September 2017 - September 2020):</p>
+    <ul>
+      <li>
+        Front-end Leader overseeing the restructuring of project architectures.
+      </li>
+      <li>Introduced knowledge of SPA, PWA, and REST APIs to the company.</li>
+    </ul>
 
-      <dt>
-        📅 Colégio Objetivo Baixada Santista (March 2010 - September 2017):
-      </dt>
-      <dd>
-        <ul>
-          <li>
-            Web Developer contributing to various projects, including a video
-            player for distance learning and educational applications.
-          </li>
-        </ul>
-      </dd>
+    <p>
+      <strong>Colégio Objetivo Baixada Santista</strong> (March 2010 - September
+      2017):
+    </p>
+    <ul>
+      <li>
+        Web Developer contributing to various projects, including a video player
+        for distance learning and educational applications.
+      </li>
+    </ul>
 
-      <dt>📅 Fundação Lusíada (June 2008 - March 2010):</dt>
-      <dd>
-        <ul>
-          <li>
-            Web Designer involved in the development and optimization of the
-            commercial part of the website.
-          </li>
-        </ul>
-      </dd>
+    <p><strong>Fundação Lusíada</strong> (June 2008 - March 2010):</p>
+    <ul>
+      <li>
+        Web Designer involved in the development and optimization of the
+        commercial part of the website.
+      </li>
+    </ul>
 
-      <dt>📅 Escola Aprendiz (February 2007 - November 2007):</dt>
-      <dd>
-        <ul>
-          <li>
-            Teacher and Web designer teaching basic computing and web design.
-          </li>
-        </ul>
-      </dd>
-    </dl>
+    <p><strong>Escola Aprendiz</strong> (February 2007 - November 2007):</p>
+    <ul>
+      <li>Teacher and Web designer teaching basic computing and web design.</li>
+    </ul>
 
     <hr />
 

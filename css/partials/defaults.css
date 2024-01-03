@@ -78,7 +78,12 @@ p {
 
 ul,
 ol {
-  padding-left: calc(var(--spacing) * 2);
+  padding-left: var(--spacing);
+}
+
+li {
+  margin-top: var(--spacing-s);
+  margin-bottom: var(--spacing-s);
 }
 
 blockquote {

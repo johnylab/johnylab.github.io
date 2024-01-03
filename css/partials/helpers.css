@@ -60,6 +60,18 @@ ul.seamless {
   padding: 0;
 }
 
+.inline-highlight {
+  display: inline;
+  padding: 0 0.5rem;
+  -ms-box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  box-decoration-break: clone;
+
+  color: #fff;
+  background-color: blue;
+}
+
 .icon {
   display: inline-block;
   vertical-align: baseline;
@@ -69,4 +81,20 @@ ul.seamless {
     width: 1em;
     height: 1em;
   }
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

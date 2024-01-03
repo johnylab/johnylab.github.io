@@ -1,4 +1,7 @@
 .site-header {
+  --link-color-hover: var(--brand-color);
+  padding: var(--spacing-s) var(--spacing);
+
   .site-nav {
     .icon {
       font-size: 1.5em;
@@ -10,6 +13,7 @@
   margin-right: auto;
   position: relative;
   transform-origin: top left;
+  transform: scale(1);
 
   &:hover {
     color: var(--brand-color);
@@ -31,17 +35,34 @@
   }
 }
 
-.site-footer__figure {
-  margin-left: 0;
-  margin-right: 0;
+.site-nav {
+  a {
+    display: inline-block;
+    font-weight: 700;
+    padding: var(--spacing-xs);
+  }
 }
 
-.site-footer__heading {
-  margin-top: var(--spacing-xs);
-  font-size: 1.2em;
+@media (max-width: 600px) {
+  .site-header {
+    padding: var(--spacing-xs) var(--spacing);
+  }
+
+  .site-title {
+    .icon {
+      font-size: 3rem;
+    }
+
+    .label {
+      font-size: .7rem;
+      transform: rotate(-90deg) translateY(-3.5rem);
+    }
+  }
 }
 
 .site-footer {
+  --link-color-hover: var(--white-color);
+
   .site-nav {
     a {
       padding-left: 0;
@@ -50,25 +71,14 @@
   }
 }
 
-@media screen and (width < 600px) {
-  .site-title {
-    font-size: 2.4em;
-
-    .label {
-      display: none;
-    }
-  }
-
+.site-footer__figure {
+  margin-left: 0;
+  margin-right: 0;
 }
 
-.site-nav {
-  a {
-    display: inline-block;
-    text-wrap: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding: var(--spacing-xs);
-  }
+.site-footer__heading {
+  margin-top: var(--spacing-xs);
+  font-size: 1.2em;
 }
 
 .page-content {
