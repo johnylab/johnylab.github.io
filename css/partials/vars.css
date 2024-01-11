@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Raleway:wght@200;400;700&display=swap');
 
 :root {
-  --base-font-family: 'Manrope', serif;
-  --title-font-family: 'Raleway', serif;
+  --base-font-family: 'Manrope', sans-serif;
+  --title-font-family: 'Raleway', sans-serif;
   --base-font-size: 1.1em;
   --base-font-weight: 300;
   --small-font-size: calc(var(--base-font-size) * 0.875);
