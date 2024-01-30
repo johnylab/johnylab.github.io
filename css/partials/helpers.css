@@ -25,16 +25,6 @@
     --link-color: var(--brand-color-lightest);
     --link-color-hover: var(--white-color);
   }
-
-  &.small {
-    padding-top: var(--spacing-xs);
-    padding-bottom: var(--spacing-xs);
-  }
-
-  &.large {
-    padding-top: var(--spacing-m);
-    padding-bottom: var(--spacing-m);
-  }
 }
 
 .video-frame {
