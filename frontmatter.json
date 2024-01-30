@@ -24,11 +24,6 @@
           "isPublishDate": true
         },
         {
-          "title": "Content preview",
-          "name": "img",
-          "type": "image"
-        },
-        {
           "title": "Is in draft",
           "name": "draft",
           "type": "draft"

@@ -2,13 +2,15 @@
 title: Ubuntu e a Cultura Organizacional Moderna
 excerpt: "Das Comunidades Rurais aos Empreendimentos Globais: Os Paralelos entre a Filosofia do Ubuntu e a Cultura Organizacional Moderna."
 date: 2024-01-30T07:42:45.327Z
-img: /img/blog/ubuntu-e-as-empresas.jpg
 tags:
   - compartilhamento
   - Ubuntu
   - colaboração
 categories:
   - Cultura
+image:
+  path: /img/blog/ubuntu-e-as-empresas.jpg
+  alt: "Das Comunidades Rurais aos Empreendimentos Globais: Os Paralelos entre a Filosofia do Ubuntu e a Cultura Organizacional Moderna"
 ---
 
 <div style="background: url('/img/blog/ubuntu-e-as-empresas.jpg') center / cover; aspect-ratio: 16/9; position: relative;">
