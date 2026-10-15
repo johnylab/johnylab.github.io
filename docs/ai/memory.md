@@ -9,3 +9,5 @@
 - **Blog:** só em PT, último post de 2024-06; há plano de série "IA para iniciantes" (rascunhos no repo `job-search`, `networking/drafts/serie-ia-para-iniciantes.md`).
 - **Links:** LinkedIn linkedin.com/in/johnylab · GitHub github.com/johnylab · e-mail do site contato@johnylab.com.br.
 - **Publicação:** branch + commit local; push só com "publica" do João.
+
+- **i18n (2026-10-15):** home em `/` (EN) e `/pt/` (PT-BR) via `_data/i18n.yml`; blog só PT; tradução dos 10 posts descartada (custo > benefício).

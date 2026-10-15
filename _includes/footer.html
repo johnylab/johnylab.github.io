@@ -1,4 +1,5 @@
 {% assign card = site.data.vcard %}
+{% assign lang_key = page.lang | default: site.lang | replace: '_', '-' %}{% assign t = site.data.i18n[lang_key] %}
 
 <footer class="site-footer hero brand">
   <div class="wrapper">
@@ -27,7 +28,7 @@
       </figcaption>
 
       <nav class="site-nav vertical">
-        <a href="{{ site.baseurl }}/">Home</a>
+        <a href="{{ site.baseurl }}{{ t.home_url | default: '/' }}">{{ t.nav_home | default: 'Home' }}</a>
         <a href="{{ site.baseurl }}/blog/">Blog</a>
         {% for link in card.social %}
         <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="url">

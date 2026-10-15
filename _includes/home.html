@@ -1,0 +1,250 @@
+{% assign t = site.data.i18n[page.lang] %}
+
+
+<style>
+  .site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+
+    &:hover,
+    &:focus-within {
+      background-color: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(10px);
+    }
+  }
+
+  .section-presentation {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-presentation .wrapper {
+    margin-left: 0;
+  }
+
+  .section-presentation__title,
+  .section-presentation__description {
+    text-wrap: balance;
+    max-width: 36rem;
+  }
+
+  .section-presentation__title {
+    font-size: clamp(1.6rem, 8vw, 3rem);
+    line-height: 1.22;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .section-presentation__description {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+</style>
+
+<section class="page-content section-presentation">
+  <div class="video-background">
+    <video id="presentation" autoplay loop playsinline muted>
+      <source
+        media="(min-width: 601px)"
+        src="{{ site.baseurl }}/assets/video/pexels-google-deepmind-18069232.mp4"
+        type="video/mp4"
+      />
+      <source
+        media="(max-width: 600px)"
+        src="{{ site.baseurl }}/assets/video/pexels-google-deepmind-18069233.mp4"
+        type="video/mp4"
+      />
+    </video>
+  </div>
+
+  <article class="section-presentation__content wrapper">
+    <h1 class="section-presentation__title">
+      <span class="inline-highlight"> {{ t.hero_title }} </span>
+    </h1>
+    <p class="section-presentation__description">
+      <span class="inline-highlight">
+        {{ t.hero_desc }}
+      </span>
+    </p>
+    <p class="button-group">
+      <a class="button" href="mailto:contato@johnylab.com.br">{{ t.cta_contact }}</a>
+      <a
+        class="button outline"
+        href="https://www.linkedin.com/in/johnylab/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >LinkedIn</a
+      >
+    </p>
+  </article>
+</section>
+
+<script>
+  {
+    const video = document.querySelector('video#presentation');
+
+    const sources = [...video.querySelectorAll('source')];
+    const sourcesMap = new Map();
+    sources.forEach((source) => {
+      sourcesMap.set(window.matchMedia(source.media), source.src);
+    });
+
+    function handleSourceChanged() {
+      const source = sourcesMap.get(this);
+      if (source) {
+        video.src = source;
+      }
+    }
+
+    sourcesMap.forEach((source, media) => {
+      media.addEventListener('change', handleSourceChanged);
+      handleSourceChanged.call(media);
+    });
+
+    const noMotionMedia = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const noMotionStep = 2;
+    let intervalID;
+
+    function handleReduceMotionChanged() {
+      if (noMotionMedia.matches) {
+        video.removeAttribute('autoplay');
+        intervalID = setInterval(() => {
+          const currentTime = video.currentTime + noMotionStep;
+          video.currentTime = currentTime > video.duration ? 0 : currentTime;
+        }, noMotionStep * 1000);
+        video.pause();
+      } else {
+        clearInterval(intervalID);
+        video.setAttribute('autoplay', '');
+        video.play();
+      }
+    }
+
+    noMotionMedia.addEventListener('change', handleReduceMotionChanged);
+    handleReduceMotionChanged();
+
+    const presentationContent = document.querySelector(
+      '.section-presentation__content'
+    );
+
+    function handleScroll() {
+      const translation = window.scrollY;
+      video.style.transform = `translateY(${translation * 0.33}px)`;
+      presentationContent.style.transform = `translateY(${
+        translation * 0.5
+      }px)`;
+    }
+
+    window.addEventListener('scroll', handleScroll);
+  }
+</script>
+
+<div class="horizontal" style="flex-wrap: wrap">
+  <section class="page-content section-skills hero" style="flex: 1 1 300px">
+    <div
+      class="wrapper vertical"
+      style="height: 100%; justify-content: flex-end"
+    >
+      <h2>{{ t.skills_title }}</h2>
+      <ul>
+        {% for item in t.skills %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section class="page-content section-blog" style="flex: 1 1 600px">
+    <div class="wrapper">
+      <h2>{{ t.blog_title }}</h2>
+      <p>{{ t.blog_intro }}</p>
+
+      <ol lang="pt-br">
+        {% for post in site.posts limit: 3 %}
+        <li>
+          <p class="blog-title">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"
+              >{{ post.title }}</a
+            >
+          </p>
+          <p>{{ post.content | strip_html | truncatewords: 10 }}</p>
+        </li>
+        {% endfor %}
+      </ol>
+
+      <p>{{ t.blog_more }}</p>
+    </div>
+  </section>
+</div>
+
+<style>
+  .section-about {
+    padding: 0;
+
+    article {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+</style>
+
+<section
+  class="section-about hero dark horizontal center"
+  style="flex-wrap: wrap"
+>
+  <div class="page-content wrapper" style="flex: 1 1 300px">
+    <article>
+      <h2>{{ t.about_title }}</h2>
+      <ul>
+        {% for item in t.about %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </article>
+
+    <article>
+      <h2>{{ t.identity_title }}</h2>
+      <ul>
+        {% for item in t.identity %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </article>
+  </div>
+
+  <div style="flex: 1 1 800px">
+    <img
+      src="{{ site.baseurl }}/img/johnylab-at-google.webp"
+      alt="{{ t.photo_alt }}"
+      width="100%"
+    />
+  </div>
+</section>
+
+<section class="page-content section-career">
+  <div class="wrapper">
+    <h2>{{ t.career_title }}</h2>
+
+    {% for job in t.career %}
+    <p><strong>{{ job.company }}</strong> ({{ job.period }}):</p>
+    <ul>
+      {% for bullet in job.bullets %}
+      <li>{{ bullet }}</li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+
+    <hr />
+
+    <p>{{ t.career_more }}</p>
+  </div>
+</section>
