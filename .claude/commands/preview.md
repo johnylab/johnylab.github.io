@@ -1,0 +1,1 @@
+Rode `bundle exec jekyll build` e, se passar, `bundle exec jekyll serve` em segundo plano; informe a URL local. Se o build falhar, mostre o erro e a causa provável (Gemfile.lock, plugin, front matter).

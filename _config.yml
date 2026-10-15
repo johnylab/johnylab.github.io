@@ -17,7 +17,7 @@ defaults:
     layout: post
     permalink: blog/:title/
 lang: en
-description: "I'm João Ferreira, a passionate frontend engineer based in Santos, SP."
+description: "I'm João Ferreira, a full stack engineer (React, TypeScript, Node.js and AI/LLM products) based in Santos, SP."
 baseurl: ''
 url: https://johnylab.com.br
 markdown: kramdown
@@ -43,3 +43,5 @@ exclude:
 - README.md
 - package.json
 - CNAME
+- CLAUDE.md
+- docs/

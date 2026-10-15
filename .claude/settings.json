@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Edit",
+      "Write",
+      "Bash(bundle exec jekyll build:*)",
+      "Bash(bundle exec jekyll serve:*)",
+      "Bash(bundle install:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git branch:*)",
+      "Bash(git checkout -b:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(ls:*)",
+      "Bash(grep:*)"
+    ],
+    "ask": [
+      "Bash(git push:*)",
+      "Bash(git merge:*)",
+      "Bash(git rebase:*)",
+      "Bash(git checkout master:*)",
+      "Bash(git checkout main:*)"
+    ],
+    "deny": [
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(rm -rf:*)",
+      "Read(~/.ssh/**)",
+      "Read(**/.env)",
+      "Read(~/Desktop/Projetos/job-search/memory/civil-id.local.md)"
+    ]
+  }
+}
