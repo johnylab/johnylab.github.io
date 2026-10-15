@@ -60,6 +60,17 @@ ul.seamless {
 
   color: #fff;
   background-color: blue;
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  a:hover,
+  a:focus,
+  a:active {
+    color: var(--brand-color-lightest);
+  }
 }
 
 .icon {
@@ -87,4 +98,65 @@ ul.seamless {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Botões */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-s);
+}
+
+.button {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing);
+  border: 2px solid var(--brand-color);
+  border-radius: 999px;
+  background-color: var(--brand-color);
+  color: var(--white-color);
+  font-family: var(--title-font-family);
+  font-weight: 700;
+  line-height: var(--base-line-height);
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: var(--brand-color-dark);
+    background-color: var(--brand-color-dark);
+    color: var(--white-color);
+    text-decoration: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid var(--brand-color-lightest);
+    outline-offset: 2px;
+  }
+
+  &.outline {
+    background-color: var(--white-color);
+    color: var(--brand-color);
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: var(--brand-color-dark);
+      background-color: var(--white-color);
+      color: var(--brand-color-dark);
+    }
+  }
+}
+
+/* Acessibilidade: skip link visível só no foco */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  z-index: 10;
+  padding: var(--spacing-xs) var(--spacing-s);
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+.skip-link:focus {
+  left: 0;
 }

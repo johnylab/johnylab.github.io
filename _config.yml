@@ -10,6 +10,7 @@ defaults:
     type: pages
   values:
     layout: page
+    image: /img/joao-ferreira.png
 - scope:
     path: ''
     type: posts
@@ -17,9 +18,17 @@ defaults:
     layout: post
     permalink: blog/:title/
 lang: en
+image: /img/joao-ferreira.png
 description: "I'm João Ferreira, a full stack engineer (React, TypeScript, Node.js and AI/LLM products) based in Santos, SP."
 baseurl: ''
 url: https://johnylab.com.br
+twitter:
+  card: summary
+social:
+  name: João Ferreira
+  links:
+    - https://www.linkedin.com/in/johnylab/
+    - https://github.com/johnylab
 markdown: kramdown
 permalink: pretty/
 paginate: 10

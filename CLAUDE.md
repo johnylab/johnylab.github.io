@@ -5,7 +5,9 @@ Site pessoal do **João Ferreira** (Santos, SP): https://johnylab.com.br. Jekyll
 
 ## Comandos
 - `bundle exec jekyll serve` — preview local (http://127.0.0.1:4000)
+- `bundle exec jekyll s -w --livereload` — preview com recarga automática
 - `bundle exec jekyll build` — build; deve terminar sem erro antes de qualquer commit
+- **Erro no Mac** `incompatible library version ... eventmachine / http_parser .bundle` (LoadError): as gems nativas em `vendor/bundle` foram compiladas com outro Ruby (ex.: rbenv 3.1.2 vs rvm 3.1.5). Correção: `bundle pristine` (recompila todas). Se faltar OpenSSL: `bundle config build.eventmachine "--with-cppflags=-I$(brew --prefix openssl@3)/include --with-ldflags=-L$(brew --prefix openssl@3)/lib"` e repita.
 - `_site/` é artefato de build (gitignored): **nunca editar nem commitar**.
 
 ## Estrutura
