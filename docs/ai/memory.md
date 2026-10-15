@@ -5,7 +5,7 @@
 - **Educação:** Tecnólogo em RH (UNIP, 2008–09); CEFAM (magistério). Certificações: Harvard CS50, Agile, Kanban, Python 3.
 - **Ferramentas de IA que usa:** Claude Code, Cursor, Copilot, Windsurf (não Gemini CLI/Codex/Antigravity).
 - **Não fabricar:** a anedota "async-events/billing do Dappier" é falsa; nunca usar. Dappier real: front-end da plataforma de agentes + contribuição na API Go + widget embutível.
-- **Decisões editoriais:** removeu "married" e "Family oriented" da home; manteve "father of two".
+- **Decisões editoriais:** removeu "married" e "Family oriented" da home; manteve "father of three".
 - **Blog:** só em PT, último post de 2024-06; há plano de série "IA para iniciantes" (rascunhos no repo `job-search`, `networking/drafts/serie-ia-para-iniciantes.md`).
 - **Links:** LinkedIn linkedin.com/in/johnylab · GitHub github.com/johnylab · e-mail do site contato@johnylab.com.br.
 - **Publicação:** branch + commit local; push só com "publica" do João.

@@ -21,7 +21,7 @@ Site pessoal do **João Ferreira** (Santos, SP): https://johnylab.com.br. Jekyll
 3. **Não publicar sem OK explícito do João:** `git push`, merge em `master` e deploy dependem de aprovação por mensagem.
    Trabalhe em branch (`refresh-AAAA-MM`), faça commits locais e mostre o `git diff`.
 4. **Não reaproveitar a história "async-events/billing" do Dappier** — nunca aconteceu (ver `docs/ai/memory.md`).
-5. Decisões editoriais já tomadas pelo João (não reverter): removeu "married" e "Family oriented"; mantém "father of two".
+5. Decisões editoriais já tomadas pelo João (não reverter): removeu "married" e "Family oriented"; mantém "father of three".
 6. Posts de blog: sempre **rascunho primeiro** (`draft: true` ou arquivo em `docs/ai/drafts/`), em PT, tom direto e prático.
 7. Acessibilidade e performance importam: `alt` em toda imagem, respeitar `prefers-reduced-motion` (já usado no vídeo da home).
 8. Pronomes: se não declarados, use they/them para terceiros.
