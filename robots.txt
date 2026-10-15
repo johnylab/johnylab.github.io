@@ -1,3 +1,4 @@
 user-agent: *
+Allow: /
 
-Sitemap: http://johnylab.github.io/sitemap.xml
+Sitemap: https://johnylab.com.br/sitemap.xml

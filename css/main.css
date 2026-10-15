@@ -3,3 +3,16 @@
 @import 'partials/syntax-highlighting.css';
 @import 'partials/helpers.css';
 @import 'partials/structure.css';
+/* Acessibilidade: skip link visível só no foco */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  z-index: 10;
+  background: #111;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+.skip-link:focus {
+  left: 0;
+}

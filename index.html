@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 'Johnylab: Full Stack Engineer · React, TypeScript, Node & AI 🚀'
+title: 'João Ferreira — Full Stack Engineer (React, Node, AI)'
 ---
 
 <style>
@@ -45,6 +45,33 @@ title: 'Johnylab: Full Stack Engineer · React, TypeScript, Node & AI 🚀'
     margin-bottom: 1rem;
   }
 
+  .section-presentation__cta {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 999px;
+    font-weight: 600;
+    text-decoration: none;
+    background: #111;
+    color: #fff;
+    border: 2px solid #111;
+  }
+
+  .cta-button--ghost {
+    background: #fff;
+    color: #111;
+  }
+
+  .cta-button:focus-visible {
+    outline: 3px solid #ff3d9a;
+    outline-offset: 2px;
+  }
+
   .section-presentation__description {
     font-size: clamp(1rem, 4vw, 1.5rem);
     font-weight: 400;
@@ -69,13 +96,23 @@ title: 'Johnylab: Full Stack Engineer · React, TypeScript, Node & AI 🚀'
   </div>
 
   <article class="section-presentation__content wrapper">
-    <h2 class="section-presentation__title">
+    <h1 class="section-presentation__title">
       <span class="inline-highlight"> Hello there! I'm João Ferreira </span>
-    </h2>
+    </h1>
     <p class="section-presentation__description">
       <span class="inline-highlight">
         Brazilian, father of three, and a software engineer since 2003.
       </span>
+    </p>
+    <p class="section-presentation__cta">
+      <a class="cta-button" href="mailto:contato@johnylab.com.br">Get in touch</a>
+      <a
+        class="cta-button cta-button--ghost"
+        href="https://www.linkedin.com/in/johnylab/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >LinkedIn</a
+      >
     </p>
   </article>
 </section>
