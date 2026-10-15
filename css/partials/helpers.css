@@ -60,6 +60,11 @@ ul.seamless {
 
   color: #fff;
   background-color: blue;
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
 }
 
 .icon {

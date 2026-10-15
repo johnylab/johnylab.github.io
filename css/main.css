@@ -9,9 +9,9 @@
   left: -999px;
   top: 0;
   z-index: 10;
-  background: #111;
-  color: #fff;
-  padding: 0.5rem 1rem;
+  padding: var(--spacing-xs) var(--spacing-s);
+  background-color: var(--black-color);
+  color: var(--white-color);
 }
 .skip-link:focus {
   left: 0;
