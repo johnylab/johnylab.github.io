@@ -31,7 +31,7 @@ O <a href="http://jsfiddle.net" target="_blank">jsFiddle</a> é um serviço comp
 
 ### The Code Player
 
-![The Code Player]({{site.baseurl}}/img/blog/thecodeplayer.png)
+<img src="{{site.baseurl}}/img/blog/thecodeplayer.webp" alt="The Code Player" loading="lazy">
 
 <a href="http://thecodeplayer.com/" target="_blank">TheCodePlayer</a>, como o nome já diz, é um "player de código". Contém diversos tutoriais, principalmente de efeitos avançados em CSS3, e também podem ser vistos com a tela dividida para exibir o resultado em tempo real. Mas a grande vantagem deste aplicativo é que ele também funciona como um player. Funcionando como se estivesse rodando um vídeo, ele mostra o código todo sendo digitado do jeito que o desenvolvedor fez, e você pode notar como as alterações vão afetando o resultado durante todo o processo. O efeito disso é tão impressionante quanto assistir o código sendo digitado sozinho, como se fosse uma transmissão de vídeo.
 

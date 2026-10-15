@@ -71,7 +71,7 @@ Usando a função `minmax()` podemos especificar que a célula amarela permaneç
 
 ```
 
-![Demonstração da função minmax() com valores absolutos]({{ site.baseurl }}/img/blog/grid-minmax-length-1.gif)
+<img src="{{ site.baseurl }}/img/blog/grid-minmax-length-1.webp" alt="Demonstração da função minmax() com valores absolutos" loading="lazy">
 
 ### Porcentagem
 
@@ -86,7 +86,7 @@ Também podemos usar porcentagens com a função `minmax()`. Digamos que precis�
 
 ```
 
-![Demonstração da função minmax() com porcentagens]({{ site.baseurl }}/img/blog/grid-minmax-percentage.gif)
+<img src="{{ site.baseurl }}/img/blog/grid-minmax-percentage.webp" alt="Demonstração da função minmax() com porcentagens" loading="lazy">
 
 Não importa o quanto a tela diminua, a célula amarela nunca ficará menor do que 200px. Porém, quando houver mais espaço, ela aumentará até ocupar metade da tela.
 
@@ -105,7 +105,7 @@ Até o momento, a unidade **fr** só pode ser usada para o valor máximo na fun�
 
 ```
 
-![Demonstração da função minmax() com a nova unidade fr]({{ site.baseurl }}/img/blog/grid-minmax-fr.gif)
+<img src="{{ site.baseurl }}/img/blog/grid-minmax-fr.webp" alt="Demonstração da função minmax() com a nova unidade fr" loading="lazy">
 
 Já que todas as colunas têm 1fr em telas maiores, elas dividem o espaço da grade igualmente.
 
@@ -124,7 +124,7 @@ Voltando ao exemplo anterior, vamos especificar que a célula amarela tenha um m
 
 ```
 
-![Demonstração da função minmax() com a palavra-chave max-content]({{ site.baseurl }}/img/blog/grid-minmax-max-content.gif)
+<img src="{{ site.baseurl }}/img/blog/grid-minmax-max-content.webp" alt="Demonstração da função minmax() com a palavra-chave max-content" loading="lazy">
 
 Como podemos ver, a coluna se expande para se ajustar ao tamanho do texto. Desde que ambos os valores mínimo e máximo estão configurados para **max-content**, a largura da coluna permanece sempre a mesma.
 
@@ -143,7 +143,7 @@ Para ilustrar a diferença entre **min-content** e **max-content**, podemos usar
 
 ```
 
-![Demonstração da função minmax() com a palavra-chave min-content]({{ site.baseurl }}/img/blog/grid-minmax-min-content.gif)
+<img src="{{ site.baseurl }}/img/blog/grid-minmax-min-content.webp" alt="Demonstração da função minmax() com a palavra-chave min-content" loading="lazy">
 
 Podemos definir que o conteúdo de dentro da célula seja alterado, para ocupar o mínimo espaço horizontal possível, sem causar nenhum estouro.
 
@@ -164,13 +164,13 @@ Para ilustrar, vamos novamente configurar a célula amarela com a função `minm
 
 ```
 
-![Demonstração da função minmax() com a palavra-chave auto]({{ site.baseurl }}/img/blog/grid-minmax-auto.gif)
+<img src="{{ site.baseurl }}/img/blog/grid-minmax-auto.webp" alt="Demonstração da função minmax() com a palavra-chave auto" loading="lazy">
 
 ## Usando a função minmax() para gerar design responsivo sem media queries
 
 Como foi visto, existem muitos casos para usar a função `minmax()`. Provavelmente o uso mais popular seja a habilidade da função `minmax()` para criar designs responsivos sem a necessidade de media queries.
 
-![Design responsivo com a função minmax()]({{ site.baseurl }}/img/blog/grid-minmax-responsive.gif)
+<img src="{{ site.baseurl }}/img/blog/grid-minmax-responsive.webp" alt="Design responsivo com a função minmax()" loading="lazy">
 
 Cada coluna da grade tem uma largura mínima de 200px. Quando a tela é redimensionada, muda o número de colunas para que elas mantenham o tamanho ideal. Com CSS Grid e a função `minmax()`, basta duas linhas de código para isso.
 
