@@ -65,6 +65,12 @@ ul.seamless {
     color: inherit;
     text-decoration: underline;
   }
+
+  a:hover,
+  a:focus,
+  a:active {
+    color: var(--brand-color-lightest);
+  }
 }
 
 .icon {
@@ -92,4 +98,18 @@ ul.seamless {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Acessibilidade: skip link visível só no foco */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  z-index: 10;
+  padding: var(--spacing-xs) var(--spacing-s);
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+.skip-link:focus {
+  left: 0;
 }
