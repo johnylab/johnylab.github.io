@@ -8,7 +8,6 @@ tags:
   - contexto
 categories:
   - IA para iniciantes
-draft: true
 ---
 
 No [post anterior]({{ site.baseurl }}/blog/o-que-e-um-llm-e-por-que-a-ia-inventa-coisas/) vimos que um LLM prevê texto e pode inventar quando não tem a resposta. Aqui vão duas ideias que explicam boa parte do comportamento dele no dia a dia: o **contexto** e o **RAG**.

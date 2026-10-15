@@ -8,7 +8,6 @@ tags:
   - alucinação
 categories:
   - IA para iniciantes
-draft: true
 ---
 
 Todo mundo fala de IA, mas pouca gente explica o que ela é. Esta é a primeira de uma série curta, sem jargão, para quem quer entender o suficiente para usar bem (e desconfiar na hora certa).

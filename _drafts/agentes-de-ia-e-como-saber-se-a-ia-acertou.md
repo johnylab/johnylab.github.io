@@ -8,7 +8,6 @@ tags:
   - testes
 categories:
   - IA para iniciantes
-draft: true
 ---
 
 Nos posts anteriores ([LLM e alucinação]({{ site.baseurl }}/blog/o-que-e-um-llm-e-por-que-a-ia-inventa-coisas/), [contexto e RAG]({{ site.baseurl }}/blog/contexto-e-rag-como-a-ia-consulta-seus-documentos/)): um LLM prevê texto, pode inventar e só enxerga o que está no contexto. Falta explicar o que muda quando ele ganha mãos, e como saber se dá para confiar no resultado.
