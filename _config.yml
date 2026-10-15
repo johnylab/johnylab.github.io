@@ -10,7 +10,7 @@ defaults:
     type: pages
   values:
     layout: page
-    image: /img/joao-ferreira.png
+    image: /img/og-image.jpg
 - scope:
     path: ''
     type: posts
@@ -18,7 +18,7 @@ defaults:
     layout: post
     permalink: blog/:title/
 lang: en
-image: /img/joao-ferreira.png
+image: /img/og-image.jpg
 description: "I'm João Ferreira, a full stack engineer (React, TypeScript, Node.js and AI/LLM products) based in Santos, SP."
 baseurl: ''
 url: https://johnylab.com.br
@@ -45,6 +45,8 @@ exclude:
 - Gemfile
 - Gemfile.lock
 - node_modules/
+- media-src/
+- scripts/
 - vendor/bundle/
 - vendor/cache/
 - vendor/gems/
