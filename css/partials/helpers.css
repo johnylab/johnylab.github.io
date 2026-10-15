@@ -100,6 +100,53 @@ ul.seamless {
   object-fit: cover;
 }
 
+/* Botões */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-s);
+}
+
+.button {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing);
+  border: 2px solid var(--brand-color);
+  border-radius: 999px;
+  background-color: var(--brand-color);
+  color: var(--white-color);
+  font-family: var(--title-font-family);
+  font-weight: 700;
+  line-height: var(--base-line-height);
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: var(--brand-color-dark);
+    background-color: var(--brand-color-dark);
+    color: var(--white-color);
+    text-decoration: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid var(--brand-color-lightest);
+    outline-offset: 2px;
+  }
+
+  &.outline {
+    background-color: var(--white-color);
+    color: var(--brand-color);
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: var(--brand-color-dark);
+      background-color: var(--white-color);
+      color: var(--brand-color-dark);
+    }
+  }
+}
+
 /* Acessibilidade: skip link visível só no foco */
 .skip-link {
   position: absolute;
