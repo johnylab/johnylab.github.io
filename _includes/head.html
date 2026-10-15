@@ -12,6 +12,13 @@
   />
   {% seo title=false description=false %} {% else %}{% seo %}{% endif %}
 
+  {% if page.ref %}
+  {% for p in site.pages %}{% if p.ref == page.ref %}
+  <link rel="alternate" hreflang="{{ p.lang }}" href="{{ p.url | absolute_url }}" />
+  {% endif %}{% endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}" />
+  {% endif %}
+
   <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" />
 
   <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" />

@@ -1,0 +1,133 @@
+en:
+  nav_home: Home
+  home_url: /
+  hero_title: "Hello there! I'm João Ferreira"
+  hero_desc: "Brazilian, father of three, and a software engineer since 2003."
+  cta_contact: Get in touch
+  skills_title: "Tech Expertise:"
+  skills:
+    - "Software engineer since 2003, now focused on full stack and AI products."
+    - "React, Next.js and TypeScript on the front end; Node.js, Go and Java on the back end."
+    - "LLM and RAG features in production, plus agent-assisted development (Claude Code, Cursor, Copilot, Windsurf)."
+    - "Problem-solving enthusiast, team player, and responsibility taker."
+  blog_title: "Blog Insights:"
+  blog_intro: 'Explore the tech universe through my <a href="/blog/">blog</a> (in Portuguese). Recent posts include:'
+  blog_more: 'More insights await in the <a href="/blog/">Blog Section</a>.'
+  about_title: "About Me:"
+  about:
+    - "Based in Santos, SP."
+    - "Brazilian, and father of three."
+  identity_title: "Professional Identity:"
+  identity:
+    - "Full Stack Engineer (React, TypeScript, Node.js) building AI-powered web products."
+    - "Currently considering new opportunities to contribute and grow."
+  photo_alt: "João at Google Space at São Paulo, Brazil"
+  career_title: "Career Summary:"
+  career_more: 'More details can be found on my <a href="https://www.linkedin.com/in/johnylab/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.'
+  career:
+    - company: Freelance Full Stack Engineer / AI Consultant
+      period: "September 2025 - present"
+      bullets:
+        - "Building LLM- and RAG-based web applications for startups (Pump, Arancia) with an agent-assisted development workflow."
+    - company: Dappier
+      period: "August 2024 - September 2025"
+      bullets:
+        - "Full Stack Engineer owning the front end of an AI-agent platform and contributing to its Go API; hardened an embeddable AI-agent widget to run across third-party sites."
+    - company: GoDaddy
+      period: "April 2024 - August 2024"
+      bullets:
+        - "Software Engineer on the website builder and e-commerce platform, including generative-AI assistance in the merchant editing flow."
+    - company: Ender
+      period: "August 2022 - December 2023"
+      bullets:
+        - "Senior Frontend Engineer leading front-end work in a distributed team with React JS, Typescript, Node.js and AWS."
+        - "Engaged in testing with Playwright and GitHub automated test integrations."
+    - company: FourSquare
+      period: "March 2021 - July 2022"
+      bullets:
+        - "Fullstack Engineer involved in web development using Ruby, Rails, Java, React JS, and AWS."
+        - "Worked on large and complex analytics reports applications with CI/CD stack integration."
+    - company: Webnets Soluções
+      period: "September 2017 - September 2020"
+      bullets:
+        - "Front-end Leader overseeing the restructuring of project architectures."
+        - "Introduced knowledge of SPA, PWA, and REST APIs to the company."
+    - company: Colégio Objetivo Baixada Santista
+      period: "March 2010 - September 2017"
+      bullets:
+        - "Web Developer contributing to various projects, including a video player for distance learning and educational applications."
+    - company: Fundação Lusíada
+      period: "June 2008 - March 2010"
+      bullets:
+        - "Web Designer involved in the development and optimization of the commercial part of the website."
+    - company: Escola Aprendiz
+      period: "February 2007 - November 2007"
+      bullets:
+        - "Teacher and Web designer teaching basic computing and web design."
+
+pt-BR:
+  nav_home: Início
+  home_url: /pt/
+  hero_title: "Olá! Eu sou o João Ferreira"
+  hero_desc: "Brasileiro, pai de três e engenheiro de software desde 2003."
+  cta_contact: Fale comigo
+  skills_title: "Especialidades:"
+  skills:
+    - "Engenheiro de software desde 2003, hoje com foco em produtos full stack e de IA."
+    - "React, Next.js e TypeScript no front-end; Node.js, Go e Java no back-end."
+    - "Recursos com LLM e RAG em produção, além de desenvolvimento assistido por agentes (Claude Code, Cursor, Copilot, Windsurf)."
+    - "Entusiasta de resolução de problemas, bom trabalho em equipe e assumo responsabilidade."
+  blog_title: "Blog:"
+  blog_intro: 'Explore o universo da tecnologia no meu <a href="/blog/">blog</a>. Posts recentes:'
+  blog_more: 'Mais conteúdo na <a href="/blog/">seção do Blog</a>.'
+  about_title: "Sobre mim:"
+  about:
+    - "Moro em Santos, SP."
+    - "Brasileiro e pai de três."
+  identity_title: "Identidade profissional:"
+  identity:
+    - "Engenheiro Full Stack (React, TypeScript, Node.js) criando produtos web com IA."
+    - "Aberto a novas oportunidades para contribuir e crescer."
+  photo_alt: "João no Google Space, em São Paulo"
+  career_title: "Resumo de carreira:"
+  career_more: 'Mais detalhes no meu <a href="https://www.linkedin.com/in/johnylab/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.'
+  career:
+    - company: Freelance — Engenheiro Full Stack / Consultor de IA
+      period: "setembro de 2025 - atual"
+      bullets:
+        - "Desenvolvimento de aplicações web com LLM e RAG para startups (Pump, Arancia), com fluxo de desenvolvimento assistido por agentes."
+    - company: Dappier
+      period: "agosto de 2024 - setembro de 2025"
+      bullets:
+        - "Engenheiro Full Stack responsável pelo front-end de uma plataforma de agentes de IA e colaborador na API em Go; reforcei um widget embutível de agente de IA para rodar em sites de terceiros."
+    - company: GoDaddy
+      period: "abril de 2024 - agosto de 2024"
+      bullets:
+        - "Engenheiro de Software na plataforma de criação de sites e e-commerce, incluindo assistência de IA generativa no fluxo de edição dos lojistas."
+    - company: Ender
+      period: "agosto de 2022 - dezembro de 2023"
+      bullets:
+        - "Engenheiro Frontend Sênior liderando o front-end em um time distribuído, com React JS, Typescript, Node.js e AWS."
+        - "Atuação em testes com Playwright e integrações de testes automatizados no GitHub."
+    - company: FourSquare
+      period: "março de 2021 - julho de 2022"
+      bullets:
+        - "Engenheiro Fullstack em desenvolvimento web com Ruby, Rails, Java, React JS e AWS."
+        - "Trabalhei em aplicações grandes e complexas de relatórios analíticos, com integração de CI/CD."
+    - company: Webnets Soluções
+      period: "setembro de 2017 - setembro de 2020"
+      bullets:
+        - "Líder de front-end na reestruturação da arquitetura de projetos."
+        - "Introduzi conhecimentos de SPA, PWA e APIs REST na empresa."
+    - company: Colégio Objetivo Baixada Santista
+      period: "março de 2010 - setembro de 2017"
+      bullets:
+        - "Desenvolvedor web em diversos projetos, incluindo um player de vídeo para ensino a distância e aplicações educacionais."
+    - company: Fundação Lusíada
+      period: "junho de 2008 - março de 2010"
+      bullets:
+        - "Web designer no desenvolvimento e otimização da parte comercial do site."
+    - company: Escola Aprendiz
+      period: "fevereiro de 2007 - novembro de 2007"
+      bullets:
+        - "Professor e web designer, ensinando informática básica e web design."

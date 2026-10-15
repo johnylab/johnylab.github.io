@@ -1,4 +1,6 @@
 {% assign card = site.data.vcard %}
+{% assign lang_key = page.lang | default: site.lang | replace: '_', '-' %}{% assign t = site.data.i18n[lang_key] %}
+{% if page.ref %}{% assign alt = site.pages | where: "ref", page.ref | where_exp: "p", "p.lang != page.lang" | first %}{% endif %}
 
 <header class="site-header">
   <div class="horizontal center">
@@ -8,8 +10,11 @@
     </a>
 
     <nav class="site-nav horizontal center">
-      <a href="{{ site.baseurl }}/">Home</a>
+      <a href="{{ site.baseurl }}{{ t.home_url | default: '/' }}">{{ t.nav_home | default: 'Home' }}</a>
       <a href="{{ site.baseurl }}/blog/">Blog</a>
+      {% if alt %}
+      <a href="{{ alt.url | prepend: site.baseurl }}" hreflang="{{ alt.lang }}" lang="{{ alt.lang }}" aria-label="{{ alt.lang_label }}">{{ alt.lang_label }}</a>
+      {% endif %}
       {% for link in card.social %}
       <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="icon" aria-label="{{ link.title }}">
         {% include svg/{{ link.icon }}.svg %}

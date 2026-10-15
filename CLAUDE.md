@@ -11,7 +11,7 @@ Site pessoal do **João Ferreira** (Santos, SP): https://johnylab.com.br. Jekyll
 - `_site/` é artefato de build (gitignored): **nunca editar nem commitar**.
 
 ## Estrutura
-- `index.html` — home (apresentação, Tech Expertise, blog, About, Career Summary).
+- `index.html` (EN, `/`) e `pt/index.html` (PT-BR, `/pt/`) — home bilíngue: ambas só incluem `_includes/home.html`, que lê os textos de `_data/i18n.yml` (`en` e `pt-BR`). **Para mudar texto/carreira, edite `_data/i18n.yml` nas DUAS línguas.** O seletor EN/PT no header e as tags `hreflang` vêm do `ref: home` + `lang_label` no front matter. Blog continua só em PT.
 - `_config.yml` — título/descrição/SEO. `_data/vcard.yml` — contato e redes.
 - `_posts/AAAA-MM-DD-slug.md` — blog (front matter: title, excerpt, date, tags, categories, image.path/alt).
 - `_layouts/`, `_includes/`, `css/`, `img/`, `assets/` — tema e mídia.
