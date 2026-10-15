@@ -84,3 +84,5 @@ Tempo de relógio estimado: ~25–40 min (encode VP9 `-row-mt 1` de 30 s em 540p
 - Vídeos 11,6 MB → 2,6 MB (desktop 1,7 MB CRF 33 · mobile 0,87 MB), sem áudio, poster WebP + `preload="metadata"`.
 - GIFs 3,3 MB → 1,4 MB (WebP, `loading="lazy"`); avatar 302 KB → 37 KB WebP; `og:image` agora `img/og-image.jpg` 1200×630; `thecodeplayer` 396 → 44 KB.
 - Total de mídia no `_site`: 16,7 MB → 5,4 MB. Originais em `media-src/` (excluída do build); regenerar com `scripts/optimize-media.sh`.
+
+**Atualização:** vídeos do hero revertidos aos originais (qualidade da recompressão rejeitada pelo João). Vídeos seguem em `assets/video/` (11,6 MB); só imagens foram otimizadas.
