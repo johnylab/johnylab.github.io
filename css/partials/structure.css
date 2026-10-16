@@ -3,6 +3,9 @@
   padding: var(--spacing-s) var(--spacing);
 
   .site-nav {
+    flex-wrap: wrap-reverse;
+    justify-content: end;
+
     .icon {
       font-size: 1.5em;
     }
@@ -21,15 +24,15 @@
   }
 
   .icon {
-    font-size: 5rem;
+    font-size: 5em;
   }
 
   .label {
     position: absolute;
-    top: 0.2rem;
+    top: 0.5em;
     left: 0;
     transform-origin: top right;
-    transform: rotate(-90deg) translateY(-5rem);
+    transform: rotate(-90deg) translateY(-4.5em);
 
     font-family: var(--title-font-family);
   }
@@ -39,24 +42,23 @@
   a {
     display: inline-block;
     font-weight: 700;
-    padding: var(--spacing-xs);
+    padding: calc(var(--spacing-xs) / 2) var(--spacing-xs);
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .site-header {
     padding: var(--spacing-xs) var(--spacing);
+
+    .site-nav {
+      a {
+        font-size: 0.8em;
+      }
+    }
   }
 
   .site-title {
-    .icon {
-      font-size: 3rem;
-    }
-
-    .label {
-      font-size: .7rem;
-      transform: rotate(-90deg) translateY(-3.5rem);
-    }
+    font-size: 0.7em;
   }
 }
 
