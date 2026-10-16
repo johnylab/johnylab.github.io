@@ -1,6 +1,10 @@
 en:
   nav_home: Home
   home_url: /
+  nav_work: Work with me
+  work_url: /work/
+  nav_projects: Selected work
+  projects_url: /projects/
   hero_title: "Hello there! I'm João Ferreira"
   hero_desc: "Brazilian, father of three, and a software engineer since 2003."
   cta_contact: Get in touch
@@ -68,6 +72,10 @@ en:
 pt-BR:
   nav_home: Início
   home_url: /pt/
+  nav_work: Trabalhe comigo
+  work_url: /pt/trabalhe-comigo/
+  nav_projects: Trabalhos
+  projects_url: /pt/projetos/
   hero_title: "Olá! Eu sou o João Ferreira"
   hero_desc: "Brasileiro, pai de três e engenheiro de software desde 2003."
   cta_contact: Fale comigo
