@@ -16,5 +16,8 @@
       "strings": true
     },
     "editor.minimap.enabled": false
+  },
+  "chat.tools.terminal.autoApprove": {
+    "bundle": true
   }
 }
