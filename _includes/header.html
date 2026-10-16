@@ -11,6 +11,8 @@
 
     <nav class="site-nav horizontal center">
       <a href="{{ site.baseurl }}{{ t.home_url | default: '/' }}">{{ t.nav_home | default: 'Home' }}</a>
+      <a href="{{ site.baseurl }}{{ t.projects_url | default: '/projects/' }}">{{ t.nav_projects | default: 'Selected work' }}</a>
+      <a href="{{ site.baseurl }}{{ t.work_url | default: '/work/' }}">{{ t.nav_work | default: 'Work with me' }}</a>
       <a href="{{ site.baseurl }}/blog/">Blog</a>
       {% if alt %}
       <a href="{{ alt.url | prepend: site.baseurl }}" hreflang="{{ alt.lang }}" lang="{{ alt.lang }}" aria-label="{{ alt.lang_label }}">{{ alt.lang_label }}</a>
