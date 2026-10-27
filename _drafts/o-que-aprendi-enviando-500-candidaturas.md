@@ -1,7 +1,7 @@
 ---
-title: "O que aprendi enviando mais de 400 candidaturas em dois meses (com números)"
+title: "O que aprendi enviando mais de 500 candidaturas em dois meses (com números)"
 excerpt: "Uma busca de emprego tratada como um projeto de dados: taxa de retorno por canal, o que travou e o que valeu a pena automatizar."
-date: 2026-10-22T12:00:00.000Z
+date: 2026-10-29T12:00:00.000Z
 tags:
   - carreira
   - mercado de trabalho
@@ -11,14 +11,14 @@ categories:
 draft: true
 ---
 
-Nas últimas semanas, tratei minha busca por emprego como um projeto: registrar cada candidatura, medir o que retorna e ajustar. Passei de 400 candidaturas. Aqui vão os números e as lições que acho que servem para qualquer pessoa de tecnologia, sem fórmula mágica.
+Nas últimas semanas, tratei minha busca por emprego como um projeto: registrar cada candidatura, medir o que retorna e ajustar. Passei de 540 candidaturas. Aqui vão os números e as lições que acho que servem para qualquer pessoa de tecnologia, sem fórmula mágica.
 
-## Os números (até 16/10/2026)
+## Os números (até 27/10/2026)
 
-- **Retorno positivo** (confirmação, teste, conversa ou entrevista): cerca de **5%** do total.
-- **Por canal:** plataforma Gupy **7%**, LinkedIn **6%**, Indeed **5%**. Alguns canais ficaram em **0%** (agregadores que repassam vaga a frio) e foram cortados.
-- **Currículo:** a versão em português e genérica de full stack rendeu 7%; a versão em inglês, nas vagas internacionais, 0 em 23.
-- **Paradas:** cerca de 1 em cada 4 candidaturas ficou mais de 14 dias sem nenhuma resposta.
+- **Retorno positivo** (confirmação, teste, conversa ou entrevista): cerca de **6%** do total (33 de 544).
+- **Por canal:** plataforma Gupy **11%**, vagas achadas direto no site das empresas **8%**, LinkedIn **5%**, Indeed **5%**. Dois canais ficaram em **0%** (um marketplace de talentos, 0 em 20, e vagas repassadas por grupo de WhatsApp, 0 em 17) e foram cortados.
+- **Currículo:** a versão principal rendeu 8% (24 em 306) e a versão em português, 8% (3 em 37); a versão em inglês voltada a vagas internacionais rendeu 0 em 26, então passei a usar a versão principal também nelas.
+- **Paradas:** quase 3 em cada 10 candidaturas (160 de 547) ficaram mais de 14 dias sem nenhuma resposta.
 
 Esses números vêm de uma amostra pequena e de um único perfil; servem como direção, não como regra.
 
