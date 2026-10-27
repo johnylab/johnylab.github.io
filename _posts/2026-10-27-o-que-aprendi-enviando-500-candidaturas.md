@@ -1,14 +1,13 @@
 ---
 title: "O que aprendi enviando mais de 500 candidaturas em dois meses (com números)"
 excerpt: "Uma busca de emprego tratada como um projeto de dados: taxa de retorno por canal, o que travou e o que valeu a pena automatizar."
-date: 2026-10-29T12:00:00.000Z
+date: 2026-10-27T12:00:00.000Z
 tags:
   - carreira
   - mercado de trabalho
   - dados
 categories:
   - Mercado de trabalho
-draft: true
 ---
 
 Nas últimas semanas, tratei minha busca por emprego como um projeto: registrar cada candidatura, medir o que retorna e ajustar. Passei de 540 candidaturas. Aqui vão os números e as lições que acho que servem para qualquer pessoa de tecnologia, sem fórmula mágica.
