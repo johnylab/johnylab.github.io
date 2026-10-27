@@ -1,7 +1,7 @@
 ---
 title: "Contexto e RAG: por que a IA esquece e como fazê-la consultar seus documentos"
 excerpt: "A IA só enxerga o que está na 'mesa de trabalho' dela. Entenda o contexto e como o RAG coloca os documentos certos sobre essa mesa."
-date: 2026-10-16T12:00:00.000Z
+date: 2026-10-27T12:00:00.000Z
 tags:
   - ia
   - rag
