@@ -25,7 +25,6 @@ en:
   identity:
     - "Full Stack Engineer (React, TypeScript, Node.js) building AI-powered web products."
     - "Currently considering new opportunities to contribute and grow."
-  photo_alt: "João at Google Space at São Paulo, Brazil"
   career_title: "Career Summary:"
   career_more: 'More details can be found on my <a href="https://www.linkedin.com/in/johnylab/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.'
   career:
@@ -96,7 +95,6 @@ pt-BR:
   identity:
     - "Engenheiro Full Stack (React, TypeScript, Node.js) criando produtos web com IA."
     - "Aberto a novas oportunidades para contribuir e crescer."
-  photo_alt: "João no Google Space, em São Paulo"
   career_title: "Resumo de carreira:"
   career_more: 'Mais detalhes no meu <a href="https://www.linkedin.com/in/johnylab/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.'
   career:
