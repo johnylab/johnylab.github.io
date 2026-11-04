@@ -11,7 +11,7 @@ Regras do site que valem aqui: nunca inventar fato (fonte: `job-search/resumes/r
 - **Aceite:** build ok; links testados; as duas línguas atualizadas juntas (`_data/i18n.yml` quando for texto da home).
 
 ## 2. Fotos
-Inventário hoje (`img/`): `joao-ferreira.webp` (rodapé/avatar), `og-image.jpg` (compartilhamento), `johnylab-at-google*.webp`, duas fotos de 2022 (`in-my-office.jpg`, `dts-modern-workshop.jpg`).
+Em 2026-11-04 o João mandou remover `joao-ferreira.webp` (rodapé) e `johnylab-at-google.webp` (home); a home e o rodapé estão sem foto. Resta em `img/`: `og-image.jpg` (compartilhamento), `johnylab-at-google*.webp`, duas fotos de 2022 (`in-my-office.jpg`, `dts-modern-workshop.jpg`).
 - **O João fornece 3 fotos:** retrato (rosto, fundo limpo, ≥1200 px), trabalhando (mesa/tela) e uma de evento ou palestra. Sem crianças e sem documentos à vista.
 - **Eu processo:** avatar WebP ~600 px (≤40 KB), `og-image.jpg` 1200×630 (≤120 KB; hoje 242 KB), versões para a página `/work/`; remover EXIF (localização); `alt` descritivo; atualizar `photo_alt` em `_data/i18n.yml`; só apagar as antigas depois de conferir o site.
 - **Aceite:** prévia de link no LinkedIn e no WhatsApp com a imagem nova (testar com o link em uma conversa), soma de `img/` menor que hoje.
