@@ -10,7 +10,7 @@
 | `img/joao-ferreira.png` | 302 KB · 1000×1000 | exibida a **150 px** no rodapé; também é o `og:image` |
 | **Total** | vídeos 11,6 MB + img 5,1 MB = **16,7 MB** | |
 
-Ferramentas locais: `cwebp`, `avifenc`, `sips` (já instalados); **faltam `ffmpeg` e `gifsicle`** (`brew install ffmpeg gifsicle`, ~300 MB de dependências, sem custo de tokens).
+Ferramentas locais: `cwebp`, `avifenc`, `sips` (já instalados); `ffmpeg` e `gifsicle` já instalados (em `/opt/homebrew/bin`, desde 2026-11-03).
 Observação: o histórico do git continua com os binários antigos (o clone não encolhe) — não recomendo reescrever histórico; o ganho é no **peso de página** (o que o visitante baixa).
 
 ## 2. Metas
@@ -45,7 +45,7 @@ Um único script idempotente `scripts/optimize-media.sh` (ffmpeg + cwebp + gifsi
 ## 4. Fases, entregas e critério de aceite
 | Fase | O que fazer | Aceite |
 |---|---|---|
-| 0 | `brew install ffmpeg gifsicle` (com seu OK); criar branch `media-compression` | `ffmpeg -version` ok |
+| 0 | ~~instalar ffmpeg e gifsicle~~ (feito); trabalhar direto na branch padrão (push direto autorizado) | `ffmpeg -version` ok |
 | 1 | Script + encode dos 2 vídeos (MP4+WebM) + posters | cada vídeo ≤ 2 MB (MP4) / ≤ 1 MB (WebM); revisão visual lado a lado no Chrome (sem banding evidente) |
 | 2 | Imagens: avatar/og, PNG→WebP, JPG recomprimido, GIFs→WebP animado | soma de `img/` ≤ 1,6 MB; posts renderizam iguais |
 | 3 | Markup: `home.html` (sources, poster, preload), posts (picture/webp/lazy), og:image dedicado | build ok; Lighthouse local: LCP < 2,5 s, sem CLS novo |
