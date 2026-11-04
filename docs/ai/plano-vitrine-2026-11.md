@@ -17,10 +17,7 @@ Inventário hoje (`img/`): `joao-ferreira.webp` (rodapé/avatar), `og-image.jpg`
 - **Aceite:** prévia de link no LinkedIn e no WhatsApp com a imagem nova (testar com o link em uma conversa), soma de `img/` menor que hoje.
 
 ## 3. Vídeo do topo da home
-Hoje: dois vídeos de banco de imagens (Pexels, ~5,8 MB cada), autoplay mudo.
-- **Fase 1 (decidida, barata):** executar `plan-compressao-midia.md` (MP4 e WebM, poster, `preload="metadata"`): ~11,6 MB → ~2 MB.
-- **Fase 2 (o João escolhe):** (a) manter o fundo abstrato; (b) loop próprio, gravado de um projeto dele (ex. a demo do threejs ou uma tela do car-catalog); (c) vídeo curto de apresentação (30 a 45 s, legendado, ele grava; o repo `job-search` já tem um áudio de apresentação). Recomendação: (a) agora e (c) depois, porque é o que mais converte para recrutador e cliente.
-- **Aceite:** Lighthouse local com LCP < 2,5 s; `prefers-reduced-motion` respeitado; nenhuma mídia > 2 MB na home.
+**Removido em 2026-11-03 por decisão do João** (a home não terá mais vídeo; sem o vídeo saem ~11,6 MB de cada visita). O visual do topo passa a vir do rebranding (`~/.claude/plans/detalhes/marca.md`).
 
 ## 4. Serviços
 O `/work/` (EN) e o `/pt/trabalhe-comigo/` já existem, escritos para vagas e contratos. Mudança: virar um **menu de serviços** com 3 blocos, cada um com para quem é, entregável, prazo típico e como contratar (e-mail e LinkedIn; formulário depois):
@@ -39,7 +36,8 @@ Fonte do calendário: `job-search/networking/drafts/` (propostas aprovadas e rot
 Canais: LinkedIn (perfil e post), grupo de WhatsApp da Gift, README do GitHub, rodapé de e-mail. Cada anúncio linka a página, não repete o texto dela.
 
 ## Ordem
-1. Fotos (depende do João) e compressão de mídia (não depende).
-2. Destaques open source (rápido, já há material).
-3. Serviços, assim que o João fechar a oferta.
-4. Anúncios, depois de cada entrega acima.
+O João planeja **migrar tudo do GitHub Pages para o Laravel (`johnylab-site`) na raiz `johnylab.com.br`** e fazer um **rebranding total**. Portanto, neste site Jekyll fazer só o que é barato e dura até a migração; o resto vai para o novo site, depois da marca.
+1. Já feito: vídeo removido.
+2. Fotos e destaques open source: esperar a marca (evita refazer); se a migração demorar, publicar a seção de destaques no Jekyll.
+3. Serviços: assim que o João fechar a oferta (`~/.claude/plans/detalhes/ofertas.md`).
+4. Anúncios: depois de cada entrega.

@@ -1,5 +1,7 @@
 # Plano: compressão de vídeos e imagens do site (2026-10-15)
 
+> **Situação 2026-11-03:** os vídeos da home foram removidos (decisão do João), então as seções de vídeo abaixo estão obsoletas. Imagens e GIFs do blog continuam valendo; avaliar se faz sentido no Jekyll ou só no novo site.
+
 ## 1. Diagnóstico (medido)
 | Item | Hoje | Observação |
 |---|---|---|

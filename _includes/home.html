@@ -19,7 +19,7 @@
 
   .section-presentation {
     position: relative;
-    height: 100vh;
+    min-height: 70vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -51,21 +51,6 @@
 </style>
 
 <section class="page-content section-presentation">
-  <div class="video-background">
-    <video id="presentation" autoplay loop playsinline muted>
-      <source
-        media="(min-width: 601px)"
-        src="{{ site.baseurl }}/assets/video/pexels-google-deepmind-18069232.mp4"
-        type="video/mp4"
-      />
-      <source
-        media="(max-width: 600px)"
-        src="{{ site.baseurl }}/assets/video/pexels-google-deepmind-18069233.mp4"
-        type="video/mp4"
-      />
-    </video>
-  </div>
-
   <article class="section-presentation__content wrapper">
     <h1 class="section-presentation__title">
       <span class="inline-highlight"> {{ t.hero_title }} </span>
@@ -87,66 +72,6 @@
     </p>
   </article>
 </section>
-
-<script>
-  {
-    const video = document.querySelector('video#presentation');
-
-    const sources = [...video.querySelectorAll('source')];
-    const sourcesMap = new Map();
-    sources.forEach((source) => {
-      sourcesMap.set(window.matchMedia(source.media), source.src);
-    });
-
-    function handleSourceChanged() {
-      const source = sourcesMap.get(this);
-      if (source) {
-        video.src = source;
-      }
-    }
-
-    sourcesMap.forEach((source, media) => {
-      media.addEventListener('change', handleSourceChanged);
-      handleSourceChanged.call(media);
-    });
-
-    const noMotionMedia = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const noMotionStep = 2;
-    let intervalID;
-
-    function handleReduceMotionChanged() {
-      if (noMotionMedia.matches) {
-        video.removeAttribute('autoplay');
-        intervalID = setInterval(() => {
-          const currentTime = video.currentTime + noMotionStep;
-          video.currentTime = currentTime > video.duration ? 0 : currentTime;
-        }, noMotionStep * 1000);
-        video.pause();
-      } else {
-        clearInterval(intervalID);
-        video.setAttribute('autoplay', '');
-        video.play();
-      }
-    }
-
-    noMotionMedia.addEventListener('change', handleReduceMotionChanged);
-    handleReduceMotionChanged();
-
-    const presentationContent = document.querySelector(
-      '.section-presentation__content'
-    );
-
-    function handleScroll() {
-      const translation = window.scrollY;
-      video.style.transform = `translateY(${translation * 0.33}px)`;
-      presentationContent.style.transform = `translateY(${
-        translation * 0.5
-      }px)`;
-    }
-
-    window.addEventListener('scroll', handleScroll);
-  }
-</script>
 
 <div class="horizontal" style="flex-wrap: wrap">
   <section class="page-content section-skills hero" style="flex: 1 1 300px">
