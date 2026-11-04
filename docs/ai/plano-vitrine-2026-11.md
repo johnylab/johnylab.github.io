@@ -37,7 +37,7 @@ Canais: LinkedIn (perfil e post), grupo de WhatsApp da Gift, README do GitHub, r
 
 ## Ordem
 O João planeja **migrar tudo do GitHub Pages para o Laravel (`johnylab-site`) na raiz `johnylab.com.br`** e fazer um **rebranding total**. Portanto, neste site Jekyll fazer só o que é barato e dura até a migração; o resto vai para o novo site, depois da marca.
-1. Já feito: vídeo removido.
+1. Já feito: vídeo removido; fotos removidas; textos da home reescritos em EN e PT (2026-11-04: novo título, CTAs "Work with me" e "Selected work", "What I do" em 3 pilares, blog e "About" atualizados).
 2. Fotos e destaques open source: esperar a marca (evita refazer); se a migração demorar, publicar a seção de destaques no Jekyll.
 3. Serviços: assim que o João fechar a oferta (`~/.claude/plans/detalhes/ofertas.md`).
 4. Anúncios: depois de cada entrega.

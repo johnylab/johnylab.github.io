@@ -5,26 +5,27 @@ en:
   work_url: /work/
   nav_projects: Selected work
   projects_url: /projects/
-  hero_title: "Hello there! I'm João Ferreira"
-  hero_desc: "Brazilian, father of three, and a software engineer since 2003."
-  cta_contact: Get in touch
-  skills_title: "Tech Expertise:"
+  hero_title: "Hi, I'm João Ferreira."
+  hero_desc: "Full stack engineer since 2003. I build AI-powered web products and help teams ship them."
+  cta_contact: Work with me
+  cta_projects: Selected work
+  skills_title: "What I do"
   skills:
-    - "Software engineer since 2003, now focused on full stack and AI products."
-    - "React, Next.js and TypeScript on the front end; Node.js, Go and Java on the back end."
-    - "LLM and RAG features in production, plus agent-assisted development (Claude Code, Cursor, Copilot, Windsurf)."
-    - "Problem-solving enthusiast, team player, and responsibility taker."
+    - "AI products: LLM and RAG features from prototype to production, with an agent-assisted development workflow."
+    - "Full stack delivery: React, Next.js and TypeScript on the front end; Node.js, Go and Java on the back end."
+    - "Technical leadership: architecture, code review and mentoring in distributed teams."
   blog_title: "Blog Insights:"
-  blog_intro: 'Explore the tech universe through my <a href="/blog/">blog</a> (in Portuguese). Recent posts include:'
+  blog_intro: 'I write about AI for beginners and about job hunting, in Portuguese, on my <a href="/blog/">blog</a>. Recent posts:'
   blog_more: 'More insights await in the <a href="/blog/">Blog Section</a>.'
-  about_title: "About Me:"
+  about_title: "About"
   about:
-    - "Based in Santos, SP."
+    - "Based in Santos, SP, available for remote work."
     - "Brazilian, and father of three."
-  identity_title: "Professional Identity:"
+    - "I mentor developers for free in the Agência Gift community and publish small open-source projects on GitHub."
+  identity_title: "Professional identity"
   identity:
-    - "Full Stack Engineer (React, TypeScript, Node.js) building AI-powered web products."
-    - "Currently considering new opportunities to contribute and grow."
+    - "Full stack engineer (React, TypeScript, Node.js) building AI-powered web products."
+    - "Open to full-time roles and selected contract work."
   career_title: "Career Summary:"
   career_more: 'More details can be found on my <a href="https://www.linkedin.com/in/johnylab/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.'
   career:
@@ -75,26 +76,27 @@ pt-BR:
   work_url: /pt/trabalhe-comigo/
   nav_projects: Trabalhos
   projects_url: /pt/projetos/
-  hero_title: "Olá! Eu sou o João Ferreira"
-  hero_desc: "Brasileiro, pai de três e engenheiro de software desde 2003."
-  cta_contact: Fale comigo
-  skills_title: "Especialidades:"
+  hero_title: "Oi, eu sou o João Ferreira."
+  hero_desc: "Engenheiro full stack desde 2003. Construo produtos web com IA e ajudo times a colocá-los no ar."
+  cta_contact: Trabalhe comigo
+  cta_projects: Trabalhos
+  skills_title: "O que eu faço"
   skills:
-    - "Engenheiro de software desde 2003, hoje com foco em produtos full stack e de IA."
-    - "React, Next.js e TypeScript no front-end; Node.js, Go e Java no back-end."
-    - "Recursos com LLM e RAG em produção, além de desenvolvimento assistido por agentes (Claude Code, Cursor, Copilot, Windsurf)."
-    - "Entusiasta de resolução de problemas, bom trabalho em equipe e assumo responsabilidade."
+    - "Produtos com IA: recursos com LLM e RAG do protótipo à produção, com fluxo de desenvolvimento assistido por agentes."
+    - "Entrega full stack: React, Next.js e TypeScript no front-end; Node.js, Go e Java no back-end."
+    - "Liderança técnica: arquitetura, code review e mentoria em times distribuídos."
   blog_title: "Blog:"
-  blog_intro: 'Explore o universo da tecnologia no meu <a href="/blog/">blog</a>. Posts recentes:'
+  blog_intro: 'Escrevo sobre IA para iniciantes e sobre busca de emprego no meu <a href="/blog/">blog</a>. Posts recentes:'
   blog_more: 'Mais conteúdo na <a href="/blog/">seção do Blog</a>.'
-  about_title: "Sobre mim:"
+  about_title: "Sobre mim"
   about:
-    - "Moro em Santos, SP."
+    - "Moro em Santos, SP, e atendo remotamente."
     - "Brasileiro e pai de três."
-  identity_title: "Identidade profissional:"
+    - "Faço mentoria gratuita de desenvolvedores na comunidade Agência Gift e publico pequenos projetos de código aberto no GitHub."
+  identity_title: "Identidade profissional"
   identity:
-    - "Engenheiro Full Stack (React, TypeScript, Node.js) criando produtos web com IA."
-    - "Aberto a novas oportunidades para contribuir e crescer."
+    - "Engenheiro full stack (React, TypeScript, Node.js) criando produtos web com IA."
+    - "Aberto a vagas e a projetos pontuais."
   career_title: "Resumo de carreira:"
   career_more: 'Mais detalhes no meu <a href="https://www.linkedin.com/in/johnylab/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.'
   career:
