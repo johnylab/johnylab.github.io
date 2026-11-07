@@ -31,7 +31,7 @@
       "Bash(rm -rf:*)",
       "Read(~/.ssh/**)",
       "Read(**/.env)",
-      "Read(~/Desktop/Projetos/job-search/memory/civil-id.local.md)"
+      "Read(~/Github/johnylab/job-search/memory/civil-id.local.md)"
     ]
   }
 }

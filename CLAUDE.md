@@ -18,7 +18,7 @@ Site pessoal do **João Ferreira** (Santos, SP): https://johnylab.com.br. Jekyll
 
 ## Regras (obrigatórias)
 1. **Nunca inventar fato.** Carreira, datas, cargos e números vêm do currículo, fonte da verdade:
-   `~/Desktop/Projetos/job-search/resumes/resume.md` (repo `job-search`). Se faltar dado, pergunte.
+   `~/Github/johnylab/job-search/resumes/resume.md` (repo `job-search`). Se faltar dado, pergunte.
 2. **Nada de dado sensível no site:** CPF/RG/PIS, endereço, telefone pessoal, documentos. E-mail só o de `_data/vcard.yml`.
 3. **Commit e push direto na branch padrão, sem pedir OK** (autorizado pelo João; vale a regra global em `~/.claude/CLAUDE.md`). Se o build do Pages falhar ou houver regressão, corrija ou reverta na hora.
 4. **Não reaproveitar a história "async-events/billing" do Dappier** — nunca aconteceu (ver `docs/ai/memory.md`).
